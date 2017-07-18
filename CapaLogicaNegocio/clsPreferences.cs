@@ -51,9 +51,16 @@ namespace CapaLogicaNegocio
 
         public void SaveSettings()
         {
+
+                credenciales.Save();
+                
+        }
+
+        public bool getConnection()
+        {
             try
             {
-                credenciales.Save();
+              
                 clsManejador manejador = new clsManejador();
                 manejador.Conectar();
                 statusConnection = manejador.State();
@@ -63,11 +70,7 @@ namespace CapaLogicaNegocio
                 statusConnection = false;
 
             }
-           
-        }
 
-        public bool getConnection()
-        {
             return statusConnection;
         }
 

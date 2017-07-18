@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using DevComponents.DotNetBar;
 using CapaLogicaNegocio;
+using Capa_de_Presentacion.Properties;
 
 namespace Capa_de_Presentacion
 {
@@ -37,10 +38,30 @@ namespace Capa_de_Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            if (Settings.Default["TecnicoUser"].ToString() == txtUser.Text &&
+                Settings.Default["TecnicoPass"].ToString() == txtPassword.Text)
+                {
+                    FrmServer frmServer = new FrmServer();
+                    frmServer.Show();
+                    txtUser.Text = "";
+                    txtPassword.Text = "";
+                    return;
+                }
+
+
+
             if (txtUser.Text.Trim() != "")
             {
                 if (txtPassword.Text.Trim() != "")
                 {
+                    clsPreferences preferences  = new clsPreferences();
+                    if (!preferences.getConnection())
+                    {
+                        MessageBox.Show("Error de Conexión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                        
+                   
                     String Mensaje = "";
                     U.User = txtUser.Text;
                     U.Password = txtPassword.Text;
@@ -81,6 +102,8 @@ namespace Capa_de_Presentacion
             DataRow row;
             DataTable dt = new DataTable();
             dt = U.DevolverDatosSesion(txtUser.Text,txtPassword.Text);
+            if (dt == null)
+                return;
             if (dt.Rows.Count == 1) {
                 row = dt.Rows[0];
                 Program.IdEmpleadoLogueado = Convert.ToInt32(row[0].ToString());

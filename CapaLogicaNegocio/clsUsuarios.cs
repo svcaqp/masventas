@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data;
+using System.Windows.Forms;
 using CapaEnlaceDatos;
 
 namespace CapaLogicaNegocio
@@ -53,8 +54,10 @@ namespace CapaLogicaNegocio
                lst.Add(new clsParametro("@Usuario", objUser));
                lst.Add(new clsParametro("@Contraseña", objPassword));
                return M.Listado("DevolverDatosSesion",lst);
-           }catch (Exception ex){
-               throw ex;
+           }catch (Exception ex)
+           {
+               MessageBox.Show("Error del servidor","Servidor",MessageBoxButtons.OK,MessageBoxIcon.Error);
+               return null;
            }
        }
     }
