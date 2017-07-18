@@ -6,17 +6,40 @@ using System.Threading.Tasks;
 
 using System.Data;
 using System.Data.SqlClient;
+using CapaEnlaceDatos;
 
 namespace CapaEnlaceDatos
 {
     public class clsManejador
     {
-        public SqlConnection conexion = new SqlConnection(@"Data Source=SERVER-PC\SERVER;Initial Catalog=DemoPractica;User id=PRUEBA;Password=prueba;");
-        //Data Source=SERVER-PC\SERVER;Initial Catalog=DemoPractica;Integrated Security=True
+
+
+
+        public SqlConnection conexion;
+        //Data Source=SERVER-PC\SERVER;Initial Catalog=DemoPractica;Integrated Security=True id=PRUEBA;Password=prueba;
+
+
+        public clsManejador()
+        {
+            clsCredencial credenciales = new clsCredencial();
+            String cadenaConnection = @"Data Source=" + credenciales.server + ";Initial Catalog=" +
+                                      credenciales.database + ";User id=" + credenciales.user + ";Password=" +
+                                      credenciales.password + ";";
+            Console.Write(cadenaConnection);
+            conexion = new SqlConnection(cadenaConnection);
+        }
+
         public void Conectar() {
             if (conexion.State == ConnectionState.Closed)
                 conexion.Open();
         }
+        public bool State()
+        {
+            if (conexion.State == ConnectionState.Open)
+                return true;
+            return false;
+        }
+ 
 
         public void Desconectar()
         {

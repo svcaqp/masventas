@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Capa_de_Presentacion.Properties {
+namespace CapaEnlaceDatos.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -23,35 +23,51 @@ namespace Capa_de_Presentacion.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVER-PC\\SERVER;Initial Catalog=DemoPractica;Integrated Security=Tru" +
-            "e")]
-        public string DemoPracticaConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBServer {
             get {
-                return ((string)(this["DemoPracticaConnectionString"]));
+                return ((string)(this["DBServer"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("support")]
-        public string TecnicoUser {
-            get {
-                return ((string)(this["TecnicoUser"]));
+            set {
+                this["DBServer"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("config")]
-        public string TecnicoPass {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBNombre {
             get {
-                return ((string)(this["TecnicoPass"]));
+                return ((string)(this["DBNombre"]));
             }
             set {
-                this["TecnicoPass"] = value;
+                this["DBNombre"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBUsuario {
+            get {
+                return ((string)(this["DBUsuario"]));
+            }
+            set {
+                this["DBUsuario"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBPassword {
+            get {
+                return ((string)(this["DBPassword"]));
+            }
+            set {
+                this["DBPassword"] = value;
             }
         }
     }

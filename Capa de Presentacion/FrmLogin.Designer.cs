@@ -82,9 +82,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(6, 118);
+            this.btnCancelar.Location = new System.Drawing.Point(19, 115);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 26);
+            this.btnCancelar.Size = new System.Drawing.Size(80, 26);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "&Salir";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(97, 113);
+            this.btnIngresar.Location = new System.Drawing.Point(105, 115);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(127, 29);
+            this.btnIngresar.Size = new System.Drawing.Size(158, 29);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "&Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;

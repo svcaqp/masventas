@@ -10,5 +10,11 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=SERVER-PC\SERVER;Initial Catalog=DemoPractica;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="TecnicoUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">support</Value>
+    </Setting>
+    <Setting Name="TecnicoPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">config</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

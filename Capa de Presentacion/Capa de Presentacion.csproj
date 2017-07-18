@@ -62,7 +62,7 @@
       <HintPath>..\Libraries\DevComponents.TreeGX.dll</HintPath>
     </Reference>
     <Reference Include="LibPrintTicket">
-      <HintPath>..\..\..\..\..\Desktop\LibPrintTicket\Release\LibPrintTicket.dll</HintPath>
+      <HintPath>..\Libraries\LibPrintTicket.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -84,6 +84,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServer.Designer.cs">
+      <DependentUpon>FrmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlmacen.Designer.cs">
+      <DependentUpon>FrmAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenCompra.Designer.cs">
+      <DependentUpon>FrmOrdenCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAbrirCaja.cs">
       <SubType>Form</SubType>
@@ -181,6 +199,12 @@
     <Compile Include="FrmReportes.Designer.cs">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPreferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreferencias.Designer.cs">
+      <DependentUpon>FrmPreferencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAbrirCaja.resx">
@@ -232,6 +256,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreferencias.resx">
+      <DependentUpon>FrmPreferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServer.resx">
+      <DependentUpon>FrmServer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -296,6 +326,7 @@
     <Content Include="Resources\1button.png" />
     <Content Include="Resources\1button_click.png" />
     <Content Include="Resources\1button_hover.png" />
+    <None Include="Resources\Apple-Logo-black-png-transparent.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
