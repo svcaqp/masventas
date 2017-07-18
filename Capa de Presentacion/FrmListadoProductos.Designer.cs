@@ -90,6 +90,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.Column1,
             this.IdC,
             this.DNI,
@@ -100,6 +101,8 @@
             this.Unidad,
             this.FechaVencimiento});
 =======
+=======
+>>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
                 this.Column1,
                 this.IdC,
                 this.DNI,
@@ -108,6 +111,9 @@
                 this.Dirección,
                 this.Teléfono,
                 this.FechaVencimiento});
+<<<<<<< HEAD
+>>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+=======
 >>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
@@ -196,9 +202,15 @@
             // Nombres
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             dataGridViewCellStyle5.Format = "C2";
             dataGridViewCellStyle5.NullValue = null;
             this.Nombres.DefaultCellStyle = dataGridViewCellStyle5;
+=======
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Nombres.DefaultCellStyle = dataGridViewCellStyle4;
+>>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
 =======
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = null;
@@ -212,9 +224,15 @@
             // Dirección
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             dataGridViewCellStyle6.Format = "C2";
             dataGridViewCellStyle6.NullValue = null;
             this.Dirección.DefaultCellStyle = dataGridViewCellStyle6;
+=======
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Dirección.DefaultCellStyle = dataGridViewCellStyle5;
+>>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
 =======
             dataGridViewCellStyle5.Format = "C2";
             dataGridViewCellStyle5.NullValue = null;
@@ -228,10 +246,13 @@
             // Unidad
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.Unidad.HeaderText = "Unidad";
             this.Unidad.Name = "Unidad";
             this.Unidad.ReadOnly = true;
 =======
+=======
+>>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
             dataGridViewCellStyle6.Format = "N2";
             dataGridViewCellStyle6.NullValue = null;
             this.Teléfono.DefaultCellStyle = dataGridViewCellStyle6;

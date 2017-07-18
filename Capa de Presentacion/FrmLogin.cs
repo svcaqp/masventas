@@ -10,8 +10,6 @@ using System.Windows.Forms;
 
 using DevComponents.DotNetBar;
 using CapaLogicaNegocio;
-using Capa_de_Presentacion.Properties;
-
 
 namespace Capa_de_Presentacion
 {
@@ -43,19 +41,6 @@ namespace Capa_de_Presentacion
             {
                 if (txtPassword.Text.Trim() != "")
                 {
-
-                    if (Settings.Default["TecnicoUser"].ToString() == txtUser.Text &&
-                        Settings.Default["TecnicoPass"].ToString() == txtPassword.Text)
-                    {
-                        FrmServer frmServer = new FrmServer();
-                        frmServer.Show();
-                        txtUser.Text = "";
-                        txtPassword.Text = "";
-
-                        return;
-                    }
-                        
-                    
                     String Mensaje = "";
                     U.User = txtUser.Text;
                     U.Password = txtPassword.Text;
