@@ -102,6 +102,7 @@ namespace Capa_de_Presentacion
                 P.txtMarca.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 P.txtPCompra.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 P.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                
                 P.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
                 P.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
                 P.Show();
@@ -176,6 +177,7 @@ namespace Capa_de_Presentacion
                 Program.IdProducto = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
                 Program.Descripcion = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 Program.Marca = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                Program.Unidad = dataGridView1.CurrentRow.Cells[8].Value.ToString();
                 Program.PrecioVenta = Convert.ToDecimal(dataGridView1.CurrentRow.Cells[5].Value.ToString());
                 Program.Stock = Convert.ToInt32(dataGridView1.CurrentRow.Cells[6].Value.ToString());
                 this.Close();

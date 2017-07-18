@@ -23,6 +23,7 @@ namespace CapaLogicaNegocio
         private Decimal m_PrecioCompra;
         private Decimal m_PrecioVenta;
         private DateTime m_FechaVencimiento;
+        private Decimal m_Unidad;
 
         public Int32 IdP{
             get { return m_IdP; }
@@ -71,6 +72,11 @@ namespace CapaLogicaNegocio
             set { m_FechaVencimiento = value; }
         }
 
+        public Decimal Unidad
+        {
+            get { return m_Unidad; }
+            set { m_Unidad = value; }
+        }
         public DataTable Listar()
         {
             return M.Listado("ListadoProductos", null);
@@ -104,6 +110,7 @@ namespace CapaLogicaNegocio
                 lst.Add(new clsParametro("@Stock", m_Stock));
                 lst.Add(new clsParametro("@PrecioCompra", m_PrecioCompra));
                 lst.Add(new clsParametro("@PrecioVenta", m_PrecioVenta));
+                lst.Add(new clsParametro("@Unidad", m_Unidad));
                 lst.Add(new clsParametro("@FechaVencimiento", m_FechaVencimiento));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("RegistrarProducto", ref lst);
@@ -130,6 +137,7 @@ namespace CapaLogicaNegocio
                 lst.Add(new clsParametro("@Stock", m_Stock));
                 lst.Add(new clsParametro("@PrecioCompra", m_PrecioCompra));
                 lst.Add(new clsParametro("@PrecioVenta", m_PrecioVenta));
+                lst.Add(new clsParametro("@Unidad", m_Unidad));
                 lst.Add(new clsParametro("@FechaVencimiento", m_FechaVencimiento));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("ActualizarProducto", ref lst);

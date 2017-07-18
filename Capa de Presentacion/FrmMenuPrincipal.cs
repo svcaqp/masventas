@@ -30,7 +30,7 @@ namespace Capa_de_Presentacion
                 
                 Program.SaldoAbierto = caja.SaldoAbierto;
                 btn_AbrirCaja.Hide();
-                lbl_saldoCaja.Text = Program.SaldoAbierto + " S/.";
+                lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto +".00";
                 lbl_saldoCaja.Show();
                 lbl_titleSaldoCaja.Show();
                 btnVentas.Enabled = true;
@@ -50,7 +50,12 @@ namespace Capa_de_Presentacion
             if (Program.IdCargoEmpleadoLogueado == "2")
             {
                 btnEmpleados.Hide();
+                
                 btnProductos.Hide();
+                label8.Hide();
+                label9.Hide();
+                label10.Hide();
+                label11.Hide();
                 btnReportes.Hide();
                 btnUsuarios.Hide();
                 lbl_TipodeUsuario.Text = "Trabajador";
@@ -178,6 +183,15 @@ namespace Capa_de_Presentacion
         }
 
         private void lbl_saldoCaja_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+                  }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

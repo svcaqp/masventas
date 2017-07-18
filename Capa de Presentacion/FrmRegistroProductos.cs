@@ -64,6 +64,7 @@ namespace Capa_de_Presentacion
                                         P.IdCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                                         P.Producto = txtProducto.Text;
                                         P.Marca = txtMarca.Text;
+                                        P.Unidad = Convert.ToDecimal(txtUnidad.Text);
                                         P.PrecioCompra = Convert.ToDecimal(txtPCompra.Text);
                                         P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text);
                                         P.Stock = Convert.ToInt32(txtStock.Text);
@@ -85,6 +86,7 @@ namespace Capa_de_Presentacion
                                         P.IdCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                                         P.Producto = txtProducto.Text;
                                         P.Marca = txtMarca.Text;
+                                        P.Unidad = Convert.ToDecimal(txtUnidad.Text);
                                         P.PrecioCompra = Convert.ToDecimal(txtPCompra.Text);
                                         P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text);
                                         P.Stock = Convert.ToInt32(txtStock.Text);
@@ -142,6 +144,7 @@ namespace Capa_de_Presentacion
             txtMarca.Clear();
             txtPCompra.Clear();
             txtPVenta.Clear();
+            txtUnidad.Clear();
             IdC.Clear();
             txtIdP.Clear();
             txtStock.Clear();

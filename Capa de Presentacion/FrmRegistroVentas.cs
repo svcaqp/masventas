@@ -147,15 +147,16 @@ namespace Capa_de_Presentacion
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             clsVenta V = new clsVenta();
+
             if (this.txtDocIdentidad.Text.Trim() != "")
             {
                 if (txtDescripcion.Text.Trim() != "")
-                    {
-                   //if (txtUnidad.Text.Trim() != "")
-                    //  {
-                        if (txtCantidad.Text.Trim() != "")
+                {
+                   if (txtUnidad.Text.Trim() != "")
+                   {
+                       if (txtCantidad.Text.Trim() != "")
                         {
-                            if (Convert.ToInt32(txtCantidad.Text) > 0)
+                           if (Convert.ToInt32(txtCantidad.Text) > 0)
                             {
                                 if (Convert.ToInt32(txtCantidad.Text) <= Convert.ToInt32(txtStock.Text))
                                 {
@@ -165,8 +166,8 @@ namespace Capa_de_Presentacion
                                     V.Cantidad = Convert.ToInt32(txtCantidad.Text);
                                     V.PrecioVenta = Convert.ToDecimal(txtPVenta.Text);
                                     V.Igv = Math.Round(Convert.ToDecimal(txtPVenta.Text) * Convert.ToDecimal(0.18), 2);
-
                                     V.SubTotal = 0;
+
                                     lst.Add(V);
                                     LlenarGrilla();
                                     Limpiar();
@@ -194,11 +195,11 @@ namespace Capa_de_Presentacion
                         DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Producto a Vender.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                     }
                 }
-                 //   else
-                   // {
-                   //     DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Producto a Vender.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                    //}
-                //}
+                   else
+                   {
+                       DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Producto a Vender.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                  }
+                }
                 else
                 {
                     DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Cliente a Vender.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);

@@ -695,7 +695,6 @@
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -718,5 +717,6 @@
         private System.Windows.Forms.RadioButton rbnNotaVenta;
         private System.Windows.Forms.TextBox txtUnidad;
         private System.Windows.Forms.Label lblUnidad;
+        private System.Windows.Forms.TextBox txtDescripcion;
     }
 }
