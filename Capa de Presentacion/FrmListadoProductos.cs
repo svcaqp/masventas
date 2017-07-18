@@ -48,6 +48,7 @@ namespace Capa_de_Presentacion
                     dataGridView1.Rows[i].Cells[5].Value = dt.Rows[i][5].ToString();
                     dataGridView1.Rows[i].Cells[6].Value = dt.Rows[i][6].ToString();
                     dataGridView1.Rows[i].Cells[7].Value = Convert.ToDateTime(dt.Rows[i][7].ToString()).ToShortDateString();
+                    dataGridView1.Rows[i].Cells[8].Value = dt.Rows[i][8].ToString();
                 }
             }
             catch (Exception ex)

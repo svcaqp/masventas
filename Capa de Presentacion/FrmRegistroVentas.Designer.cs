@@ -326,7 +326,7 @@
             this.txtUnidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnidad.Location = new System.Drawing.Point(93, 57);
             this.txtUnidad.Name = "txtUnidad";
-            this.txtUnidad.Size = new System.Drawing.Size(257, 22);
+            this.txtUnidad.Size = new System.Drawing.Size(341, 22);
             this.txtUnidad.TabIndex = 15;
             // 
             // lblUnidad
@@ -342,9 +342,9 @@
             // 
             this.txtIgv.BackColor = System.Drawing.SystemColors.Control;
             this.txtIgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIgv.Location = new System.Drawing.Point(256, 89);
+            this.txtIgv.Location = new System.Drawing.Point(251, 89);
             this.txtIgv.Name = "txtIgv";
-            this.txtIgv.Size = new System.Drawing.Size(60, 22);
+            this.txtIgv.Size = new System.Drawing.Size(71, 22);
             this.txtIgv.TabIndex = 13;
             this.txtIgv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtIgv.TextChanged += new System.EventHandler(this.txtIgv_TextChanged_1);
@@ -452,7 +452,7 @@
             this.txtDescripcion.Location = new System.Drawing.Point(93, 24);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(361, 22);
+            this.txtDescripcion.Size = new System.Drawing.Size(341, 22);
             this.txtDescripcion.TabIndex = 2;
             this.txtDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
