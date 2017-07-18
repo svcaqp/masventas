@@ -1,8 +1,7 @@
 ﻿namespace Capa_de_Presentacion
 {
     partial class FrmAbrirCaja
-    {
-        /// <summary>
+    {/// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -31,13 +30,14 @@
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(149, 93);
+            this.btn_aceptar.Location = new System.Drawing.Point(30, 104);
             this.btn_aceptar.Name = "btn_aceptar";
-            this.btn_aceptar.Size = new System.Drawing.Size(114, 35);
+            this.btn_aceptar.Size = new System.Drawing.Size(114, 39);
             this.btn_aceptar.TabIndex = 0;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = true;
@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 44);
+            this.label1.Location = new System.Drawing.Point(12, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 1;
@@ -55,19 +55,31 @@
             // txt_cantidad
             // 
             this.txt_cantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cantidad.Location = new System.Drawing.Point(122, 41);
+            this.txt_cantidad.Location = new System.Drawing.Point(103, 42);
             this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(210, 26);
+            this.txt_cantidad.Size = new System.Drawing.Size(168, 26);
             this.txt_cantidad.TabIndex = 2;
+            // 
+            // btn_cancelar
+            // 
+            this.btn_cancelar.Location = new System.Drawing.Point(157, 104);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(114, 39);
+            this.btn_cancelar.TabIndex = 3;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // FrmAbrirCaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 160);
+            this.ClientSize = new System.Drawing.Size(299, 171);
+            this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.txt_cantidad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_aceptar);
+            this.DoubleBuffered = true;
             this.Name = "FrmAbrirCaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Abrir Caja";
@@ -81,5 +93,6 @@
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_cantidad;
+        private System.Windows.Forms.Button btn_cancelar;
     }
 }

@@ -15,6 +15,7 @@ namespace Capa_de_Presentacion
     public partial class FrmMenuPrincipal : DevComponents.DotNetBar.Metro.MetroForm
     {
         int EnviarFecha = 0;
+
         public FrmMenuPrincipal()
         {
             InitializeComponent();
@@ -24,10 +25,10 @@ namespace Capa_de_Presentacion
         {
             lblUsuario.Text = Program.NombreEmpleadoLogueado;
             clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "");
-            
+
             if (caja.IdCaja != null)
             {
-                
+
                 Program.SaldoAbierto = caja.SaldoAbierto;
                 btn_AbrirCaja.Hide();
                 lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto +".00";
@@ -77,7 +78,7 @@ namespace Capa_de_Presentacion
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            FrmListadoProductos P = new FrmListadoProductos();
+            FrmAlmacen P = new FrmAlmacen();
             P.Show();
         }
 
@@ -101,12 +102,14 @@ namespace Capa_de_Presentacion
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            switch(EnviarFecha){
+            switch (EnviarFecha)
+            {
                 case 0: CapturarFechaSistema(); break;
             }
         }
 
-        private void CapturarFechaSistema() {
+        private void CapturarFechaSistema()
+        {
             lblFecha.Text = DateTime.Now.ToShortDateString();
             lblHora.Text = DateTime.Now.ToShortTimeString();
         }
@@ -159,8 +162,7 @@ namespace Capa_de_Presentacion
         private void btn_CerrarCaja_Click(object sender, EventArgs e)
         {
 
-            clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "") 
-                                        {SaldoCerrado = Program.SaldoAbierto};
+            clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "") { SaldoCerrado = Program.SaldoAbierto };
             caja.CerrarCaja();
             Program.IdCaja = null;
             Program.SaldoAbierto = 0;

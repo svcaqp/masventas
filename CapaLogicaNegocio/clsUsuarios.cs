@@ -41,8 +41,9 @@ namespace CapaLogicaNegocio
                lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                M.EjecutarSP("IniciarSesion",ref lst);
                return Mensaje=lst[2].Valor.ToString();
-           }catch (Exception ex){
-               throw ex;
+           }catch (Exception ex)
+           {
+               return "No se pudo iniciar session";
            }
        }
 

@@ -17,6 +17,7 @@ namespace Capa_de_Presentacion
     {
         private clsCategoria C = new clsCategoria();
         private clsProducto P = new clsProducto();
+        FrmOrdenCompra frm_orden_compra = new FrmOrdenCompra();
 
         public FrmRegistroProductos()
         {
@@ -28,7 +29,8 @@ namespace Capa_de_Presentacion
             ListarElementos();
         }
 
-        private void ListarElementos() {
+        private void ListarElementos()
+        {
             if (IdC.Text.Trim() != "")
             {
                 cbxCategoria.DisplayMember = "Descripcion";
@@ -125,7 +127,8 @@ namespace Capa_de_Presentacion
                     txtMarca.Focus();
                 }
             }
-            else {
+            else
+            {
                 DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese Nombre del Producto.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtProducto.Focus();
             }
@@ -139,7 +142,8 @@ namespace Capa_de_Presentacion
             C.Show();
         }
 
-        private void Limpiar() {
+        private void Limpiar()
+        {
             txtProducto.Text = "";
             txtMarca.Clear();
             txtPCompra.Clear();
@@ -154,7 +158,8 @@ namespace Capa_de_Presentacion
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (DevComponents.DotNetBar.MessageBoxEx.Show("¿Está Seguro que Desea Salir.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes) {
+            if (DevComponents.DotNetBar.MessageBoxEx.Show("¿Está Seguro que Desea Salir.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            {
                 this.Close();
             }
 
@@ -223,17 +228,17 @@ namespace Capa_de_Presentacion
                 e.Handled = false;
             }
             else
-                if (Char.IsControl(e.KeyChar))
-                {
-                    e.Handled = false;
-                }
-                else
-                {
-                    e.Handled = true;
-                } 
+            if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
 
-    
+
 
         private void txtMarca_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -246,6 +251,32 @@ namespace Capa_de_Presentacion
         private void txtMarca_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frm_orden_compra.Show();
+            }
+            catch
+            {
+                frm_orden_compra = new FrmOrdenCompra();
+                frm_orden_compra.Show();
+            }
+
+        }
+
+        private void FrmRegistroProductos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                frm_orden_compra.Close();
+            }
+            catch (Exception exeption)
+            {
+                Console.Write("FrmRegistroProductos_FormClosed" + exeption.Message);
+            }
         }
     }
 }
