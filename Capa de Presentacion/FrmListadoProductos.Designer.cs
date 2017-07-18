@@ -89,8 +89,7 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             this.Column1,
             this.IdC,
             this.DNI,
@@ -100,21 +99,8 @@
             this.Dirección,
             this.Unidad,
             this.FechaVencimiento});
-=======
-=======
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
-                this.Column1,
-                this.IdC,
-                this.DNI,
-                this.Apellidos,
-                this.Nombres,
-                this.Dirección,
-                this.Teléfono,
-                this.FechaVencimiento});
-<<<<<<< HEAD
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
-=======
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+
+               
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(738, 174);
@@ -201,21 +187,15 @@
             // 
             // Nombres
             // 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             dataGridViewCellStyle5.Format = "C2";
             dataGridViewCellStyle5.NullValue = null;
             this.Nombres.DefaultCellStyle = dataGridViewCellStyle5;
-=======
+
             dataGridViewCellStyle4.Format = "C2";
             dataGridViewCellStyle4.NullValue = null;
             this.Nombres.DefaultCellStyle = dataGridViewCellStyle4;
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
-=======
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Nombres.DefaultCellStyle = dataGridViewCellStyle4;
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+
             this.Nombres.HeaderText = "P. Compra";
             this.Nombres.Name = "Nombres";
             this.Nombres.ReadOnly = true;
@@ -223,21 +203,12 @@
             // 
             // Dirección
             // 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             dataGridViewCellStyle6.Format = "C2";
             dataGridViewCellStyle6.NullValue = null;
             this.Dirección.DefaultCellStyle = dataGridViewCellStyle6;
-=======
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle5;
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
-=======
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle5;
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+
+           
             this.Dirección.HeaderText = "P. Venta";
             this.Dirección.Name = "Dirección";
             this.Dirección.ReadOnly = true;
@@ -245,14 +216,11 @@
             // 
             // Unidad
             // 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
             this.Unidad.HeaderText = "Unidad";
             this.Unidad.Name = "Unidad";
             this.Unidad.ReadOnly = true;
-=======
-=======
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+
             dataGridViewCellStyle6.Format = "N2";
             dataGridViewCellStyle6.NullValue = null;
             this.Teléfono.DefaultCellStyle = dataGridViewCellStyle6;
@@ -260,15 +228,13 @@
             this.Teléfono.Name = "Teléfono";
             this.Teléfono.ReadOnly = true;
             this.Teléfono.Width = 40;
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
-            // 
+
             // FechaVencimiento
             // 
             this.FechaVencimiento.HeaderText = "Fecha Vto";
             this.FechaVencimiento.Name = "FechaVencimiento";
             // 
-<<<<<<< HEAD
-=======
+
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -309,7 +275,7 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
->>>>>>> e7295b040cb600ff29b57cd4d5fa2fc0ebbc7429
+
             // FrmListadoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
