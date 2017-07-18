@@ -40,7 +40,8 @@ namespace Capa_de_Presentacion
         // Datos de la caja 
         public static String IdCaja;
         public static double SaldoAbierto;
- 
+    
+
         [STAThread]
         static void Main()
         {

@@ -35,10 +35,19 @@ namespace Capa_de_Presentacion
             preferences.setPassword(this.txt_pass.Text);
             preferences.SaveSettings();
             if (preferences.getConnection())
+            {
                 MessageBox.Show("El Servidor esta vivo", "Servidor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
+                this.Close();
+            }
             else
-                MessageBox.Show("Error de Conexión","Servidor",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Error de Conexión", "Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+        }
+
+        private void FrmServer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+       
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Capa_de_Presentacion
     public partial class FrmLogin : DevComponents.DotNetBar.Metro.MetroForm
     {
         clsUsuarios U = new clsUsuarios();
+    
 
         public FrmLogin()
         {
@@ -25,7 +26,7 @@ namespace Capa_de_Presentacion
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace Capa_de_Presentacion
                     frmServer.Show();
                     txtUser.Text = "";
                     txtPassword.Text = "";
+                
                     return;
                 }
 
@@ -84,9 +86,25 @@ namespace Capa_de_Presentacion
                         {
                             
                             FrmMenuPrincipal MP = new FrmMenuPrincipal();
-                            RecuperarDatosSesion();
-                            MP.Show();
-                            this.Hide();
+                            try
+                            {
+                                RecuperarDatosSesion();
+                                MP.Show();
+                                this.Hide();
+                            }
+                            catch (Exception exception)
+                            {
+                                
+                                if (!preferences.getConnection())
+                                {
+                                    MessageBox.Show("Error de Conexión: "+exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    return;
+                                }
+                                
+                                
+                            }
+                            
+                            
                         }
                 }else {
                     DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese su Contraseña.","Sistema de Ventas.",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -103,7 +121,7 @@ namespace Capa_de_Presentacion
             DataTable dt = new DataTable();
             dt = U.DevolverDatosSesion(txtUser.Text,txtPassword.Text);
             if (dt == null)
-                return;
+                throw new Exception("Error al recuperar los datos");
             if (dt.Rows.Count == 1) {
                 row = dt.Rows[0];
                 Program.IdEmpleadoLogueado = Convert.ToInt32(row[0].ToString());
@@ -130,6 +148,11 @@ namespace Capa_de_Presentacion
         private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FrmLogin_Activated(object sender, EventArgs e)
+        {
+           
         }
     }
 }
