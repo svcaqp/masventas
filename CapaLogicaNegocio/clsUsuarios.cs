@@ -19,6 +19,7 @@ namespace CapaLogicaNegocio
        public string Password { get; set; }
 
        public String RegistrarUsuarios() {
+           
            List<clsParametro> lst = new List<clsParametro>();
            String Mensaje = "";
            try{
@@ -34,6 +35,7 @@ namespace CapaLogicaNegocio
        }
 
        public String IniciarSesion() {
+           M = new clsManejador();
            List<clsParametro> lst = new List<clsParametro>();
            String Mensaje="";
            try{

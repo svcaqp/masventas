@@ -11,6 +11,7 @@ namespace CapaLogicaNegocio
     {
         private clsCredencial credenciales = new clsCredencial();
         private bool statusConnection = false;
+        public string message="";
         public clsPreferences()
         {
         }
@@ -58,16 +59,18 @@ namespace CapaLogicaNegocio
 
         public bool getConnection()
         {
+            clsManejador manejador = new clsManejador();
             try
             {
-              
-                clsManejador manejador = new clsManejador();
                 manejador.Conectar();
                 statusConnection = manejador.State();
             }
             catch (Exception e)
             {
+                Console.Write("Error getConnection :"+ e.Message);
+                this.message = e.Message;
                 statusConnection = false;
+                manejador.Desconectar();
 
             }
 

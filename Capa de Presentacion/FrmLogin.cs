@@ -59,7 +59,8 @@ namespace Capa_de_Presentacion
                     clsPreferences preferences  = new clsPreferences();
                     if (!preferences.getConnection())
                     {
-                        MessageBox.Show("Error de Conexión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        MessageBox.Show("Error de Conexión : "+preferences.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                         
