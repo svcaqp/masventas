@@ -17,24 +17,21 @@ namespace Capa_de_Presentacion
             try
             {
                 DateTime localDate = DateTime.Now;
-
-                int diasPrueba = localDate.DayOfYear - Settings.Default.FechaHoy.DayOfYear;
-                if (diasPrueba == 0)
+                if (Settings.Default.FechaHoy.DayOfYear == 1)
                 {
-
                     Settings.Default.FechaHoy = localDate;
                     Settings.Default.Save();
                 }
-                else
+                int diasPrueba = localDate.DayOfYear - Settings.Default.FechaHoy.DayOfYear;
+                
+                if (diasPrueba < 0 || diasPrueba > 15)
                 {
-                    if (diasPrueba < 0 || diasPrueba > 15)
-                    {
-                        message = "Su version de prueba a terminado";
-                        statusCode = 3;
-                        return;
-                    }
-
+                    message = "Su version de prueba a terminado";
+                    statusCode = 3;
+                    return;
                 }
+
+             
 
                 int diasRestantes = (15 - diasPrueba);
 
