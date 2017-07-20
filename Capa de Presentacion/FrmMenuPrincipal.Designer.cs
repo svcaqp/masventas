@@ -376,7 +376,7 @@
             this.lbl_titleSaldoCaja.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.lbl_titleSaldoCaja.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titleSaldoCaja.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_titleSaldoCaja.Location = new System.Drawing.Point(55, 45);
+            this.lbl_titleSaldoCaja.Location = new System.Drawing.Point(55, 50);
             this.lbl_titleSaldoCaja.Name = "lbl_titleSaldoCaja";
             this.lbl_titleSaldoCaja.Size = new System.Drawing.Size(93, 16);
             this.lbl_titleSaldoCaja.TabIndex = 9;
@@ -385,15 +385,14 @@
             // 
             // lbl_saldoCaja
             // 
+            this.lbl_saldoCaja.AutoSize = true;
             this.lbl_saldoCaja.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_saldoCaja.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saldoCaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbl_saldoCaja.ForeColor = System.Drawing.Color.White;
-            this.lbl_saldoCaja.Location = new System.Drawing.Point(150, 40);
+            this.lbl_saldoCaja.Location = new System.Drawing.Point(165, 49);
             this.lbl_saldoCaja.Name = "lbl_saldoCaja";
-            this.lbl_saldoCaja.Size = new System.Drawing.Size(89, 23);
+            this.lbl_saldoCaja.Size = new System.Drawing.Size(0, 20);
             this.lbl_saldoCaja.TabIndex = 10;
-            this.lbl_saldoCaja.Visible = false;
-            this.lbl_saldoCaja.Click += new System.EventHandler(this.lbl_saldoCaja_Click);
             // 
             // btn_CerrarCaja
             // 
@@ -458,6 +457,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panel2.Controls.Add(this.lbl_saldoCaja);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_AbrirCaja);
             this.panel2.Controls.Add(this.label2);
@@ -465,7 +465,6 @@
             this.panel2.Controls.Add(this.btn_CerrarCaja);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.lblHora);
-            this.panel2.Controls.Add(this.lbl_saldoCaja);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Controls.Add(this.lbl_titleSaldoCaja);

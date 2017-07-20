@@ -42,10 +42,13 @@ namespace Capa_de_Presentacion
 
         }
 
-       
 
+        bool active = false;
         private void FrmMenuPrincipal_Activated(object sender, EventArgs e)
         {
+    
+                
+
             lblUsuario.Text = Program.NombreEmpleadoLogueado;
             clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "");
 
@@ -54,7 +57,8 @@ namespace Capa_de_Presentacion
 
                 Program.SaldoAbierto = caja.SaldoAbierto;
                 btn_AbrirCaja.Hide();
-                lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto +".00";
+                lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto + ".00";
+
                 lbl_saldoCaja.Show();
                 lbl_titleSaldoCaja.Show();
                 btnVentas.Enabled = true;
@@ -259,10 +263,9 @@ namespace Capa_de_Presentacion
 
         }
 
-        private void lbl_saldoCaja_Click(object sender, EventArgs e)
-        {
 
-        }
+
+       
 
     }
 }

@@ -48,5 +48,10 @@ namespace Capa_de_Presentacion
         {
 
         }
+
+        private void FrmAbrirCaja_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

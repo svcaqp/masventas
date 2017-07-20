@@ -645,7 +645,10 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(839, 582);
+            this.MinimumSize = new System.Drawing.Size(839, 582);
             this.Name = "FrmRegistroVentas";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Ventas";
             this.Activated += new System.EventHandler(this.FrmVentas_Activated);

@@ -26,7 +26,7 @@ namespace Capa_de_Presentacion
                 
                 if (diasPrueba < 0 || diasPrueba > 15)
                 {
-                    message = "Su version de prueba a terminado";
+                    message = "Su versión de prueba ha terminado";
                     statusCode = 3;
                     return;
                 }
@@ -37,15 +37,14 @@ namespace Capa_de_Presentacion
 
                 if (diasRestantes < 0)
                 {
-                    message = "Su version de prueba a terminado";
+                    message = "Su versión de prueba ha terminado";
                     statusCode = 2;
                 }
                 else
                 {
-                    message = "Dias de prueba restantes : " + diasRestantes;
+                    message = "Días de prueba restantes : " + diasRestantes;
                     statusCode = 1;
                 }
-
 
             }
 
