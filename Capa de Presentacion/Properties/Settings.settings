@@ -16,5 +16,8 @@
     <Setting Name="TecnicoPass" Type="System.String" Scope="User">
       <Value Profile="(Default)">config</Value>
     </Setting>
+    <Setting Name="FechaHoy" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

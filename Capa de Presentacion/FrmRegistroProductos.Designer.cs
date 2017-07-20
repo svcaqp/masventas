@@ -169,7 +169,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(350, 187);
+            this.btnGuardar.Location = new System.Drawing.Point(350, 175);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 60);
             this.btnGuardar.TabIndex = 12;
@@ -204,16 +204,16 @@
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Location = new System.Drawing.Point(17, 24);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(195, 23);
+            this.cbxCategoria.Size = new System.Drawing.Size(293, 23);
             this.cbxCategoria.TabIndex = 15;
             // 
             // btnCategoria
             // 
-            this.btnCategoria.Location = new System.Drawing.Point(223, 24);
+            this.btnCategoria.Location = new System.Drawing.Point(350, 24);
             this.btnCategoria.Name = "btnCategoria";
-            this.btnCategoria.Size = new System.Drawing.Size(87, 27);
+            this.btnCategoria.Size = new System.Drawing.Size(100, 60);
             this.btnCategoria.TabIndex = 16;
-            this.btnCategoria.Text = "&Categoria";
+            this.btnCategoria.Text = "&Categorias";
             this.btnCategoria.UseVisualStyleBackColor = true;
             this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
@@ -253,7 +253,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(350, 112);
+            this.button1.Location = new System.Drawing.Point(350, 100);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 60);
             this.button1.TabIndex = 21;
@@ -295,6 +295,7 @@
             this.Name = "FrmRegistroProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Productos";
+            this.Activated += new System.EventHandler(this.FrmRegistroProductos_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistroProductos_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistroProductos_Load);
             this.ResumeLayout(false);

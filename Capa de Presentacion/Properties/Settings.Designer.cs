@@ -54,5 +54,16 @@ namespace Capa_de_Presentacion.Properties {
                 this["TecnicoPass"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime FechaHoy {
+            get {
+                return ((global::System.DateTime)(this["FechaHoy"]));
+            }
+            set {
+                this["FechaHoy"] = value;
+            }
+        }
     }
 }

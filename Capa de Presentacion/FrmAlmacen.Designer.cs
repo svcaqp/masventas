@@ -88,14 +88,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-                this.Column1,
-                this.IdC,
-                this.DNI,
-                this.Apellidos,
-                this.Nombres,
-                this.Dirección,
-                this.Teléfono,
-                this.FechaVencimiento});
+            this.Column1,
+            this.IdC,
+            this.DNI,
+            this.Apellidos,
+            this.Nombres,
+            this.Dirección,
+            this.Teléfono,
+            this.FechaVencimiento});
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(738, 174);
@@ -205,7 +205,7 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // FrmListadoProductos
+            // FrmAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,9 +219,9 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "FrmListadoProductos";
+            this.Name = "FrmAlmacen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro de Productos";
+            this.Text = "Almacen";
             this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

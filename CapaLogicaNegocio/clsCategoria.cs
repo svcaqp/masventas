@@ -39,18 +39,37 @@ namespace CapaLogicaNegocio
             return M.Listado("ListarCategoria",null);
         }
 
-        public String RegistrarCategoria() {
+        public String EliminarCategoria()
+        {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
             try
             {
-                lst.Add(new clsParametro("@Descripcion",m_Descripcion));
+                lst.Add(new clsParametro("@IdCategoria", this.IdC));
                 lst.Add(new clsParametro("@Mensaje","",SqlDbType.VarChar,ParameterDirection.Output,50));
-                M.EjecutarSP("RegistrarCategoria",ref lst);
+                M.EjecutarSP("EliminarCategoria", ref lst);
                 Mensaje = lst[1].Valor.ToString();
             }
             catch (Exception ex)
             {    
+                throw ex;
+            }
+            return Mensaje;
+        }
+
+        public String RegistrarCategoria()
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            String Mensaje = "";
+            try
+            {
+                lst.Add(new clsParametro("@Descripcion", m_Descripcion));
+                lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
+                M.EjecutarSP("RegistrarCategoria", ref lst);
+                Mensaje = lst[1].Valor.ToString();
+            }
+            catch (Exception ex)
+            {
                 throw ex;
             }
             return Mensaje;

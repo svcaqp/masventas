@@ -45,6 +45,7 @@ namespace Capa_de_Presentacion
                         }else {
                             MessageBoxEx.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Limpiar();
+                            ListarElementos();
                         }
 
                     }else{
@@ -66,6 +67,35 @@ namespace Capa_de_Presentacion
         private void Limpiar() {
             txtCategoria.Clear();
             txtCategoria.Focus();
+        }
+
+        private void FrmRegistrarCategoria_Load(object sender, EventArgs e)
+        {
+            ListarElementos();
+        }
+        private void ListarElementos()
+        {
+            if (IdC.Text.Trim() != "")
+            {
+                cbxCategoria.DisplayMember = "Descripcion";
+                cbxCategoria.ValueMember = "IdCategoria";
+                cbxCategoria.DataSource = C.Listar();
+                cbxCategoria.SelectedValue = IdC.Text;
+            }
+            else
+            {
+                cbxCategoria.DisplayMember = "Descripcion";
+                cbxCategoria.ValueMember = "IdCategoria";
+                cbxCategoria.DataSource = C.Listar();
+            }
+        }
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            clsCategoria categoria = new clsCategoria();
+            categoria.IdC = Convert.ToInt32(cbxCategoria.SelectedValue);
+            categoria.EliminarCategoria();
+            ListarElementos();
         }
     }
 }

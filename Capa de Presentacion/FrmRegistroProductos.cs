@@ -278,5 +278,10 @@ namespace Capa_de_Presentacion
                 Console.Write("FrmRegistroProductos_FormClosed" + exeption.Message);
             }
         }
+
+        private void FrmRegistroProductos_Activated(object sender, EventArgs e)
+        {
+            ListarElementos();
+        }
     }
 }

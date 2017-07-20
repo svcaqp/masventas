@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.Panel_items = new System.Windows.Forms.Panel();
+            this.lbl_nodisponible = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,12 +58,14 @@
             this.lbl_saldoCaja = new System.Windows.Forms.Label();
             this.btn_CerrarCaja = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_prueba = new System.Windows.Forms.Label();
             this.lbl_TipodeUsuario = new System.Windows.Forms.Label();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Panel_items.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,7 +122,7 @@
             // Panel_items
             // 
             this.Panel_items.BackColor = System.Drawing.Color.Transparent;
-            this.Panel_items.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Panel_items.Controls.Add(this.lbl_nodisponible);
             this.Panel_items.Controls.Add(this.label11);
             this.Panel_items.Controls.Add(this.label10);
             this.Panel_items.Controls.Add(this.label9);
@@ -138,6 +141,19 @@
             this.Panel_items.Name = "Panel_items";
             this.Panel_items.Size = new System.Drawing.Size(1002, 216);
             this.Panel_items.TabIndex = 5;
+            // 
+            // lbl_nodisponible
+            // 
+            this.lbl_nodisponible.AutoSize = true;
+            this.lbl_nodisponible.BackColor = System.Drawing.Color.Snow;
+            this.lbl_nodisponible.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nodisponible.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbl_nodisponible.Location = new System.Drawing.Point(652, 88);
+            this.lbl_nodisponible.Name = "lbl_nodisponible";
+            this.lbl_nodisponible.Size = new System.Drawing.Size(126, 36);
+            this.lbl_nodisponible.TabIndex = 19;
+            this.lbl_nodisponible.Text = "No Disponible\r\nVersion de prueba";
+            this.lbl_nodisponible.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
@@ -179,10 +195,9 @@
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(395, 165);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 16);
+            this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Productos";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.label8.Text = "Almacen";
             // 
             // label7
             // 
@@ -235,6 +250,7 @@
             // 
             this.btnReportes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.BackgroundImage")));
             this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReportes.Enabled = false;
             this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Location = new System.Drawing.Point(648, 48);
             this.btnReportes.Name = "btnReportes";
@@ -399,11 +415,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panel1.Controls.Add(this.lbl_prueba);
             this.panel1.Location = new System.Drawing.Point(0, 427);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(945, 40);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lbl_prueba
+            // 
+            this.lbl_prueba.AutoSize = true;
+            this.lbl_prueba.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbl_prueba.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prueba.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl_prueba.Location = new System.Drawing.Point(12, 12);
+            this.lbl_prueba.Name = "lbl_prueba";
+            this.lbl_prueba.Size = new System.Drawing.Size(0, 16);
+            this.lbl_prueba.TabIndex = 16;
             // 
             // lbl_TipodeUsuario
             // 
@@ -456,7 +484,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(180, 40);
             this.panel3.TabIndex = 16;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // FrmMenuPrincipal
             // 
@@ -472,6 +499,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -481,6 +509,8 @@
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.Panel_items.ResumeLayout(false);
             this.Panel_items.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -524,6 +554,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbl_prueba;
+        private System.Windows.Forms.Label lbl_nodisponible;
 
 
     }

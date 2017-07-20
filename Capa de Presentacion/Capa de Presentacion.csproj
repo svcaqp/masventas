@@ -49,6 +49,9 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>oie_transparent__1__OF0_1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -80,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsPrueba.cs" />
     <Compile Include="clsVenta.cs" />
     <Compile Include="DataSetReporteProductos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -211,6 +215,9 @@
     <EmbeddedResource Include="FrmAbrirCaja.resx">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlmacen.resx">
+      <DependentUpon>FrmAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCargos.resx">
       <DependentUpon>FrmListadoCargos.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,9 +332,11 @@
     <None Include="bin\Resorces\1button_hover.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="oie_transparent__1__OF0_1.ico" />
     <Content Include="Resources\1button.png" />
     <Content Include="Resources\1button_click.png" />
     <Content Include="Resources\1button_hover.png" />
+    <None Include="Resources\money.png" />
     <None Include="Resources\preloader.gif" />
     <None Include="Resources\server.png" />
     <None Include="Resources\logo PREVEN.jpg" />

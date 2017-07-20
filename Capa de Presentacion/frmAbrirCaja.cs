@@ -43,5 +43,10 @@ namespace Capa_de_Presentacion
         {
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

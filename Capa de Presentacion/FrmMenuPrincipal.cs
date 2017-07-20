@@ -5,10 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaLogicaNegocio;
 using DevComponents.DotNetBar;
+using Capa_de_Presentacion.Properties;
 
 namespace Capa_de_Presentacion
 {
@@ -19,7 +21,28 @@ namespace Capa_de_Presentacion
         public FrmMenuPrincipal()
         {
             InitializeComponent();
+
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode == 1)
+            {
+                lbl_prueba.Text = testPrueba.message;
+            }
+            else
+            {
+                MessageBox.Show(testPrueba.message,"Versión de prueba",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
+            
+
+
+
+
         }
+
+       
 
         private void FrmMenuPrincipal_Activated(object sender, EventArgs e)
         {
@@ -59,6 +82,7 @@ namespace Capa_de_Presentacion
                 label11.Hide();
                 btnReportes.Hide();
                 btnUsuarios.Hide();
+                lbl_nodisponible.Hide();
                 lbl_TipodeUsuario.Text = "Trabajador";
 
             }
@@ -78,24 +102,59 @@ namespace Capa_de_Presentacion
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
             FrmAlmacen P = new FrmAlmacen();
             P.Show();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
             FrmListadoClientes C = new FrmListadoClientes();
             C.Show();
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
             FrmRegistroVentas V = new FrmRegistroVentas();
             V.Show();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
             FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
             U.Show();
         }
@@ -116,6 +175,14 @@ namespace Capa_de_Presentacion
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
             FrmListadoEmpleados E = new FrmListadoEmpleados();
             E.Show();
         }
@@ -148,6 +215,14 @@ namespace Capa_de_Presentacion
 
         private void btn_AbrirCaja_Click(object sender, EventArgs e)
         {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
             FrmAbrirCaja cajaForm = new FrmAbrirCaja();
             cajaForm.Show();
         }
@@ -189,13 +264,5 @@ namespace Capa_de_Presentacion
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-                  }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
