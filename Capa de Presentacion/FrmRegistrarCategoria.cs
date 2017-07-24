@@ -41,9 +41,9 @@ namespace Capa_de_Presentacion
                         C.Descripcion = txtCategoria.Text;
                         Mensaje = C.RegistrarCategoria();
                         if (Mensaje == "Categoria ya se encuentra Registrada."){
-                            MessageBoxEx.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            MessageBoxEx.Show(this,Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }else {
-                            MessageBoxEx.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBoxEx.Show(this,Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             Limpiar();
                             ListarElementos();
                         }
@@ -51,11 +51,11 @@ namespace Capa_de_Presentacion
                     }else{
                         C.IdC = Convert.ToInt32(IdC.Text);
                         C.Descripcion = txtCategoria.Text;
-                        MessageBoxEx.Show(C.ActualizarCategoria(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBoxEx.Show(this,C.ActualizarCategoria(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpiar();
                     }
                 }else {
-                    MessageBoxEx.Show("Por Favor Digíte Datos.","Sistema de Ventas.",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBoxEx.Show(this,"Por Favor Digíte Datos.","Sistema de Ventas.",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     txtCategoria.Focus();
                 }
             }catch (Exception ex){

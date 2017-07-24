@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.IdC = new System.Windows.Forms.TextBox();
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.btn_Eliminar = new System.Windows.Forms.Button();
@@ -53,36 +52,25 @@
             this.txtCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoria.Location = new System.Drawing.Point(8, 98);
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(261, 21);
+            this.txtCategoria.Size = new System.Drawing.Size(307, 21);
             this.txtCategoria.TabIndex = 1;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(169, 135);
+            this.btnGuardar.Location = new System.Drawing.Point(370, 87);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 32);
+            this.btnGuardar.Size = new System.Drawing.Size(75, 32);
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "&Agregar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(12, 135);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 32);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "&Salir";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // IdC
             // 
             this.IdC.BackColor = System.Drawing.SystemColors.Control;
             this.IdC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IdC.Location = new System.Drawing.Point(343, 11);
+            this.IdC.Location = new System.Drawing.Point(501, 12);
             this.IdC.Name = "IdC";
             this.IdC.Size = new System.Drawing.Size(18, 13);
             this.IdC.TabIndex = 4;
@@ -94,13 +82,13 @@
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Location = new System.Drawing.Point(8, 40);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(175, 21);
+            this.cbxCategoria.Size = new System.Drawing.Size(307, 21);
             this.cbxCategoria.TabIndex = 16;
             // 
             // btn_Eliminar
             // 
             this.btn_Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Eliminar.Location = new System.Drawing.Point(194, 34);
+            this.btn_Eliminar.Location = new System.Drawing.Point(370, 32);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(75, 32);
             this.btn_Eliminar.TabIndex = 17;
@@ -122,12 +110,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 179);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(463, 244);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Eliminar);
             this.Controls.Add(this.cbxCategoria);
             this.Controls.Add(this.IdC);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.label1);
@@ -135,8 +124,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmRegistrarCategoria";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Categorias";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmRegistrarCategoria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -147,7 +139,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnCancelar;
         public System.Windows.Forms.TextBox txtCategoria;
         public System.Windows.Forms.TextBox IdC;
         public System.Windows.Forms.ComboBox cbxCategoria;

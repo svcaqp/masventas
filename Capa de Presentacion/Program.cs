@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaLogicaNegocio;
 
 namespace Capa_de_Presentacion
 {
@@ -41,6 +42,21 @@ namespace Capa_de_Presentacion
         public static String IdCaja;
         public static double SaldoAbierto;
     
+
+        //Datos orden de Compra
+
+        public static clsCompra ordenCompra = new clsCompra();
+
+
+
+        //Referencias Forms
+
+        public static FrmAlmacen frmAlmacen;
+        public static FrmRegistroProductos frmRegistroProductos;
+        public static Frmregresar frmregresar;
+        public static FrmRegistrarCategoria frmCategoria;
+        public static FrmEditarProducto frmEditarProducto;
+
 
         [STAThread]
         static void Main()

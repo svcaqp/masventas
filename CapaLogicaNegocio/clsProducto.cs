@@ -23,7 +23,8 @@ namespace CapaLogicaNegocio
         private Decimal m_PrecioCompra;
         private Decimal m_PrecioVenta;
         private DateTime m_FechaVencimiento;
-        private Decimal m_Unidad;
+        private String m_Unidad;
+       
 
         public Int32 IdP{
             get { return m_IdP; }
@@ -72,7 +73,7 @@ namespace CapaLogicaNegocio
             set { m_FechaVencimiento = value; }
         }
 
-        public Decimal Unidad
+        public String Unidad
         {
             get { return m_Unidad; }
             set { m_Unidad = value; }
@@ -97,7 +98,7 @@ namespace CapaLogicaNegocio
             return dt;
         }
 
-        public String RegistrarProductos()
+        public String RegistrarProductos(clsCompra ordenCompra)
         {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
@@ -112,9 +113,12 @@ namespace CapaLogicaNegocio
                 lst.Add(new clsParametro("@PrecioVenta", m_PrecioVenta));
                 lst.Add(new clsParametro("@Unidad", m_Unidad));
                 lst.Add(new clsParametro("@FechaVencimiento", m_FechaVencimiento));
+                lst.Add(new clsParametro("@NroDocumento", ordenCompra.NroDocumento));
+                lst.Add(new clsParametro("@TipoDocumento", ordenCompra.TipoDocumento));
+                lst.Add(new clsParametro("@Total", ordenCompra.Total));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("RegistrarProducto", ref lst);
-                Mensaje = lst[7].Valor.ToString();
+                Mensaje = lst[11].Valor.ToString();
             }
             catch (Exception ex)
             {
@@ -123,7 +127,26 @@ namespace CapaLogicaNegocio
             return Mensaje;
         }
 
-        public String ActualizarProductos()
+        public String EliminarProducto()
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            String Mensaje = "";
+
+            try
+            {
+                lst.Add(new clsParametro("@IdProducto", m_IdP));
+                lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
+                M.EjecutarSP("EliminarProducto", ref lst);
+                Mensaje = lst[1].Valor.ToString();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return Mensaje;
+        }
+
+        public String ActualizarProductos(clsCompra ordenCompra)
         {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
@@ -139,9 +162,12 @@ namespace CapaLogicaNegocio
                 lst.Add(new clsParametro("@PrecioVenta", m_PrecioVenta));
                 lst.Add(new clsParametro("@Unidad", m_Unidad));
                 lst.Add(new clsParametro("@FechaVencimiento", m_FechaVencimiento));
+                lst.Add(new clsParametro("@NroDocumento", ordenCompra.NroDocumento));
+                lst.Add(new clsParametro("@TipoDocumento", ordenCompra.TipoDocumento));
+                lst.Add(new clsParametro("@Total", ordenCompra.Total));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("ActualizarProducto", ref lst);
-                Mensaje = lst[8].Valor.ToString();
+                Mensaje = lst[12].Valor.ToString();
             }
             catch (Exception ex)
             {

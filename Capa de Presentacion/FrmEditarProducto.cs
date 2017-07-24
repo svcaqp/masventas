@@ -14,15 +14,18 @@ using System.Globalization;
 
 namespace Capa_de_Presentacion
 {
-    public partial class FrmRegistroProductos : DevComponents.DotNetBar.Metro.MetroForm
+    public partial class FrmEditarProducto : DevComponents.DotNetBar.Metro.MetroForm
     {
         private clsCategoria C = new clsCategoria();
         private clsProducto P = new clsProducto();
         FrmOrdenCompra frm_orden_compra = new FrmOrdenCompra();
 
+        public int actualStock = 0;
+        public double actualPCompra = 0.0;
+
         private int cat_index = -1;
 
-        public FrmRegistroProductos()
+        public FrmEditarProducto()
         {
             InitializeComponent();
         }
@@ -32,6 +35,8 @@ namespace Capa_de_Presentacion
             ListarElementos();
         }
 
+
+   
         private void ListarElementos()
         {
             if (IdC.Text.Trim() != "")
@@ -48,13 +53,15 @@ namespace Capa_de_Presentacion
                 cbxCategoria.DataSource = C.Listar();
             }
 
-
             
-
-            txtStock.Text = Program.ordenCompra.Cantidad.ToString();
-            if(Program.ordenCompra.Cantidad != 0)
-                txtPCompra.Text = Math.Round(Program.ordenCompra.Total / Program.ordenCompra.Cantidad,1).ToString();
-
+            
+            
+            txtStock.Text = (actualStock + Program.ordenCompra.Cantidad).ToString();
+            
+            if (Program.ordenCompra.Cantidad != 0)
+            {
+                txtPCompra.Text = Math.Round((actualPCompra + (Program.ordenCompra.Total / Program.ordenCompra.Cantidad)) / 2.0, 1).ToString();
+            }
 
         }
 
@@ -73,18 +80,23 @@ namespace Capa_de_Presentacion
                             {
                                 if (txtStock.Text.Trim() != "")
                                 {
+                                    P.IdP = Convert.ToInt32(txtIdP.Text);
                                     P.IdCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
                                     P.Producto = txtProducto.Text;
                                     P.Marca = txtMarca.Text;
                                     P.Unidad = txtUnidad.Text;
                                     P.PrecioCompra = Convert.ToDecimal(txtPCompra.Text);
-                                    P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text, new CultureInfo("en-US"));
+                                    if (txtPVenta.Text.Contains("."))
+                                        P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text, new CultureInfo("en-US"));
+                                    else
+                                        P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text);
+
                                     P.Stock = Convert.ToInt32(txtStock.Text);
                                     P.FechaVencimiento = Convert.ToDateTime(dateTimePicker1.Value);
 
-                                    Mensaje = P.RegistrarProductos(Program.ordenCompra);
+                                    Mensaje = P.ActualizarProductos(Program.ordenCompra);
 
-                                    if (Mensaje == "Registrado Correctamente.")
+                                    if (Mensaje == "Registro Actualizado Correctamente.")
                                     {
                                         DevComponents.DotNetBar.MessageBoxEx.Show(this, Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                         Limpiar();
@@ -97,22 +109,7 @@ namespace Capa_de_Presentacion
                                     }
                                   
                                        
-                                    /*
-                                    else
-                                    {
-                                        P.IdP = Convert.ToInt32(txtIdP.Text);
-                                        P.IdCategoria = Convert.ToInt32(cbxCategoria.SelectedValue);
-                                        P.Producto = txtProducto.Text;
-                                        P.Marca = txtMarca.Text;
-                                        P.Unidad =txtUnidad.Text;
-                                       
-                                        P.PrecioCompra = Convert.ToDecimal(txtPCompra.Text);
-                                        P.PrecioVenta = Convert.ToDecimal(txtPVenta.Text);
-                                        P.Stock = Convert.ToInt32(txtStock.Text);
-                                        P.FechaVencimiento = Convert.ToDateTime(dateTimePicker1.Value);
-                                        DevComponents.DotNetBar.MessageBoxEx.Show(P.ActualizarProductos(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                        Limpiar();
-                                    }*/
+                                   
                                 }
                                 else
                                 {
@@ -156,6 +153,7 @@ namespace Capa_de_Presentacion
         private void btnCategoria_Click(object sender, EventArgs e)
         {
             Program.frmCategoria.Show();
+
         }
 
         private void Limpiar()
@@ -174,10 +172,11 @@ namespace Capa_de_Presentacion
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (DevComponents.DotNetBar.MessageBoxEx.Show(this,"¿Está Seguro que Desea Salir.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            /*if (DevComponents.DotNetBar.MessageBoxEx.Show(this,"¿Está Seguro que Desea Salir.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
             {
                 this.Close();
-            }
+            }*/
+            this.Close();
 
         }
 
@@ -280,7 +279,7 @@ namespace Capa_de_Presentacion
             catch
             {
                 frm_orden_compra = new FrmOrdenCompra();
-                frm_orden_compra.Location = new Point(this.Location.X + 30, this.Location.Y + 50);
+                frm_orden_compra.Location = new Point(this.Location.X + 30, this.Location.Y + 30);
                 frm_orden_compra.Show();
             }
 
@@ -304,6 +303,18 @@ namespace Capa_de_Presentacion
             if (cat_index != -1)
             {
                 cbxCategoria.SelectedIndex = cat_index;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Eliminar el Producto?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            {
+                P.IdP = Convert.ToInt32(txtIdP.Text);
+                
+                DevComponents.DotNetBar.MessageBoxEx.Show(this, P.EliminarProducto(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Program.frmAlmacen.CargarListado();
+                this.Close();
             }
         }
 

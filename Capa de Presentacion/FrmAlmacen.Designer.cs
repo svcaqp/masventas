@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,9 +44,7 @@
             this.Dirección = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Teléfono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaVencimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
+            this.Unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,7 +76,7 @@
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Location = new System.Drawing.Point(13, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(738, 213);
+            this.panel1.Size = new System.Drawing.Size(738, 159);
             this.panel1.TabIndex = 4;
             // 
             // dataGridView1
@@ -95,10 +93,11 @@
             this.Nombres,
             this.Dirección,
             this.Teléfono,
-            this.FechaVencimiento});
+            this.FechaVencimiento,
+            this.Unidad});
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(738, 174);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 152);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -134,9 +133,9 @@
             // 
             // Nombres
             // 
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Nombres.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Nombres.DefaultCellStyle = dataGridViewCellStyle4;
             this.Nombres.HeaderText = "P. Compra";
             this.Nombres.Name = "Nombres";
             this.Nombres.ReadOnly = true;
@@ -144,9 +143,9 @@
             // 
             // Dirección
             // 
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Dirección.DefaultCellStyle = dataGridViewCellStyle5;
             this.Dirección.HeaderText = "P. Venta";
             this.Dirección.Name = "Dirección";
             this.Dirección.ReadOnly = true;
@@ -154,9 +153,9 @@
             // 
             // Teléfono
             // 
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle6;
             this.Teléfono.HeaderText = "Stock";
             this.Teléfono.Name = "Teléfono";
             this.Teléfono.ReadOnly = true;
@@ -167,39 +166,10 @@
             this.FechaVencimiento.HeaderText = "Fecha Vto";
             this.FechaVencimiento.Name = "FechaVencimiento";
             // 
-            // btnCancelar
+            // Unidad
             // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(676, 262);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 32);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "&Salir";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(571, 262);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 32);
-            this.btnEditar.TabIndex = 8;
-            this.btnEditar.Text = "&Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(462, 262);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 32);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "&Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.Unidad.HeaderText = "Unidad";
+            this.Unidad.Name = "Unidad";
             // 
             // timer1
             // 
@@ -209,10 +179,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 300);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnNuevo);
+            this.ClientSize = new System.Drawing.Size(755, 252);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.label1);
@@ -220,8 +188,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmAlmacen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Almacen";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -236,9 +207,6 @@
         private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnNuevo;
         public System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdC;
@@ -248,5 +216,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Dirección;
         private System.Windows.Forms.DataGridViewTextBoxColumn Teléfono;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaVencimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unidad;
     }
 }

@@ -18,17 +18,52 @@ namespace Capa_de_Presentacion
         public FrmAlmacen()
         {
             InitializeComponent();
+            
         }
 
         private void FrmProductos_Load(object sender, EventArgs e)
         {
-            timer1.Start();
-            timer1.Interval = 5000;
+            this.Location = new Point(1, 1);
+            
+            int window_width = Convert.ToInt32(Screen.FromControl(this).Bounds.Width-472);
+            int window_height = Convert.ToInt32(Screen.FromControl(this).Bounds.Height -66);
+            this.Size = new System.Drawing.Size(window_width, window_height);
+
+
+            int control_height = Convert.ToInt32(this.Size.Height*0.75);
+            int control_width = Convert.ToInt32(this.Size.Width*0.95);
+            this.panel1.Size = new System.Drawing.Size(control_width, control_height);
+            this.dataGridView1.Size = new System.Drawing.Size(control_width, control_height);
+
+            
+
+
+            NuevoProducto();
+
+            Program.frmRegistroProductos.Location = new Point(this.Size.Width + 5, 96);
+
+            FormRegresar();
+            Program.frmregresar.Location = new Point(this.Size.Width + 5, this.Location.Y);
             CargarListado();
             dataGridView1.ClearSelection();
+            Program.frmAlmacen = this;
+
+            Program.frmCategoria = new FrmRegistrarCategoria();
+            Program.frmCategoria.Location = new Point(this.Size.Width + 5, Program.frmRegistroProductos.Size.Height + 101);
+            Program.frmCategoria.Show();
+
+            Program.ordenCompra = new clsCompra();
+
+
+
+            //Program.frmCategoria.Hide();
+
+            
+
+
         }
 
-        private void CargarListado()
+        public void CargarListado()
         {
             DataTable dt = new DataTable();
             dt = P.Listar();
@@ -46,6 +81,7 @@ namespace Capa_de_Presentacion
                     dataGridView1.Rows[i].Cells[5].Value = dt.Rows[i][5].ToString();
                     dataGridView1.Rows[i].Cells[6].Value = dt.Rows[i][6].ToString();
                     dataGridView1.Rows[i].Cells[7].Value = Convert.ToDateTime(dt.Rows[i][7].ToString()).ToShortDateString();
+                    dataGridView1.Rows[i].Cells[8].Value = dt.Rows[i][8].ToString();
                 }
             }
             catch (Exception ex)
@@ -69,32 +105,28 @@ namespace Capa_de_Presentacion
             Close();
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void NuevoProducto()
         {
-            /*if (dataGridView1.SelectedRows.Count > 0)
-            {
-                DevComponents.DotNetBar.MessageBoxEx.Show("La Fila no debe Estar Seleccionada.");
-                FrmRegistroProductos P = new FrmRegistroProductos();
-                dataGridView1.ClearSelection();
-                P.Show();
-            }
-            else
-            {*/
-            FrmRegistroProductos P = new FrmRegistroProductos();
-            if (dataGridView1.SelectedRows.Count > 0)
-                Program.Evento = 1;
-            else
-                Program.Evento = 0;
+            
+            Program.frmRegistroProductos = new FrmRegistroProductos();
             dataGridView1.ClearSelection();
-            P.Show();
-            //}
+            Program.frmRegistroProductos.Show();
+
+        }
+
+        private void FormRegresar()
+        {
+
+            Program.frmregresar = new Frmregresar();
+            Program.frmregresar.Show();
+
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                FrmRegistroProductos P = new FrmRegistroProductos();
+                FrmEditarProducto P = new FrmEditarProducto();
                 P.txtIdP.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 P.IdC.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 P.txtProducto.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -103,16 +135,18 @@ namespace Capa_de_Presentacion
                 P.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
                 P.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
                 P.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
+                P.actualStock = Int32.Parse(P.txtStock.Text);
+                P.actualPCompra = Double.Parse(P.txtPCompra.Text);
+                P.txtUnidad.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+               
+                
                 P.Show();
-                if (dataGridView1.SelectedRows.Count > 0)
-                    Program.Evento = 1;
-                else
-                    Program.Evento = 0;
+                
                 dataGridView1.ClearSelection();
             }
             else
             {
-                DevComponents.DotNetBar.MessageBoxEx.Show("Debe Seleccionar la Fila a Editar.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                DevComponents.DotNetBar.MessageBoxEx.Show(this,"Debe Seleccionar la Fila a Editar.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -143,6 +177,7 @@ namespace Capa_de_Presentacion
                     dataGridView1.Rows[i].Cells[5].Value = dt.Rows[i][5].ToString();
                     dataGridView1.Rows[i].Cells[6].Value = dt.Rows[i][6].ToString();
                     dataGridView1.Rows[i].Cells[7].Value = Convert.ToDateTime(dt.Rows[i][7].ToString()).ToShortDateString();
+                    dataGridView1.Rows[i].Cells[8].Value = dt.Rows[i][8].ToString();
                 }
             }
             catch (Exception ex)
@@ -176,12 +211,29 @@ namespace Capa_de_Presentacion
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            Program.IdProducto = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            Program.Descripcion = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            Program.Marca = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            Program.PrecioVenta = Convert.ToDecimal(dataGridView1.CurrentRow.Cells[5].Value.ToString());
-            Program.Stock = Convert.ToInt32(dataGridView1.CurrentRow.Cells[6].Value.ToString());
-            this.Close();
+          
+
+            Program.frmEditarProducto = new FrmEditarProducto();
+            Program.frmEditarProducto.txtIdP.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            Program.frmEditarProducto.IdC.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            Program.frmEditarProducto.txtProducto.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            Program.frmEditarProducto.txtMarca.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            Program.frmEditarProducto.txtPCompra.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            Program.frmEditarProducto.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            Program.frmEditarProducto.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            Program.frmEditarProducto.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
+            Program.frmEditarProducto.actualStock = Int32.Parse(Program.frmEditarProducto.txtStock.Text);
+            Program.frmEditarProducto.actualPCompra = Double.Parse(Program.frmEditarProducto.txtPCompra.Text);
+            Program.frmEditarProducto.txtUnidad.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+
+
+            Program.frmEditarProducto.Show();
+
+            dataGridView1.ClearSelection();
+
+
+
+            
         }
 
         private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
@@ -193,6 +245,7 @@ namespace Capa_de_Presentacion
         {
 
         }
+
 
 
     }

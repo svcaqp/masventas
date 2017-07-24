@@ -90,6 +90,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmEditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarProducto.Designer.cs">
+      <DependentUpon>FrmEditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmregresar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmregresar.Designer.cs">
+      <DependentUpon>Frmregresar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmServer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +244,9 @@
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenCompra.resx">
+      <DependentUpon>FrmOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCargo.resx">
       <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,11 +272,17 @@
     <EmbeddedResource Include="FrmRegistroCliente.resx">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarProducto.resx">
+      <DependentUpon>FrmEditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroProductos.resx">
       <DependentUpon>FrmRegistroProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroVentas.resx">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmregresar.resx">
+      <DependentUpon>Frmregresar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
@@ -336,6 +357,8 @@
     <Content Include="Resources\1button.png" />
     <Content Include="Resources\1button_click.png" />
     <Content Include="Resources\1button_hover.png" />
+    <None Include="Resources\btnProductos.BackgroundImage.png" />
+    <None Include="Resources\IconProductos.bmp" />
     <None Include="Resources\money.png" />
     <None Include="Resources\preloader.gif" />
     <None Include="Resources\server.png" />
