@@ -94,7 +94,7 @@ namespace Capa_de_Presentacion
                 lbl_TipodeUsuario.Text = "Trabajador";
 
             }
-            lbl_saldoCaja.Text = (Program.SaldoAbierto + Program.TotalVentas) + " s/.";
+            lbl_saldoCaja.Text = "s/. "+(Program.SaldoAbierto + Program.TotalVentas);
 
 
 
@@ -272,6 +272,11 @@ namespace Capa_de_Presentacion
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }

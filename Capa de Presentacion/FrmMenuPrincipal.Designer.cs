@@ -35,10 +35,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.Panel_items = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnMenuCaja = new System.Windows.Forms.Button();
+            this.btnTutorial = new System.Windows.Forms.Button();
+            this.btnDocumentos = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,7 +54,6 @@
             this.lbl_CajaCerrada = new System.Windows.Forms.Label();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -57,21 +63,21 @@
             this.lbl_saldoCaja = new System.Windows.Forms.Label();
             this.btn_CerrarCaja = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_prueba = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_TipodeUsuario = new System.Windows.Forms.Label();
+            this.lbl_prueba = new System.Windows.Forms.Label();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_items.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -80,7 +86,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(170, 87);
+            this.label2.Location = new System.Drawing.Point(170, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 1;
@@ -91,7 +97,7 @@
             this.lblFecha.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.lblFecha.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(223, 112);
+            this.lblFecha.Location = new System.Drawing.Point(223, 106);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(99, 20);
             this.lblFecha.TabIndex = 2;
@@ -103,7 +109,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(170, 112);
+            this.label3.Location = new System.Drawing.Point(170, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 3;
@@ -115,7 +121,7 @@
             this.lblHora.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.lblHora.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(223, 87);
+            this.lblHora.Location = new System.Drawing.Point(223, 81);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(99, 20);
             this.lblHora.TabIndex = 4;
@@ -125,31 +131,123 @@
             // Panel_items
             // 
             this.Panel_items.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_items.Controls.Add(this.label12);
+            this.Panel_items.Controls.Add(this.label5);
+            this.Panel_items.Controls.Add(this.label1);
+            this.Panel_items.Controls.Add(this.label8);
+            this.Panel_items.Controls.Add(this.btnProductos);
+            this.Panel_items.Controls.Add(this.lbl_CajaCerrada);
+            this.Panel_items.Controls.Add(this.btnMenuCaja);
+            this.Panel_items.Controls.Add(this.btnTutorial);
+            this.Panel_items.Controls.Add(this.btnDocumentos);
             this.Panel_items.Controls.Add(this.label11);
             this.Panel_items.Controls.Add(this.label10);
             this.Panel_items.Controls.Add(this.label9);
-            this.Panel_items.Controls.Add(this.label8);
             this.Panel_items.Controls.Add(this.label7);
             this.Panel_items.Controls.Add(this.btnUsuarios);
             this.Panel_items.Controls.Add(this.label6);
             this.Panel_items.Controls.Add(this.btnEmpleados);
             this.Panel_items.Controls.Add(this.btnReportes);
-            this.Panel_items.Controls.Add(this.lbl_CajaCerrada);
             this.Panel_items.Controls.Add(this.btnVentas);
             this.Panel_items.Controls.Add(this.btnClientes);
-            this.Panel_items.Controls.Add(this.btnProductos);
             this.Panel_items.ForeColor = System.Drawing.Color.Black;
-            this.Panel_items.Location = new System.Drawing.Point(128, 247);
+            this.Panel_items.Location = new System.Drawing.Point(47, 147);
             this.Panel_items.Name = "Panel_items";
-            this.Panel_items.Size = new System.Drawing.Size(895, 188);
+            this.Panel_items.Size = new System.Drawing.Size(1020, 317);
             this.Panel_items.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(774, 294);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(78, 16);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Documentos";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(701, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Tutorial";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(413, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 16);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Caja";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(215, 293);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 16);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Almacen";
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProductos.BackgroundImage")));
+            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.Location = new System.Drawing.Point(171, 172);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(133, 114);
+            this.btnProductos.TabIndex = 0;
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // btnMenuCaja
+            // 
+            this.btnMenuCaja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuCaja.BackgroundImage")));
+            this.btnMenuCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuCaja.Location = new System.Drawing.Point(369, 24);
+            this.btnMenuCaja.Name = "btnMenuCaja";
+            this.btnMenuCaja.Size = new System.Drawing.Size(133, 112);
+            this.btnMenuCaja.TabIndex = 21;
+            this.btnMenuCaja.UseVisualStyleBackColor = true;
+            // 
+            // btnTutorial
+            // 
+            this.btnTutorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTutorial.BackgroundImage")));
+            this.btnTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTutorial.Location = new System.Drawing.Point(655, 25);
+            this.btnTutorial.Name = "btnTutorial";
+            this.btnTutorial.Size = new System.Drawing.Size(134, 114);
+            this.btnTutorial.TabIndex = 20;
+            this.btnTutorial.UseVisualStyleBackColor = true;
+            // 
+            // btnDocumentos
+            // 
+            this.btnDocumentos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDocumentos.BackgroundImage")));
+            this.btnDocumentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDocumentos.Location = new System.Drawing.Point(746, 172);
+            this.btnDocumentos.Name = "btnDocumentos";
+            this.btnDocumentos.Size = new System.Drawing.Size(128, 114);
+            this.btnDocumentos.TabIndex = 19;
+            this.btnDocumentos.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(768, 160);
+            this.label11.Location = new System.Drawing.Point(621, 295);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 16);
             this.label11.TabIndex = 18;
@@ -160,7 +258,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(632, 155);
+            this.label10.Location = new System.Drawing.Point(492, 292);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(59, 16);
             this.label10.TabIndex = 17;
@@ -171,29 +269,18 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(477, 155);
+            this.label9.Location = new System.Drawing.Point(346, 292);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 16);
             this.label9.TabIndex = 16;
             this.label9.Text = "Empleados";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(344, 155);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Almacen";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(202, 155);
+            this.label7.Location = new System.Drawing.Point(557, 142);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 16);
             this.label7.TabIndex = 14;
@@ -206,9 +293,9 @@
             this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUsuarios.Enabled = false;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(748, 36);
+            this.btnUsuarios.Location = new System.Drawing.Point(603, 172);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(130, 119);
+            this.btnUsuarios.Size = new System.Drawing.Size(130, 116);
             this.btnUsuarios.TabIndex = 0;
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
@@ -218,7 +305,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(61, 155);
+            this.label6.Location = new System.Drawing.Point(274, 142);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 13;
@@ -229,7 +316,7 @@
             this.btnEmpleados.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.BackgroundImage")));
             this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.Location = new System.Drawing.Point(449, 38);
+            this.btnEmpleados.Location = new System.Drawing.Point(315, 172);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(131, 114);
             this.btnEmpleados.TabIndex = 1;
@@ -241,7 +328,7 @@
             this.btnReportes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.BackgroundImage")));
             this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Location = new System.Drawing.Point(597, 38);
+            this.btnReportes.Location = new System.Drawing.Point(457, 172);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(134, 114);
             this.btnReportes.TabIndex = 0;
@@ -254,7 +341,7 @@
             this.lbl_CajaCerrada.BackColor = System.Drawing.Color.Snow;
             this.lbl_CajaCerrada.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_CajaCerrada.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbl_CajaCerrada.Location = new System.Drawing.Point(21, 67);
+            this.lbl_CajaCerrada.Location = new System.Drawing.Point(242, 62);
             this.lbl_CajaCerrada.Name = "lbl_CajaCerrada";
             this.lbl_CajaCerrada.Size = new System.Drawing.Size(103, 50);
             this.lbl_CajaCerrada.TabIndex = 11;
@@ -267,7 +354,7 @@
             this.btnVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVentas.Enabled = false;
             this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.Location = new System.Drawing.Point(11, 38);
+            this.btnVentas.Location = new System.Drawing.Point(227, 24);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(131, 114);
             this.btnVentas.TabIndex = 0;
@@ -279,24 +366,12 @@
             this.btnClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.BackgroundImage")));
             this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(158, 38);
+            this.btnClientes.Location = new System.Drawing.Point(515, 24);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(128, 114);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProductos.BackgroundImage")));
-            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.Location = new System.Drawing.Point(301, 38);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(133, 114);
-            this.btnProductos.TabIndex = 0;
-            this.btnProductos.UseVisualStyleBackColor = true;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // label4
             // 
@@ -412,16 +487,16 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // lbl_prueba
+            // panel3
             // 
-            this.lbl_prueba.AutoSize = true;
-            this.lbl_prueba.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_prueba.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_prueba.ForeColor = System.Drawing.Color.Transparent;
-            this.lbl_prueba.Location = new System.Drawing.Point(12, 12);
-            this.lbl_prueba.Name = "lbl_prueba";
-            this.lbl_prueba.Size = new System.Drawing.Size(0, 16);
-            this.lbl_prueba.TabIndex = 16;
+            this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.lbl_TipodeUsuario);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(940, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(180, 40);
+            this.panel3.TabIndex = 16;
             // 
             // lbl_TipodeUsuario
             // 
@@ -434,6 +509,17 @@
             this.lbl_TipodeUsuario.Size = new System.Drawing.Size(0, 18);
             this.lbl_TipodeUsuario.TabIndex = 14;
             // 
+            // lbl_prueba
+            // 
+            this.lbl_prueba.AutoSize = true;
+            this.lbl_prueba.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbl_prueba.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_prueba.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl_prueba.Location = new System.Drawing.Point(12, 12);
+            this.lbl_prueba.Name = "lbl_prueba";
+            this.lbl_prueba.Size = new System.Drawing.Size(0, 16);
+            this.lbl_prueba.TabIndex = 16;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
@@ -445,41 +531,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1120, 141);
             this.panel2.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(440, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.lbl_TipodeUsuario);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(940, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 40);
-            this.panel3.TabIndex = 16;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lbl_saldoCaja);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.lbl_titleSaldoCaja);
-            this.panel4.Controls.Add(this.btn_AbrirCaja);
-            this.panel4.Controls.Add(this.lblUsuario);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(377, 141);
-            this.panel4.TabIndex = 16;
             // 
             // panel5
             // 
@@ -494,6 +545,31 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(361, 141);
             this.panel5.TabIndex = 17;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbl_saldoCaja);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lbl_titleSaldoCaja);
+            this.panel4.Controls.Add(this.btn_AbrirCaja);
+            this.panel4.Controls.Add(this.lblUsuario);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(377, 141);
+            this.panel4.TabIndex = 16;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(440, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(282, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmMenuPrincipal
             // 
@@ -520,14 +596,14 @@
             this.Panel_items.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -569,6 +645,12 @@
         private System.Windows.Forms.Label lbl_prueba;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnTutorial;
+        private System.Windows.Forms.Button btnDocumentos;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnMenuCaja;
 
 
     }

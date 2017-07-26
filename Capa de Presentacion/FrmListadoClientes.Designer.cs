@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTipoBusqueda = new System.Windows.Forms.Label();
             this.txtBuscarCliente = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,16 +47,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTipoBusqueda
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Buscar por DNI";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblTipoBusqueda.AutoSize = true;
+            this.lblTipoBusqueda.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoBusqueda.Location = new System.Drawing.Point(10, 22);
+            this.lblTipoBusqueda.Name = "lblTipoBusqueda";
+            this.lblTipoBusqueda.Size = new System.Drawing.Size(93, 16);
+            this.lblTipoBusqueda.TabIndex = 0;
+            this.lblTipoBusqueda.Text = "Buscar por DNI";
+            this.lblTipoBusqueda.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtBuscarCliente
             // 
@@ -192,7 +192,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtBuscarCliente);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTipoBusqueda);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -211,7 +211,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTipoBusqueda;
         private System.Windows.Forms.TextBox txtBuscarCliente;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;

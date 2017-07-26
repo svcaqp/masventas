@@ -19,6 +19,7 @@ namespace Capa_de_Presentacion
         clsDetalleVenta Detalle = new clsDetalleVenta();
         double documento = 0.0;
 
+
         private List<clsVenta> lst = new List<clsVenta>();
 
         public FrmRegistroVentas()
@@ -39,7 +40,15 @@ namespace Capa_de_Presentacion
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
                 documento = 1.0;
-                label5.Text = "RUC";
+                lblDocumento.Text = "RUC";
+                lblDocumento.Visible = true;
+                txtDocIdentidad.Visible = true;
+                lblNombre.Text = "Nombre:";
+                btnBusqueda.Visible = true;
+                lblDireccion.Visible = true;
+                txtDireccion.Visible = true;
+                txtDatos.Text = "";
+
             }
             else if (rbnBoleta.Checked == true)
             {
@@ -47,7 +56,15 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad:";
+                lblDocumento.Visible = false;
+                txtDocIdentidad.Visible = false;
+                lblNombre.Text = "Sr/Sra:";
+                btnBusqueda.Visible = false;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+                Program.IdCliente = 1;
+                txtDatos.Text = "Cliente Particular";
             }
             else
             {
@@ -55,7 +72,15 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad:";
+                lblDocumento.Visible = false;
+                txtDocIdentidad.Visible = false;
+                lblNombre.Text = "Sr/Sra:";
+                btnBusqueda.Visible = false;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+                Program.IdCliente = 1;
+                txtDatos.Text = "Cliente Particular";
             }
             LlenarGrilla();
             GenerarNumeroComprobante();
@@ -63,6 +88,7 @@ namespace Capa_de_Presentacion
 
         private void rbnBoleta_CheckedChanged(object sender, EventArgs e)
         {
+           
             if (rbnFactura.Checked == true)
             {
                 lblTipo.Text = "FACTURA";
@@ -70,7 +96,14 @@ namespace Capa_de_Presentacion
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
                 documento = 1.0;
-                label5.Text = "RUC";
+                lblDocumento.Text = "RUC";
+                lblDocumento.Visible = true;
+                txtDocIdentidad.Visible = true;
+                lblNombre.Text = "Nombre:";
+                btnBusqueda.Visible = true;
+                lblDireccion.Visible = true;
+                txtDireccion.Visible = true;
+                txtDatos.Text = "";
             }
             else if (rbnBoleta.Checked == true)
             {
@@ -78,7 +111,15 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad:";
+                lblDocumento.Visible = false;
+                txtDocIdentidad.Visible = false;
+                lblNombre.Text = "Sr/Sra:";
+                btnBusqueda.Visible = false;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+                Program.IdCliente = 1;
+                txtDatos.Text = "Cliente Particular";
             }
             else
             {
@@ -86,7 +127,15 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad:";
+                lblDocumento.Visible = false;
+                txtDocIdentidad.Visible = false;
+                lblNombre.Text = "Sr/Sra:";
+                btnBusqueda.Visible = false;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+                Program.IdCliente = 1;
+                txtDatos.Text = "Cliente Particular";
             }
             LlenarGrilla();
             GenerarNumeroComprobante();
@@ -544,6 +593,7 @@ namespace Capa_de_Presentacion
 
         private void rbnNotaVenta_CheckedChanged(object sender, EventArgs e)
         {
+            txtDatos.Text = "Cliente Particular";
             if (rbnFactura.Checked == true)
             {
                 lblTipo.Text = "FACTURA";
@@ -551,7 +601,7 @@ namespace Capa_de_Presentacion
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
                 documento = 1.0;
-                label5.Text = "RUC";
+                lblDocumento.Text = "RUC";
             }
             else if (rbnBoleta.Checked == true)
             {
@@ -559,7 +609,7 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad";
             }
             else
             {
@@ -567,7 +617,7 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = false;
                 label12.Visible = false;
                 documento = 0.0;
-                label5.Text = "Doc. Identidad";
+                lblDocumento.Text = "Doc. Identidad";
             } 
             
             GenerarNumeroComprobante();
@@ -595,5 +645,10 @@ namespace Capa_de_Presentacion
             //}
 
         }
+
+        private void txtDatos_TextChanged(object sender, EventArgs e)
+        {
+
+        }                
     }
 }

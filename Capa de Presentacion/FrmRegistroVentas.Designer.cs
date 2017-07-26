@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,11 +44,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.btnBusqueda = new System.Windows.Forms.Button();
             this.txtDocIdentidad = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDocumento = new System.Windows.Forms.Label();
             this.txtDatos = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtUnidad = new System.Windows.Forms.TextBox();
             this.lblUnidad = new System.Windows.Forms.Label();
@@ -97,7 +99,7 @@
             this.panel1.Controls.Add(this.lblNroCorrelativo);
             this.panel1.Controls.Add(this.lblSerie);
             this.panel1.Controls.Add(this.lblTipo);
-            this.panel1.Location = new System.Drawing.Point(579, 53);
+            this.panel1.Location = new System.Drawing.Point(609, 53);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 1;
@@ -217,7 +219,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(350, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(217, 51);
+            this.groupBox2.Size = new System.Drawing.Size(243, 51);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fecha de Venta";
@@ -225,29 +227,50 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(17, 20);
+            this.dateTimePicker1.Location = new System.Drawing.Point(23, 20);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(168, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(195, 22);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtDireccion);
+            this.groupBox3.Controls.Add(this.lblDireccion);
             this.groupBox3.Controls.Add(this.btnBusqueda);
             this.groupBox3.Controls.Add(this.txtDocIdentidad);
-            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.lblDocumento);
             this.groupBox3.Controls.Add(this.txtDatos);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.lblNombre);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 71);
+            this.groupBox3.Location = new System.Drawing.Point(12, 63);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(555, 82);
+            this.groupBox3.Size = new System.Drawing.Size(581, 110);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cliente";
             // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDireccion.Location = new System.Drawing.Point(91, 79);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(465, 20);
+            this.txtDireccion.TabIndex = 6;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(21, 82);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(64, 14);
+            this.lblDireccion.TabIndex = 5;
+            this.lblDireccion.Text = "Dirección: ";
+            // 
             // btnBusqueda
             // 
-            this.btnBusqueda.Location = new System.Drawing.Point(417, 18);
+            this.btnBusqueda.Location = new System.Drawing.Point(446, 20);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.Size = new System.Drawing.Size(110, 26);
             this.btnBusqueda.TabIndex = 4;
@@ -258,41 +281,42 @@
             // txtDocIdentidad
             // 
             this.txtDocIdentidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDocIdentidad.Location = new System.Drawing.Point(162, 22);
+            this.txtDocIdentidad.Location = new System.Drawing.Point(162, 23);
             this.txtDocIdentidad.Name = "txtDocIdentidad";
             this.txtDocIdentidad.ReadOnly = true;
-            this.txtDocIdentidad.Size = new System.Drawing.Size(201, 22);
+            this.txtDocIdentidad.Size = new System.Drawing.Size(270, 22);
             this.txtDocIdentidad.TabIndex = 3;
             this.txtDocIdentidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label5
+            // lblDocumento
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 14);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Doc. Identidad:";
+            this.lblDocumento.AutoSize = true;
+            this.lblDocumento.Location = new System.Drawing.Point(21, 23);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(92, 14);
+            this.lblDocumento.TabIndex = 2;
+            this.lblDocumento.Text = "Doc. Identidad:";
             // 
             // txtDatos
             // 
             this.txtDatos.BackColor = System.Drawing.SystemColors.Control;
             this.txtDatos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDatos.Location = new System.Drawing.Point(65, 50);
+            this.txtDatos.Location = new System.Drawing.Point(91, 51);
             this.txtDatos.Name = "txtDatos";
             this.txtDatos.ReadOnly = true;
-            this.txtDatos.Size = new System.Drawing.Size(462, 22);
+            this.txtDatos.Size = new System.Drawing.Size(465, 22);
             this.txtDatos.TabIndex = 1;
             this.txtDatos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDatos.TextChanged += new System.EventHandler(this.txtDatos_TextChanged);
             // 
-            // label1
+            // lblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sr (a):";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(21, 53);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(42, 14);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Sr (a):";
             // 
             // groupBox4
             // 
@@ -313,9 +337,9 @@
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 159);
+            this.groupBox4.Location = new System.Drawing.Point(12, 180);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(767, 135);
+            this.groupBox4.Size = new System.Drawing.Size(799, 116);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Producto";
@@ -324,15 +348,16 @@
             // 
             this.txtUnidad.BackColor = System.Drawing.SystemColors.Control;
             this.txtUnidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUnidad.Location = new System.Drawing.Point(93, 57);
+            this.txtUnidad.Location = new System.Drawing.Point(91, 55);
             this.txtUnidad.Name = "txtUnidad";
             this.txtUnidad.Size = new System.Drawing.Size(341, 22);
             this.txtUnidad.TabIndex = 15;
+            this.txtUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblUnidad
             // 
             this.lblUnidad.AutoSize = true;
-            this.lblUnidad.Location = new System.Drawing.Point(10, 60);
+            this.lblUnidad.Location = new System.Drawing.Point(8, 57);
             this.lblUnidad.Name = "lblUnidad";
             this.lblUnidad.Size = new System.Drawing.Size(52, 14);
             this.lblUnidad.TabIndex = 14;
@@ -342,7 +367,7 @@
             // 
             this.txtIgv.BackColor = System.Drawing.SystemColors.Control;
             this.txtIgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIgv.Location = new System.Drawing.Point(251, 89);
+            this.txtIgv.Location = new System.Drawing.Point(249, 83);
             this.txtIgv.Name = "txtIgv";
             this.txtIgv.Size = new System.Drawing.Size(71, 22);
             this.txtIgv.TabIndex = 13;
@@ -352,7 +377,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(188, 93);
+            this.label12.Location = new System.Drawing.Point(190, 89);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 14);
             this.label12.TabIndex = 12;
@@ -360,7 +385,7 @@
             // 
             // btnBusquedaProducto
             // 
-            this.btnBusquedaProducto.Location = new System.Drawing.Point(645, 20);
+            this.btnBusquedaProducto.Location = new System.Drawing.Point(646, 26);
             this.btnBusquedaProducto.Name = "btnBusquedaProducto";
             this.btnBusquedaProducto.Size = new System.Drawing.Size(110, 26);
             this.btnBusquedaProducto.TabIndex = 11;
@@ -370,9 +395,9 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(645, 60);
+            this.btnAgregar.Location = new System.Drawing.Point(646, 56);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(110, 55);
+            this.btnAgregar.Size = new System.Drawing.Size(110, 50);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -381,7 +406,7 @@
             // txtCantidad
             // 
             this.txtCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCantidad.Location = new System.Drawing.Point(520, 88);
+            this.txtCantidad.Location = new System.Drawing.Point(519, 84);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(3, 3, 8, 8);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(106, 22);
@@ -391,7 +416,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(459, 91);
+            this.label10.Location = new System.Drawing.Point(454, 87);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 14);
             this.label10.TabIndex = 8;
@@ -400,7 +425,7 @@
             // txtPVenta
             // 
             this.txtPVenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPVenta.Location = new System.Drawing.Point(94, 89);
+            this.txtPVenta.Location = new System.Drawing.Point(92, 83);
             this.txtPVenta.Name = "txtPVenta";
             this.txtPVenta.ReadOnly = true;
             this.txtPVenta.Size = new System.Drawing.Size(71, 22);
@@ -411,7 +436,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 91);
+            this.label9.Location = new System.Drawing.Point(8, 89);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(59, 14);
             this.label9.TabIndex = 6;
@@ -420,7 +445,7 @@
             // txtStock
             // 
             this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStock.Location = new System.Drawing.Point(520, 56);
+            this.txtStock.Location = new System.Drawing.Point(519, 56);
             this.txtStock.Name = "txtStock";
             this.txtStock.ReadOnly = true;
             this.txtStock.Size = new System.Drawing.Size(106, 22);
@@ -430,7 +455,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(459, 59);
+            this.label8.Location = new System.Drawing.Point(454, 61);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 14);
             this.label8.TabIndex = 4;
@@ -439,7 +464,7 @@
             // txtMarca
             // 
             this.txtMarca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMarca.Location = new System.Drawing.Point(520, 24);
+            this.txtMarca.Location = new System.Drawing.Point(519, 28);
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.ReadOnly = true;
             this.txtMarca.Size = new System.Drawing.Size(106, 22);
@@ -449,7 +474,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDescripcion.Location = new System.Drawing.Point(93, 24);
+            this.txtDescripcion.Location = new System.Drawing.Point(91, 27);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
             this.txtDescripcion.Size = new System.Drawing.Size(341, 22);
@@ -460,7 +485,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(459, 26);
+            this.label7.Location = new System.Drawing.Point(454, 30);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 14);
             this.label7.TabIndex = 1;
@@ -469,7 +494,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 25);
+            this.label6.Location = new System.Drawing.Point(8, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 14);
             this.label6.TabIndex = 0;
@@ -520,9 +545,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column4.HeaderText = "P. UNIT.";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -530,9 +555,9 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column3.HeaderText = "IMPORTE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -586,7 +611,7 @@
             // btnEliminarItem
             // 
             this.btnEliminarItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarItem.Location = new System.Drawing.Point(657, 312);
+            this.btnEliminarItem.Location = new System.Drawing.Point(657, 306);
             this.btnEliminarItem.Name = "btnEliminarItem";
             this.btnEliminarItem.Size = new System.Drawing.Size(110, 27);
             this.btnEliminarItem.TabIndex = 20;
@@ -605,7 +630,7 @@
             // btnEliminarVenta
             // 
             this.btnEliminarVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarVenta.Location = new System.Drawing.Point(657, 345);
+            this.btnEliminarVenta.Location = new System.Drawing.Point(657, 338);
             this.btnEliminarVenta.Name = "btnEliminarVenta";
             this.btnEliminarVenta.Size = new System.Drawing.Size(110, 27);
             this.btnEliminarVenta.TabIndex = 22;
@@ -616,7 +641,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(658, 378);
+            this.button1.Location = new System.Drawing.Point(658, 370);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 25);
             this.button1.TabIndex = 23;
@@ -686,10 +711,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtDatos;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.TextBox txtDocIdentidad;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDocumento;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnBusquedaProducto;
         private System.Windows.Forms.Button btnAgregar;
@@ -723,5 +748,7 @@
         private System.Windows.Forms.TextBox txtUnidad;
         private System.Windows.Forms.Label lblUnidad;
         private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblDireccion;
     }
 }
