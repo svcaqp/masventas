@@ -11,6 +11,8 @@
     <AssemblyName>Capa de Presentacion</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,10 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -90,6 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DemoPracticaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +106,12 @@
     </Compile>
     <Compile Include="Frmregresar.Designer.cs">
       <DependentUpon>Frmregresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteVentas.Designer.cs">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmServer.cs">
       <SubType>Form</SubType>
@@ -290,6 +301,9 @@
     <EmbeddedResource Include="FrmPreferencias.resx">
       <DependentUpon>FrmPreferencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteVentas.resx">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmServer.resx">
       <DependentUpon>FrmServer.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,6 +323,17 @@
     </None>
     <None Include="DataSetReporteProductos.xss">
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet.xsc">
+      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaDataSet.xss">
+      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

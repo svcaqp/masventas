@@ -41,7 +41,7 @@ namespace Capa_de_Presentacion
         // Datos de la caja 
         public static String IdCaja;
         public static double SaldoAbierto;
-    
+        public static double TotalVentas = 0;
 
         //Datos orden de Compra
 
@@ -56,6 +56,7 @@ namespace Capa_de_Presentacion
         public static Frmregresar frmregresar;
         public static FrmRegistrarCategoria frmCategoria;
         public static FrmEditarProducto frmEditarProducto;
+
 
 
         [STAThread]

@@ -35,6 +35,10 @@ namespace Capa_de_Presentacion
                 return;
             }
 
+            pictureBox1.Location = new Point((Screen.FromControl(this).Bounds.Width - pictureBox1.Size.Width) / 2, pictureBox1.Location.Y);
+            Panel_items.Location = new Point(this.Size.Width / 6, Panel_items.Location.Y);
+
+
             
 
 
@@ -55,7 +59,7 @@ namespace Capa_de_Presentacion
             if (caja.IdCaja != null)
             {
 
-                Program.SaldoAbierto = caja.SaldoAbierto;
+                Program.SaldoAbierto = caja.SaldoAbierto ;
                 btn_AbrirCaja.Hide();
                 lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto + ".00";
 
@@ -86,10 +90,11 @@ namespace Capa_de_Presentacion
                 label11.Hide();
                 btnReportes.Hide();
                 btnUsuarios.Hide();
-                lbl_nodisponible.Hide();
+                                                    
                 lbl_TipodeUsuario.Text = "Trabajador";
 
             }
+            lbl_saldoCaja.Text = (Program.SaldoAbierto + Program.TotalVentas) + " s/.";
 
 
 
@@ -102,6 +107,11 @@ namespace Capa_de_Presentacion
         {
             timer1.Interval = 500;
             timer1.Start();
+
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -203,8 +213,11 @@ namespace Capa_de_Presentacion
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            FrmReportes R = new FrmReportes();
-            R.Show();
+
+
+            FrmReporteVentas report = new FrmReporteVentas();
+            report.Show();
+
         }
 
         private void lblHora_Click(object sender, EventArgs e)

@@ -56,7 +56,7 @@ namespace Capa_de_Presentacion
 
 
 
-            //Program.frmCategoria.Hide();
+         
 
             
 
@@ -211,25 +211,31 @@ namespace Capa_de_Presentacion
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-          
 
-            Program.frmEditarProducto = new FrmEditarProducto();
-            Program.frmEditarProducto.txtIdP.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            Program.frmEditarProducto.IdC.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            Program.frmEditarProducto.txtProducto.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            Program.frmEditarProducto.txtMarca.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            Program.frmEditarProducto.txtPCompra.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            Program.frmEditarProducto.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            Program.frmEditarProducto.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            Program.frmEditarProducto.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
-            Program.frmEditarProducto.actualStock = Int32.Parse(Program.frmEditarProducto.txtStock.Text);
-            Program.frmEditarProducto.actualPCompra = Double.Parse(Program.frmEditarProducto.txtPCompra.Text);
-            Program.frmEditarProducto.txtUnidad.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            try 
+            {
+                Program.frmEditarProducto = new FrmEditarProducto();
+                Program.frmEditarProducto.txtIdP.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                Program.frmEditarProducto.IdC.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                Program.frmEditarProducto.txtProducto.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                Program.frmEditarProducto.txtMarca.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                Program.frmEditarProducto.txtPCompra.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                Program.frmEditarProducto.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                Program.frmEditarProducto.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                Program.frmEditarProducto.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
+                Program.frmEditarProducto.actualStock = Int32.Parse(Program.frmEditarProducto.txtStock.Text);
+                Program.frmEditarProducto.actualPCompra = Double.Parse(Program.frmEditarProducto.txtPCompra.Text);
+                Program.frmEditarProducto.txtUnidad.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
 
 
-            Program.frmEditarProducto.Show();
+                Program.frmEditarProducto.Show();
 
-            dataGridView1.ClearSelection();
+                dataGridView1.ClearSelection();
+            }
+            catch
+            {
+
+            }
 
 
 
@@ -241,10 +247,6 @@ namespace Capa_de_Presentacion
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
 
 

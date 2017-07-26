@@ -65,5 +65,16 @@ namespace Capa_de_Presentacion.Properties {
                 this["FechaHoy"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVER-PC\\SERVER;Initial Catalog=DemoPractica;User ID=PRUEBA;Password" +
+            "=prueba")]
+        public string DemoPracticaConnectionString1 {
+            get {
+                return ((string)(this["DemoPracticaConnectionString1"]));
+            }
+        }
     }
 }

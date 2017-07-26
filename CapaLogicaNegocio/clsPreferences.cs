@@ -77,5 +77,12 @@ namespace CapaLogicaNegocio
             return statusConnection;
         }
 
+        public String getConnectionString()
+        {
+            return @"Data Source=" + credenciales.server + ";Initial Catalog=" +
+                                     credenciales.database + ";User id=" + credenciales.user + ";Password=" +
+                                     credenciales.password + ";";
+        }
+
     }
 }

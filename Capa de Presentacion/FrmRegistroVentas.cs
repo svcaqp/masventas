@@ -280,6 +280,7 @@ namespace Capa_de_Presentacion
             txtMarca.Clear();
             txtStock.Clear();
             txtPVenta.Clear();
+            txtUnidad.Clear();
             txtCantidad.Clear();
             txtCantidad.Focus();
             Program.Descripcion = "";
@@ -344,9 +345,10 @@ namespace Capa_de_Presentacion
                     GuardarVenta();
                     try
                     {
+                        Decimal SumaIgv = 0; Decimal SumaSubTotal = 0;
                         for (int i = 0; i < dataGridView1.Rows.Count; i++)
                         {
-                            Decimal SumaIgv = 0; Decimal SumaSubTotal = 0;
+                            
                             if (Convert.ToString(dataGridView1.Rows[i].Cells[2].Value) != "")
                             {
                                 SumaIgv += Convert.ToDecimal(dataGridView1.Rows[i].Cells[6].Value);
@@ -365,6 +367,7 @@ namespace Capa_de_Presentacion
                                 //DevComponents.DotNetBar.MessageBoxEx.Show("Fila Vacia.");
                             }
                         }
+                        Program.TotalVentas += Convert.ToDouble( SumaSubTotal);
                         Limpiar1();
 
                     }
@@ -433,6 +436,7 @@ namespace Capa_de_Presentacion
             txtIgv.Clear();
             txtDocIdentidad.Clear();
             txtDatos.Clear();
+            txtUnidad.Clear();
             dataGridView1.Rows.Clear();
             Program.IdCliente = 0;
             txtIdProducto.Clear();
