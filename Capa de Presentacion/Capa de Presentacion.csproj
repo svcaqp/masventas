@@ -95,17 +95,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaja.Designer.cs">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEditarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEditarProducto.Designer.cs">
       <DependentUpon>FrmEditarProducto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frmregresar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frmregresar.Designer.cs">
-      <DependentUpon>Frmregresar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReporteVentas.cs">
       <SubType>Form</SubType>
@@ -167,12 +167,6 @@
     <Compile Include="FrmRegistrarCargo.Designer.cs">
       <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrarCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCategoria.Designer.cs">
-      <DependentUpon>FrmRegistrarCategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmListadoCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,12 +203,6 @@
     <Compile Include="FrmRegistroCliente.Designer.cs">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistroProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistroProductos.Designer.cs">
-      <DependentUpon>FrmRegistroProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmRegistroVentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +229,9 @@
     <EmbeddedResource Include="FrmAlmacen.resx">
       <DependentUpon>FrmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCaja.resx">
+      <DependentUpon>FrmCaja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCargos.resx">
       <DependentUpon>FrmListadoCargos.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,9 +251,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCargo.resx">
       <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCategoria.resx">
-      <DependentUpon>FrmRegistrarCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCategoria.resx">
       <DependentUpon>FrmListadoCategoria.cs</DependentUpon>
@@ -286,14 +274,8 @@
     <EmbeddedResource Include="FrmEditarProducto.resx">
       <DependentUpon>FrmEditarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistroProductos.resx">
-      <DependentUpon>FrmRegistroProductos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroVentas.resx">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frmregresar.resx">
-      <DependentUpon>Frmregresar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>

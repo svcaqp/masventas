@@ -118,22 +118,8 @@ namespace Capa_de_Presentacion
             Close();
         }
 
-        private void NuevoProducto()
-        {
-            
-            Program.frmRegistroProductos = new FrmRegistroProductos();
-            dataGridView1.ClearSelection();
-            Program.frmRegistroProductos.Show();
+        
 
-        }
-
-        private void FormRegresar()
-        {
-
-            Program.frmregresar = new Frmregresar();
-            Program.frmregresar.Show();
-
-        }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {

@@ -36,7 +36,7 @@ namespace Capa_de_Presentacion
             }
 
             pictureBox1.Location = new Point((Screen.FromControl(this).Bounds.Width - pictureBox1.Size.Width) / 2, pictureBox1.Location.Y);
-            Panel_items.Location = new Point(this.Size.Width / 6, Panel_items.Location.Y);
+            Panel_items.Location = new Point((Screen.FromControl(this).Bounds.Width - Panel_items.Size.Width) / 2, (Screen.FromControl(this).Bounds.Height - Panel_items.Size.Height) / 2);
 
 
             
@@ -60,14 +60,10 @@ namespace Capa_de_Presentacion
             {
 
                 Program.SaldoAbierto = caja.SaldoAbierto ;
-                btn_AbrirCaja.Hide();
-                lbl_saldoCaja.Text = " s/." + Program.SaldoAbierto + ".00";
-
-                lbl_saldoCaja.Show();
-                lbl_titleSaldoCaja.Show();
+             
                 btnVentas.Enabled = true;
                 lbl_CajaCerrada.Hide();
-                btn_CerrarCaja.Show();
+ 
             }
             else
             {
@@ -94,7 +90,7 @@ namespace Capa_de_Presentacion
                 lbl_TipodeUsuario.Text = "Trabajador";
 
             }
-            lbl_saldoCaja.Text = "s/. "+(Program.SaldoAbierto + Program.TotalVentas);
+            //lbl_saldoCaja.Text = "s/. "+(Program.SaldoAbierto + Program.TotalVentas);
 
 
 
@@ -240,7 +236,7 @@ namespace Capa_de_Presentacion
                 this.Close();
                 return;
             }
-            FrmAbrirCaja cajaForm = new FrmAbrirCaja();
+            FrmCaja cajaForm = new FrmCaja();
             cajaForm.Show();
         }
 
@@ -258,12 +254,9 @@ namespace Capa_de_Presentacion
             caja.CerrarCaja();
             Program.IdCaja = null;
             Program.SaldoAbierto = 0;
-            btn_AbrirCaja.Hide();
-            lbl_saldoCaja.Hide();
-            lbl_titleSaldoCaja.Hide();
             Panel_items.Hide();
             lbl_CajaCerrada.Show();
-            btn_CerrarCaja.Hide();
+    
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -279,6 +272,20 @@ namespace Capa_de_Presentacion
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnMenuCaja_Click(object sender, EventArgs e)
+        {
+            clsPrueba testPrueba = new clsPrueba();
+            testPrueba.VersionPrueba();
+            if (testPrueba.statusCode != 1)
+            {
+                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+            FrmCaja cajaForm = new FrmCaja();
+            cajaForm.Show();
         }
 
 

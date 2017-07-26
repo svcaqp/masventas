@@ -83,40 +83,17 @@ namespace Capa_de_Presentacion
             }
             else
             {*/
-                FrmRegistroProductos P = new FrmRegistroProductos();
+                
                 if (dataGridView1.SelectedRows.Count > 0)
                     Program.Evento = 1;
                 else
                     Program.Evento = 0;
                 dataGridView1.ClearSelection();
-                P.Show();
+             
                 //}
             }
         
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count > 0) {
-                FrmRegistroProductos P = new FrmRegistroProductos();
-                P.txtIdP.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                P.IdC.Text= dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                P.txtProducto.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                P.txtMarca.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                P.txtPCompra.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                P.txtPVenta.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-                
-                P.txtStock.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-                P.dateTimePicker1.Value = Convert.ToDateTime(dataGridView1.CurrentRow.Cells[7].Value.ToString());
-                P.Show();
-                if (dataGridView1.SelectedRows.Count > 0)
-                    Program.Evento = 1;
-                else
-                    Program.Evento = 0;
-                dataGridView1.ClearSelection();
-            }
-            else {
-                DevComponents.DotNetBar.MessageBoxEx.Show("Debe Seleccionar la Fila a Editar.","Sistema de Ventas.",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
-            }
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {

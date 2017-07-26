@@ -54,9 +54,6 @@ namespace Capa_de_Presentacion
 
         public static FrmAlmacen frmAlmacen;
         public static FrmOrdenCompra frmOrdenCompra;
-        public static FrmRegistroProductos frmRegistroProductos;
-        public static Frmregresar frmregresar;
-        public static FrmRegistrarCategoria frmCategoria;
         public static FrmEditarProducto frmEditarProducto;
 
 

@@ -30,8 +30,7 @@ namespace Capa_de_Presentacion
             }
             else
             {
-                FrmRegistrarCategoria C = new FrmRegistrarCategoria();
-                C.Show();
+              
                 if (dataGridView1.SelectedRows.Count > 0)
                     Program.Evento = 1;
                 else
@@ -109,15 +108,14 @@ namespace Capa_de_Presentacion
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                FrmRegistrarCategoria C = new FrmRegistrarCategoria();
-                C.IdC.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                C.txtCategoria.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+        
+
                 if (dataGridView1.SelectedRows.Count > 0)
                     Program.Evento = 1;
                 else
                     Program.Evento = 0;
                 dataGridView1.ClearSelection();
-                C.Show();
+             
             }
             else {
                 MessageBox.Show("Debe Seleccionar la Fila a Editar Datos.","Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);

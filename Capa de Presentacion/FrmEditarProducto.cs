@@ -155,11 +155,6 @@ namespace Capa_de_Presentacion
             LP.timer1.Start();
         }
 
-        private void btnCategoria_Click(object sender, EventArgs e)
-        {
-            Program.frmCategoria.Show();
-
-        }
 
         private void Limpiar()
         {
