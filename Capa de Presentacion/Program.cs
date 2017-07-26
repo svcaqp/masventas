@@ -46,12 +46,14 @@ namespace Capa_de_Presentacion
         //Datos orden de Compra
 
         public static clsCompra ordenCompra = new clsCompra();
+        public static String nombreProduct;
 
 
 
         //Referencias Forms
 
         public static FrmAlmacen frmAlmacen;
+        public static FrmOrdenCompra frmOrdenCompra;
         public static FrmRegistroProductos frmRegistroProductos;
         public static Frmregresar frmregresar;
         public static FrmRegistrarCategoria frmCategoria;

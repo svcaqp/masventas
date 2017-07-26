@@ -44,7 +44,7 @@ namespace Capa_de_Presentacion
                             MessageBoxEx.Show(this,Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }else {
                             MessageBoxEx.Show(this,Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Limpiar();
+                            LimpiarCategoria();
                             ListarElementos();
                         }
 
@@ -52,7 +52,7 @@ namespace Capa_de_Presentacion
                         C.IdC = Convert.ToInt32(IdC.Text);
                         C.Descripcion = txtCategoria.Text;
                         MessageBoxEx.Show(this,C.ActualizarCategoria(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Limpiar();
+                        LimpiarCategoria();
                     }
                 }else {
                     MessageBoxEx.Show(this,"Por Favor Digíte Datos.","Sistema de Ventas.",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -64,7 +64,7 @@ namespace Capa_de_Presentacion
         }
 
 
-        private void Limpiar() {
+        private void LimpiarCategoria() {
             txtCategoria.Clear();
             txtCategoria.Focus();
         }

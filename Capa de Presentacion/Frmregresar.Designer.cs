@@ -44,6 +44,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -69,10 +70,11 @@
             this.lbl_title.Size = new System.Drawing.Size(85, 24);
             this.lbl_title.TabIndex = 2;
             this.lbl_title.Text = "Almacen";
+            this.lbl_title.Click += new System.EventHandler(this.lbl_title_Click);
             // 
             // Frmregresar
             // 
-            this.ClientSize = new System.Drawing.Size(451, 75);
+            this.ClientSize = new System.Drawing.Size(451, 215);
             this.ControlBox = false;
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.button1);

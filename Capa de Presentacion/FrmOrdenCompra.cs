@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -17,7 +18,15 @@ namespace Capa_de_Presentacion
         }
         private void FrmRegistroProductos_Load(object sender, EventArgs e)
         {
+            this.lbl_nombreProducto.Text = "Producto : " + Program.nombreProduct;
+        }
 
+        public void LimpiarOrdenCompra()
+        {
+            txt_nroDocumento.Clear();
+            txtCantidad.Clear();
+            txtIdP.Clear();
+            txtTotal.Clear();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -35,7 +44,8 @@ namespace Capa_de_Presentacion
                     Program.ordenCompra.TipoDocumento = "Factura";
                 if (rbn_guia.Checked)
                     Program.ordenCompra.TipoDocumento = "Guia";
-                Program.ordenCompra.Total = Double.Parse(txtTotal.Text);
+
+                Program.ordenCompra.Total = Convert.ToDouble(txtTotal.Text, new CultureInfo("en-US"));
                 Program.ordenCompra.Cantidad = Int32.Parse(txtCantidad.Text);
                 Program.ordenCompra.FechaRegistro = date_Fecha.Value.Date;
 
@@ -69,7 +79,52 @@ namespace Capa_de_Presentacion
 
         private void FrmOrdenCompra_Activated(object sender, EventArgs e)
         {
-           
+            this.lbl_nombreProducto.Text = "Producto : " + Program.nombreProduct;
         }
+
+        private void OnlyDouble_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBox tBox = (TextBox)sender;
+
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9)
+               || (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9)
+               || (e.KeyCode == Keys.Decimal && !(tBox.Text.Contains('.'))
+                   && !(tBox.Text.Length == 0)
+                   && !((tBox.Text.Length == 1)
+                      && (tBox.Text.Contains('-') || tBox.Text.Contains('+'))))
+               || (e.KeyCode == Keys.OemPeriod && !(tBox.Text.Contains('.'))
+                   && !(tBox.Text.Length == 0)
+                   && !((tBox.Text.Length == 1)
+                      && (tBox.Text.Contains('-') || tBox.Text.Contains('+'))))
+               || (e.KeyCode == Keys.Subtract && ((tBox.Text.Length == 0) ||
+                   tBox.Text.EndsWith("e") || tBox.Text.EndsWith("E")))
+               || (e.KeyCode == Keys.OemMinus && ((tBox.Text.Length == 0) ||
+                   tBox.Text.EndsWith("e") || tBox.Text.EndsWith("E")))
+               || (e.KeyCode == Keys.Add && ((tBox.Text.Length == 0) ||
+                   tBox.Text.EndsWith("e") || tBox.Text.EndsWith("E")))
+               || (e.KeyCode == Keys.Oemplus && ((tBox.Text.Length == 0) ||
+                   tBox.Text.EndsWith("e") || tBox.Text.EndsWith("E")))
+               || e.KeyCode == Keys.Delete
+               || e.KeyCode == Keys.Back
+               || e.KeyCode == Keys.Left
+               || e.KeyCode == Keys.Right
+               || (e.KeyCode == Keys.E) && !(tBox.Text.Contains('e')) &&
+                   (tBox.Text.Contains('.') && !tBox.Text.EndsWith("."))))
+            {
+                e.SuppressKeyPress = true;
+            }
+            
+                
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
     }
 }

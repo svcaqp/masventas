@@ -29,5 +29,15 @@ namespace Capa_de_Presentacion
             catch { }
             
         }
+
+        private void lbl_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

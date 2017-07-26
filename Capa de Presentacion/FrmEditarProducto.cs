@@ -18,7 +18,7 @@ namespace Capa_de_Presentacion
     {
         private clsCategoria C = new clsCategoria();
         private clsProducto P = new clsProducto();
-        FrmOrdenCompra frm_orden_compra = new FrmOrdenCompra();
+        
 
         public int actualStock = 0;
         public double actualPCompra = 0.0;
@@ -43,8 +43,18 @@ namespace Capa_de_Presentacion
             {
                 cbxCategoria.DisplayMember = "Descripcion";
                 cbxCategoria.ValueMember = "IdCategoria";
-                cbxCategoria.DataSource = C.Listar();
-                cbxCategoria.SelectedValue = IdC.Text;
+                DataTable clist = C.Listar();
+                int listPosition =0;
+                for (int i = 0; i < clist.Rows.Count;i++ ){
+                    String value = clist.Rows[i][0].ToString();
+                    if (value  == IdC.Text)
+                    {
+                        listPosition = i;
+                        break;
+                    }
+                }
+                cbxCategoria.DataSource = clist;
+                    cbxCategoria.SelectedIndex = listPosition;
             }
             else
             {
@@ -53,15 +63,9 @@ namespace Capa_de_Presentacion
                 cbxCategoria.DataSource = C.Listar();
             }
 
+
             
-            
-            
-            txtStock.Text = (actualStock + Program.ordenCompra.Cantidad).ToString();
-            
-            if (Program.ordenCompra.Cantidad != 0)
-            {
-                txtPCompra.Text = Math.Round((actualPCompra + (Program.ordenCompra.Total / Program.ordenCompra.Cantidad)) / 2.0, 1).ToString();
-            }
+           
 
         }
 
@@ -101,6 +105,7 @@ namespace Capa_de_Presentacion
                                         DevComponents.DotNetBar.MessageBoxEx.Show(this, Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                         Limpiar();
                                         Program.frmAlmacen.CargarListado();
+                                        this.Close();
                                     }
                                     else
                                     {
@@ -172,11 +177,16 @@ namespace Capa_de_Presentacion
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            /*if (DevComponents.DotNetBar.MessageBoxEx.Show(this,"¿Está Seguro que Desea Salir.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            if (Program.ordenCompra.Cantidad > 0)
             {
+                if (MessageBoxEx.Show(this, " Los cambios no se han Grabado ¿Está Seguro que Desea Salir?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
+            else
                 this.Close();
-            }*/
-            this.Close();
+            
 
         }
 
@@ -272,24 +282,33 @@ namespace Capa_de_Presentacion
         {
             try
             {
+
+                this.TopMost = true;
+                Program.nombreProduct = txtProducto.Text;
                 cat_index = cbxCategoria.SelectedIndex;
-                frm_orden_compra.Location = new Point(this.Location.X + 30, this.Location.Y + 30);
-                frm_orden_compra.Show();
+
+                Program.frmOrdenCompra.Focus();
+                Program.frmOrdenCompra.Show();
+                
             }
             catch
             {
-                frm_orden_compra = new FrmOrdenCompra();
-                frm_orden_compra.Location = new Point(this.Location.X + 30, this.Location.Y + 30);
-                frm_orden_compra.Show();
+                Program.frmOrdenCompra = new FrmOrdenCompra();
+
+                Program.frmOrdenCompra.Show();
             }
 
         }
 
         private void FrmRegistroProductos_FormClosed(object sender, FormClosedEventArgs e)
         {
+            this.TopMost = false;
+            Program.frmAlmacen.EditarFlag = false;
+            Program.ordenCompra = new clsCompra();
+            Program.frmOrdenCompra.LimpiarOrdenCompra();
             try
             {
-                frm_orden_compra.Close();
+                Program.frmOrdenCompra.Close();
             }
             catch (Exception exeption)
             {
@@ -299,11 +318,21 @@ namespace Capa_de_Presentacion
 
         private void FrmRegistroProductos_Activated(object sender, EventArgs e)
         {
-            ListarElementos();
+
+            
             if (cat_index != -1)
             {
                 cbxCategoria.SelectedIndex = cat_index;
             }
+
+
+            txtStock.Text = (actualStock + Program.ordenCompra.Cantidad).ToString();
+
+            if (Program.ordenCompra.Cantidad != 0)
+            {
+                txtPCompra.Text = Math.Round(Program.ordenCompra.Total, 1).ToString();
+            }
+            
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

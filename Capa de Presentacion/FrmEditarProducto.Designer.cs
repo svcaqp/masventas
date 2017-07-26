@@ -317,9 +317,8 @@
             this.Name = "FrmEditarProducto";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Productos";
-            this.TopMost = true;
             this.Activated += new System.EventHandler(this.FrmRegistroProductos_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistroProductos_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistroProductos_Load);
