@@ -284,7 +284,7 @@ namespace Capa_de_Presentacion
             {
 
                 this.TopMost = true;
-                Program.nombreProduct = txtProducto.Text;
+                Program.nombreProduct = txtProducto.Text + " Marca : " + txtMarca.Text;
                 cat_index = cbxCategoria.SelectedIndex;
 
                 Program.frmOrdenCompra.Focus();

@@ -273,7 +273,7 @@ namespace Capa_de_Presentacion
             try
             {
 
-                Program.nombreProduct = txtProducto.Text;
+                Program.nombreProduct = txtProducto.Text + " Marca : " + txtMarca.Text;
                 cat_index = cbxCategoria.SelectedIndex;
                 Program.frmOrdenCompra.Show();
                
@@ -458,10 +458,15 @@ namespace Capa_de_Presentacion
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            clsCategoria categoria = new clsCategoria();
-            categoria.IdC = Convert.ToInt32(cbox_ListaCategorias.SelectedValue);
-            MessageBoxEx.Show(this, categoria.EliminarCategoria(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarElementos();
+            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Eliminar la categoria? \n Se eliminarán todos los productos asociados", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            {
+
+                clsCategoria categoria = new clsCategoria();
+                categoria.IdC = Convert.ToInt32(cbox_ListaCategorias.SelectedValue);
+                MessageBoxEx.Show(this, categoria.EliminarCategoria(), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ListarElementos();
+                CargarListado();
+            }
            
 
         }
