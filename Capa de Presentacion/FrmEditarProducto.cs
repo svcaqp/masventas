@@ -305,7 +305,9 @@ namespace Capa_de_Presentacion
             this.TopMost = false;
             Program.frmAlmacen.EditarFlag = false;
             Program.ordenCompra = new clsCompra();
-            Program.frmOrdenCompra.LimpiarOrdenCompra();
+            try { Program.frmOrdenCompra.LimpiarOrdenCompra(); }
+            catch { }
+            
             try
             {
                 Program.frmOrdenCompra.Close();
