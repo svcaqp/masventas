@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdministracion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_caja = new System.Windows.Forms.Button();
             this.btn_igv = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -321,17 +321,17 @@
             // 
             // contraseñaDataGridViewTextBoxColumn
             // 
-            dataGridViewCellStyle1.NullValue = "********";
-            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.NullValue = "********";
+            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
             this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
             this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
             this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
             // 
             // Actualizar
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "Actualizar";
-            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.NullValue = "Actualizar";
+            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle8;
             this.Actualizar.HeaderText = "Actualizar";
             this.Actualizar.Name = "Actualizar";
             this.Actualizar.Text = "Actualizar";
@@ -340,9 +340,9 @@
             // Eliminar
             // 
             this.Eliminar.DataPropertyName = "Eliminar";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "Eliminar";
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.NullValue = "Eliminar";
+            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle9;
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Text = "Eliminar";
@@ -420,6 +420,7 @@
             this.gbox_informacion.TabIndex = 9;
             this.gbox_informacion.TabStop = false;
             this.gbox_informacion.Text = "Información de la empresa";
+            this.gbox_informacion.Visible = false;
             // 
             // label2
             // 
@@ -489,6 +490,7 @@
             this.gbox_impresora.TabIndex = 17;
             this.gbox_impresora.TabStop = false;
             this.gbox_impresora.Text = "Impresora";
+            this.gbox_impresora.Visible = false;
             // 
             // button5
             // 
@@ -526,6 +528,7 @@
             this.gbox_igv.TabIndex = 18;
             this.gbox_igv.TabStop = false;
             this.gbox_igv.Text = "IGV";
+            this.gbox_igv.Visible = false;
             // 
             // button6
             // 
@@ -563,6 +566,7 @@
             this.gbox_seguridad.TabIndex = 19;
             this.gbox_seguridad.TabStop = false;
             this.gbox_seguridad.Text = "Seguridad";
+            this.gbox_seguridad.Visible = false;
             // 
             // button7
             // 
