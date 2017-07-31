@@ -164,9 +164,11 @@ namespace Capa_de_Presentacion
                 Application.Exit();
                 return;
             }
+            FrmAdministracion frmAdmin = new FrmAdministracion();
+            frmAdmin.Show();
 
-            FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
-            U.Show();
+
+         
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -211,7 +213,7 @@ namespace Capa_de_Presentacion
         {
 
 
-            FrmReporteVentas report = new FrmReporteVentas();
+            FrmReportes report = new FrmReportes();
             report.Show();
 
         }

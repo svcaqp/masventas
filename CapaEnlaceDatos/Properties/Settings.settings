@@ -3,16 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="DBServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">.\SQLEXPRESS</Value>
     </Setting>
     <Setting Name="DBNombre" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">DemoPractica</Value>
     </Setting>
     <Setting Name="DBUsuario" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">PRUEBA</Value>
     </Setting>
     <Setting Name="DBPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">prueba</Value>
     </Setting>
   </Settings>
 </SettingsFile>

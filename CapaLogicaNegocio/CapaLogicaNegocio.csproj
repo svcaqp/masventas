@@ -48,6 +48,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibPrintTicket">
+      <HintPath>..\Libraries\LibPrintTicket.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -65,6 +68,7 @@
     <Compile Include="clsCompra.cs" />
     <Compile Include="clsDetalleVenta.cs" />
     <Compile Include="clsEmpleado.cs" />
+    <Compile Include="clsPago.cs" />
     <Compile Include="clsPreferences.cs" />
     <Compile Include="clsProducto.cs" />
     <Compile Include="clsUsuarios.cs" />

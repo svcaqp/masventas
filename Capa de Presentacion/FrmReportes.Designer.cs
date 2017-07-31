@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.ClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetReporteProductos = new Capa_de_Presentacion.DataSetReporteProductos();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,13 +48,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSetReporteProductos = new Capa_de_Presentacion.DataSetReporteProductos();
-            this.ClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ClienteTableAdapter = new Capa_de_Presentacion.DataSetReporteProductosTableAdapters.ClienteTableAdapter();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetReporteProductos)).BeginInit();
+            this.DemoPracticaVentas = new Capa_de_Presentacion.DemoPracticaVentas();
+            this.VentaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VentaTableAdapter = new Capa_de_Presentacion.DemoPracticaVentasTableAdapters.VentaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetReporteProductos)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VentaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ClienteBindingSource
+            // 
+            this.ClienteBindingSource.DataMember = "Cliente";
+            this.ClienteBindingSource.DataSource = this.DataSetReporteProductos;
+            // 
+            // DataSetReporteProductos
+            // 
+            this.DataSetReporteProductos.DataSetName = "DataSetReporteProductos";
+            this.DataSetReporteProductos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -199,28 +214,32 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.ClienteBindingSource;
+            reportDataSource1.Name = "DataSetVentas";
+            reportDataSource1.Value = this.VentaBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportProductos.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(25, 156);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(967, 246);
             this.reportViewer1.TabIndex = 2;
             // 
-            // DataSetReporteProductos
-            // 
-            this.DataSetReporteProductos.DataSetName = "DataSetReporteProductos";
-            this.DataSetReporteProductos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ClienteBindingSource
-            // 
-            this.ClienteBindingSource.DataMember = "Cliente";
-            this.ClienteBindingSource.DataSource = this.DataSetReporteProductos;
-            // 
             // ClienteTableAdapter
             // 
             this.ClienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // DemoPracticaVentas
+            // 
+            this.DemoPracticaVentas.DataSetName = "DemoPracticaVentas";
+            this.DemoPracticaVentas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // VentaBindingSource
+            // 
+            this.VentaBindingSource.DataMember = "Venta";
+            this.VentaBindingSource.DataSource = this.DemoPracticaVentas;
+            // 
+            // VentaTableAdapter
+            // 
+            this.VentaTableAdapter.ClearBeforeFill = true;
             // 
             // FrmReportes
             // 
@@ -233,10 +252,12 @@
             this.Name = "FrmReportes";
             this.Text = "Reportes de Ventas";
             this.Load += new System.EventHandler(this.FrmReportes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetReporteProductos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetReporteProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VentaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,5 +283,8 @@
         private System.Windows.Forms.BindingSource ClienteBindingSource;
         private DataSetReporteProductos DataSetReporteProductos;
         private DataSetReporteProductosTableAdapters.ClienteTableAdapter ClienteTableAdapter;
+        private System.Windows.Forms.BindingSource VentaBindingSource;
+        private DemoPracticaVentas DemoPracticaVentas;
+        private DemoPracticaVentasTableAdapters.VentaTableAdapter VentaTableAdapter;
     }
 }

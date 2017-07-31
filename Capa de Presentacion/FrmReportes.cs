@@ -23,8 +23,10 @@ namespace Capa_de_Presentacion
 
         private void FrmReportes_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'DemoPracticaVentas.Venta' Puede moverla o quitarla según sea necesario.
+            this.VentaTableAdapter.Fill(this.DemoPracticaVentas.Venta);
             // TODO: esta línea de código carga datos en la tabla 'DataSetReporteProductos.Cliente' Puede moverla o quitarla según sea necesario.
-            this.ClienteTableAdapter.Fill(this.DataSetReporteProductos.Cliente);
+            
 
             this.reportViewer1.RefreshReport();
         }

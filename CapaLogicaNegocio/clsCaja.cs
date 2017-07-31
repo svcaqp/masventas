@@ -1,7 +1,9 @@
 ﻿using CapaEnlaceDatos;
+using LibPrintTicket;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -21,6 +23,8 @@ namespace CapaLogicaNegocio
         public string FechaCerrado { get; set; }
         public string HoraCerrado { get; set; }
 
+        public double totalVentas = 0;
+
         public clsCaja(string idEmpleado, double saldo)
         {
             this.IdEmpleado = idEmpleado;
@@ -35,6 +39,11 @@ namespace CapaLogicaNegocio
             this.IdEmpleado = idEmpleado;
             CargarCaja();
 
+        }
+
+        public clsCaja()
+        {
+            // TODO: Complete member initialization
         }
 
         public string RegistrarCaja()
@@ -62,6 +71,134 @@ namespace CapaLogicaNegocio
             return mensaje;
         }
 
+        public static string GetDateString(string date)
+        {
+            DateTime theDate;
+            if (DateTime.TryParseExact(date, "dd/MM/yyyy H:mm:ss",
+                    CultureInfo.InvariantCulture, DateTimeStyles.None, out theDate))
+            {
+                // the string was successfully parsed into theDate
+                return theDate.ToString("yyyy'-'MM'-'dd");
+            }
+            else
+            {
+                // the parsing failed, return some sensible default value
+                return "Couldn't read the date";
+            }
+        }
+
+        public double TotalVendido()
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            lst.Add(new clsParametro("@IdEmpleado", this.IdEmpleado));
+            lst.Add(new clsParametro("@FechaAbierto", GetDateString(this.FechaAbierto)));
+            DataTable data = _manejador.Listado("TotalVendido", lst);
+            if (data.Rows.Count == 1 && Convert.ToInt32(data.Rows[0][1]) > 0)
+            {
+                return Convert.ToDouble(data.Rows[0][0].ToString());
+            }
+            return 0;
+            
+        }
+
+        public double TotalPagos()
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            lst.Add(new clsParametro("@IdEmpleado", this.IdEmpleado));
+            lst.Add(new clsParametro("@FechaAbierto", GetDateString(this.FechaAbierto)));
+            DataTable data = _manejador.Listado("TotalPagos", lst);
+            if (data.Rows.Count == 1 && Convert.ToInt32(data.Rows[0][1]) > 0)
+            {
+                return Convert.ToDouble(data.Rows[0][0].ToString());
+            }
+            return 0;
+
+        }
+
+        public bool BuscarCajaDia()
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            lst.Add(new clsParametro("@IdEmpleado", this.IdEmpleado));
+            DataTable data = _manejador.Listado("BuscarCajaDia", lst);
+            if (Convert.ToInt32(data.Rows[0][0]) > 0)
+            {
+                return true;
+            }
+            return false;
+
+        }
+
+       
+        public Ticket TotalVendidoDetalle(Ticket ticket )
+        {
+            List<clsParametro> lst = new List<clsParametro>();
+            lst.Add(new clsParametro("@IdEmpleado", this.IdEmpleado));
+            lst.Add(new clsParametro("@FechaAbierto", GetDateString(this.FechaAbierto)));
+            DataTable data = _manejador.Listado("TotalVendidoDetalle", lst);
+
+
+
+            ticket.AddHeaderLine("");
+            ticket.AddHeaderLine("RESUMEN DE VENTAS");
+            ticket.AddHeaderLine("===================================");
+          
+
+
+            double total = 0;
+            double totalBoleta = 0;
+            double totalFactura = 0;
+            double totalNota = 0;
+          
+            if (data.Rows.Count > 0)
+            {
+                for (int i = 0; i < data.Rows.Count; i++)
+                {
+                    if (data.Rows[i][5].ToString() == "Boleta")
+                    {
+                        totalBoleta += Convert.ToDouble(data.Rows[0][7].ToString());
+                    }
+                    if (data.Rows[i][5].ToString() == "Factura")
+                    {
+                        totalFactura += Convert.ToDouble(data.Rows[0][7].ToString());
+                    }
+                    if (data.Rows[i][5].ToString() == "Nota")
+                    {
+                        totalNota += Convert.ToDouble(data.Rows[0][7].ToString());
+                    }
+                    total += Convert.ToDouble(data.Rows[i][7].ToString()); 
+                }
+
+
+   
+                        
+            }
+            ticket.AddHeaderLine("");
+            ticket.AddHeaderLine("Total Boleta S/.        : "+ string.Format("{0:N2}", totalBoleta));
+            ticket.AddHeaderLine("Total Factura S/.       : "+ string.Format("{0:N2}", totalFactura));
+            ticket.AddHeaderLine("Total Nota de Venta S/. : "+ string.Format("{0:N2}", totalNota));
+
+            ticket.AddHeaderLine("");
+
+            ticket.AddHeaderLine("TOTAL VENTAS (s/.)  :  " + string.Format("{0:N2}", total));
+
+            ticket.AddHeaderLine("");
+            ticket.AddHeaderLine("");
+            ticket.AddHeaderLine("\t\t DETALLE DE VENTAS");
+
+            ticket.AddHeaderLine("===================================");
+
+            ticket.AddHeaderLine("Docum. " + " Nro.Doc "+ "  Total");
+            ticket.AddHeaderLine("");
+
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                ticket.AddHeaderLine(data.Rows[i][5].ToString() + "  " + data.Rows[i][4].ToString() + "  " + string.Format("{0:N2}",Convert.ToDouble(data.Rows[i][7].ToString())));
+            }
+            totalVentas = total;
+            return ticket;
+
+        }
+
         private void CargarCaja()
         {
             List<clsParametro> lst = new List<clsParametro>();
@@ -83,13 +220,13 @@ namespace CapaLogicaNegocio
                 }
 
             }
-            
+
         }
 
         public string CerrarCaja()
         {
             var mensaje = "";
-
+            this.SaldoCerrado = this.SaldoAbierto + TotalVendido() - TotalPagos();
             var lst = new List<clsParametro>();
             try
             {
@@ -106,6 +243,30 @@ namespace CapaLogicaNegocio
             catch (Exception ex)
             {
                 mensaje = "Error al registrar la caja";
+                Console.Write("Error: " + ex.Message);
+            }
+
+            return mensaje;
+        }
+
+        public string ReaperturarCaja()
+        {
+            var mensaje = "";
+ 
+            var lst = new List<clsParametro>();
+            try
+            {
+                lst.Add(new clsParametro("@IdCaja", this.IdCaja));
+
+                lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
+                _manejador.EjecutarSP("ReaperturarCaja", ref lst);
+                mensaje = lst[1].Valor.ToString();
+
+
+            }
+            catch (Exception ex)
+            {
+                mensaje = "Error al Reaperturar la caja";
                 Console.Write("Error: " + ex.Message);
             }
 

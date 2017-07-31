@@ -64,7 +64,13 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                txtDatos.Text = "Cliente Particular";
+                Program.NombreCliente = "Cliente";
+                Program.ApellidosCliente = "Particular";
+                Program.DocumentoIdentidad = "00000000";
+                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+
+
+           
             }
             else
             {
@@ -80,7 +86,11 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                txtDatos.Text = "Cliente Particular";
+                Program.NombreCliente = "Cliente";
+                Program.ApellidosCliente = "Particular";
+                Program.DocumentoIdentidad = "00000000";
+                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+               
             }
             LlenarGrilla();
             GenerarNumeroComprobante();
@@ -119,7 +129,11 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                txtDatos.Text = "Cliente Particular";
+                Program.NombreCliente = "Cliente";
+                Program.ApellidosCliente = "Particular";
+                Program.DocumentoIdentidad = "00000000";
+                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+             
             }
             else
             {
@@ -135,7 +149,11 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                txtDatos.Text = "Cliente Particular";
+                Program.NombreCliente = "Cliente";
+                Program.ApellidosCliente = "Particular";
+                Program.DocumentoIdentidad = "00000000";
+                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+               
             }
             LlenarGrilla();
             GenerarNumeroComprobante();
@@ -593,7 +611,7 @@ namespace Capa_de_Presentacion
 
         private void rbnNotaVenta_CheckedChanged(object sender, EventArgs e)
         {
-            txtDatos.Text = "Cliente Particular";
+            txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
             if (rbnFactura.Checked == true)
             {
                 lblTipo.Text = "FACTURA";

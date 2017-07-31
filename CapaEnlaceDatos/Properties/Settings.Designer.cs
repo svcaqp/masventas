@@ -25,7 +25,7 @@ namespace CapaEnlaceDatos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute(".\\SQLEXPRESS")]
         public string DBServer {
             get {
                 return ((string)(this["DBServer"]));
@@ -37,7 +37,7 @@ namespace CapaEnlaceDatos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("DemoPractica")]
         public string DBNombre {
             get {
                 return ((string)(this["DBNombre"]));
@@ -49,7 +49,7 @@ namespace CapaEnlaceDatos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("PRUEBA")]
         public string DBUsuario {
             get {
                 return ((string)(this["DBUsuario"]));
@@ -61,7 +61,7 @@ namespace CapaEnlaceDatos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("prueba")]
         public string DBPassword {
             get {
                 return ((string)(this["DBPassword"]));

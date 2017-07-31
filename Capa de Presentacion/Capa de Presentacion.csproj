@@ -90,10 +90,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DemoPracticaCajasCerradas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaCajasCerradas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DemoPracticaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministracion.Designer.cs">
+      <DependentUpon>FrmAdministracion.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCaja.cs">
       <SubType>Form</SubType>
@@ -226,6 +247,9 @@
     <EmbeddedResource Include="FrmAbrirCaja.resx">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministracion.resx">
+      <DependentUpon>FrmAdministracion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAlmacen.resx">
       <DependentUpon>FrmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +318,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="ReportProductos.rdlc" />
     <None Include="DataSetReporteProductos.xsc">
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
@@ -306,6 +331,17 @@
     <None Include="DataSetReporteProductos.xss">
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
     </None>
+    <None Include="DemoPracticaCajasCerradas.xsc">
+      <DependentUpon>DemoPracticaCajasCerradas.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaCajasCerradas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaCajasCerradas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaCajasCerradas.xss">
+      <DependentUpon>DemoPracticaCajasCerradas.xsd</DependentUpon>
+    </None>
     <None Include="DemoPracticaDataSet.xsc">
       <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
     </None>
@@ -316,6 +352,28 @@
     </None>
     <None Include="DemoPracticaDataSet.xss">
       <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet1.xsc">
+      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaDataSet1.xss">
+      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet11.xsc">
+      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaDataSet11.xss">
+      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
