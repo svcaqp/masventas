@@ -30,13 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
             this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+=======
+>>>>>>> 1a9b6cf66bd8b302e76faec6eb23d8fbcaf8b9c1
             this.nroDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEmpleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.demoPracticaDataSet = new Capa_de_Presentacion.DemoPracticaDataSet();
+            this.ventaTableAdapter = new Capa_de_Presentacion.DemoPracticaDataSetTableAdapters.VentaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -54,11 +60,12 @@
             this.idClienteDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.ventaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 100);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(643, 314);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 263);
             this.dataGridView1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // ventaBindingSource
             // 
             this.ventaBindingSource.DataMember = "Venta";
@@ -70,6 +77,8 @@
             // ventaTableAdapter
             // 
               // 
+=======
+>>>>>>> 1a9b6cf66bd8b302e76faec6eb23d8fbcaf8b9c1
             // nroDocumentoDataGridViewTextBoxColumn
             // 
             this.nroDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NroDocumento";
@@ -105,6 +114,20 @@
             this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
             this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            // 
+            // ventaBindingSource
+            // 
+            this.ventaBindingSource.DataMember = "Venta";
+            this.ventaBindingSource.DataSource = this.demoPracticaDataSet;
+            // 
+            // demoPracticaDataSet
+            // 
+            this.demoPracticaDataSet.DataSetName = "DemoPracticaDataSet";
+            this.demoPracticaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ventaTableAdapter
+            // 
+            this.ventaTableAdapter.ClearBeforeFill = true;
             // 
             // FrmReporteVentas
             // 
