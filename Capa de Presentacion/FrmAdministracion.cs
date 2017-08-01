@@ -20,14 +20,7 @@ namespace Capa_de_Presentacion
 
         private void FrmAdministracion_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaUsuarios.Usuario' Puede moverla o quitarla según sea necesario.
-            this.usuarioTableAdapter.Fill(this.demoPracticaUsuarios.Usuario);
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaUsuarios.Usuario' Puede moverla o quitarla según sea necesario.
-            this.usuarioTableAdapter.Fill(this.demoPracticaUsuarios.Usuario);
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaUsuarios.Usuario' Puede moverla o quitarla según sea necesario.
-            this.usuarioTableAdapter.Fill(this.demoPracticaUsuarios.Usuario);
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaDataSet1.Usuario' Puede moverla o quitarla según sea necesario.
-       
+  
             // TODO: esta línea de código carga datos en la tabla 'demoPracticaCajasCerradas.CajasCerradas' Puede moverla o quitarla según sea necesario.
             this.cajasCerradasTableAdapter.Fill(this.demoPracticaCajasCerradas.CajasCerradas);
             // TODO: esta línea de código carga datos en la tabla 'demoPracticaCajasCerradas1.CajasCerradas' Puede moverla o quitarla según sea necesario.

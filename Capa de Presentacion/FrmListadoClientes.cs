@@ -46,7 +46,7 @@ namespace Capa_de_Presentacion
                     dataGridView1.Rows[i].Cells[2].Value = dt.Rows[i][2].ToString();
                     dataGridView1.Rows[i].Cells[3].Value = dt.Rows[i][3].ToString();
                     dataGridView1.Rows[i].Cells[4].Value = dt.Rows[i][4].ToString();
-                    dataGridView1.Rows[i].Cells[5].Value = dt.Rows[i][5].ToString();
+  
                 }
                 dataGridView1.ClearSelection();
             }
@@ -81,10 +81,9 @@ namespace Capa_de_Presentacion
             {
                 FrmRegistroCliente FrmC = new FrmRegistroCliente();
                 FrmC.txtDni.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                FrmC.txtApellidos.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                FrmC.txtNombres.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                FrmC.txtDireccion.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                FrmC.txtTelefono.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                FrmC.txtNombres.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                FrmC.txtDireccion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                FrmC.txtTelefono.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 FrmC.txtDni.Focus();
                 FrmC.Show();
                 if (dataGridView1.SelectedRows.Count > 0)
@@ -127,7 +126,7 @@ namespace Capa_de_Presentacion
                         dataGridView1.Rows[i].Cells[2].Value = dt.Rows[i][2].ToString();
                         dataGridView1.Rows[i].Cells[3].Value = dt.Rows[i][3].ToString();
                         dataGridView1.Rows[i].Cells[4].Value = dt.Rows[i][4].ToString();
-                        dataGridView1.Rows[i].Cells[5].Value = dt.Rows[i][5].ToString();
+                  
                     }
                     dataGridView1.ClearSelection();
                     timer1.Stop();
@@ -171,8 +170,7 @@ namespace Capa_de_Presentacion
         {
             Program.IdCliente = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             Program.DocumentoIdentidad = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            Program.ApellidosCliente = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            Program.NombreCliente = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            Program.NombreCliente = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             this.Close();
         }
 
@@ -185,10 +183,10 @@ namespace Capa_de_Presentacion
                     if (Resultado == DialogResult.Yes){
                         FrmRegistroCliente FrmC = new FrmRegistroCliente();
                         FrmC.txtDni.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                        FrmC.txtApellidos.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                        FrmC.txtNombres.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                        FrmC.txtDireccion.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                        FrmC.txtTelefono.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                       
+                        FrmC.txtNombres.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                        FrmC.txtDireccion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                        FrmC.txtTelefono.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                         FrmC.txtDni.Focus();
                         FrmC.Show();
                         if (dataGridView1.SelectedRows.Count > 0)

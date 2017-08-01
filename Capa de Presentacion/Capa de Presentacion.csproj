@@ -95,20 +95,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaCajasCerradas.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DemoPracticaDataSet.Designer.cs">
+    <Compile Include="DemoPracticaClientes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+      <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DemoPracticaDataSet1.Designer.cs">
+    <Compile Include="DemoPracticaEmpleados.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+      <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DemoPracticaDataSet11.Designer.cs">
+    <Compile Include="DemoPracticaReporteVentas.cs">
+      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemoPracticaReporteVentas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
+      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
@@ -318,7 +322,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportVentas.rdlc" />
     <EmbeddedResource Include="ReportProductos.rdlc" />
     <None Include="DataSetReporteProductos.xsc">
       <DependentUpon>DataSetReporteProductos.xsd</DependentUpon>
@@ -342,38 +346,38 @@
     <None Include="DemoPracticaCajasCerradas.xss">
       <DependentUpon>DemoPracticaCajasCerradas.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet.xsc">
-      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    <None Include="DemoPracticaClientes.xsc">
+      <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet.xsd">
+    <None Include="DemoPracticaClientes.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DemoPracticaDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DemoPracticaClientes.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DemoPracticaDataSet.xss">
-      <DependentUpon>DemoPracticaDataSet.xsd</DependentUpon>
+    <None Include="DemoPracticaClientes.xss">
+      <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet1.xsc">
-      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+    <None Include="DemoPracticaEmpleados.xsc">
+      <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet1.xsd">
+    <None Include="DemoPracticaEmpleados.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DemoPracticaDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>DemoPracticaEmpleados.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DemoPracticaDataSet1.xss">
-      <DependentUpon>DemoPracticaDataSet1.xsd</DependentUpon>
+    <None Include="DemoPracticaEmpleados.xss">
+      <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet11.xsc">
-      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
+    <None Include="DemoPracticaReporteVentas.xsc">
+      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaDataSet11.xsd">
+    <None Include="DemoPracticaReporteVentas.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DemoPracticaDataSet11.Designer.cs</LastGenOutput>
+      <LastGenOutput>DemoPracticaReporteVentas.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DemoPracticaDataSet11.xss">
-      <DependentUpon>DemoPracticaDataSet11.xsd</DependentUpon>
+    <None Include="DemoPracticaReporteVentas.xss">
+      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

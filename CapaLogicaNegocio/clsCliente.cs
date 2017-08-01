@@ -16,7 +16,6 @@ namespace CapaLogicaNegocio
         private clsManejador M = new clsManejador();
 
         private String m_Dni;
-        private String m_Apellidos;
         private String m_Nombres;
         private String m_Direccion;
         private String m_Telefono;
@@ -27,10 +26,6 @@ namespace CapaLogicaNegocio
             set { m_Dni = value; }
         }
 
-        public String Apellidos{
-            get { return m_Apellidos; }
-            set { m_Apellidos = value; }
-        }
 
         public String Nombres{
             get { return m_Nombres; }
@@ -64,13 +59,12 @@ namespace CapaLogicaNegocio
             try
             {
                 lst.Add(new clsParametro("@DNI",m_Dni));
-                lst.Add(new clsParametro("@Apellidos",m_Apellidos));
                 lst.Add(new clsParametro("@Nombres",m_Nombres));
                 lst.Add(new clsParametro("@Direccion",m_Direccion));
                 lst.Add(new clsParametro("@Telefono",m_Telefono));
                 lst.Add(new clsParametro("@Mensaje","",SqlDbType.VarChar,ParameterDirection.Output,50));
                 M.EjecutarSP("RegistrarCliente", ref lst);
-                Mensaje=lst[5].Valor.ToString();
+                Mensaje=lst[4].Valor.ToString();
             }
             catch (Exception ex)
             {
@@ -86,13 +80,12 @@ namespace CapaLogicaNegocio
             try
             {
                 lst.Add(new clsParametro("@DNI", m_Dni));
-                lst.Add(new clsParametro("@Apellidos", m_Apellidos));
                 lst.Add(new clsParametro("@Nombres", m_Nombres));
                 lst.Add(new clsParametro("@Direccion", m_Direccion));
                 lst.Add(new clsParametro("@Telefono", m_Telefono));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("ActualizarCliente", ref lst);
-                Mensaje = lst[5].Valor.ToString();
+                Mensaje = lst[4].Valor.ToString();
             }
             catch (Exception ex)
             {

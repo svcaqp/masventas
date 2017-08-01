@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.demoPracticaDataSet = new Capa_de_Presentacion.DemoPracticaDataSet();
-            this.ventaTableAdapter = new Capa_de_Presentacion.DemoPracticaDataSetTableAdapters.VentaTableAdapter();
             this.nroDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,7 +39,6 @@
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -65,17 +62,14 @@
             // ventaBindingSource
             // 
             this.ventaBindingSource.DataMember = "Venta";
-            this.ventaBindingSource.DataSource = this.demoPracticaDataSet;
+
             // 
             // demoPracticaDataSet
             // 
-            this.demoPracticaDataSet.DataSetName = "DemoPracticaDataSet";
-            this.demoPracticaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ventaTableAdapter
             // 
-            this.ventaTableAdapter.ClearBeforeFill = true;
-            // 
+              // 
             // nroDocumentoDataGridViewTextBoxColumn
             // 
             this.nroDocumentoDataGridViewTextBoxColumn.DataPropertyName = "NroDocumento";
@@ -126,7 +120,6 @@
             this.Load += new System.EventHandler(this.FrmReporteVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,9 +127,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DemoPracticaDataSet demoPracticaDataSet;
         private System.Windows.Forms.BindingSource ventaBindingSource;
-        private DemoPracticaDataSetTableAdapters.VentaTableAdapter ventaTableAdapter;
+
         private System.Windows.Forms.DataGridViewTextBoxColumn nroDocumentoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoDocumentoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaVentaDataGridViewTextBoxColumn;

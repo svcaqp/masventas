@@ -39,12 +39,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnProductos = new System.Windows.Forms.Button();
             this.lbl_CajaCerrada = new System.Windows.Forms.Label();
+            this.btnMenuCaja = new System.Windows.Forms.Button();
+            this.btnTutorial = new System.Windows.Forms.Button();
+            this.btnDocumentos = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnVentas = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -57,25 +66,16 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnMenuCaja = new System.Windows.Forms.Button();
-            this.btnTutorial = new System.Windows.Forms.Button();
-            this.btnDocumentos = new System.Windows.Forms.Button();
-            this.btnUsuarios = new System.Windows.Forms.Button();
-            this.btnEmpleados = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.btnVentas = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_items.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -198,6 +198,18 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Almacen";
             // 
+            // btnProductos
+            // 
+            this.btnProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProductos.BackgroundImage")));
+            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.Location = new System.Drawing.Point(19, 166);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(133, 114);
+            this.btnProductos.TabIndex = 0;
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
             // lbl_CajaCerrada
             // 
             this.lbl_CajaCerrada.AutoSize = true;
@@ -210,6 +222,38 @@
             this.lbl_CajaCerrada.TabIndex = 11;
             this.lbl_CajaCerrada.Text = "CAJA\r\nCERRADA";
             this.lbl_CajaCerrada.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_CajaCerrada.Click += new System.EventHandler(this.lbl_CajaCerrada_Click);
+            // 
+            // btnMenuCaja
+            // 
+            this.btnMenuCaja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuCaja.BackgroundImage")));
+            this.btnMenuCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenuCaja.Location = new System.Drawing.Point(240, 20);
+            this.btnMenuCaja.Name = "btnMenuCaja";
+            this.btnMenuCaja.Size = new System.Drawing.Size(133, 112);
+            this.btnMenuCaja.TabIndex = 21;
+            this.btnMenuCaja.UseVisualStyleBackColor = true;
+            this.btnMenuCaja.Click += new System.EventHandler(this.btnMenuCaja_Click);
+            // 
+            // btnTutorial
+            // 
+            this.btnTutorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTutorial.BackgroundImage")));
+            this.btnTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTutorial.Location = new System.Drawing.Point(526, 21);
+            this.btnTutorial.Name = "btnTutorial";
+            this.btnTutorial.Size = new System.Drawing.Size(134, 114);
+            this.btnTutorial.TabIndex = 20;
+            this.btnTutorial.UseVisualStyleBackColor = true;
+            // 
+            // btnDocumentos
+            // 
+            this.btnDocumentos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDocumentos.BackgroundImage")));
+            this.btnDocumentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDocumentos.Location = new System.Drawing.Point(594, 166);
+            this.btnDocumentos.Name = "btnDocumentos";
+            this.btnDocumentos.Size = new System.Drawing.Size(128, 114);
+            this.btnDocumentos.TabIndex = 19;
+            this.btnDocumentos.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -256,6 +300,18 @@
             this.label7.Text = "Clientes";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // btnUsuarios
+            // 
+            this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.Location = new System.Drawing.Point(451, 166);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(130, 116);
+            this.btnUsuarios.TabIndex = 0;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -266,6 +322,55 @@
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 13;
             this.label6.Text = "Ventas";
+            // 
+            // btnEmpleados
+            // 
+            this.btnEmpleados.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.BackgroundImage")));
+            this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.Location = new System.Drawing.Point(163, 166);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(131, 114);
+            this.btnEmpleados.TabIndex = 1;
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.BackgroundImage")));
+            this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.Location = new System.Drawing.Point(305, 166);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(134, 114);
+            this.btnReportes.TabIndex = 0;
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnVentas
+            // 
+            this.btnVentas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVentas.BackgroundImage")));
+            this.btnVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVentas.Enabled = false;
+            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentas.Location = new System.Drawing.Point(98, 20);
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(131, 114);
+            this.btnVentas.TabIndex = 0;
+            this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.BackgroundImage")));
+            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.Location = new System.Drawing.Point(386, 20);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(128, 114);
+            this.btnClientes.TabIndex = 0;
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // label4
             // 
@@ -391,6 +496,16 @@
             this.panel4.TabIndex = 16;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(39, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(78, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -401,120 +516,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProductos.BackgroundImage")));
-            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.Location = new System.Drawing.Point(19, 166);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(133, 114);
-            this.btnProductos.TabIndex = 0;
-            this.btnProductos.UseVisualStyleBackColor = true;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
-            // 
-            // btnMenuCaja
-            // 
-            this.btnMenuCaja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuCaja.BackgroundImage")));
-            this.btnMenuCaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenuCaja.Location = new System.Drawing.Point(240, 20);
-            this.btnMenuCaja.Name = "btnMenuCaja";
-            this.btnMenuCaja.Size = new System.Drawing.Size(133, 112);
-            this.btnMenuCaja.TabIndex = 21;
-            this.btnMenuCaja.UseVisualStyleBackColor = true;
-            this.btnMenuCaja.Click += new System.EventHandler(this.btnMenuCaja_Click);
-            // 
-            // btnTutorial
-            // 
-            this.btnTutorial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTutorial.BackgroundImage")));
-            this.btnTutorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnTutorial.Location = new System.Drawing.Point(526, 21);
-            this.btnTutorial.Name = "btnTutorial";
-            this.btnTutorial.Size = new System.Drawing.Size(134, 114);
-            this.btnTutorial.TabIndex = 20;
-            this.btnTutorial.UseVisualStyleBackColor = true;
-            // 
-            // btnDocumentos
-            // 
-            this.btnDocumentos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDocumentos.BackgroundImage")));
-            this.btnDocumentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDocumentos.Location = new System.Drawing.Point(594, 166);
-            this.btnDocumentos.Name = "btnDocumentos";
-            this.btnDocumentos.Size = new System.Drawing.Size(128, 114);
-            this.btnDocumentos.TabIndex = 19;
-            this.btnDocumentos.UseVisualStyleBackColor = true;
-            // 
-            // btnUsuarios
-            // 
-            this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
-            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(451, 166);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(130, 116);
-            this.btnUsuarios.TabIndex = 0;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
-            // 
-            // btnEmpleados
-            // 
-            this.btnEmpleados.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.BackgroundImage")));
-            this.btnEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEmpleados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpleados.Location = new System.Drawing.Point(163, 166);
-            this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(131, 114);
-            this.btnEmpleados.TabIndex = 1;
-            this.btnEmpleados.UseVisualStyleBackColor = true;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReportes.BackgroundImage")));
-            this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Location = new System.Drawing.Point(305, 166);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(134, 114);
-            this.btnReportes.TabIndex = 0;
-            this.btnReportes.UseVisualStyleBackColor = true;
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-            // 
-            // btnVentas
-            // 
-            this.btnVentas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVentas.BackgroundImage")));
-            this.btnVentas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVentas.Enabled = false;
-            this.btnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVentas.Location = new System.Drawing.Point(98, 20);
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(131, 114);
-            this.btnVentas.TabIndex = 0;
-            this.btnVentas.UseVisualStyleBackColor = true;
-            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.BackgroundImage")));
-            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Location = new System.Drawing.Point(386, 20);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(128, 114);
-            this.btnClientes.TabIndex = 0;
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(39, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // FrmMenuPrincipal
             // 
@@ -548,8 +549,8 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

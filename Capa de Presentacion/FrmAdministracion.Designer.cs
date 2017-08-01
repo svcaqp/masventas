@@ -61,8 +61,6 @@
             this.Actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.demoPracticaUsuarios = new Capa_de_Presentacion.DemoPracticaUsuarios();
-            this.usuarioTableAdapter = new Capa_de_Presentacion.DemoPracticaUsuariosTableAdapters.UsuarioTableAdapter();
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.gbox_opciones = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -95,7 +93,7 @@
             this.gbox_usuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaUsuarios)).BeginInit();
+          
             this.gbox_opciones.SuspendLayout();
             this.gbox_informacion.SuspendLayout();
             this.gbox_impresora.SuspendLayout();
@@ -350,17 +348,13 @@
             // 
             // usuarioBindingSource
             // 
-            this.usuarioBindingSource.DataMember = "Usuario";
-            this.usuarioBindingSource.DataSource = this.demoPracticaUsuarios;
+            
             // 
             // demoPracticaUsuarios
             // 
-            this.demoPracticaUsuarios.DataSetName = "DemoPracticaUsuarios";
-            this.demoPracticaUsuarios.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+             // 
             // usuarioTableAdapter
             // 
-            this.usuarioTableAdapter.ClearBeforeFill = true;
             // 
             // lbl_mensaje
             // 
@@ -622,7 +616,7 @@
             this.gbox_usuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaUsuarios)).EndInit();
+         
             this.gbox_opciones.ResumeLayout(false);
             this.gbox_informacion.ResumeLayout(false);
             this.gbox_informacion.PerformLayout();
@@ -660,9 +654,9 @@
         private System.Windows.Forms.Button btn_usuarios;
         private System.Windows.Forms.GroupBox gbox_usuarios;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private DemoPracticaUsuarios demoPracticaUsuarios;
+    
         private System.Windows.Forms.BindingSource usuarioBindingSource;
-        private DemoPracticaUsuariosTableAdapters.UsuarioTableAdapter usuarioTableAdapter;
+ 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUsuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn1;

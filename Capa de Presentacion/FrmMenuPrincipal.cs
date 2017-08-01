@@ -150,8 +150,18 @@ namespace Capa_de_Presentacion
                 Application.Exit();
                 return;
             }
-            FrmRegistroVentas V = new FrmRegistroVentas();
-            V.Show();
+
+            clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "");
+            string fechacaja = caja.FechaAbierto.Substring(0, 10);
+            string fechaactual = DateTime.Now.ToString("dd/MM/yyyy");
+            if (fechacaja != fechaactual)
+                DevComponents.DotNetBar.MessageBoxEx.Show(this, "La caja no se cerro correctamente para el dia : "+caja.FechaAbierto.Substring(0, 10), "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                FrmRegistroVentas V = new FrmRegistroVentas();
+                V.Show();
+            }
+             
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -288,6 +298,11 @@ namespace Capa_de_Presentacion
             }
             FrmCaja cajaForm = new FrmCaja();
             cajaForm.Show();
+        }
+
+        private void lbl_CajaCerrada_Click(object sender, EventArgs e)
+        {
+
         }
 
 

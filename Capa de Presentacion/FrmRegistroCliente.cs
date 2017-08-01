@@ -26,8 +26,7 @@ namespace Capa_de_Presentacion
         {
             if (txtDni.Text.Trim() != "")
             {
-                if (txtApellidos.Text.Trim() != "")
-                {
+               
                     if (txtNombres.Text.Trim() != "")
                     {
                         if (txtDireccion.Text.Trim() != "")
@@ -38,7 +37,6 @@ namespace Capa_de_Presentacion
                                 if (Program.Evento == 0)
                                 {
                                     C.Dni = txtDni.Text;
-                                    C.Apellidos = txtApellidos.Text;
                                     C.Nombres = txtNombres.Text;
                                     C.Direccion = txtDireccion.Text;
                                     C.Telefono = txtTelefono.Text;
@@ -48,7 +46,6 @@ namespace Capa_de_Presentacion
                                 else
                                 {
                                     C.Dni = txtDni.Text;
-                                    C.Apellidos = txtApellidos.Text;
                                     C.Nombres = txtNombres.Text;
                                     C.Direccion = txtDireccion.Text;
                                     C.Telefono = txtTelefono.Text;
@@ -73,22 +70,18 @@ namespace Capa_de_Presentacion
                         DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese Nombre(s) del Cliente.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         txtNombres.Focus();
                     }
-                }
-                else
-                {
-                    DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese Apellidos del Cliente.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    txtApellidos.Focus();
-                }
+                
+                
             }
             else {
-                DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese N° de D.N.I del Cliente.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingrese N° de RUC del Cliente.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtDni.Focus();
             }
        }
 
         private void Limpiar() {
             txtDni.Text = "";
-            txtApellidos.Clear();
+
             txtNombres.Clear();
             txtDireccion.Clear();
             txtTelefono.Clear();
