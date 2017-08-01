@@ -285,6 +285,8 @@ namespace Capa_de_Presentacion
             dateTimePicker1.Value = DateTime.Now;
             txtProducto.Focus();
             Program.ordenCompra = new clsCompra();
+            cbxCategoria.SelectedItem = null;
+           
             
 
         }
