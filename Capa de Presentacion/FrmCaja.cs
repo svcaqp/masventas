@@ -64,8 +64,8 @@ namespace Capa_de_Presentacion
         private void btn_AbrirCaja_Click(object sender, EventArgs e)
         {
            
-            FrmAbrirCaja cajaForm = new FrmAbrirCaja();
-            cajaForm.Show();
+            Program.frmAbrirCaja = new FrmAbrirCaja();
+            Program.frmAbrirCaja.Show();
         }
 
         private void btn_CerrarCaja_Click(object sender, EventArgs e)
@@ -149,6 +149,12 @@ namespace Capa_de_Presentacion
             else
                 DevComponents.DotNetBar.MessageBoxEx.Show(this, "Impresora no configurada, no realizará impresion", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         
+        }
+
+        private void FrmCaja_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try { Program.frmAbrirCaja.Close(); }
+            catch { }
         }
     }
 }

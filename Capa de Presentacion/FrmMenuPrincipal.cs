@@ -90,7 +90,7 @@ namespace Capa_de_Presentacion
                 lbl_TipodeUsuario.Text = "Trabajador";
 
             }
-            //lbl_saldoCaja.Text = "s/. "+(Program.SaldoAbierto + Program.TotalVentas);
+
 
 
 
@@ -121,8 +121,10 @@ namespace Capa_de_Presentacion
                 return;
             }
 
-            FrmAlmacen P = new FrmAlmacen();
-            P.Show();
+
+
+            Program.frmAlmacen = new FrmAlmacen();
+            Program.frmAlmacen.Show();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -136,8 +138,8 @@ namespace Capa_de_Presentacion
                 return;
             }
 
-            FrmListadoClientes C = new FrmListadoClientes();
-            C.Show();
+            Program.frmClientes = new FrmListadoClientes();
+            Program.frmClientes.Show();
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
@@ -174,8 +176,8 @@ namespace Capa_de_Presentacion
                 Application.Exit();
                 return;
             }
-            FrmAdministracion frmAdmin = new FrmAdministracion();
-            frmAdmin.Show();
+            Program.frmAdministracion = new FrmAdministracion();
+            Program.frmAdministracion.Show();
 
 
          
@@ -205,13 +207,17 @@ namespace Capa_de_Presentacion
                 Application.Exit();
                 return;
             }
-            FrmListadoEmpleados E = new FrmListadoEmpleados();
-            E.Show();
+            Program.frmEmpleados = new FrmListadoEmpleados();
+            Program.frmEmpleados.Show();
         }
 
         private void FrmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            try{ Program.frmCaja.Close();} catch { }
+            try { Program.frmClientes.Close(); } catch { }
+            try { Program.frmEmpleados.Close(); }catch { }
+            try { Program.frmAlmacen.Close(); } catch { }
+            try { Program.frmAdministracion.Close(); } catch { }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -223,8 +229,8 @@ namespace Capa_de_Presentacion
         {
 
 
-            FrmReportes report = new FrmReportes();
-            report.Show();
+            Program.frmReportes  = new FrmReportesMenu();
+            Program.frmReportes.Show();
 
         }
 
@@ -296,12 +302,19 @@ namespace Capa_de_Presentacion
                 this.Close();
                 return;
             }
-            FrmCaja cajaForm = new FrmCaja();
-            cajaForm.Show();
+            Program.frmCaja = new FrmCaja();
+            Program.frmCaja.Show();
         }
 
         private void lbl_CajaCerrada_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnDocumentos_Click(object sender, EventArgs e)
+        {
+            Program.frmDocumentos = new  FrmDocumentos();
+            Program.frmDocumentos.Show();
 
         }
 

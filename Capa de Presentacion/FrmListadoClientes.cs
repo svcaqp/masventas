@@ -171,6 +171,7 @@ namespace Capa_de_Presentacion
             Program.IdCliente = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             Program.DocumentoIdentidad = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             Program.NombreCliente = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            Program.Direccion = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             this.Close();
         }
 

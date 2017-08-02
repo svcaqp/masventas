@@ -17,7 +17,7 @@ namespace Capa_de_Presentacion
     {
         clsVentas Ventas = new clsVentas();
         clsDetalleVenta Detalle = new clsDetalleVenta();
-        double documento = 0.0;
+
 
 
         private List<clsVenta> lst = new List<clsVenta>();
@@ -39,9 +39,10 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = true;
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
-                documento = 1.0;
+                Program.DocumentoIdentidad = "";
                 lblDocumento.Text = "RUC";
                 lblDocumento.Visible = true;
+                txtDocIdentidad.Text = "";
                 txtDocIdentidad.Visible = true;
                 lblNombre.Text = "Nombre:";
                 btnBusqueda.Visible = true;
@@ -55,7 +56,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "BOLETA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+         
                 lblDocumento.Text = "Doc. Identidad:";
                 lblDocumento.Visible = false;
                 txtDocIdentidad.Visible = false;
@@ -65,9 +66,9 @@ namespace Capa_de_Presentacion
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
                 Program.NombreCliente = "Cliente";
-                Program.ApellidosCliente = "Particular";
+
                 Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+                txtDatos.Text = Program.NombreCliente;
 
 
            
@@ -77,7 +78,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "NOTA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+               
                 lblDocumento.Text = "Doc. Identidad:";
                 lblDocumento.Visible = false;
                 txtDocIdentidad.Visible = false;
@@ -87,9 +88,8 @@ namespace Capa_de_Presentacion
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
                 Program.NombreCliente = "Cliente";
-                Program.ApellidosCliente = "Particular";
                 Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+                txtDatos.Text =  Program.NombreCliente;
                
             }
             LlenarGrilla();
@@ -105,10 +105,11 @@ namespace Capa_de_Presentacion
                 txtIgv.Visible = true;
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
-                documento = 1.0;
+                Program.DocumentoIdentidad = "";
                 lblDocumento.Text = "RUC";
                 lblDocumento.Visible = true;
                 txtDocIdentidad.Visible = true;
+                txtDocIdentidad.Text = "";
                 lblNombre.Text = "Nombre:";
                 btnBusqueda.Visible = true;
                 lblDireccion.Visible = true;
@@ -120,7 +121,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "BOLETA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+             
                 lblDocumento.Text = "Doc. Identidad:";
                 lblDocumento.Visible = false;
                 txtDocIdentidad.Visible = false;
@@ -130,9 +131,8 @@ namespace Capa_de_Presentacion
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
                 Program.NombreCliente = "Cliente";
-                Program.ApellidosCliente = "Particular";
                 Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+                txtDatos.Text = Program.NombreCliente;
              
             }
             else
@@ -140,7 +140,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "NOTA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+                
                 lblDocumento.Text = "Doc. Identidad:";
                 lblDocumento.Visible = false;
                 txtDocIdentidad.Visible = false;
@@ -150,9 +150,8 @@ namespace Capa_de_Presentacion
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
                 Program.NombreCliente = "Cliente";
-                Program.ApellidosCliente = "Particular";
                 Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+                txtDatos.Text =  Program.NombreCliente;
                
             }
             LlenarGrilla();
@@ -195,7 +194,8 @@ namespace Capa_de_Presentacion
         private void FrmVentas_Activated(object sender, EventArgs e)
         {
             txtDocIdentidad.Text = Program.DocumentoIdentidad;
-            txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+            txtDatos.Text =  Program.NombreCliente;
+            txtDireccion.Text = Program.Direccion;
             txtIdProducto.Text = Program.IdProducto + "";
             txtDescripcion.Text = Program.Descripcion;
             txtUnidad.Text = Program.Unidad;
@@ -511,7 +511,7 @@ namespace Capa_de_Presentacion
             rbnNotaVenta.Checked = true;
             rbnFactura.Checked = false;
             Program.DocumentoIdentidad = "";
-            Program.ApellidosCliente = "";
+            Program.Direccion = "";
             Program.NombreCliente = "";
             txtIgv.Clear();
             lst = new List<clsVenta>();
@@ -611,14 +611,14 @@ namespace Capa_de_Presentacion
 
         private void rbnNotaVenta_CheckedChanged(object sender, EventArgs e)
         {
-            txtDatos.Text = Program.ApellidosCliente + ", " + Program.NombreCliente;
+            txtDatos.Text = Program.NombreCliente;
             if (rbnFactura.Checked == true)
             {
                 lblTipo.Text = "FACTURA";
                 txtIgv.Visible = true;
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
-                documento = 1.0;
+              
                 lblDocumento.Text = "RUC";
             }
             else if (rbnBoleta.Checked == true)
@@ -626,7 +626,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "BOLETA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+        
                 lblDocumento.Text = "Doc. Identidad";
             }
             else
@@ -634,7 +634,7 @@ namespace Capa_de_Presentacion
                 lblTipo.Text = "NOTA DE VENTA";
                 txtIgv.Visible = false;
                 label12.Visible = false;
-                documento = 0.0;
+             
                 lblDocumento.Text = "Doc. Identidad";
             } 
             

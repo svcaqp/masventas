@@ -18,7 +18,7 @@ namespace Capa_de_Presentacion
          public static int IdCliente;
          public static String DocumentoIdentidad;
          public static String NombreCliente;
-         public static String ApellidosCliente;
+         public static String Direccion;
 
         //Datos del Producto
          public static int IdProducto;
@@ -56,7 +56,14 @@ namespace Capa_de_Presentacion
         public static FrmOrdenCompra frmOrdenCompra;
         public static FrmEditarProducto frmEditarProducto;
 
+        public static FrmCaja frmCaja;
+        public static FrmAbrirCaja frmAbrirCaja;
+        public static FrmListadoClientes frmClientes;
+        public static FrmListadoEmpleados frmEmpleados;
+        public static FrmReportesMenu frmReportes;
+        public static FrmAdministracion frmAdministracion;
 
+        public static FrmDocumentos frmDocumentos;
 
         [STAThread]
         static void Main()

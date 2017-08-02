@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Capa_de_Presentacion
 {
-    public partial class FrmReportes : DevComponents.DotNetBar.Metro.MetroForm
+    public partial class FrmReportesVentas : DevComponents.DotNetBar.Metro.MetroForm
     {
-        public FrmReportes()
+        public FrmReportesVentas()
         {
             InitializeComponent();
         }

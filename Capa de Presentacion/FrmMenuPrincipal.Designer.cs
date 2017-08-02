@@ -254,6 +254,7 @@
             this.btnDocumentos.Size = new System.Drawing.Size(128, 114);
             this.btnDocumentos.TabIndex = 19;
             this.btnDocumentos.UseVisualStyleBackColor = true;
+            this.btnDocumentos.Click += new System.EventHandler(this.btnDocumentos_Click);
             // 
             // label11
             // 

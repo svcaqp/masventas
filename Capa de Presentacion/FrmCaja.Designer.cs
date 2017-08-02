@@ -35,11 +35,11 @@
             this.lbl_usuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbox_egresos = new System.Windows.Forms.GroupBox();
-            this.txt_descripcion = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_monto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_monto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.lbl_fecha = new System.Windows.Forms.Label();
             this.lbl_hora = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -132,28 +132,15 @@
             this.gbox_egresos.TabStop = false;
             this.gbox_egresos.Text = "Salida de dinero";
             // 
-            // txt_descripcion
+            // button1
             // 
-            this.txt_descripcion.Location = new System.Drawing.Point(26, 39);
-            this.txt_descripcion.Name = "txt_descripcion";
-            this.txt_descripcion.Size = new System.Drawing.Size(195, 20);
-            this.txt_descripcion.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Descripción *";
-            // 
-            // txt_monto
-            // 
-            this.txt_monto.Location = new System.Drawing.Point(26, 86);
-            this.txt_monto.Name = "txt_monto";
-            this.txt_monto.Size = new System.Drawing.Size(195, 20);
-            this.txt_monto.TabIndex = 2;
+            this.button1.Location = new System.Drawing.Point(61, 132);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 38);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Registrar Egreso";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -164,15 +151,28 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Monto(s/.) *";
             // 
-            // button1
+            // txt_monto
             // 
-            this.button1.Location = new System.Drawing.Point(61, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Registrar Egreso";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txt_monto.Location = new System.Drawing.Point(26, 86);
+            this.txt_monto.Name = "txt_monto";
+            this.txt_monto.Size = new System.Drawing.Size(195, 20);
+            this.txt_monto.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Descripción *";
+            // 
+            // txt_descripcion
+            // 
+            this.txt_descripcion.Location = new System.Drawing.Point(26, 39);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.Size = new System.Drawing.Size(195, 20);
+            this.txt_descripcion.TabIndex = 0;
             // 
             // lbl_fecha
             // 
@@ -217,6 +217,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Caja";
             this.Activated += new System.EventHandler(this.FrmCaja_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCaja_FormClosing);
             this.Load += new System.EventHandler(this.FrmCaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbox_egresos.ResumeLayout(false);

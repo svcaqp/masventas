@@ -100,6 +100,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DemoPracticaDocumentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaDocumentos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DemoPracticaEmpleados.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,6 +130,12 @@
     </Compile>
     <Compile Include="FrmCaja.Designer.cs">
       <DependentUpon>FrmCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDocumentos.Designer.cs">
+      <DependentUpon>FrmDocumentos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditarProducto.cs">
       <SubType>Form</SubType>
@@ -228,11 +239,11 @@
     <Compile Include="FrmRegistroVentas.Designer.cs">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmReportes.cs">
+    <Compile Include="FrmReportesVentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReportes.Designer.cs">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
+    <Compile Include="FrmReportesVentas.Designer.cs">
+      <DependentUpon>FrmReportesVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPreferencias.cs">
       <SubType>Form</SubType>
@@ -242,6 +253,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmReportesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportesMenu.Designer.cs">
+      <DependentUpon>FrmReportesMenu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmAbrirCaja.resx">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCaja.resx">
       <DependentUpon>FrmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDocumentos.resx">
+      <DependentUpon>FrmDocumentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCargos.resx">
       <DependentUpon>FrmListadoCargos.cs</DependentUpon>
@@ -299,8 +319,8 @@
     <EmbeddedResource Include="FrmRegistroVentas.resx">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmReportes.resx">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReportesVentas.resx">
+      <DependentUpon>FrmReportesVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPreferencias.resx">
       <DependentUpon>FrmPreferencias.cs</DependentUpon>
@@ -312,6 +332,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportesMenu.resx">
+      <DependentUpon>FrmReportesMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportVentas.rdlc" />
     <EmbeddedResource Include="ReportProductos.rdlc" />
@@ -347,6 +370,17 @@
     </None>
     <None Include="DemoPracticaClientes.xss">
       <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDocumentos.xsc">
+      <DependentUpon>DemoPracticaDocumentos.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaDocumentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaDocumentos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaDocumentos.xss">
+      <DependentUpon>DemoPracticaDocumentos.xsd</DependentUpon>
     </None>
     <None Include="DemoPracticaEmpleados.xsc">
       <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
