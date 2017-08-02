@@ -48,6 +48,7 @@
             this.button2.Size = new System.Drawing.Size(87, 96);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_reporteventas
             // 
@@ -120,7 +121,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Reporte Vencimiento";
             // 
-            // ReportesMenu
+            // FrmReportesMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +135,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_reporteventas);
             this.DoubleBuffered = true;
-            this.Name = "ReportesMenu";
+            this.Name = "FrmReportesMenu";
             this.Text = "ReportesMenu";
             this.ResumeLayout(false);
             this.PerformLayout();

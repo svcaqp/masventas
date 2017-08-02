@@ -20,17 +20,17 @@ namespace Capa_de_Presentacion {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DemoPracticaReporteVentas")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DemoPracticaKardex")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DemoPracticaReporteVentas : global::System.Data.DataSet {
+    public partial class DemoPracticaKardex : global::System.Data.DataSet {
         
-        private ReporteVentasDataTable tableReporteVentas;
+        private ReporteKardexDataTable tableReporteKardex;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DemoPracticaReporteVentas() {
+        public DemoPracticaKardex() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Capa_de_Presentacion {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DemoPracticaReporteVentas(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DemoPracticaKardex(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Capa_de_Presentacion {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["ReporteVentas"] != null)) {
-                    base.Tables.Add(new ReporteVentasDataTable(ds.Tables["ReporteVentas"]));
+                if ((ds.Tables["ReporteKardex"] != null)) {
+                    base.Tables.Add(new ReporteKardexDataTable(ds.Tables["ReporteKardex"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Capa_de_Presentacion {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ReporteVentasDataTable ReporteVentas {
+        public ReporteKardexDataTable ReporteKardex {
             get {
-                return this.tableReporteVentas;
+                return this.tableReporteKardex;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Capa_de_Presentacion {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DemoPracticaReporteVentas cln = ((DemoPracticaReporteVentas)(base.Clone()));
+            DemoPracticaKardex cln = ((DemoPracticaKardex)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Capa_de_Presentacion {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["ReporteVentas"] != null)) {
-                    base.Tables.Add(new ReporteVentasDataTable(ds.Tables["ReporteVentas"]));
+                if ((ds.Tables["ReporteKardex"] != null)) {
+                    base.Tables.Add(new ReporteKardexDataTable(ds.Tables["ReporteKardex"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Capa_de_Presentacion {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableReporteVentas = ((ReporteVentasDataTable)(base.Tables["ReporteVentas"]));
+            this.tableReporteKardex = ((ReporteKardexDataTable)(base.Tables["ReporteKardex"]));
             if ((initTable == true)) {
-                if ((this.tableReporteVentas != null)) {
-                    this.tableReporteVentas.InitVars();
+                if ((this.tableReporteKardex != null)) {
+                    this.tableReporteKardex.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Capa_de_Presentacion {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DemoPracticaReporteVentas";
+            this.DataSetName = "DemoPracticaKardex";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DemoPracticaReporteVentas.xsd";
+            this.Namespace = "http://tempuri.org/DemoPracticaKardex.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableReporteVentas = new ReporteVentasDataTable();
-            base.Tables.Add(this.tableReporteVentas);
+            this.tableReporteKardex = new ReporteKardexDataTable();
+            base.Tables.Add(this.tableReporteKardex);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeReporteVentas() {
+        private bool ShouldSerializeReporteKardex() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Capa_de_Presentacion {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DemoPracticaReporteVentas ds = new DemoPracticaReporteVentas();
+            DemoPracticaKardex ds = new DemoPracticaKardex();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,35 +270,33 @@ namespace Capa_de_Presentacion {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void ReporteVentasRowChangeEventHandler(object sender, ReporteVentasRowChangeEvent e);
+        public delegate void ReporteKardexRowChangeEventHandler(object sender, ReporteKardexRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ReporteVentasDataTable : global::System.Data.TypedTableBase<ReporteVentasRow> {
+        public partial class ReporteKardexDataTable : global::System.Data.TypedTableBase<ReporteKardexRow> {
             
-            private global::System.Data.DataColumn columnIdVenta;
-            
-            private global::System.Data.DataColumn columnIdEmpleado;
-            
-            private global::System.Data.DataColumn columnIdCliente;
-            
-            private global::System.Data.DataColumn columnSerie;
-            
-            private global::System.Data.DataColumn columnNroDocumento;
+            private global::System.Data.DataColumn columnFechaRegistro;
             
             private global::System.Data.DataColumn columnTipoDocumento;
             
-            private global::System.Data.DataColumn columnFechaVenta;
+            private global::System.Data.DataColumn columnCantidad;
             
             private global::System.Data.DataColumn columnTotal;
             
+            private global::System.Data.DataColumn columnTipo;
+            
+            private global::System.Data.DataColumn columnFisico;
+            
+            private global::System.Data.DataColumn columnSaldo;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasDataTable() {
-                this.TableName = "ReporteVentas";
+            public ReporteKardexDataTable() {
+                this.TableName = "ReporteKardex";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -306,7 +304,7 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ReporteVentasDataTable(global::System.Data.DataTable table) {
+            internal ReporteKardexDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -323,48 +321,16 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected ReporteVentasDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ReporteKardexDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IdVentaColumn {
+            public global::System.Data.DataColumn FechaRegistroColumn {
                 get {
-                    return this.columnIdVenta;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IdEmpleadoColumn {
-                get {
-                    return this.columnIdEmpleado;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IdClienteColumn {
-                get {
-                    return this.columnIdCliente;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SerieColumn {
-                get {
-                    return this.columnSerie;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NroDocumentoColumn {
-                get {
-                    return this.columnNroDocumento;
+                    return this.columnFechaRegistro;
                 }
             }
             
@@ -378,9 +344,9 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FechaVentaColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnFechaVenta;
+                    return this.columnCantidad;
                 }
             }
             
@@ -389,6 +355,30 @@ namespace Capa_de_Presentacion {
             public global::System.Data.DataColumn TotalColumn {
                 get {
                     return this.columnTotal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TipoColumn {
+                get {
+                    return this.columnTipo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FisicoColumn {
+                get {
+                    return this.columnFisico;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SaldoColumn {
+                get {
+                    return this.columnSaldo;
                 }
             }
             
@@ -403,59 +393,51 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRow this[int index] {
+            public ReporteKardexRow this[int index] {
                 get {
-                    return ((ReporteVentasRow)(this.Rows[index]));
+                    return ((ReporteKardexRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ReporteVentasRowChangeEventHandler ReporteVentasRowChanging;
+            public event ReporteKardexRowChangeEventHandler ReporteKardexRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ReporteVentasRowChangeEventHandler ReporteVentasRowChanged;
+            public event ReporteKardexRowChangeEventHandler ReporteKardexRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ReporteVentasRowChangeEventHandler ReporteVentasRowDeleting;
+            public event ReporteKardexRowChangeEventHandler ReporteKardexRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ReporteVentasRowChangeEventHandler ReporteVentasRowDeleted;
+            public event ReporteKardexRowChangeEventHandler ReporteKardexRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddReporteVentasRow(ReporteVentasRow row) {
+            public void AddReporteKardexRow(ReporteKardexRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRow AddReporteVentasRow(int IdEmpleado, int IdCliente, string Serie, string NroDocumento, string TipoDocumento, System.DateTime FechaVenta, decimal Total) {
-                ReporteVentasRow rowReporteVentasRow = ((ReporteVentasRow)(this.NewRow()));
+            public ReporteKardexRow AddReporteKardexRow(System.DateTime FechaRegistro, string TipoDocumento, int Cantidad, double Total, string Tipo, int Fisico, decimal Saldo) {
+                ReporteKardexRow rowReporteKardexRow = ((ReporteKardexRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        IdEmpleado,
-                        IdCliente,
-                        Serie,
-                        NroDocumento,
+                        FechaRegistro,
                         TipoDocumento,
-                        FechaVenta,
-                        Total};
-                rowReporteVentasRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowReporteVentasRow);
-                return rowReporteVentasRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRow FindByIdVenta(int IdVenta) {
-                return ((ReporteVentasRow)(this.Rows.Find(new object[] {
-                            IdVenta})));
+                        Cantidad,
+                        Total,
+                        Tipo,
+                        Fisico,
+                        Saldo};
+                rowReporteKardexRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowReporteKardexRow);
+                return rowReporteKardexRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ReporteVentasDataTable cln = ((ReporteVentasDataTable)(base.Clone()));
+                ReporteKardexDataTable cln = ((ReporteKardexDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -463,82 +445,73 @@ namespace Capa_de_Presentacion {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ReporteVentasDataTable();
+                return new ReporteKardexDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnIdVenta = base.Columns["IdVenta"];
-                this.columnIdEmpleado = base.Columns["IdEmpleado"];
-                this.columnIdCliente = base.Columns["IdCliente"];
-                this.columnSerie = base.Columns["Serie"];
-                this.columnNroDocumento = base.Columns["NroDocumento"];
+                this.columnFechaRegistro = base.Columns["FechaRegistro"];
                 this.columnTipoDocumento = base.Columns["TipoDocumento"];
-                this.columnFechaVenta = base.Columns["FechaVenta"];
+                this.columnCantidad = base.Columns["Cantidad"];
                 this.columnTotal = base.Columns["Total"];
+                this.columnTipo = base.Columns["Tipo"];
+                this.columnFisico = base.Columns["Fisico"];
+                this.columnSaldo = base.Columns["Saldo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnIdVenta = new global::System.Data.DataColumn("IdVenta", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdVenta);
-                this.columnIdEmpleado = new global::System.Data.DataColumn("IdEmpleado", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdEmpleado);
-                this.columnIdCliente = new global::System.Data.DataColumn("IdCliente", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdCliente);
-                this.columnSerie = new global::System.Data.DataColumn("Serie", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSerie);
-                this.columnNroDocumento = new global::System.Data.DataColumn("NroDocumento", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNroDocumento);
+                this.columnFechaRegistro = new global::System.Data.DataColumn("FechaRegistro", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFechaRegistro);
                 this.columnTipoDocumento = new global::System.Data.DataColumn("TipoDocumento", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTipoDocumento);
-                this.columnFechaVenta = new global::System.Data.DataColumn("FechaVenta", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFechaVenta);
-                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotal);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnIdVenta}, true));
-                this.columnIdVenta.AutoIncrement = true;
-                this.columnIdVenta.AllowDBNull = false;
-                this.columnIdVenta.ReadOnly = true;
-                this.columnIdVenta.Unique = true;
-                this.columnIdEmpleado.AllowDBNull = false;
-                this.columnIdCliente.AllowDBNull = false;
-                this.columnSerie.AllowDBNull = false;
-                this.columnSerie.MaxLength = 5;
-                this.columnNroDocumento.AllowDBNull = false;
-                this.columnNroDocumento.MaxLength = 7;
+                this.columnTipo = new global::System.Data.DataColumn("Tipo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTipo);
+                this.columnFisico = new global::System.Data.DataColumn("Fisico", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFisico);
+                this.columnSaldo = new global::System.Data.DataColumn("Saldo", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaldo);
+                this.columnFechaRegistro.ReadOnly = true;
+                this.columnTipoDocumento.ReadOnly = true;
                 this.columnTipoDocumento.MaxLength = 7;
-                this.columnFechaVenta.AllowDBNull = false;
-                this.columnTotal.AllowDBNull = false;
+                this.columnCantidad.ReadOnly = true;
+                this.columnTotal.ReadOnly = true;
+                this.columnTipo.ReadOnly = true;
+                this.columnTipo.MaxLength = 7;
+                this.columnFisico.ReadOnly = true;
+                this.columnSaldo.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRow NewReporteVentasRow() {
-                return ((ReporteVentasRow)(this.NewRow()));
+            public ReporteKardexRow NewReporteKardexRow() {
+                return ((ReporteKardexRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ReporteVentasRow(builder);
+                return new ReporteKardexRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ReporteVentasRow);
+                return typeof(ReporteKardexRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ReporteVentasRowChanged != null)) {
-                    this.ReporteVentasRowChanged(this, new ReporteVentasRowChangeEvent(((ReporteVentasRow)(e.Row)), e.Action));
+                if ((this.ReporteKardexRowChanged != null)) {
+                    this.ReporteKardexRowChanged(this, new ReporteKardexRowChangeEvent(((ReporteKardexRow)(e.Row)), e.Action));
                 }
             }
             
@@ -546,8 +519,8 @@ namespace Capa_de_Presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ReporteVentasRowChanging != null)) {
-                    this.ReporteVentasRowChanging(this, new ReporteVentasRowChangeEvent(((ReporteVentasRow)(e.Row)), e.Action));
+                if ((this.ReporteKardexRowChanging != null)) {
+                    this.ReporteKardexRowChanging(this, new ReporteKardexRowChangeEvent(((ReporteKardexRow)(e.Row)), e.Action));
                 }
             }
             
@@ -555,8 +528,8 @@ namespace Capa_de_Presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ReporteVentasRowDeleted != null)) {
-                    this.ReporteVentasRowDeleted(this, new ReporteVentasRowChangeEvent(((ReporteVentasRow)(e.Row)), e.Action));
+                if ((this.ReporteKardexRowDeleted != null)) {
+                    this.ReporteKardexRowDeleted(this, new ReporteKardexRowChangeEvent(((ReporteKardexRow)(e.Row)), e.Action));
                 }
             }
             
@@ -564,14 +537,14 @@ namespace Capa_de_Presentacion {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ReporteVentasRowDeleting != null)) {
-                    this.ReporteVentasRowDeleting(this, new ReporteVentasRowChangeEvent(((ReporteVentasRow)(e.Row)), e.Action));
+                if ((this.ReporteKardexRowDeleting != null)) {
+                    this.ReporteKardexRowDeleting(this, new ReporteKardexRowChangeEvent(((ReporteKardexRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveReporteVentasRow(ReporteVentasRow row) {
+            public void RemoveReporteKardexRow(ReporteKardexRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -580,7 +553,7 @@ namespace Capa_de_Presentacion {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DemoPracticaReporteVentas ds = new DemoPracticaReporteVentas();
+                DemoPracticaKardex ds = new DemoPracticaKardex();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -598,7 +571,7 @@ namespace Capa_de_Presentacion {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ReporteVentasDataTable";
+                attribute2.FixedValue = "ReporteKardexDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -642,69 +615,30 @@ namespace Capa_de_Presentacion {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ReporteVentasRow : global::System.Data.DataRow {
+        public partial class ReporteKardexRow : global::System.Data.DataRow {
             
-            private ReporteVentasDataTable tableReporteVentas;
+            private ReporteKardexDataTable tableReporteKardex;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ReporteVentasRow(global::System.Data.DataRowBuilder rb) : 
+            internal ReporteKardexRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableReporteVentas = ((ReporteVentasDataTable)(this.Table));
+                this.tableReporteKardex = ((ReporteKardexDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int IdVenta {
+            public System.DateTime FechaRegistro {
                 get {
-                    return ((int)(this[this.tableReporteVentas.IdVentaColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tableReporteKardex.FechaRegistroColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FechaRegistro\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableReporteVentas.IdVentaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int IdEmpleado {
-                get {
-                    return ((int)(this[this.tableReporteVentas.IdEmpleadoColumn]));
-                }
-                set {
-                    this[this.tableReporteVentas.IdEmpleadoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int IdCliente {
-                get {
-                    return ((int)(this[this.tableReporteVentas.IdClienteColumn]));
-                }
-                set {
-                    this[this.tableReporteVentas.IdClienteColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Serie {
-                get {
-                    return ((string)(this[this.tableReporteVentas.SerieColumn]));
-                }
-                set {
-                    this[this.tableReporteVentas.SerieColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NroDocumento {
-                get {
-                    return ((string)(this[this.tableReporteVentas.NroDocumentoColumn]));
-                }
-                set {
-                    this[this.tableReporteVentas.NroDocumentoColumn] = value;
+                    this[this.tableReporteKardex.FechaRegistroColumn] = value;
                 }
             }
             
@@ -713,49 +647,179 @@ namespace Capa_de_Presentacion {
             public string TipoDocumento {
                 get {
                     try {
-                        return ((string)(this[this.tableReporteVentas.TipoDocumentoColumn]));
+                        return ((string)(this[this.tableReporteKardex.TipoDocumentoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TipoDocumento\' de la tabla \'ReporteVentas\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TipoDocumento\' de la tabla \'ReporteKardex\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReporteVentas.TipoDocumentoColumn] = value;
+                    this[this.tableReporteKardex.TipoDocumentoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime FechaVenta {
+            public int Cantidad {
                 get {
-                    return ((global::System.DateTime)(this[this.tableReporteVentas.FechaVentaColumn]));
+                    try {
+                        return ((int)(this[this.tableReporteKardex.CantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableReporteVentas.FechaVentaColumn] = value;
+                    this[this.tableReporteKardex.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal Total {
+            public double Total {
                 get {
-                    return ((decimal)(this[this.tableReporteVentas.TotalColumn]));
+                    try {
+                        return ((double)(this[this.tableReporteKardex.TotalColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Total\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableReporteVentas.TotalColumn] = value;
+                    this[this.tableReporteKardex.TotalColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Tipo {
+                get {
+                    try {
+                        return ((string)(this[this.tableReporteKardex.TipoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Tipo\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReporteKardex.TipoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Fisico {
+                get {
+                    try {
+                        return ((int)(this[this.tableReporteKardex.FisicoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Fisico\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReporteKardex.FisicoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Saldo {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableReporteKardex.SaldoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Saldo\' de la tabla \'ReporteKardex\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableReporteKardex.SaldoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFechaRegistroNull() {
+                return this.IsNull(this.tableReporteKardex.FechaRegistroColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFechaRegistroNull() {
+                this[this.tableReporteKardex.FechaRegistroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTipoDocumentoNull() {
-                return this.IsNull(this.tableReporteVentas.TipoDocumentoColumn);
+                return this.IsNull(this.tableReporteKardex.TipoDocumentoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetTipoDocumentoNull() {
-                this[this.tableReporteVentas.TipoDocumentoColumn] = global::System.Convert.DBNull;
+                this[this.tableReporteKardex.TipoDocumentoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableReporteKardex.CantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCantidadNull() {
+                this[this.tableReporteKardex.CantidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotalNull() {
+                return this.IsNull(this.tableReporteKardex.TotalColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotalNull() {
+                this[this.tableReporteKardex.TotalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTipoNull() {
+                return this.IsNull(this.tableReporteKardex.TipoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTipoNull() {
+                this[this.tableReporteKardex.TipoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFisicoNull() {
+                return this.IsNull(this.tableReporteKardex.FisicoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFisicoNull() {
+                this[this.tableReporteKardex.FisicoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSaldoNull() {
+                return this.IsNull(this.tableReporteKardex.SaldoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSaldoNull() {
+                this[this.tableReporteKardex.SaldoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -763,22 +827,22 @@ namespace Capa_de_Presentacion {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class ReporteVentasRowChangeEvent : global::System.EventArgs {
+        public class ReporteKardexRowChangeEvent : global::System.EventArgs {
             
-            private ReporteVentasRow eventRow;
+            private ReporteKardexRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRowChangeEvent(ReporteVentasRow row, global::System.Data.DataRowAction action) {
+            public ReporteKardexRowChangeEvent(ReporteKardexRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteVentasRow Row {
+            public ReporteKardexRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -794,7 +858,7 @@ namespace Capa_de_Presentacion {
         }
     }
 }
-namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
+namespace Capa_de_Presentacion.DemoPracticaKardexTableAdapters {
     
     
     /// <summary>
@@ -806,7 +870,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ReporteVentasTableAdapter : global::System.ComponentModel.Component {
+    public partial class ReporteKardexTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -820,7 +884,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ReporteVentasTableAdapter() {
+        public ReporteKardexTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -917,15 +981,14 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ReporteVentas";
-            tableMapping.ColumnMappings.Add("IdVenta", "IdVenta");
-            tableMapping.ColumnMappings.Add("IdEmpleado", "IdEmpleado");
-            tableMapping.ColumnMappings.Add("IdCliente", "IdCliente");
-            tableMapping.ColumnMappings.Add("Serie", "Serie");
-            tableMapping.ColumnMappings.Add("NroDocumento", "NroDocumento");
+            tableMapping.DataSetTable = "ReporteKardex";
+            tableMapping.ColumnMappings.Add("FechaRegistro", "FechaRegistro");
             tableMapping.ColumnMappings.Add("TipoDocumento", "TipoDocumento");
-            tableMapping.ColumnMappings.Add("FechaVenta", "FechaVenta");
+            tableMapping.ColumnMappings.Add("Cantidad", "Cantidad");
             tableMapping.ColumnMappings.Add("Total", "Total");
+            tableMapping.ColumnMappings.Add("Tipo", "Tipo");
+            tableMapping.ColumnMappings.Add("Fisico", "Fisico");
+            tableMapping.ColumnMappings.Add("Saldo", "Saldo");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -942,13 +1005,11 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.ReporteVentas";
+            this._commandCollection[0].CommandText = "dbo.ReporteKardex";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdEmpleado", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdCliente", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TipoDocumento", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FechaInicial", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdProducto", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FechaInicio", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FechaFinal", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -956,37 +1017,25 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DemoPracticaReporteVentas.ReporteVentasDataTable dataTable, global::System.Nullable<int> IdEmpleado, global::System.Nullable<int> IdCliente, string TipoDocumento, global::System.Nullable<global::System.DateTime> FechaInicial, global::System.Nullable<global::System.DateTime> FechaFinal) {
+        public virtual int Fill(DemoPracticaKardex.ReporteKardexDataTable dataTable, global::System.Nullable<int> IdProducto, global::System.Nullable<global::System.DateTime> FechaInicio, global::System.Nullable<global::System.DateTime> FechaFinal) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((IdEmpleado.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(IdEmpleado.Value));
+            if ((IdProducto.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(IdProducto.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((IdCliente.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(IdCliente.Value));
+            if ((FechaInicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(FechaInicio.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((TipoDocumento == null)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(TipoDocumento));
-            }
-            if ((FechaInicial.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(FechaInicial.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
             if ((FechaFinal.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((System.DateTime)(FechaFinal.Value));
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(FechaFinal.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -999,39 +1048,27 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DemoPracticaReporteVentas.ReporteVentasDataTable GetData(global::System.Nullable<int> IdEmpleado, global::System.Nullable<int> IdCliente, string TipoDocumento, global::System.Nullable<global::System.DateTime> FechaInicial, global::System.Nullable<global::System.DateTime> FechaFinal) {
+        public virtual DemoPracticaKardex.ReporteKardexDataTable GetData(global::System.Nullable<int> IdProducto, global::System.Nullable<global::System.DateTime> FechaInicio, global::System.Nullable<global::System.DateTime> FechaFinal) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((IdEmpleado.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(IdEmpleado.Value));
+            if ((IdProducto.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(IdProducto.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((IdCliente.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(IdCliente.Value));
+            if ((FechaInicio.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((System.DateTime)(FechaInicio.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((TipoDocumento == null)) {
+            if ((FechaFinal.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((System.DateTime)(FechaFinal.Value));
+            }
+            else {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(TipoDocumento));
-            }
-            if ((FechaInicial.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((System.DateTime)(FechaInicial.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((FechaFinal.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((System.DateTime)(FechaFinal.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            DemoPracticaReporteVentas.ReporteVentasDataTable dataTable = new DemoPracticaReporteVentas.ReporteVentasDataTable();
+            DemoPracticaKardex.ReporteKardexDataTable dataTable = new DemoPracticaKardex.ReporteKardexDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1105,7 +1142,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DemoPracticaReporteVentas dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DemoPracticaKardex dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1115,7 +1152,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DemoPracticaReporteVentas dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DemoPracticaKardex dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1125,7 +1162,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DemoPracticaReporteVentas dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DemoPracticaKardex dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1159,7 +1196,7 @@ namespace Capa_de_Presentacion.DemoPracticaReporteVentasTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DemoPracticaReporteVentas dataSet) {
+        public virtual int UpdateAll(DemoPracticaKardex dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

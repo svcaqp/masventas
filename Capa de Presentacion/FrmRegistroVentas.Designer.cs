@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -178,7 +178,7 @@
             this.rbnNotaVenta.TabStop = true;
             this.rbnNotaVenta.Text = "Nota de Venta";
             this.rbnNotaVenta.UseVisualStyleBackColor = true;
-            this.rbnNotaVenta.CheckedChanged += new System.EventHandler(this.rbnNotaVenta_CheckedChanged);
+            this.rbnNotaVenta.CheckedChanged += new System.EventHandler(this.rbnFactura_CheckedChanged);
             // 
             // rbnFactura
             // 
@@ -202,7 +202,7 @@
             this.rbnBoleta.TabStop = true;
             this.rbnBoleta.Text = "Boleta";
             this.rbnBoleta.UseVisualStyleBackColor = true;
-            this.rbnBoleta.CheckedChanged += new System.EventHandler(this.rbnBoleta_CheckedChanged);
+            this.rbnBoleta.CheckedChanged += new System.EventHandler(this.rbnFactura_CheckedChanged);
             // 
             // label4
             // 
@@ -373,7 +373,7 @@
             this.txtIgv.Size = new System.Drawing.Size(71, 22);
             this.txtIgv.TabIndex = 13;
             this.txtIgv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtIgv.TextChanged += new System.EventHandler(this.txtIgv_TextChanged_1);
+           
             // 
             // label12
             // 
@@ -432,7 +432,7 @@
             this.txtPVenta.Size = new System.Drawing.Size(71, 22);
             this.txtPVenta.TabIndex = 7;
             this.txtPVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtPVenta.TextChanged += new System.EventHandler(this.txtPVenta_TextChanged);
+    
             // 
             // label9
             // 
@@ -481,7 +481,7 @@
             this.txtDescripcion.Size = new System.Drawing.Size(341, 22);
             this.txtDescripcion.TabIndex = 2;
             this.txtDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
+ 
             // 
             // label7
             // 
@@ -519,7 +519,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(625, 218);
             this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+ 
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // IdD
@@ -546,9 +546,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column4.HeaderText = "P. UNIT.";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -556,9 +556,9 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column3.HeaderText = "IMPORTE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -585,7 +585,7 @@
             this.txtIdVenta.Name = "txtIdVenta";
             this.txtIdVenta.Size = new System.Drawing.Size(51, 20);
             this.txtIdVenta.TabIndex = 17;
-            this.txtIdVenta.TextChanged += new System.EventHandler(this.txtIdVenta_TextChanged);
+
             // 
             // btnSalir
             // 
@@ -626,7 +626,7 @@
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(51, 20);
             this.txtIdProducto.TabIndex = 21;
-            this.txtIdProducto.TextChanged += new System.EventHandler(this.txtIdProducto_TextChanged);
+    
             // 
             // btnEliminarVenta
             // 

@@ -110,14 +110,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DemoPracticaReporteVentas.cs">
-      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DemoPracticaReporteVentas.Designer.cs">
+    <Compile Include="DemoPracticaKardex.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
+      <DependentUpon>DemoPracticaKardex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaVentas.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="FrmEditarProducto.Designer.cs">
       <DependentUpon>FrmEditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportesKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportesKardex.Designer.cs">
+      <DependentUpon>FrmReportesKardex.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmServer.cs">
       <SubType>Form</SubType>
@@ -319,6 +331,9 @@
     <EmbeddedResource Include="FrmRegistroVentas.resx">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportesKardex.resx">
+      <DependentUpon>FrmReportesKardex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReportesVentas.resx">
       <DependentUpon>FrmReportesVentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +351,7 @@
     <EmbeddedResource Include="FrmReportesMenu.resx">
       <DependentUpon>FrmReportesMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportKardex.rdlc" />
     <EmbeddedResource Include="ReportVentas.rdlc" />
     <EmbeddedResource Include="ReportProductos.rdlc" />
     <None Include="DataSetReporteProductos.xsc">
@@ -393,16 +409,38 @@
     <None Include="DemoPracticaEmpleados.xss">
       <DependentUpon>DemoPracticaEmpleados.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaReporteVentas.xsc">
-      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
+    <None Include="DemoPracticaKardex.xsc">
+      <DependentUpon>DemoPracticaKardex.xsd</DependentUpon>
     </None>
-    <None Include="DemoPracticaReporteVentas.xsd">
+    <None Include="DemoPracticaKardex.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DemoPracticaReporteVentas.Designer.cs</LastGenOutput>
+      <LastGenOutput>DemoPracticaKardex.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DemoPracticaReporteVentas.xss">
-      <DependentUpon>DemoPracticaReporteVentas.xsd</DependentUpon>
+    <None Include="DemoPracticaKardex.xss">
+      <DependentUpon>DemoPracticaKardex.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaProducto.xsc">
+      <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaProducto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaProducto.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaProducto.xss">
+      <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaVentas.xsc">
+      <DependentUpon>DemoPracticaVentas.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaVentas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaVentas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaVentas.xss">
+      <DependentUpon>DemoPracticaVentas.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

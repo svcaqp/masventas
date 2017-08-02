@@ -29,6 +29,7 @@ namespace Capa_de_Presentacion
 
         private void FrmReportes_Load(object sender, EventArgs e)
         {
+            
 
             clsPreferences preferences = new clsPreferences();
             Settings.Default["DemoPracticaConnectionString1"] = preferences.getConnectionString();
@@ -50,20 +51,14 @@ namespace Capa_de_Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // this.VentaTableAdapter.Fill(this.DemoPracticaDataSet.Venta, Convert.ToInt32(cbox_empleado.SelectedValue), date_inicial.Value.ToString().Substring(0, 10), date_final.Value.ToString().Substring(0, 10));
-        
-            string nota = "";
-            string boleta = "";
+          
             if(alldocumentos){
                 documento = "All";
             }
 
-            
-            
-
-            this.ReporteVentasTableAdapter.Fill(this.DemoPracticaReporteVentas.ReporteVentas
-                , IdEmpleado, IdCliente, documento,date_inicial.Value, date_final.Value);
+            this.ReporteVentasTableAdapter.Fill(this.DemoPracticaVentas.ReporteVentas, IdEmpleado, IdCliente, documento,date_inicial.Value, date_final.Value);
             this.reportViewer1.RefreshReport();
+            
         }
 
         private void cbox_todos_CheckedChanged(object sender, EventArgs e)

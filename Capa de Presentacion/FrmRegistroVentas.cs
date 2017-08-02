@@ -40,6 +40,8 @@ namespace Capa_de_Presentacion
                 txtIgv.Text = "18 %";
                 label12.Visible = true;
                 Program.DocumentoIdentidad = "";
+                Program.NombreCliente = "";
+                txtDatos.Text = Program.NombreCliente;
                 lblDocumento.Text = "RUC";
                 lblDocumento.Visible = true;
                 txtDocIdentidad.Text = "";
@@ -49,6 +51,8 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = true;
                 txtDireccion.Visible = true;
                 txtDatos.Text = "";
+                Program.Direccion = "";
+                txtDireccion.Text = "";
 
             }
             else if (rbnBoleta.Checked == true)
@@ -65,7 +69,7 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente";
+                Program.NombreCliente = "Cliente Particular";
 
                 Program.DocumentoIdentidad = "00000000";
                 txtDatos.Text = Program.NombreCliente;
@@ -87,7 +91,7 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente";
+                Program.NombreCliente = "Cliente Particular";
                 Program.DocumentoIdentidad = "00000000";
                 txtDatos.Text =  Program.NombreCliente;
                
@@ -96,6 +100,7 @@ namespace Capa_de_Presentacion
             GenerarNumeroComprobante();
         }
 
+        /*
         private void rbnBoleta_CheckedChanged(object sender, EventArgs e)
         {
            
@@ -130,7 +135,7 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente";
+                Program.NombreCliente = "Cliente particular";
                 Program.DocumentoIdentidad = "00000000";
                 txtDatos.Text = Program.NombreCliente;
              
@@ -149,7 +154,7 @@ namespace Capa_de_Presentacion
                 lblDireccion.Visible = false;
                 txtDireccion.Visible = false;
                 Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente";
+                Program.NombreCliente = "Cliente particular";
                 Program.DocumentoIdentidad = "00000000";
                 txtDatos.Text =  Program.NombreCliente;
                
@@ -157,6 +162,7 @@ namespace Capa_de_Presentacion
             LlenarGrilla();
             GenerarNumeroComprobante();
         }
+         */
         private void FrmVentas_Load(object sender, EventArgs e)
         {
             GenerarNumeroComprobante();
@@ -193,6 +199,12 @@ namespace Capa_de_Presentacion
 
         private void FrmVentas_Activated(object sender, EventArgs e)
         {
+            if (rbnNotaVenta.Checked || rbnBoleta.Checked)
+            {
+                Program.DocumentoIdentidad = "00000000";
+                Program.NombreCliente = "Cliente particular";
+                Program.IdCliente = 1;
+            }
             txtDocIdentidad.Text = Program.DocumentoIdentidad;
             txtDatos.Text =  Program.NombreCliente;
             txtDireccion.Text = Program.Direccion;
@@ -202,6 +214,7 @@ namespace Capa_de_Presentacion
             txtMarca.Text = Program.Marca;
             txtStock.Text = Program.Stock + "";
             txtPVenta.Text = Program.PrecioVenta + "";
+            
             
         }
 
@@ -354,6 +367,7 @@ namespace Capa_de_Presentacion
             Program.Stock = 0;
             Program.Marca = "";
             Program.PrecioVenta = 0;
+            Program.Unidad = "";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -501,18 +515,27 @@ namespace Capa_de_Presentacion
         private void Limpiar1()
         {
             txtIgv.Clear();
-            txtDocIdentidad.Clear();
-            txtDatos.Clear();
+            
+            
             txtUnidad.Clear();
             dataGridView1.Rows.Clear();
-            Program.IdCliente = 0;
+            
             txtIdProducto.Clear();
             rbnBoleta.Checked = true;
             rbnNotaVenta.Checked = true;
             rbnFactura.Checked = false;
-            Program.DocumentoIdentidad = "";
-            Program.Direccion = "";
-            Program.NombreCliente = "";
+            if (rbnFactura.Checked)
+            {
+                txtDatos.Clear();
+                txtDocIdentidad.Clear();
+                txtDireccion.Clear();
+                Program.DocumentoIdentidad = "";
+                Program.Direccion = "";
+                Program.NombreCliente = "";
+                Program.IdCliente = 0;
+            }
+
+            
             txtIgv.Clear();
             lst = new List<clsVenta>();
             GenerarNumeroComprobante();
@@ -553,35 +576,7 @@ namespace Capa_de_Presentacion
             ticket.PrintTicket("Star SP500 Tear Bar (SP512)"); //Nombre de la impresora de tickets
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIgv_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtIdVenta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIdProducto_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void btnEliminarVenta_Click(object sender, EventArgs e)
         {
@@ -589,15 +584,7 @@ namespace Capa_de_Presentacion
             LlenarGrilla();
         }
 
-        private void txtPVenta_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDescripcion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
@@ -609,6 +596,7 @@ namespace Capa_de_Presentacion
 
         }
 
+        /*
         private void rbnNotaVenta_CheckedChanged(object sender, EventArgs e)
         {
             txtDatos.Text = Program.NombreCliente;
@@ -640,29 +628,10 @@ namespace Capa_de_Presentacion
             
             GenerarNumeroComprobante();
 
-            //private void btnQuitar_Click(object sender, EventArgs e)
-            //{
-            //    DialogResult Resultado = new DialogResult();
-            //    Resultado = DevComponents.DotNetBar.MessageBoxEx.Show("¿Está Seguro Que Desea Quitar Este Producto.?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-            //       if(Resultado==DialogResult.OK){
-            //            try{	        
-            //                foreach (DataGridViewRow row in dataGridView1.Rows)
-            //                {
-            //                    Boolean Activo=Convert.ToBoolean(row.Cells["Eliminar"].Value);
-            //                    if(Activo){
-            //                        for (int i = 0; i < dataGridView1.RowCount; i++)
-            //                        {
-            //                            dataGridView1.Rows.RemoveAt(i);
-            //                        }
-            //                    }
-            //                }
-            //            }catch (Exception ex){
-            //                 DevComponents.DotNetBar.MessageBoxEx.Show(ex.Message);
-            //            }
-            //       }
-            //}
+            
 
         }
+         */
 
         private void txtDatos_TextChanged(object sender, EventArgs e)
         {
