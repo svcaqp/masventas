@@ -25,7 +25,7 @@ namespace Capa_de_Presentacion
         public FrmAlmacen()
         {
             InitializeComponent();
-            
+                      
         }
 
         private void FrmProductos_Load(object sender, EventArgs e)
@@ -259,7 +259,8 @@ namespace Capa_de_Presentacion
             try
             {
 
-                Program.nombreProduct = txtProducto.Text + " Marca : " + txtMarca.Text;
+                Program.nombreProduct = txtProducto.Text;
+                Program.marcaProduct = txtMarca.Text;
                 cat_index = cbxCategoria.SelectedIndex;
                 Program.frmOrdenCompra.Show();
                
@@ -446,7 +447,7 @@ namespace Capa_de_Presentacion
 
         private void btn_Eliminar_Click(object sender, EventArgs e)
         {
-            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Eliminar la categoria? \n Se eliminarán todos los productos asociados", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Seguro que desea Eliminar esta Categoria? \n Se borraran todos los productos asociados.", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
             {
 
                 clsCategoria categoria = new clsCategoria();
@@ -508,6 +509,31 @@ namespace Capa_de_Presentacion
             }
             LimpiarCategoria();
             ListarElementos();
+        }
+
+        private void cbox_ListaCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbox_ListaCategorias.Text = "";
+        }
+
+        private void cbxCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbox_ListaCategorias_Format(object sender, ListControlConvertEventArgs e)
+        {
+            cbox_ListaCategorias.Text = "";
+        }
+
+        private void gbox_nuevo_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
 

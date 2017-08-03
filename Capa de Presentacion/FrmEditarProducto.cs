@@ -279,7 +279,8 @@ namespace Capa_de_Presentacion
             {
 
                 this.TopMost = true;
-                Program.nombreProduct = txtProducto.Text + " Marca : " + txtMarca.Text;
+                Program.nombreProduct = txtProducto.Text;
+                Program.marcaProduct = txtMarca.Text;
                 cat_index = cbxCategoria.SelectedIndex;
 
                 Program.frmOrdenCompra.Focus();
@@ -334,7 +335,7 @@ namespace Capa_de_Presentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Eliminar el Producto?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está seguro que desea Eliminar el Producto?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
             {
                 P.IdP = Convert.ToInt32(txtIdP.Text);
                 
@@ -342,6 +343,11 @@ namespace Capa_de_Presentacion
                 Program.frmAlmacen.CargarListado();
                 this.Close();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

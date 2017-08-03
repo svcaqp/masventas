@@ -18,7 +18,8 @@ namespace Capa_de_Presentacion
         }
         private void FrmRegistroProductos_Load(object sender, EventArgs e)
         {
-            this.lbl_nombreProducto.Text = "Producto : " + Program.nombreProduct;
+            this.lbl_nombreProducto.Text = "PRODUCTO: " + Program.nombreProduct;
+            this.lbl_MarcaProducto.Text = "MARCA: " + Program.marcaProduct;
         }
 
         public void LimpiarOrdenCompra()
@@ -70,16 +71,19 @@ namespace Capa_de_Presentacion
             {
                 txt_nroDocumento.Text = "";
                 txt_nroDocumento.Enabled = false;
+                txt_nroDocumento.BackColor = System.Drawing.SystemColors.ControlLight;
             }
             else
             {
                 txt_nroDocumento.Enabled = true;
+                txt_nroDocumento.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             }
         }
 
         private void FrmOrdenCompra_Activated(object sender, EventArgs e)
         {
-            this.lbl_nombreProducto.Text = "Producto : " + Program.nombreProduct;
+            this.lbl_nombreProducto.Text = "PRODUCTO: " + Program.nombreProduct;
+            this.lbl_MarcaProducto.Text = "MARCA: " + Program.marcaProduct;
         }
 
         private void OnlyDouble_KeyDown(object sender, KeyEventArgs e)
@@ -119,6 +123,35 @@ namespace Capa_de_Presentacion
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_nroDocumento.Text="";
+            rbn_guia.Checked =true;
+            txtCantidad.Clear();
+            txtTotal.Clear();
+            date_Fecha.Value = DateTime.Now;            
+        }
+
+        private void txt_nroDocumento_EnabledChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lbl_nombreProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nroDocumento_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -47,6 +47,7 @@ namespace Capa_de_Presentacion
 
         public static clsCompra ordenCompra = new clsCompra();
         public static String nombreProduct;
+        public static String marcaProduct;
 
 
 

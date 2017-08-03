@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlmacen));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -70,38 +70,38 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.gbox_Categorias = new System.Windows.Forms.GroupBox();
-            this.cbox_ListaCategorias = new System.Windows.Forms.ComboBox();
-            this.btn_Eliminar = new System.Windows.Forms.Button();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.lbl_title = new System.Windows.Forms.Label();
+            this.cbox_ListaCategorias = new System.Windows.Forms.ComboBox();
+            this.btn_Eliminar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_IdCat = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbox_nuevo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.gbox_Categorias.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 29);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 16);
+            this.label1.Size = new System.Drawing.Size(179, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar Por Descripción o Marca:";
             // 
@@ -109,7 +109,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(9, 74);
+            this.panel1.Location = new System.Drawing.Point(9, 82);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(745, 507);
             this.panel1.TabIndex = 4;
@@ -130,7 +130,7 @@
             this.Teléfono,
             this.FechaVencimiento,
             this.Unidad});
-            this.dataGridView1.Location = new System.Drawing.Point(0, -1);
+            this.dataGridView1.Location = new System.Drawing.Point(0, -4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(744, 507);
             this.dataGridView1.TabIndex = 0;
@@ -170,9 +170,9 @@
             // 
             // Nombres
             // 
-            dataGridViewCellStyle25.Format = "C2";
-            dataGridViewCellStyle25.NullValue = null;
-            this.Nombres.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle4.Format = "C2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Nombres.DefaultCellStyle = dataGridViewCellStyle4;
             this.Nombres.HeaderText = "Precio Compra";
             this.Nombres.Name = "Nombres";
             this.Nombres.ReadOnly = true;
@@ -180,9 +180,9 @@
             // 
             // Dirección
             // 
-            dataGridViewCellStyle26.Format = "C2";
-            dataGridViewCellStyle26.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Dirección.DefaultCellStyle = dataGridViewCellStyle5;
             this.Dirección.HeaderText = "Precio Venta";
             this.Dirección.Name = "Dirección";
             this.Dirección.ReadOnly = true;
@@ -190,9 +190,9 @@
             // 
             // Teléfono
             // 
-            dataGridViewCellStyle27.Format = "N2";
-            dataGridViewCellStyle27.NullValue = null;
-            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle6;
             this.Teléfono.HeaderText = "Stock";
             this.Teléfono.Name = "Teléfono";
             this.Teléfono.ReadOnly = true;
@@ -212,17 +212,19 @@
             // gbox_nuevo
             // 
             this.gbox_nuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbox_nuevo.Controls.Add(this.pictureBox1);
             this.gbox_nuevo.Controls.Add(this.txtIdP);
             this.gbox_nuevo.Controls.Add(this.IdProduct);
             this.gbox_nuevo.Controls.Add(this.panel2);
             this.gbox_nuevo.Controls.Add(this.panel3);
             this.gbox_nuevo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbox_nuevo.Location = new System.Drawing.Point(771, 109);
+            this.gbox_nuevo.Location = new System.Drawing.Point(771, 68);
             this.gbox_nuevo.Name = "gbox_nuevo";
-            this.gbox_nuevo.Size = new System.Drawing.Size(472, 369);
+            this.gbox_nuevo.Size = new System.Drawing.Size(472, 425);
             this.gbox_nuevo.TabIndex = 6;
             this.gbox_nuevo.TabStop = false;
             this.gbox_nuevo.Text = "Registro de Productos";
+            this.gbox_nuevo.Enter += new System.EventHandler(this.gbox_nuevo_Enter);
             // 
             // txtIdP
             // 
@@ -247,7 +249,7 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Controls.Add(this.btnGuardar);
-            this.panel2.Location = new System.Drawing.Point(350, 28);
+            this.panel2.Location = new System.Drawing.Point(348, 81);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(111, 335);
             this.panel2.TabIndex = 1003;
@@ -255,7 +257,7 @@
             // btn_LimpiarRegistroProductos
             // 
             this.btn_LimpiarRegistroProductos.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_LimpiarRegistroProductos.Location = new System.Drawing.Point(7, 8);
+            this.btn_LimpiarRegistroProductos.Location = new System.Drawing.Point(7, 184);
             this.btn_LimpiarRegistroProductos.Name = "btn_LimpiarRegistroProductos";
             this.btn_LimpiarRegistroProductos.Size = new System.Drawing.Size(98, 66);
             this.btn_LimpiarRegistroProductos.TabIndex = 1000;
@@ -266,9 +268,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(7, 80);
+            this.button2.Location = new System.Drawing.Point(7, 9);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 66);
+            this.button2.Size = new System.Drawing.Size(98, 66);
             this.button2.TabIndex = 999;
             this.button2.Text = "&Sumar Stock";
             this.button2.UseVisualStyleBackColor = true;
@@ -290,7 +292,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(7, 256);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(96, 66);
+            this.btnGuardar.Size = new System.Drawing.Size(98, 66);
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -315,7 +317,7 @@
             this.panel3.Controls.Add(this.dateTimePicker1);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(16, 28);
+            this.panel3.Location = new System.Drawing.Point(14, 81);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(317, 335);
             this.panel3.TabIndex = 1002;
@@ -409,6 +411,7 @@
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(284, 22);
             this.cbxCategoria.TabIndex = 1;
+            this.cbxCategoria.SelectedIndexChanged += new System.EventHandler(this.cbxCategoria_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -474,12 +477,31 @@
             this.gbox_Categorias.Controls.Add(this.txtCategoria);
             this.gbox_Categorias.Controls.Add(this.button3);
             this.gbox_Categorias.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbox_Categorias.Location = new System.Drawing.Point(771, 499);
+            this.gbox_Categorias.Location = new System.Drawing.Point(771, 497);
             this.gbox_Categorias.Name = "gbox_Categorias";
             this.gbox_Categorias.Size = new System.Drawing.Size(472, 65);
             this.gbox_Categorias.TabIndex = 7;
             this.gbox_Categorias.TabStop = false;
             this.gbox_Categorias.Text = "Añadir Categoria";
+            // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoria.Location = new System.Drawing.Point(16, 26);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(317, 22);
+            this.txtCategoria.TabIndex = 1002;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(357, 20);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 32);
+            this.button3.TabIndex = 1003;
+            this.button3.Text = "&Añadir";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // cbox_ListaCategorias
             // 
@@ -501,35 +523,6 @@
             this.btn_Eliminar.UseVisualStyleBackColor = true;
             this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoria.Location = new System.Drawing.Point(16, 26);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(317, 22);
-            this.txtCategoria.TabIndex = 1002;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(357, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 32);
-            this.button3.TabIndex = 1003;
-            this.button3.Text = "&Añadir";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // lbl_title
-            // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(71, 25);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(91, 23);
-            this.lbl_title.TabIndex = 10;
-            this.lbl_title.Text = "ALMACEN";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Tomato;
@@ -537,23 +530,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(327, 17);
+            this.button1.Location = new System.Drawing.Point(327, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 38);
+            this.button1.Size = new System.Drawing.Size(143, 33);
             this.button1.TabIndex = 9;
             this.button1.Text = "Regresar ";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 51);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // label10
             // 
@@ -576,17 +559,6 @@
             this.txt_IdCat.TabIndex = 1007;
             this.txt_IdCat.Visible = false;
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.lbl_title);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Location = new System.Drawing.Point(771, 13);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(472, 72);
-            this.panel4.TabIndex = 1008;
-            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -597,14 +569,15 @@
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Location = new System.Drawing.Point(27, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 587);
+            this.groupBox1.Size = new System.Drawing.Size(738, 589);
             this.groupBox1.TabIndex = 1009;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtBuscarProducto
             // 
             this.txtBuscarProducto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarProducto.Location = new System.Drawing.Point(212, 28);
+            this.txtBuscarProducto.Location = new System.Drawing.Point(201, 28);
             this.txtBuscarProducto.Name = "txtBuscarProducto";
             this.txtBuscarProducto.Size = new System.Drawing.Size(510, 22);
             this.txtBuscarProducto.TabIndex = 1;
@@ -617,12 +590,42 @@
             this.groupBox2.Controls.Add(this.cbox_ListaCategorias);
             this.groupBox2.Controls.Add(this.btn_Eliminar);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(771, 570);
+            this.groupBox2.Location = new System.Drawing.Point(771, 568);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(472, 65);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eliminar Categoria";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(22, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(67, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.lbl_title);
+            this.panel4.Location = new System.Drawing.Point(771, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(472, 50);
+            this.panel4.TabIndex = 1008;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(10, 14);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(91, 23);
+            this.lbl_title.TabIndex = 10;
+            this.lbl_title.Text = "ALMACEN";
             // 
             // FrmAlmacen
             // 
@@ -654,12 +657,12 @@
             this.panel3.PerformLayout();
             this.gbox_Categorias.ResumeLayout(false);
             this.gbox_Categorias.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -672,9 +675,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox gbox_nuevo;
         private System.Windows.Forms.GroupBox gbox_Categorias;
-        private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button button2;
@@ -705,7 +706,6 @@
         public System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Button button3;
         public System.Windows.Forms.TextBox txt_IdCat;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBuscarProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -718,5 +718,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaVencimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unidad;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

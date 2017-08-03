@@ -165,6 +165,11 @@ namespace Capa_de_Presentacion
          */
         private void FrmVentas_Load(object sender, EventArgs e)
         {
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
+
             GenerarNumeroComprobante();
             GenerarIdVenta();
             GenerarSeriedeDocumento();
@@ -634,6 +639,16 @@ namespace Capa_de_Presentacion
          */
 
         private void txtDatos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
         {
 
         }                
