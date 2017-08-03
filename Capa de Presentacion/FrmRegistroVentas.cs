@@ -207,7 +207,7 @@ namespace Capa_de_Presentacion
             if (rbnNotaVenta.Checked || rbnBoleta.Checked)
             {
                 Program.DocumentoIdentidad = "00000000";
-                Program.NombreCliente = "Cliente particular";
+                Program.NombreCliente = "Cliente Particular";
                 Program.IdCliente = 1;
             }
             txtDocIdentidad.Text = Program.DocumentoIdentidad;
