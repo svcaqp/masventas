@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using DevComponents.DotNetBar;
-using CapaLogicaNegocio;
+using GestorComercial;
 
 namespace Capa_de_Presentacion
 {

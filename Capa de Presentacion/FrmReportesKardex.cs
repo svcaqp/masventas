@@ -1,5 +1,6 @@
 ﻿using Capa_de_Presentacion.Properties;
-using CapaLogicaNegocio;
+using GestorComercial;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,7 @@ namespace Capa_de_Presentacion
 
         private void FrmReportes_Load(object sender, EventArgs e)
         {
+
            
       
 
@@ -49,7 +51,11 @@ namespace Capa_de_Presentacion
             IdProducto = (int)cbox_productos.SelectedValue;
             
             this.ReporteKardexTableAdapter.Fill(this.DemoPracticaKardex.ReporteKardex, IdProducto, date_inicial.Value, date_final.Value);
-           
+
+            ReportParameter[] parameters = new ReportParameter[2];
+            parameters[0] = new ReportParameter("DiaInicio", date_final.Value.ToString().Substring(0,10));
+            parameters[1] = new ReportParameter("DiaFin", date_final.Value.ToString().Substring(0, 10));
+            this.reportViewer1.LocalReport.SetParameters(parameters);
             this.reportViewer1.RefreshReport();
             
         }

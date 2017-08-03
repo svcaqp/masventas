@@ -63,7 +63,7 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Fisico" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFisico" msprop:Generator_ColumnPropNameInRow="Fisico" msprop:Generator_ColumnPropNameInTable="FisicoColumn" msprop:Generator_UserColumnName="Fisico" type="xs:int" minOccurs="0" />
-              <xs:element name="Saldo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Saldo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSaldo" msprop:Generator_ColumnPropNameInRow="Saldo" msprop:Generator_ColumnPropNameInTable="SaldoColumn" msprop:Generator_UserColumnName="Saldo" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

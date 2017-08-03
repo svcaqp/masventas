@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CapaEnlaceDatos.Properties {
+namespace GestorComercial.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

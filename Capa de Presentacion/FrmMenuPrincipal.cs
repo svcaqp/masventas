@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaLogicaNegocio;
+using GestorComercial;
 using DevComponents.DotNetBar;
 using Capa_de_Presentacion.Properties;
 

@@ -1,5 +1,5 @@
 ﻿using Capa_de_Presentacion.Properties;
-using CapaLogicaNegocio;
+using GestorComercial;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
