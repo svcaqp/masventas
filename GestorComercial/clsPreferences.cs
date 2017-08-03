@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using CapaEnlaceDatos;
 
-namespace CapaLogicaNegocio
+
+namespace GestorComercial
 {
     public class clsPreferences
     {
         private clsCredencial credenciales = new clsCredencial();
         private bool statusConnection = false;
-        public string message="";
+        public string message = "";
         public clsPreferences()
         {
         }
@@ -53,8 +53,8 @@ namespace CapaLogicaNegocio
         public void SaveSettings()
         {
 
-                credenciales.Save();
-                
+            credenciales.Save();
+
         }
 
         public bool getConnection()
@@ -67,7 +67,7 @@ namespace CapaLogicaNegocio
             }
             catch (Exception e)
             {
-                Console.Write("Error getConnection :"+ e.Message);
+                Console.Write("Error getConnection :" + e.Message);
                 this.message = e.Message;
                 statusConnection = false;
                 manejador.Desconectar();

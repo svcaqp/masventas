@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-using CapaEnlaceDatos;
 
-namespace CapaLogicaNegocio
+
+namespace GestorComercial
 {
     public class clsCliente
     {
@@ -21,50 +21,57 @@ namespace CapaLogicaNegocio
         private String m_Telefono;
 
 
-        public String Dni{
+        public String Dni
+        {
             get { return m_Dni; }
             set { m_Dni = value; }
         }
 
 
-        public String Nombres{
+        public String Nombres
+        {
             get { return m_Nombres; }
             set { m_Nombres = value; }
         }
 
-        public String Telefono{
+        public String Telefono
+        {
             get { return m_Telefono; }
             set { m_Telefono = value; }
         }
 
-        public String Direccion{
+        public String Direccion
+        {
             get { return m_Direccion; }
             set { m_Direccion = value; }
         }
 
-        public DataTable Listado() {
-           return M.Listado("ListarClientes", null);
+        public DataTable Listado()
+        {
+            return M.Listado("ListarClientes", null);
         }
 
-        public DataTable BuscarCliente(String objDatos) {
+        public DataTable BuscarCliente(String objDatos)
+        {
             DataTable dt = new DataTable();
             List<clsParametro> lst = new List<clsParametro>();
-            lst.Add(new clsParametro("@Datos",objDatos));
-            return dt=M.Listado("FiltrarDatosCliente",lst);
+            lst.Add(new clsParametro("@Datos", objDatos));
+            return dt = M.Listado("FiltrarDatosCliente", lst);
         }
 
-        public String RegistrarCliente() {
+        public String RegistrarCliente()
+        {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
             try
             {
-                lst.Add(new clsParametro("@DNI",m_Dni));
-                lst.Add(new clsParametro("@Nombres",m_Nombres));
-                lst.Add(new clsParametro("@Direccion",m_Direccion));
-                lst.Add(new clsParametro("@Telefono",m_Telefono));
-                lst.Add(new clsParametro("@Mensaje","",SqlDbType.VarChar,ParameterDirection.Output,50));
+                lst.Add(new clsParametro("@DNI", m_Dni));
+                lst.Add(new clsParametro("@Nombres", m_Nombres));
+                lst.Add(new clsParametro("@Direccion", m_Direccion));
+                lst.Add(new clsParametro("@Telefono", m_Telefono));
+                lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 M.EjecutarSP("RegistrarCliente", ref lst);
-                Mensaje=lst[4].Valor.ToString();
+                Mensaje = lst[4].Valor.ToString();
             }
             catch (Exception ex)
             {

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CapaEnlaceDatos.Properties;
+using GestorComercial.Properties;
 
-namespace CapaEnlaceDatos
+namespace GestorComercial
 {
     public class clsCredencial
     {
-        public String server ="";
-        public String database="";
-        public String user ="";
-        public String password="";
-        
+        public String server = "";
+        public String database = "";
+        public String user = "";
+        public String password = "";
+
 
         public clsCredencial()
         {

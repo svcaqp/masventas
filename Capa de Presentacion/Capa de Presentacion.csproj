@@ -64,6 +64,9 @@
     <Reference Include="DevComponents.TreeGX">
       <HintPath>..\Libraries\DevComponents.TreeGX.dll</HintPath>
     </Reference>
+    <Reference Include="GestorComercial">
+      <HintPath>..\Libraries\GestorComercial.dll</HintPath>
+    </Reference>
     <Reference Include="LibPrintTicket">
       <HintPath>..\Libraries\LibPrintTicket.dll</HintPath>
     </Reference>
@@ -459,12 +462,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CapaLogicaNegocio\CapaLogicaNegocio.csproj">
-      <Project>{8087117a-5bea-4eb0-925a-407b17ab7983}</Project>
-      <Name>CapaLogicaNegocio</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\1button.png" />

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using CapaLogicaNegocio;
+using GestorComercial;
 
 namespace Capa_de_Presentacion
 {

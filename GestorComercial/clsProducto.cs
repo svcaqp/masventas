@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-using CapaEnlaceDatos;
 
-namespace CapaLogicaNegocio
+namespace GestorComercial
 {
     public class clsProducto
     {
@@ -24,11 +23,12 @@ namespace CapaLogicaNegocio
         private Decimal m_PrecioVenta;
         private DateTime m_FechaVencimiento;
         private String m_Unidad;
-       
 
-        public Int32 IdP{
+
+        public Int32 IdP
+        {
             get { return m_IdP; }
-            set{m_IdP=value;}
+            set { m_IdP = value; }
         }
 
         public Int32 IdCategoria
@@ -83,7 +83,8 @@ namespace CapaLogicaNegocio
             return M.Listado("ListadoProductos", null);
         }
 
-        public DataTable BusquedaProductos(String objDatos) {
+        public DataTable BusquedaProductos(String objDatos)
+        {
             DataTable dt = new DataTable();
             List<clsParametro> lst = new List<clsParametro>();
             try
@@ -92,7 +93,7 @@ namespace CapaLogicaNegocio
                 dt = M.Listado("FiltrarDatosProducto", lst);
             }
             catch (Exception ex)
-            {    
+            {
                 throw ex;
             }
             return dt;
@@ -153,7 +154,7 @@ namespace CapaLogicaNegocio
 
             try
             {
-                lst.Add(new clsParametro("@IdProducto",m_IdP));
+                lst.Add(new clsParametro("@IdProducto", m_IdP));
                 lst.Add(new clsParametro("@IdCategoria", m_IdCategoria));
                 lst.Add(new clsParametro("@Nombre", m_Producto));
                 lst.Add(new clsParametro("@Marca", m_Marca));

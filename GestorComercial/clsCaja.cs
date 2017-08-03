@@ -1,5 +1,4 @@
-﻿using CapaEnlaceDatos;
-using LibPrintTicket;
+﻿using LibPrintTicket;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace CapaLogicaNegocio
+namespace GestorComercial
 {
     // ReSharper disable once InconsistentNaming
     public class clsCaja
@@ -59,7 +58,7 @@ namespace CapaLogicaNegocio
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 _manejador.EjecutarSP("RegistrarCaja", ref lst);
                 mensaje = lst[3].Valor.ToString();
-                this.IdCaja =lst[2].Valor.ToString();
+                this.IdCaja = lst[2].Valor.ToString();
 
             }
             catch (Exception ex)
@@ -67,7 +66,7 @@ namespace CapaLogicaNegocio
                 mensaje = "Error al regsitrar la caja";
                 Console.Write("Error: " + ex.Message);
             }
-            
+
             return mensaje;
         }
 
@@ -98,7 +97,7 @@ namespace CapaLogicaNegocio
                 return Convert.ToDouble(data.Rows[0][0].ToString());
             }
             return 0;
-            
+
         }
 
         public double TotalPagos()
@@ -128,8 +127,8 @@ namespace CapaLogicaNegocio
 
         }
 
-       
-        public Ticket TotalVendidoDetalle(Ticket ticket )
+
+        public Ticket TotalVendidoDetalle(Ticket ticket)
         {
             List<clsParametro> lst = new List<clsParametro>();
             lst.Add(new clsParametro("@IdEmpleado", this.IdEmpleado));
@@ -141,14 +140,14 @@ namespace CapaLogicaNegocio
             ticket.AddHeaderLine("");
             ticket.AddHeaderLine("RESUMEN DE VENTAS");
             ticket.AddHeaderLine("===================================");
-          
+
 
 
             double total = 0;
             double totalBoleta = 0;
             double totalFactura = 0;
             double totalNota = 0;
-          
+
             if (data.Rows.Count > 0)
             {
                 for (int i = 0; i < data.Rows.Count; i++)
@@ -165,17 +164,17 @@ namespace CapaLogicaNegocio
                     {
                         totalNota += Convert.ToDouble(data.Rows[0][7].ToString());
                     }
-                    total += Convert.ToDouble(data.Rows[i][7].ToString()); 
+                    total += Convert.ToDouble(data.Rows[i][7].ToString());
                 }
 
 
-   
-                        
+
+
             }
             ticket.AddHeaderLine("");
-            ticket.AddHeaderLine("Total Boleta S/.        : "+ string.Format("{0:N2}", totalBoleta));
-            ticket.AddHeaderLine("Total Factura S/.       : "+ string.Format("{0:N2}", totalFactura));
-            ticket.AddHeaderLine("Total Nota de Venta S/. : "+ string.Format("{0:N2}", totalNota));
+            ticket.AddHeaderLine("Total Boleta S/.        : " + string.Format("{0:N2}", totalBoleta));
+            ticket.AddHeaderLine("Total Factura S/.       : " + string.Format("{0:N2}", totalFactura));
+            ticket.AddHeaderLine("Total Nota de Venta S/. : " + string.Format("{0:N2}", totalNota));
 
             ticket.AddHeaderLine("");
 
@@ -187,12 +186,12 @@ namespace CapaLogicaNegocio
 
             ticket.AddHeaderLine("===================================");
 
-            ticket.AddHeaderLine("Docum. " + " Nro.Doc "+ "  Total");
+            ticket.AddHeaderLine("Docum. " + " Nro.Doc " + "  Total");
             ticket.AddHeaderLine("");
 
             for (int i = 0; i < data.Rows.Count; i++)
             {
-                ticket.AddHeaderLine(data.Rows[i][5].ToString() + "  " + data.Rows[i][4].ToString() + "  " + string.Format("{0:N2}",Convert.ToDouble(data.Rows[i][7].ToString())));
+                ticket.AddHeaderLine(data.Rows[i][5].ToString() + "  " + data.Rows[i][4].ToString() + "  " + string.Format("{0:N2}", Convert.ToDouble(data.Rows[i][7].ToString())));
             }
             totalVentas = total;
             return ticket;
@@ -232,12 +231,12 @@ namespace CapaLogicaNegocio
             {
                 lst.Add(new clsParametro("@IdCaja", this.IdCaja));
                 lst.Add(new clsParametro("@SaldoCerrado", this.SaldoCerrado));
-                
-              
+
+
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 _manejador.EjecutarSP("CerrarCaja", ref lst);
                 mensaje = lst[2].Valor.ToString();
-                
+
 
             }
             catch (Exception ex)
@@ -252,7 +251,7 @@ namespace CapaLogicaNegocio
         public string ReaperturarCaja()
         {
             var mensaje = "";
- 
+
             var lst = new List<clsParametro>();
             try
             {
@@ -273,6 +272,6 @@ namespace CapaLogicaNegocio
             return mensaje;
         }
 
-        
+
     }
 }

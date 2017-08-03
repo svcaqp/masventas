@@ -419,7 +419,7 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ReporteKardexRow AddReporteKardexRow(System.DateTime FechaRegistro, string TipoDocumento, int Cantidad, double Total, string Tipo, int Fisico, decimal Saldo) {
+            public ReporteKardexRow AddReporteKardexRow(System.DateTime FechaRegistro, string TipoDocumento, int Cantidad, double Total, string Tipo, int Fisico, int Saldo) {
                 ReporteKardexRow rowReporteKardexRow = ((ReporteKardexRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         FechaRegistro,
@@ -475,7 +475,7 @@ namespace Capa_de_Presentacion {
                 base.Columns.Add(this.columnTipo);
                 this.columnFisico = new global::System.Data.DataColumn("Fisico", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFisico);
-                this.columnSaldo = new global::System.Data.DataColumn("Saldo", typeof(decimal), null, global::System.Data.MappingType.Element);
+                this.columnSaldo = new global::System.Data.DataColumn("Saldo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSaldo);
                 this.columnFechaRegistro.ReadOnly = true;
                 this.columnTipoDocumento.ReadOnly = true;
@@ -724,10 +724,10 @@ namespace Capa_de_Presentacion {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal Saldo {
+            public int Saldo {
                 get {
                     try {
-                        return ((decimal)(this[this.tableReporteKardex.SaldoColumn]));
+                        return ((int)(this[this.tableReporteKardex.SaldoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'Saldo\' de la tabla \'ReporteKardex\' es DBNull.", e);

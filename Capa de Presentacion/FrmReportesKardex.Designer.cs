@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.date_final = new System.Windows.Forms.DateTimePicker();
             this.date_inicial = new System.Windows.Forms.DateTimePicker();
             this.cbox_productos = new System.Windows.Forms.ComboBox();
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.demoPracticaProducto = new Capa_de_Presentacion.DemoPracticaProducto();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.productoTableAdapter = new Capa_de_Presentacion.DemoPracticaProductoTableAdapters.ProductoTableAdapter();
             this.DemoPracticaKardex = new Capa_de_Presentacion.DemoPracticaKardex();
             this.ReporteKardexBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReporteKardexTableAdapter = new Capa_de_Presentacion.DemoPracticaKardexTableAdapters.ReporteKardexTableAdapter();
-            this.demoPracticaProducto = new Capa_de_Presentacion.DemoPracticaProducto();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productoTableAdapter = new Capa_de_Presentacion.DemoPracticaProductoTableAdapters.ProductoTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaKardex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteKardexBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -108,6 +108,16 @@
             this.cbox_productos.TabIndex = 7;
             this.cbox_productos.ValueMember = "IdProducto";
             // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataMember = "Producto";
+            this.productoBindingSource.DataSource = this.demoPracticaProducto;
+            // 
+            // demoPracticaProducto
+            // 
+            this.demoPracticaProducto.DataSetName = "DemoPracticaProducto";
+            this.demoPracticaProducto.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -155,14 +165,18 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.ReporteKardexBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource3.Name = "DataSetKardex";
+            reportDataSource3.Value = this.ReporteKardexBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportKardex.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(25, 117);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(967, 327);
             this.reportViewer1.TabIndex = 2;
+            // 
+            // productoTableAdapter
+            // 
+            this.productoTableAdapter.ClearBeforeFill = true;
             // 
             // DemoPracticaKardex
             // 
@@ -178,20 +192,6 @@
             // 
             this.ReporteKardexTableAdapter.ClearBeforeFill = true;
             // 
-            // demoPracticaProducto
-            // 
-            this.demoPracticaProducto.DataSetName = "DemoPracticaProducto";
-            this.demoPracticaProducto.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataMember = "Producto";
-            this.productoBindingSource.DataSource = this.demoPracticaProducto;
-            // 
-            // productoTableAdapter
-            // 
-            this.productoTableAdapter.ClearBeforeFill = true;
-            // 
             // FrmReportesKardex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,10 +205,10 @@
             this.Load += new System.EventHandler(this.FrmReportes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaKardex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteKardexBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,11 +228,12 @@
         private DemoPracticaClientes demoPracticaClientes;
         private DemoPracticaClientesTableAdapters.ListarClientesTableAdapter listarClientesTableAdapter;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.BindingSource ReporteKardexBindingSource;
-        private DemoPracticaKardex DemoPracticaKardex;
-        private DemoPracticaKardexTableAdapters.ReporteKardexTableAdapter ReporteKardexTableAdapter;
+       
         private DemoPracticaProducto demoPracticaProducto;
         private System.Windows.Forms.BindingSource productoBindingSource;
         private DemoPracticaProductoTableAdapters.ProductoTableAdapter productoTableAdapter;
+        private System.Windows.Forms.BindingSource ReporteKardexBindingSource;
+        private DemoPracticaKardex DemoPracticaKardex;
+        private DemoPracticaKardexTableAdapters.ReporteKardexTableAdapter ReporteKardexTableAdapter;
     }
 }

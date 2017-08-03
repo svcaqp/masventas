@@ -1,4 +1,4 @@
-﻿using CapaLogicaNegocio;
+﻿using GestorComercial;
 using LibPrintTicket;
 using System;
 using System.Collections.Generic;

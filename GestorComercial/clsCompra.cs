@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CapaLogicaNegocio
+namespace GestorComercial
 {
     public class clsCompra
     {
- 
+
         private String m_IdProducto;
         private String m_NroDocumento;
         private String m_TipoDocumento;

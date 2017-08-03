@@ -1,4 +1,4 @@
-﻿using CapaEnlaceDatos;
+﻿
 using LibPrintTicket;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace CapaLogicaNegocio
+namespace GestorComercial
 {
     public class clsPago
     {
@@ -23,18 +23,18 @@ namespace CapaLogicaNegocio
         public double totalPagos = 0;
 
 
-        public clsPago(string idEmpleado, double monto,string descripcion)
+        public clsPago(string idEmpleado, double monto, string descripcion)
         {
             this.IdEmpleado = idEmpleado;
             this.Monto = monto;
             this.Descripcion = descripcion;
-            
+
         }
         public clsPago(string idEmpleado, string fecha)
         {
             this.IdEmpleado = idEmpleado;
             this.Fecha = fecha;
-            
+
 
         }
 
@@ -93,10 +93,10 @@ namespace CapaLogicaNegocio
             ticket.AddHeaderLine("ID. " + "  Hora " + "  Descripion " + "  Total");
             ticket.AddHeaderLine("");
 
-            double total=0;
+            double total = 0;
             for (int i = 0; i < data.Rows.Count; i++)
             {
-                ticket.AddHeaderLine(data.Rows[i][0].ToString() + "  " + data.Rows[i][4].ToString().Substring(0, 5) +"  " + data.Rows[i][5].ToString().Substring(0, 12) + "  " + string.Format("{0:N2}", Convert.ToDouble(data.Rows[i][2].ToString())));
+                ticket.AddHeaderLine(data.Rows[i][0].ToString() + "  " + data.Rows[i][4].ToString().Substring(0, 5) + "  " + data.Rows[i][5].ToString().Substring(0, 12) + "  " + string.Format("{0:N2}", Convert.ToDouble(data.Rows[i][2].ToString())));
                 total += Convert.ToDouble(data.Rows[i][2].ToString());
             }
 
