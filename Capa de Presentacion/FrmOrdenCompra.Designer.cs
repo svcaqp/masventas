@@ -283,8 +283,10 @@
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(297, 15);
+            this.button2.MaximumSize = new System.Drawing.Size(141, 33);
+            this.button2.MinimumSize = new System.Drawing.Size(141, 33);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 33);
+            this.button2.Size = new System.Drawing.Size(141, 33);
             this.button2.TabIndex = 9;
             this.button2.Text = "Regresar ";
             this.button2.UseVisualStyleBackColor = false;
@@ -299,7 +301,7 @@
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(423, 62);
+            this.panel4.Size = new System.Drawing.Size(449, 62);
             this.panel4.TabIndex = 1010;
             // 
             // lbl_title

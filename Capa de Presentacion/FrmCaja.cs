@@ -100,11 +100,11 @@ namespace Capa_de_Presentacion
 
                 ticket.AddHeaderLine("Fin");
 
-
+                
 
         
                 
-                Imprimir(ticket);
+               Imprimir(ticket);
                 Program.IdCaja = null;
                 Program.SaldoAbierto = 0;
             }
@@ -144,10 +144,14 @@ namespace Capa_de_Presentacion
         private void Imprimir(Ticket ticket)
         {
 
-            if (ticket.PrinterExists("POS-80C"))
+            try
+            {
                 ticket.PrintTicket("POS-80C"); //Nombre de la impresora de tickets
-            else
-                DevComponents.DotNetBar.MessageBoxEx.Show(this, "Impresora no configurada, no realizará impresion", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch
+            {
+            //    DevComponents.DotNetBar.MessageBoxEx.Show(this, "Impresora no configurada, no realizará impresion", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         
         }
 
@@ -155,6 +159,11 @@ namespace Capa_de_Presentacion
         {
             try { Program.frmAbrirCaja.Close(); }
             catch { }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
