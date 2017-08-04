@@ -92,9 +92,10 @@ namespace Capa_de_Presentacion
 
         private void cbox_Tipo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lbl_mensaje.Visible = false;
             if (cbox_Tipo.SelectedIndex == 0)
             {
-
+                
                 cbox_Documentos.Visible = true;
                 btn_Buscar.Visible = true;
                 data_documentos.Visible = true;
