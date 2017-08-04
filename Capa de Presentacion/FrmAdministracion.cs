@@ -16,6 +16,7 @@ namespace Capa_de_Presentacion
         public FrmAdministracion()
         {
             InitializeComponent();
+            lbl_mensaje.Show(); 
         }
 
         private void FrmAdministracion_Load(object sender, EventArgs e)
@@ -55,14 +56,24 @@ namespace Capa_de_Presentacion
         {
             lbl_mensaje.Hide();
             gbox_caja.Show();
+           
+            gbox_informacion.Hide();
+            gbox_seguridad.Hide();
+            gbox_impresora.Hide();
             gbox_usuarios.Hide();
+            label1.Show(); ;
         }
 
         private void btn_usuarios_Click(object sender, EventArgs e)
         {
             lbl_mensaje.Hide();
-            gbox_usuarios.Show();
             gbox_caja.Hide();
+           
+            gbox_informacion.Hide();
+            gbox_seguridad.Hide();
+            gbox_impresora.Hide();
+            gbox_usuarios.Show();
+            label1.Show(); ;
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -78,12 +89,70 @@ namespace Capa_de_Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            lbl_mensaje.Hide();                
+            gbox_caja.Hide();
+        
+            gbox_informacion.Show();
+            gbox_seguridad.Hide();
+            gbox_impresora.Hide();
+            gbox_usuarios.Hide();
+            label1.Hide();                 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_igv_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_empresa_Click(object sender, EventArgs e)
+        {
+            lbl_mensaje.Hide();
+            gbox_caja.Hide();
+           
+            gbox_informacion.Show();
+            gbox_seguridad.Hide();
+            gbox_impresora.Hide();
+            gbox_usuarios.Hide();
+            label1.Hide(); ;
+        }
+
+        private void btn_seguridad_Click(object sender, EventArgs e)
+        {
+            lbl_mensaje.Hide();
+            gbox_caja.Hide();
+        
+            gbox_informacion.Hide();
+            gbox_seguridad.Show();
+            gbox_impresora.Hide();
+            gbox_usuarios.Hide();
+            label1.Hide(); ;
+        }
+
+        private void btn_impresora_Click(object sender, EventArgs e)
+        {
+            lbl_mensaje.Hide();
+            gbox_caja.Hide();
+            
+            gbox_informacion.Hide();
+            gbox_seguridad.Hide();
+            gbox_impresora.Show();
+            gbox_usuarios.Hide();
+            label1.Hide(); ;
+        }
+
+        private void gbox_seguridad_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

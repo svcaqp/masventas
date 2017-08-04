@@ -39,7 +39,7 @@ namespace Capa_de_Presentacion
                 preferences.SaveSettings();
                 if (preferences.getConnection())
                 {
-                    MessageBox.Show("El Servidor esta vivo", "Servidor", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El Servidor está vivo.", "Servidor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     this.Close();
                 }
@@ -81,6 +81,11 @@ namespace Capa_de_Presentacion
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -177,7 +177,7 @@
             this.panel4.Controls.Add(this.lbl_title);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(998, 52);
+            this.panel4.Size = new System.Drawing.Size(984, 52);
             this.panel4.TabIndex = 1010;
             // 
             // pictureBox1
