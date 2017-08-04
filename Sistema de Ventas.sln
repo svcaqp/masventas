@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa de Presentacion", "Cap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorComercial", "GestorComercial\GestorComercial.csproj", "{01AD26D8-A31F-4C07-B44E-82CF742747A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capa Desarrollo", "Capa Desarrollo", "{64022FE8-F2B8-4A8B-B134-7BDAFEC571C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beta", "Beta\Beta.csproj", "{605858DF-82F7-42CF-B44B-F5CC39653D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
@@ -40,6 +44,16 @@ Global
 		{01AD26D8-A31F-4C07-B44E-82CF742747A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01AD26D8-A31F-4C07-B44E-82CF742747A6}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{01AD26D8-A31F-4C07-B44E-82CF742747A6}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{605858DF-82F7-42CF-B44B-F5CC39653D96}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{01AD26D8-A31F-4C07-B44E-82CF742747A6} = {528A2F6A-6578-412A-B401-4E00ADEB31BA}
 		{F54C7316-903E-4543-840A-9CFB39CF275A} = {D3403F9F-B16F-4BDE-85FA-73E3BA5440A9}
+		{605858DF-82F7-42CF-B44B-F5CC39653D96} = {64022FE8-F2B8-4A8B-B134-7BDAFEC571C7}
 	EndGlobalSection
 EndGlobal
