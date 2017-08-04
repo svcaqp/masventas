@@ -105,5 +105,18 @@ namespace Capa_de_Presentacion
         {
             txtDni.Focus();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            txtDni.Text = "";
+            txtNombres.Clear();
+            txtDireccion.Clear();
+            txtTelefono.Clear();    
+        }
     }
 }
