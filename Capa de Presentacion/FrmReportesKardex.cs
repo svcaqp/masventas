@@ -28,6 +28,8 @@ namespace Capa_de_Presentacion
 
         private void FrmReportes_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'demoPracticaProductosDetalle.ListadoProductosDetalle' Puede moverla o quitarla según sea necesario.
+            this.listadoProductosDetalleTableAdapter.Fill(this.demoPracticaProductosDetalle.ListadoProductosDetalle);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Left = Top = 0;
             Width = Screen.PrimaryScreen.WorkingArea.Width;
@@ -53,9 +55,11 @@ namespace Capa_de_Presentacion
             
             this.ReporteKardexTableAdapter.Fill(this.DemoPracticaKardex.ReporteKardex, IdProducto, date_inicial.Value, date_final.Value);
 
-            ReportParameter[] parameters = new ReportParameter[2];
+            ReportParameter[] parameters = new ReportParameter[4];
             parameters[0] = new ReportParameter("DiaInicio", date_final.Value.ToString().Substring(0,10));
             parameters[1] = new ReportParameter("DiaFin", date_final.Value.ToString().Substring(0, 10));
+            parameters[2] = new ReportParameter("Codigo", IdProducto +"");
+            parameters[3] = new ReportParameter("Detalle", cbox_productos.Text);
             this.reportViewer1.LocalReport.SetParameters(parameters);
             this.reportViewer1.RefreshReport();
             

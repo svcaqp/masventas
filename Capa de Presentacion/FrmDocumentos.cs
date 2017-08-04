@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GestorComercial;
-using Beta;
+
 namespace Capa_de_Presentacion
 {
     public partial class FrmDocumentos : DevComponents.DotNetBar.Metro.MetroForm

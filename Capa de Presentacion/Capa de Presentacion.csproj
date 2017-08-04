@@ -64,7 +64,8 @@
     <Reference Include="DevComponents.TreeGX">
       <HintPath>..\Libraries\DevComponents.TreeGX.dll</HintPath>
     </Reference>
-    <Reference Include="GestorComercial">
+    <Reference Include="GestorComercial, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\GestorComercial.dll</HintPath>
     </Reference>
     <Reference Include="LibPrintTicket">
@@ -132,6 +133,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaProductosDetalle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaProductosDetalle.xsd</DependentUpon>
     </Compile>
     <Compile Include="DemoPracticaVentas.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -466,6 +472,17 @@
     <None Include="DemoPracticaProducto.xss">
       <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
     </None>
+    <None Include="DemoPracticaProductosDetalle.xsc">
+      <DependentUpon>DemoPracticaProductosDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaProductosDetalle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaProductosDetalle.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaProductosDetalle.xss">
+      <DependentUpon>DemoPracticaProductosDetalle.xsd</DependentUpon>
+    </None>
     <None Include="DemoPracticaVentas.xsc">
       <DependentUpon>DemoPracticaVentas.xsd</DependentUpon>
     </None>
@@ -537,12 +554,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Beta\Beta.csproj">
-      <Project>{605858df-82f7-42cf-b44b-f5cc39653d96}</Project>
-      <Name>Beta</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

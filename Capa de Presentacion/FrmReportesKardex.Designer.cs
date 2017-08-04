@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesKardex));
             this.ReporteKardexBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DemoPracticaKardex = new Capa_de_Presentacion.DemoPracticaKardex();
@@ -52,6 +52,9 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.demoPracticaProductosDetalle = new Capa_de_Presentacion.DemoPracticaProductosDetalle();
+            this.listadoProductosDetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listadoProductosDetalleTableAdapter = new Capa_de_Presentacion.DemoPracticaProductosDetalleTableAdapters.ListadoProductosDetalleTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ReporteKardexBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaKardex)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -59,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProducto)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProductosDetalle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadoProductosDetalleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ReporteKardexBindingSource
@@ -122,8 +127,8 @@
             // 
             // cbox_productos
             // 
-            this.cbox_productos.DataSource = this.productoBindingSource;
-            this.cbox_productos.DisplayMember = "Marca";
+            this.cbox_productos.DataSource = this.listadoProductosDetalleBindingSource;
+            this.cbox_productos.DisplayMember = "Column1";
             this.cbox_productos.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_productos.FormattingEnabled = true;
             this.cbox_productos.Location = new System.Drawing.Point(129, 16);
@@ -196,9 +201,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "DataSetKardex";
-            reportDataSource1.Value = this.ReporteKardexBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSetKardex";
+            reportDataSource2.Value = this.ReporteKardexBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportKardex.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(17, 155);
             this.reportViewer1.Name = "reportViewer1";
@@ -264,6 +269,20 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // demoPracticaProductosDetalle
+            // 
+            this.demoPracticaProductosDetalle.DataSetName = "DemoPracticaProductosDetalle";
+            this.demoPracticaProductosDetalle.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listadoProductosDetalleBindingSource
+            // 
+            this.listadoProductosDetalleBindingSource.DataMember = "ListadoProductosDetalle";
+            this.listadoProductosDetalleBindingSource.DataSource = this.demoPracticaProductosDetalle;
+            // 
+            // listadoProductosDetalleTableAdapter
+            // 
+            this.listadoProductosDetalleTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmReportesKardex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,6 +306,8 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaProductosDetalle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadoProductosDetalleBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,5 +338,8 @@
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
+        private DemoPracticaProductosDetalle demoPracticaProductosDetalle;
+        private System.Windows.Forms.BindingSource listadoProductosDetalleBindingSource;
+        private DemoPracticaProductosDetalleTableAdapters.ListadoProductosDetalleTableAdapter listadoProductosDetalleTableAdapter;
     }
 }

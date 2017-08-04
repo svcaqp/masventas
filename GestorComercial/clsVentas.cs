@@ -13,7 +13,7 @@ namespace GestorComercial
     public class clsVentas
     {
         clsManejador M = new clsManejador();
-
+        public static string currentId="";
         public int IdEmpleado { get; set; }
         public int IdCliente { get; set; }
         public string Serie { get; set; }
@@ -88,7 +88,10 @@ namespace GestorComercial
                 lst.Add(new clsParametro("@FechaVenta", FechaVenta));
                 lst.Add(new clsParametro("@Total", Total));
                 lst.Add(new clsParametro("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 100));
+                lst.Add(new clsParametro("@IdVenta", "", SqlDbType.VarChar, ParameterDirection.Output, 5));
+               
                 M.EjecutarSP("RegistrarVenta", ref lst);
+                currentId = lst[8].Valor.ToString();
                 return Mensaje = lst[7].Valor.ToString();
             }
             catch (Exception ex)

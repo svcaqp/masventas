@@ -100,69 +100,7 @@ namespace Capa_de_Presentacion
             GenerarNumeroComprobante();
         }
 
-        /*
-        private void rbnBoleta_CheckedChanged(object sender, EventArgs e)
-        {
-           
-            if (rbnFactura.Checked == true)
-            {
-                lblTipo.Text = "FACTURA";
-                txtIgv.Visible = true;
-                txtIgv.Text = "18 %";
-                label12.Visible = true;
-                Program.DocumentoIdentidad = "";
-                lblDocumento.Text = "RUC";
-                lblDocumento.Visible = true;
-                txtDocIdentidad.Visible = true;
-                txtDocIdentidad.Text = "";
-                lblNombre.Text = "Nombre:";
-                btnBusqueda.Visible = true;
-                lblDireccion.Visible = true;
-                txtDireccion.Visible = true;
-                txtDatos.Text = "";
-            }
-            else if (rbnBoleta.Checked == true)
-            {
-                lblTipo.Text = "BOLETA DE VENTA";
-                txtIgv.Visible = false;
-                label12.Visible = false;
-             
-                lblDocumento.Text = "Doc. Identidad:";
-                lblDocumento.Visible = false;
-                txtDocIdentidad.Visible = false;
-                lblNombre.Text = "Sr/Sra:";
-                btnBusqueda.Visible = false;
-                lblDireccion.Visible = false;
-                txtDireccion.Visible = false;
-                Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente particular";
-                Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text = Program.NombreCliente;
-             
-            }
-            else
-            {
-                lblTipo.Text = "NOTA DE VENTA";
-                txtIgv.Visible = false;
-                label12.Visible = false;
-                
-                lblDocumento.Text = "Doc. Identidad:";
-                lblDocumento.Visible = false;
-                txtDocIdentidad.Visible = false;
-                lblNombre.Text = "Sr/Sra:";
-                btnBusqueda.Visible = false;
-                lblDireccion.Visible = false;
-                txtDireccion.Visible = false;
-                Program.IdCliente = 1;
-                Program.NombreCliente = "Cliente particular";
-                Program.DocumentoIdentidad = "00000000";
-                txtDatos.Text =  Program.NombreCliente;
-               
-            }
-            LlenarGrilla();
-            GenerarNumeroComprobante();
-        }
-         */
+      
         private void FrmVentas_Load(object sender, EventArgs e)
         {
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -506,14 +444,14 @@ namespace Capa_de_Presentacion
         {
 
             Detalle.IdProducto = objIdProducto;
-            Detalle.IdVenta = objIdVenta;
+            Detalle.IdVenta = Convert.ToInt32(clsVentas.currentId);
             Detalle.Cantidad = objCantidad;
             Detalle.PUnitario = objPUnitario;
             Detalle.Igv = objIgv;
             Detalle.SubTotal = objSubTotal;
             Detalle.RegistrarDetalleVenta();
 
-            GenerarIdVenta();
+            
 
         }
 
@@ -601,42 +539,7 @@ namespace Capa_de_Presentacion
 
         }
 
-        /*
-        private void rbnNotaVenta_CheckedChanged(object sender, EventArgs e)
-        {
-            txtDatos.Text = Program.NombreCliente;
-            if (rbnFactura.Checked == true)
-            {
-                lblTipo.Text = "FACTURA";
-                txtIgv.Visible = true;
-                txtIgv.Text = "18 %";
-                label12.Visible = true;
-              
-                lblDocumento.Text = "RUC";
-            }
-            else if (rbnBoleta.Checked == true)
-            {
-                lblTipo.Text = "BOLETA DE VENTA";
-                txtIgv.Visible = false;
-                label12.Visible = false;
-        
-                lblDocumento.Text = "Doc. Identidad";
-            }
-            else
-            {
-                lblTipo.Text = "NOTA DE VENTA";
-                txtIgv.Visible = false;
-                label12.Visible = false;
-             
-                lblDocumento.Text = "Doc. Identidad";
-            } 
-            
-            GenerarNumeroComprobante();
-
-            
-
-        }
-         */
+     
 
         private void txtDatos_TextChanged(object sender, EventArgs e)
         {
