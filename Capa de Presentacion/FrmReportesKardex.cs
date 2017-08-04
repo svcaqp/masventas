@@ -28,10 +28,11 @@ namespace Capa_de_Presentacion
 
         private void FrmReportes_Load(object sender, EventArgs e)
         {
-
-           
-      
-
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
+                
             clsPreferences preferences = new clsPreferences();
             Settings.Default["DemoPracticaConnectionString1"] = preferences.getConnectionString();
             Settings.Default.Save();
@@ -58,6 +59,11 @@ namespace Capa_de_Presentacion
             this.reportViewer1.LocalReport.SetParameters(parameters);
             this.reportViewer1.RefreshReport();
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     

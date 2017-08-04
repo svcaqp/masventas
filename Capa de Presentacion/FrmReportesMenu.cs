@@ -27,5 +27,10 @@ namespace Capa_de_Presentacion
             FrmReportesKardex reporte = new FrmReportesKardex();
             reporte.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
