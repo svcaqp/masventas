@@ -29,9 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDocumentos));
+
             this.data_documentos = new System.Windows.Forms.DataGridView();
             this.idVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,36 +54,52 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.cbox_Tipo = new System.Windows.Forms.ToolStripComboBox();
             this.data_compras = new System.Windows.Forms.DataGridView();
-            this.demoPracticaCompras = new Capa_de_Presentacion.DemoPracticaCompras();
-            this.listarComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listarComprasTableAdapter = new Capa_de_Presentacion.DemoPracticaComprasTableAdapters.ListarComprasTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.cbox_Documentos = new System.Windows.Forms.ComboBox();
             this.data_pagos = new System.Windows.Forms.DataGridView();
             this.demoPracticaPagos = new Capa_de_Presentacion.DemoPracticaPagos();
             this.listarPagosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listarPagosTableAdapter = new Capa_de_Presentacion.DemoPracticaPagosTableAdapters.ListarPagosTableAdapter();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+          
+          
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+       
             this.idPagoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+
+        
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+           
+      
+        
+            this.listarComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.demoPracticaCompras = new Capa_de_Presentacion.DemoPracticaCompras();
+            this.listarComprasTableAdapter = new Capa_de_Presentacion.DemoPracticaComprasTableAdapters.ListarComprasTableAdapter();
+            
+
             ((System.ComponentModel.ISupportInitialize)(this.data_documentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listarDocumentosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaDocumentos)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_compras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCompras)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listarComprasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_pagos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaPagos)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listarPagosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaPagos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listarComprasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCompras)).BeginInit();
             this.SuspendLayout();
             // 
             // data_documentos
@@ -93,7 +116,7 @@
             this.totalDataGridViewTextBoxColumn,
             this.Anular});
             this.data_documentos.DataSource = this.listarDocumentosBindingSource;
-            this.data_documentos.Location = new System.Drawing.Point(9, 117);
+            this.data_documentos.Location = new System.Drawing.Point(395, 205);
             this.data_documentos.Name = "data_documentos";
             this.data_documentos.ReadOnly = true;
             this.data_documentos.Size = new System.Drawing.Size(541, 317);
@@ -140,9 +163,9 @@
             // 
             // Anular
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.NullValue = "Anular";
-            this.Anular.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.NullValue = "Anular";
+            this.Anular.DefaultCellStyle = dataGridViewCellStyle4;
             this.Anular.HeaderText = "Anular";
             this.Anular.Name = "Anular";
             this.Anular.ReadOnly = true;
@@ -164,7 +187,7 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(171, 65);
+            this.btn_Buscar.Location = new System.Drawing.Point(557, 176);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(103, 23);
             this.btn_Buscar.TabIndex = 6;
@@ -176,29 +199,31 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
+            this.toolStrip1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.cbox_Tipo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(562, 50);
+            this.toolStrip1.Size = new System.Drawing.Size(1038, 173);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(100, 47);
+            this.toolStripLabel1.Size = new System.Drawing.Size(103, 146);
             this.toolStripLabel1.Text = "Tipo Documento:";
             // 
             // cbox_Tipo
             // 
+            this.cbox_Tipo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_Tipo.Items.AddRange(new object[] {
             "Ventas",
             "Compras",
             "Egresos"});
             this.cbox_Tipo.Name = "cbox_Tipo";
-            this.cbox_Tipo.Size = new System.Drawing.Size(120, 50);
+            this.cbox_Tipo.Size = new System.Drawing.Size(220, 149);
             this.cbox_Tipo.Text = "Seleccionar";
             this.cbox_Tipo.SelectedIndexChanged += new System.EventHandler(this.cbox_Tipo_SelectedIndexChanged);
             // 
@@ -216,77 +241,13 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewButtonColumn1});
             this.data_compras.DataSource = this.listarComprasBindingSource;
-            this.data_compras.Location = new System.Drawing.Point(9, 117);
+            this.data_compras.Location = new System.Drawing.Point(395, 205);
             this.data_compras.Name = "data_compras";
             this.data_compras.ReadOnly = true;
             this.data_compras.Size = new System.Drawing.Size(541, 317);
             this.data_compras.TabIndex = 8;
             this.data_compras.Visible = false;
             this.data_compras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);
-            // 
-            // demoPracticaCompras
-            // 
-            this.demoPracticaCompras.DataSetName = "DemoPracticaCompras";
-            this.demoPracticaCompras.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // listarComprasBindingSource
-            // 
-            this.listarComprasBindingSource.DataMember = "ListarCompras";
-            this.listarComprasBindingSource.DataSource = this.demoPracticaCompras;
-            // 
-            // listarComprasTableAdapter
-            // 
-            this.listarComprasTableAdapter.ClearBeforeFill = true;
-            // 
-            // cbox_Documentos
-            // 
-            this.cbox_Documentos.FormattingEnabled = true;
-            this.cbox_Documentos.Items.AddRange(new object[] {
-            "Factura",
-            "Boleta",
-            "Nota"});
-            this.cbox_Documentos.Location = new System.Drawing.Point(9, 65);
-            this.cbox_Documentos.Name = "cbox_Documentos";
-            this.cbox_Documentos.Size = new System.Drawing.Size(147, 21);
-            this.cbox_Documentos.TabIndex = 9;
-            this.cbox_Documentos.Text = "Selecciona Documento";
-            this.cbox_Documentos.Visible = false;
-            // 
-            // data_pagos
-            // 
-            this.data_pagos.AllowUserToAddRows = false;
-            this.data_pagos.AllowUserToDeleteRows = false;
-            this.data_pagos.AutoGenerateColumns = false;
-            this.data_pagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_pagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idPagoDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.horaDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn,
-            this.montoDataGridViewTextBoxColumn,
-            this.dataGridViewButtonColumn2});
-            this.data_pagos.DataSource = this.listarPagosBindingSource;
-            this.data_pagos.Location = new System.Drawing.Point(9, 117);
-            this.data_pagos.Name = "data_pagos";
-            this.data_pagos.ReadOnly = true;
-            this.data_pagos.Size = new System.Drawing.Size(541, 317);
-            this.data_pagos.TabIndex = 10;
-            this.data_pagos.Visible = false;
-            this.data_pagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);
-            // 
-            // demoPracticaPagos
-            // 
-            this.demoPracticaPagos.DataSetName = "DemoPracticaPagos";
-            this.demoPracticaPagos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // listarPagosBindingSource
-            // 
-            this.listarPagosBindingSource.DataMember = "ListarPagos";
-            this.listarPagosBindingSource.DataSource = this.demoPracticaPagos;
-            // 
-            // listarPagosTableAdapter
-            // 
-            this.listarPagosTableAdapter.ClearBeforeFill = true;
             // 
             // Column1
             // 
@@ -309,6 +270,166 @@
             this.FechaRegistro.Name = "FechaRegistro";
             this.FechaRegistro.ReadOnly = true;
             // 
+            // dataGridViewButtonColumn1
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = "Anular";
+            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewButtonColumn1.HeaderText = "Anular";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Text = "Anular";
+            // 
+            // cbox_Documentos
+            // 
+            this.cbox_Documentos.FormattingEnabled = true;
+            this.cbox_Documentos.Items.AddRange(new object[] {
+            "Factura",
+            "Boleta",
+            "Nota"});
+            this.cbox_Documentos.Location = new System.Drawing.Point(12, 178);
+            this.cbox_Documentos.Name = "cbox_Documentos";
+            this.cbox_Documentos.Size = new System.Drawing.Size(147, 21);
+            this.cbox_Documentos.TabIndex = 9;
+            this.cbox_Documentos.Text = "Selecciona Documento";
+            this.cbox_Documentos.Visible = false;
+            // 
+            // data_pagos
+            // 
+            this.data_pagos.AllowUserToAddRows = false;
+            this.data_pagos.AllowUserToDeleteRows = false;
+            this.data_pagos.AutoGenerateColumns = false;
+            this.data_pagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_pagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idPagoDataGridViewTextBoxColumn,
+            this.fechaDataGridViewTextBoxColumn,
+            this.horaDataGridViewTextBoxColumn,
+            this.descripcionDataGridViewTextBoxColumn,
+            this.montoDataGridViewTextBoxColumn,
+            this.dataGridViewButtonColumn2});
+            this.data_pagos.DataSource = this.listarPagosBindingSource;
+            this.data_pagos.Location = new System.Drawing.Point(395, 205);
+            this.data_pagos.Name = "data_pagos";
+            this.data_pagos.ReadOnly = true;
+            this.data_pagos.Size = new System.Drawing.Size(541, 317);
+            this.data_pagos.TabIndex = 10;
+            this.data_pagos.Visible = false;
+            this.data_pagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = "Anular";
+            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewButtonColumn2.HeaderText = "Anular";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.ReadOnly = true;
+            this.dataGridViewButtonColumn2.Text = "Anular";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.lbl_title);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Location = new System.Drawing.Point(17, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(998, 52);
+            this.panel4.TabIndex = 1016;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(93, 12);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(133, 23);
+            this.lbl_title.TabIndex = 1013;
+            this.lbl_title.Text = "DOCUMENTOS";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(845, 8);
+            this.button1.MaximumSize = new System.Drawing.Size(141, 33);
+            this.button1.MinimumSize = new System.Drawing.Size(141, 33);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 33);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Regresar ";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+
+            // idPagoDataGridViewTextBoxColumn
+            // 
+            this.idPagoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.idPagoDataGridViewTextBoxColumn.DataPropertyName = "IdPago";
+            this.idPagoDataGridViewTextBoxColumn.FillWeight = 1F;
+            this.idPagoDataGridViewTextBoxColumn.HeaderText = "";
+            this.idPagoDataGridViewTextBoxColumn.MinimumWidth = 2;
+            this.idPagoDataGridViewTextBoxColumn.Name = "idPagoDataGridViewTextBoxColumn";
+            this.idPagoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idPagoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.idPagoDataGridViewTextBoxColumn.Visible = false;
+            this.idPagoDataGridViewTextBoxColumn.Width = 2;
+            // 
+            // fechaDataGridViewTextBoxColumn
+            // 
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // horaDataGridViewTextBoxColumn
+            // 
+            this.horaDataGridViewTextBoxColumn.DataPropertyName = "Hora";
+            this.horaDataGridViewTextBoxColumn.HeaderText = "Hora";
+            this.horaDataGridViewTextBoxColumn.MaxInputLength = 5;
+            this.horaDataGridViewTextBoxColumn.Name = "horaDataGridViewTextBoxColumn";
+            this.horaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // montoDataGridViewTextBoxColumn
+            // 
+            this.montoDataGridViewTextBoxColumn.DataPropertyName = "Monto";
+            this.montoDataGridViewTextBoxColumn.HeaderText = "Monto";
+            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
+            this.montoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // listarPagosBindingSource
+
+            // 
+            this.listarPagosBindingSource.DataMember = "ListarPagos";
+            this.listarPagosBindingSource.DataSource = this.demoPracticaPagos;
+            // 
+            // demoPracticaPagos
+            // 
+            this.demoPracticaPagos.DataSetName = "DemoPracticaPagos";
+            this.demoPracticaPagos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "TipoDocumento";
@@ -330,15 +451,23 @@
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // dataGridViewButtonColumn1
+            // listarComprasBindingSource
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "Anular";
-            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewButtonColumn1.HeaderText = "Anular";
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.ReadOnly = true;
-            this.dataGridViewButtonColumn1.Text = "Anular";
+            this.listarComprasBindingSource.DataMember = "ListarCompras";
+            this.listarComprasBindingSource.DataSource = this.demoPracticaCompras;
+            // 
+            // demoPracticaCompras
+            // 
+            this.demoPracticaCompras.DataSetName = "DemoPracticaCompras";
+            this.demoPracticaCompras.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listarComprasTableAdapter
+            // 
+            this.listarComprasTableAdapter.ClearBeforeFill = true;
+            // 
+            // listarPagosTableAdapter
+            // 
+            this.listarPagosTableAdapter.ClearBeforeFill = true;
             // 
             // idPagoDataGridViewTextBoxColumn
             // 
@@ -396,16 +525,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 446);
-            this.Controls.Add(this.data_pagos);
+            this.ClientSize = new System.Drawing.Size(1038, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.cbox_Documentos);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.data_pagos);
             this.Controls.Add(this.data_compras);
             this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.data_documentos);
             this.Controls.Add(this.toolStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDocumentos";
-            this.Text = "FrmDocumentos";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FrmDocumentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_documentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listarDocumentosBindingSource)).EndInit();
@@ -413,11 +545,14 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_compras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCompras)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listarComprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_pagos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaPagos)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listarPagosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaPagos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listarComprasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCompras)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -453,11 +588,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
+
         private System.Windows.Forms.DataGridViewTextBoxColumn idPagoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+
     }
 }
