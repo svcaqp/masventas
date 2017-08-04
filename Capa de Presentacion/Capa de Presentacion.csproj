@@ -103,6 +103,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DemoPracticaCompras.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaCompras.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DemoPracticaDocumentos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -117,6 +122,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaKardex.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaPagos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaPagos.xsd</DependentUpon>
     </Compile>
     <Compile Include="DemoPracticaProducto.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -390,6 +400,17 @@
     <None Include="DemoPracticaClientes.xss">
       <DependentUpon>DemoPracticaClientes.xsd</DependentUpon>
     </None>
+    <None Include="DemoPracticaCompras.xsc">
+      <DependentUpon>DemoPracticaCompras.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaCompras.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaCompras.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaCompras.xss">
+      <DependentUpon>DemoPracticaCompras.xsd</DependentUpon>
+    </None>
     <None Include="DemoPracticaDocumentos.xsc">
       <DependentUpon>DemoPracticaDocumentos.xsd</DependentUpon>
     </None>
@@ -422,6 +443,17 @@
     </None>
     <None Include="DemoPracticaKardex.xss">
       <DependentUpon>DemoPracticaKardex.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaPagos.xsc">
+      <DependentUpon>DemoPracticaPagos.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaPagos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaPagos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaPagos.xss">
+      <DependentUpon>DemoPracticaPagos.xsd</DependentUpon>
     </None>
     <None Include="DemoPracticaProducto.xsc">
       <DependentUpon>DemoPracticaProducto.xsd</DependentUpon>
@@ -505,6 +537,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Beta\Beta.csproj">
+      <Project>{605858df-82f7-42cf-b44b-f5cc39653d96}</Project>
+      <Name>Beta</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
