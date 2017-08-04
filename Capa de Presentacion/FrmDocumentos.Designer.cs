@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDocumentos));
             this.data_documentos = new System.Windows.Forms.DataGridView();
             this.idVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +58,7 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.idPagoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,10 +101,10 @@
             this.totalDataGridViewTextBoxColumn,
             this.Anular});
             this.data_documentos.DataSource = this.listarDocumentosBindingSource;
-            this.data_documentos.Location = new System.Drawing.Point(395, 205);
+            this.data_documentos.Location = new System.Drawing.Point(26, 178);
             this.data_documentos.Name = "data_documentos";
             this.data_documentos.ReadOnly = true;
-            this.data_documentos.Size = new System.Drawing.Size(541, 317);
+            this.data_documentos.Size = new System.Drawing.Size(979, 317);
             this.data_documentos.TabIndex = 3;
             this.data_documentos.Visible = false;
             this.data_documentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);
@@ -147,9 +148,9 @@
             // 
             // Anular
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = "Anular";
-            this.Anular.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "Anular";
+            this.Anular.DefaultCellStyle = dataGridViewCellStyle1;
             this.Anular.HeaderText = "Anular";
             this.Anular.Name = "Anular";
             this.Anular.ReadOnly = true;
@@ -171,9 +172,9 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(557, 176);
+            this.btn_Buscar.Location = new System.Drawing.Point(706, 103);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(103, 23);
+            this.btn_Buscar.Size = new System.Drawing.Size(98, 35);
             this.btn_Buscar.TabIndex = 6;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
@@ -189,15 +190,15 @@
             this.cbox_Tipo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1038, 173);
+            this.toolStrip1.Size = new System.Drawing.Size(1038, 175);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(103, 146);
-            this.toolStripLabel1.Text = "Tipo Documento:";
+            this.toolStripLabel1.Size = new System.Drawing.Size(177, 172);
+            this.toolStripLabel1.Text = "CATEGORIA DE DOCUMENTO: ";
             // 
             // cbox_Tipo
             // 
@@ -207,7 +208,7 @@
             "Compras",
             "Egresos"});
             this.cbox_Tipo.Name = "cbox_Tipo";
-            this.cbox_Tipo.Size = new System.Drawing.Size(220, 149);
+            this.cbox_Tipo.Size = new System.Drawing.Size(220, 175);
             this.cbox_Tipo.Text = "Seleccionar";
             this.cbox_Tipo.SelectedIndexChanged += new System.EventHandler(this.cbox_Tipo_SelectedIndexChanged);
             // 
@@ -225,10 +226,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewButtonColumn1});
             this.data_compras.DataSource = this.listarComprasBindingSource;
-            this.data_compras.Location = new System.Drawing.Point(395, 205);
+            this.data_compras.Location = new System.Drawing.Point(26, 178);
             this.data_compras.Name = "data_compras";
             this.data_compras.ReadOnly = true;
-            this.data_compras.Size = new System.Drawing.Size(541, 317);
+            this.data_compras.Size = new System.Drawing.Size(979, 317);
             this.data_compras.TabIndex = 8;
             this.data_compras.Visible = false;
             // 
@@ -255,9 +256,9 @@
             // 
             // dataGridViewButtonColumn1
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.NullValue = "Anular";
-            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = "Anular";
+            this.dataGridViewButtonColumn1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewButtonColumn1.HeaderText = "Anular";
             this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
             this.dataGridViewButtonColumn1.ReadOnly = true;
@@ -265,14 +266,15 @@
             // 
             // cbox_Documentos
             // 
+            this.cbox_Documentos.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_Documentos.FormattingEnabled = true;
             this.cbox_Documentos.Items.AddRange(new object[] {
             "Factura",
             "Boleta",
             "Nota"});
-            this.cbox_Documentos.Location = new System.Drawing.Point(12, 178);
+            this.cbox_Documentos.Location = new System.Drawing.Point(14, 137);
             this.cbox_Documentos.Name = "cbox_Documentos";
-            this.cbox_Documentos.Size = new System.Drawing.Size(147, 21);
+            this.cbox_Documentos.Size = new System.Drawing.Size(522, 22);
             this.cbox_Documentos.TabIndex = 9;
             this.cbox_Documentos.Text = "Selecciona Documento";
             this.cbox_Documentos.Visible = false;
@@ -281,6 +283,9 @@
             // 
             this.data_pagos.AllowUserToAddRows = false;
             this.data_pagos.AllowUserToDeleteRows = false;
+            this.data_pagos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.data_pagos.AutoGenerateColumns = false;
             this.data_pagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_pagos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -291,18 +296,18 @@
             this.montoDataGridViewTextBoxColumn,
             this.dataGridViewButtonColumn2});
             this.data_pagos.DataSource = this.listarPagosBindingSource;
-            this.data_pagos.Location = new System.Drawing.Point(395, 205);
+            this.data_pagos.Location = new System.Drawing.Point(26, 178);
             this.data_pagos.Name = "data_pagos";
             this.data_pagos.ReadOnly = true;
-            this.data_pagos.Size = new System.Drawing.Size(541, 317);
+            this.data_pagos.Size = new System.Drawing.Size(979, 461);
             this.data_pagos.TabIndex = 10;
             this.data_pagos.Visible = false;
             // 
             // dataGridViewButtonColumn2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = "Anular";
-            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "Anular";
+            this.dataGridViewButtonColumn2.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewButtonColumn2.HeaderText = "Anular";
             this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
             this.dataGridViewButtonColumn2.ReadOnly = true;
@@ -357,6 +362,17 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Regresar ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 28);
+            this.label1.TabIndex = 1017;
+            this.label1.Text = "Por favor, \r\nSeleccionar el tipo de Documento a visualizar.";
             // 
             // idPagoDataGridViewTextBoxColumn
             // 
@@ -455,6 +471,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 662);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbox_Documentos);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.data_pagos);
@@ -482,6 +499,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.listarComprasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCompras)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -526,5 +544,6 @@
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
