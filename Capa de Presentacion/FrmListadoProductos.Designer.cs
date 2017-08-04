@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoProductos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -102,7 +102,7 @@
             this.Teléfono,
             this.Nombres,
             this.Unidad});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1004, 300);
             this.dataGridView1.TabIndex = 0;
@@ -125,7 +125,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1012, 52);
+            this.panel4.Size = new System.Drawing.Size(998, 52);
             this.panel4.TabIndex = 1012;
             // 
             // lbl_title
@@ -156,7 +156,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(859, 8);
+            this.button3.Location = new System.Drawing.Point(845, 8);
             this.button3.MaximumSize = new System.Drawing.Size(141, 33);
             this.button3.MinimumSize = new System.Drawing.Size(141, 33);
             this.button3.Name = "button3";
@@ -171,6 +171,7 @@
             this.Column1.HeaderText = "Codigo";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Width = 95;
             // 
             // IdC
             // 
@@ -200,9 +201,9 @@
             // 
             // Dirección
             // 
-            dataGridViewCellStyle16.Format = "N2";
-            dataGridViewCellStyle16.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Dirección.DefaultCellStyle = dataGridViewCellStyle7;
             this.Dirección.HeaderText = "P. Venta";
             this.Dirección.Name = "Dirección";
             this.Dirección.ReadOnly = true;
@@ -210,9 +211,9 @@
             // 
             // Teléfono
             // 
-            dataGridViewCellStyle17.Format = "N2";
-            dataGridViewCellStyle17.NullValue = null;
-            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle8;
             this.Teléfono.HeaderText = "Stock";
             this.Teléfono.Name = "Teléfono";
             this.Teléfono.ReadOnly = true;
@@ -220,9 +221,9 @@
             // 
             // Nombres
             // 
-            dataGridViewCellStyle18.Format = "C2";
-            dataGridViewCellStyle18.NullValue = null;
-            this.Nombres.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle9.Format = "C2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Nombres.DefaultCellStyle = dataGridViewCellStyle9;
             this.Nombres.HeaderText = "Fecha Vto,";
             this.Nombres.Name = "Nombres";
             this.Nombres.ReadOnly = true;

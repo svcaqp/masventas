@@ -35,6 +35,7 @@
             this.lbl_usuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbox_egresos = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_monto = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbox_egresos.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -145,6 +145,17 @@
             this.gbox_egresos.TabStop = false;
             this.gbox_egresos.Text = "Egresos";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 39);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "S/.";
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -169,7 +180,7 @@
             // txt_monto
             // 
             this.txt_monto.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txt_monto.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_monto.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_monto.Location = new System.Drawing.Point(70, 91);
             this.txt_monto.MaxLength = 9;
             this.txt_monto.Multiline = true;
@@ -270,17 +281,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(274, 98);
             this.panel1.TabIndex = 1010;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 39);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "S/.";
             // 
             // FrmCaja
             // 

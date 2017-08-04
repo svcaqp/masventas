@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroVentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_nroruc = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblNroCorrelativo = new System.Windows.Forms.Label();
@@ -59,8 +60,8 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtUnidad = new System.Windows.Forms.TextBox();
             this.lblUnidad = new System.Windows.Forms.Label();
+            this.txtUnidad = new System.Windows.Forms.TextBox();
             this.btnBusquedaProducto = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -74,6 +75,14 @@
             this.txtIgv = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnRegistrarVenta = new System.Windows.Forms.Button();
+            this.btnEliminarVenta = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnEliminarItem = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.IdD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,16 +90,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRegistrarVenta = new System.Windows.Forms.Button();
-            this.btnEliminarVenta = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lbl_title = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEliminarItem = new System.Windows.Forms.Button();
-            this.lbl_nroruc = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -119,9 +118,21 @@
             this.panel1.Controls.Add(this.txtIdVenta);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.MaximumSize = new System.Drawing.Size(300, 110);
+            this.panel1.MinimumSize = new System.Drawing.Size(300, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 110);
             this.panel1.TabIndex = 1;
+            // 
+            // lbl_nroruc
+            // 
+            this.lbl_nroruc.AutoSize = true;
+            this.lbl_nroruc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nroruc.Location = new System.Drawing.Point(124, 8);
+            this.lbl_nroruc.Name = "lbl_nroruc";
+            this.lbl_nroruc.Size = new System.Drawing.Size(124, 19);
+            this.lbl_nroruc.TabIndex = 1011;
+            this.lbl_nroruc.Text = " 20486546126";
             // 
             // label3
             // 
@@ -139,7 +150,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(123, 80);
+            this.label2.Location = new System.Drawing.Point(130, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(13, 17);
             this.label2.TabIndex = 2;
@@ -150,9 +161,9 @@
             this.lblNroCorrelativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNroCorrelativo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNroCorrelativo.ForeColor = System.Drawing.Color.Red;
-            this.lblNroCorrelativo.Location = new System.Drawing.Point(145, 79);
+            this.lblNroCorrelativo.Location = new System.Drawing.Point(161, 80);
             this.lblNroCorrelativo.Name = "lblNroCorrelativo";
-            this.lblNroCorrelativo.Size = new System.Drawing.Size(133, 23);
+            this.lblNroCorrelativo.Size = new System.Drawing.Size(123, 23);
             this.lblNroCorrelativo.TabIndex = 1;
             // 
             // lblSerie
@@ -160,9 +171,9 @@
             this.lblSerie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSerie.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSerie.Location = new System.Drawing.Point(20, 79);
+            this.lblSerie.Location = new System.Drawing.Point(36, 80);
             this.lblSerie.Name = "lblSerie";
-            this.lblSerie.Size = new System.Drawing.Size(100, 23);
+            this.lblSerie.Size = new System.Drawing.Size(79, 23);
             this.lblSerie.TabIndex = 1;
             // 
             // lblTipo
@@ -197,7 +208,7 @@
             this.groupBox1.Controls.Add(this.rbnFactura);
             this.groupBox1.Controls.Add(this.rbnBoleta);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(51, 85);
+            this.groupBox1.Location = new System.Drawing.Point(64, 85);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(419, 59);
             this.groupBox1.TabIndex = 6;
@@ -247,7 +258,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(74, 108);
+            this.label4.Location = new System.Drawing.Point(87, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 5;
@@ -256,7 +267,7 @@
             // 
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(494, 85);
+            this.groupBox2.Location = new System.Drawing.Point(507, 85);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(243, 59);
             this.groupBox2.TabIndex = 7;
@@ -283,7 +294,7 @@
             this.groupBox3.Controls.Add(this.txtDatos);
             this.groupBox3.Controls.Add(this.lblNombre);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(51, 146);
+            this.groupBox3.Location = new System.Drawing.Point(64, 146);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(903, 119);
             this.groupBox3.TabIndex = 8;
@@ -398,7 +409,7 @@
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(51, 268);
+            this.groupBox4.Location = new System.Drawing.Point(64, 268);
             this.groupBox4.MaximumSize = new System.Drawing.Size(1217, 109);
             this.groupBox4.MinimumSize = new System.Drawing.Size(1217, 109);
             this.groupBox4.Name = "groupBox4";
@@ -440,6 +451,16 @@
             this.pictureBox3.TabIndex = 1012;
             this.pictureBox3.TabStop = false;
             // 
+            // lblUnidad
+            // 
+            this.lblUnidad.AutoSize = true;
+            this.lblUnidad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnidad.Location = new System.Drawing.Point(128, 81);
+            this.lblUnidad.Name = "lblUnidad";
+            this.lblUnidad.Size = new System.Drawing.Size(52, 14);
+            this.lblUnidad.TabIndex = 14;
+            this.lblUnidad.Text = "Unidad: ";
+            // 
             // txtUnidad
             // 
             this.txtUnidad.BackColor = System.Drawing.SystemColors.Control;
@@ -451,23 +472,13 @@
             this.txtUnidad.TabIndex = 15;
             this.txtUnidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblUnidad
-            // 
-            this.lblUnidad.AutoSize = true;
-            this.lblUnidad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnidad.Location = new System.Drawing.Point(128, 81);
-            this.lblUnidad.Name = "lblUnidad";
-            this.lblUnidad.Size = new System.Drawing.Size(52, 14);
-            this.lblUnidad.TabIndex = 14;
-            this.lblUnidad.Text = "Unidad: ";
-            // 
             // btnBusquedaProducto
             // 
             this.btnBusquedaProducto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBusquedaProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBusquedaProducto.BackgroundImage")));
             this.btnBusquedaProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBusquedaProducto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBusquedaProducto.Location = new System.Drawing.Point(776, 28);
+            this.btnBusquedaProducto.Location = new System.Drawing.Point(772, 34);
             this.btnBusquedaProducto.Name = "btnBusquedaProducto";
             this.btnBusquedaProducto.Size = new System.Drawing.Size(98, 58);
             this.btnBusquedaProducto.TabIndex = 11;
@@ -480,7 +491,7 @@
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAgregar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(1096, 28);
+            this.btnAgregar.Location = new System.Drawing.Point(1098, 34);
             this.btnAgregar.MaximumSize = new System.Drawing.Size(98, 58);
             this.btnAgregar.MinimumSize = new System.Drawing.Size(98, 58);
             this.btnAgregar.Name = "btnAgregar";
@@ -582,7 +593,7 @@
             this.txtIgv.BackColor = System.Drawing.SystemColors.Control;
             this.txtIgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIgv.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIgv.Location = new System.Drawing.Point(67, 16);
+            this.txtIgv.Location = new System.Drawing.Point(52, 3);
             this.txtIgv.Name = "txtIgv";
             this.txtIgv.Size = new System.Drawing.Size(62, 23);
             this.txtIgv.TabIndex = 13;
@@ -592,7 +603,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(22, 19);
+            this.label12.Location = new System.Drawing.Point(7, 6);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(43, 14);
             this.label12.TabIndex = 12;
@@ -614,11 +625,116 @@
             this.Column5,
             this.Column6});
             this.dataGridView1.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.Location = new System.Drawing.Point(51, 389);
+            this.dataGridView1.Location = new System.Drawing.Point(64, 389);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1061, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(1076, 231);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
+            // 
+            // btnRegistrarVenta
+            // 
+            this.btnRegistrarVenta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegistrarVenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrarVenta.BackgroundImage")));
+            this.btnRegistrarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegistrarVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarVenta.Location = new System.Drawing.Point(-1, 132);
+            this.btnRegistrarVenta.Name = "btnRegistrarVenta";
+            this.btnRegistrarVenta.Size = new System.Drawing.Size(135, 165);
+            this.btnRegistrarVenta.TabIndex = 19;
+            this.btnRegistrarVenta.UseVisualStyleBackColor = true;
+            this.btnRegistrarVenta.Click += new System.EventHandler(this.btnRegistrarVenta_Click);
+            // 
+            // btnEliminarVenta
+            // 
+            this.btnEliminarVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminarVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarVenta.Location = new System.Drawing.Point(16, 91);
+            this.btnEliminarVenta.MaximumSize = new System.Drawing.Size(98, 35);
+            this.btnEliminarVenta.MinimumSize = new System.Drawing.Size(98, 35);
+            this.btnEliminarVenta.Name = "btnEliminarVenta";
+            this.btnEliminarVenta.Size = new System.Drawing.Size(98, 35);
+            this.btnEliminarVenta.TabIndex = 22;
+            this.btnEliminarVenta.Text = "Eliminar &Venta";
+            this.btnEliminarVenta.UseVisualStyleBackColor = true;
+            this.btnEliminarVenta.Click += new System.EventHandler(this.btnEliminarVenta_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.lbl_title);
+            this.panel4.Location = new System.Drawing.Point(33, 11);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1199, 52);
+            this.panel4.TabIndex = 1009;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Tomato;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1045, 8);
+            this.button2.MaximumSize = new System.Drawing.Size(143, 33);
+            this.button2.MinimumSize = new System.Drawing.Size(143, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 33);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Regresar ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(13, 14);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(78, 23);
+            this.lbl_title.TabIndex = 10;
+            this.lbl_title.Text = "VENTAS";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnRegistrarVenta);
+            this.panel2.Controls.Add(this.btnEliminarVenta);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.btnEliminarItem);
+            this.panel2.Controls.Add(this.txtIgv);
+            this.panel2.Location = new System.Drawing.Point(1146, 389);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(135, 305);
+            this.panel2.TabIndex = 1010;
+            // 
+            // btnEliminarItem
+            // 
+            this.btnEliminarItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminarItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarItem.Location = new System.Drawing.Point(16, 50);
+            this.btnEliminarItem.MaximumSize = new System.Drawing.Size(98, 35);
+            this.btnEliminarItem.MinimumSize = new System.Drawing.Size(98, 35);
+            this.btnEliminarItem.Name = "btnEliminarItem";
+            this.btnEliminarItem.Size = new System.Drawing.Size(98, 35);
+            this.btnEliminarItem.TabIndex = 20;
+            this.btnEliminarItem.Text = "Eliminar &Item";
+            this.btnEliminarItem.UseVisualStyleBackColor = true;
+            this.btnEliminarItem.Click += new System.EventHandler(this.btnEliminarItem_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Location = new System.Drawing.Point(981, 153);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 110);
+            this.panel3.TabIndex = 1011;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // IdD
             // 
@@ -644,23 +760,23 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle11.Format = "N2";
-            dataGridViewCellStyle11.NullValue = null;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle13.Format = "N2";
+            dataGridViewCellStyle13.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle13;
             this.Column4.HeaderText = "P. UNIT.";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 120;
+            this.Column4.Width = 125;
             // 
             // Column3
             // 
-            dataGridViewCellStyle12.Format = "N2";
-            dataGridViewCellStyle12.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle14.Format = "N2";
+            dataGridViewCellStyle14.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle14;
             this.Column3.HeaderText = "IMPORTE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 120;
+            this.Column3.Width = 125;
             // 
             // Column5
             // 
@@ -677,135 +793,6 @@
             this.Column6.ReadOnly = true;
             this.Column6.Visible = false;
             this.Column6.Width = 120;
-            // 
-            // btnRegistrarVenta
-            // 
-            this.btnRegistrarVenta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistrarVenta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrarVenta.BackgroundImage")));
-            this.btnRegistrarVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRegistrarVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarVenta.Location = new System.Drawing.Point(3, 133);
-            this.btnRegistrarVenta.Name = "btnRegistrarVenta";
-            this.btnRegistrarVenta.Size = new System.Drawing.Size(147, 95);
-            this.btnRegistrarVenta.TabIndex = 19;
-            this.btnRegistrarVenta.UseVisualStyleBackColor = true;
-            this.btnRegistrarVenta.Click += new System.EventHandler(this.btnRegistrarVenta_Click);
-            // 
-            // btnEliminarVenta
-            // 
-            this.btnEliminarVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminarVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarVenta.Location = new System.Drawing.Point(29, 89);
-            this.btnEliminarVenta.MaximumSize = new System.Drawing.Size(98, 35);
-            this.btnEliminarVenta.MinimumSize = new System.Drawing.Size(98, 35);
-            this.btnEliminarVenta.Name = "btnEliminarVenta";
-            this.btnEliminarVenta.Size = new System.Drawing.Size(98, 35);
-            this.btnEliminarVenta.TabIndex = 22;
-            this.btnEliminarVenta.Text = "Eliminar Venta";
-            this.btnEliminarVenta.UseVisualStyleBackColor = true;
-            this.btnEliminarVenta.Click += new System.EventHandler(this.btnEliminarVenta_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(47, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(10, 25);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Imprimir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.lbl_title);
-            this.panel4.Location = new System.Drawing.Point(33, 11);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1199, 52);
-            this.panel4.TabIndex = 1009;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Tomato;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1047, 8);
-            this.button2.MaximumSize = new System.Drawing.Size(143, 33);
-            this.button2.MinimumSize = new System.Drawing.Size(143, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(143, 33);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Regresar ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // lbl_title
-            // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(13, 14);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(78, 23);
-            this.lbl_title.TabIndex = 10;
-            this.lbl_title.Text = "VENTAS";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnRegistrarVenta);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btnEliminarVenta);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.btnEliminarItem);
-            this.panel2.Controls.Add(this.txtIgv);
-            this.panel2.Location = new System.Drawing.Point(1150, 389);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 231);
-            this.panel2.TabIndex = 1010;
-            // 
-            // btnEliminarItem
-            // 
-            this.btnEliminarItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminarItem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarItem.Location = new System.Drawing.Point(29, 47);
-            this.btnEliminarItem.MaximumSize = new System.Drawing.Size(98, 35);
-            this.btnEliminarItem.MinimumSize = new System.Drawing.Size(98, 35);
-            this.btnEliminarItem.Name = "btnEliminarItem";
-            this.btnEliminarItem.Size = new System.Drawing.Size(98, 35);
-            this.btnEliminarItem.TabIndex = 20;
-            this.btnEliminarItem.Text = "&Eliminar Item";
-            this.btnEliminarItem.UseVisualStyleBackColor = true;
-            this.btnEliminarItem.Click += new System.EventHandler(this.btnEliminarItem_Click);
-            // 
-            // lbl_nroruc
-            // 
-            this.lbl_nroruc.AutoSize = true;
-            this.lbl_nroruc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nroruc.Location = new System.Drawing.Point(124, 8);
-            this.lbl_nroruc.Name = "lbl_nroruc";
-            this.lbl_nroruc.Size = new System.Drawing.Size(124, 19);
-            this.lbl_nroruc.TabIndex = 1011;
-            this.lbl_nroruc.Text = " 20486546126";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(968, 153);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 110);
-            this.panel3.TabIndex = 1011;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // FrmRegistroVentas
             // 
@@ -893,7 +880,6 @@
         private System.Windows.Forms.Button btnRegistrarVenta;
         private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Button btnEliminarVenta;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton rbnNotaVenta;
         private System.Windows.Forms.TextBox txtUnidad;
         private System.Windows.Forms.Label lblUnidad;
@@ -906,6 +892,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnEliminarItem;
+        private System.Windows.Forms.Label lbl_nroruc;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdD;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -913,8 +902,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button btnEliminarItem;
-        private System.Windows.Forms.Label lbl_nroruc;
-        private System.Windows.Forms.Panel panel3;
     }
 }
