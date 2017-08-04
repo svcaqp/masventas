@@ -44,13 +44,43 @@ namespace Capa_de_Presentacion
                 if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Anular este Documento? ", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
 
-                    string iddocumento = data_documentos.CurrentRow.Cells[0].Value.ToString();
-                    clsDocumento documento = new clsDocumento(iddocumento, "Venta");
-                    System.Windows.Forms.MessageBox.Show(documento.AnularDocumento());
+                    
+                    clsDocumento documento = null;
+                    if (cbox_Tipo.SelectedIndex == 0)
+                    {
+                        string iddocumento = data_documentos.CurrentRow.Cells[0].Value.ToString();
+                        documento = new clsDocumento(iddocumento, "Venta");
+                    }
+                    if (cbox_Tipo.SelectedIndex == 1)
+                    {
+                        string iddocumento = data_compras.CurrentRow.Cells[0].Value.ToString();
+                        documento = new clsDocumento(iddocumento, "Compra");
+                    }
+                    if (cbox_Tipo.SelectedIndex == 2)
+                    {
+                        string iddocumento = data_pagos.CurrentRow.Cells[0].Value.ToString();
+                        documento = new clsDocumento(iddocumento, "Pago");
+                    }
+                    if(documento != null)
+                        System.Windows.Forms.MessageBox.Show(documento.AnularDocumento());
 
-
-                    this.listarDocumentosTableAdapter.Fill(this.demoPracticaDocumentos.ListarDocumentos,
+                    if (cbox_Tipo.SelectedIndex == 0)
+                    {
+                        this.listarDocumentosTableAdapter.Fill(this.demoPracticaDocumentos.ListarDocumentos,
                        cbox_Documentos.Text);
+
+                    }
+                    if (cbox_Tipo.SelectedIndex == 1)
+                    {
+                        this.listarComprasTableAdapter.Fill(this.demoPracticaCompras.ListarCompras);
+                    }
+                    if (cbox_Tipo.SelectedIndex == 2)
+                    {
+                        this.listarPagosTableAdapter.Fill(this.demoPracticaPagos.ListarPagos);
+                    }
+
+                    
+
                 }
             }
         }
