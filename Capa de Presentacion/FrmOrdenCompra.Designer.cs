@@ -64,9 +64,9 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(354, 353);
+            this.btnGuardar.Location = new System.Drawing.Point(353, 369);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(98, 66);
+            this.btnGuardar.Size = new System.Drawing.Size(98, 35);
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@
             this.groupBox1.Controls.Add(this.rbn_factura);
             this.groupBox1.Controls.Add(this.rbn_boleta);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 146);
+            this.groupBox1.Location = new System.Drawing.Point(13, 141);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(450, 125);
             this.groupBox1.TabIndex = 25;
@@ -179,7 +179,7 @@
             // 
             this.lbl_nombreProducto.AutoSize = true;
             this.lbl_nombreProducto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombreProducto.Location = new System.Drawing.Point(10, 20);
+            this.lbl_nombreProducto.Location = new System.Drawing.Point(10, 19);
             this.lbl_nombreProducto.Name = "lbl_nombreProducto";
             this.lbl_nombreProducto.Size = new System.Drawing.Size(82, 14);
             this.lbl_nombreProducto.TabIndex = 26;
@@ -190,7 +190,7 @@
             // 
             this.groupBox2.Controls.Add(this.lbl_MarcaProducto);
             this.groupBox2.Controls.Add(this.lbl_nombreProducto);
-            this.groupBox2.Location = new System.Drawing.Point(12, 75);
+            this.groupBox2.Location = new System.Drawing.Point(12, 69);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(450, 65);
             this.groupBox2.TabIndex = 27;
@@ -200,7 +200,7 @@
             // 
             this.lbl_MarcaProducto.AutoSize = true;
             this.lbl_MarcaProducto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MarcaProducto.Location = new System.Drawing.Point(10, 38);
+            this.lbl_MarcaProducto.Location = new System.Drawing.Point(10, 37);
             this.lbl_MarcaProducto.Name = "lbl_MarcaProducto";
             this.lbl_MarcaProducto.Size = new System.Drawing.Size(57, 14);
             this.lbl_MarcaProducto.TabIndex = 27;
@@ -210,7 +210,7 @@
             // 
             this.groupBox3.Controls.Add(this.date_Fecha);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(171, 282);
+            this.groupBox3.Location = new System.Drawing.Point(171, 279);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(291, 62);
             this.groupBox3.TabIndex = 28;
@@ -223,7 +223,7 @@
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.txtTotal);
             this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Location = new System.Drawing.Point(12, 271);
+            this.groupBox5.Location = new System.Drawing.Point(12, 268);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(149, 150);
             this.groupBox5.TabIndex = 29;
@@ -282,7 +282,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(297, 15);
+            this.button2.Location = new System.Drawing.Point(217, 9);
             this.button2.MaximumSize = new System.Drawing.Size(141, 33);
             this.button2.MinimumSize = new System.Drawing.Size(141, 33);
             this.button2.Name = "button2";
@@ -297,18 +297,17 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.lbl_title);
-            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.button2);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(449, 62);
+            this.panel4.Size = new System.Drawing.Size(369, 52);
             this.panel4.TabIndex = 1010;
             // 
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(79, 20);
+            this.lbl_title.Location = new System.Drawing.Point(14, 15);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(180, 23);
             this.lbl_title.TabIndex = 11;
@@ -317,9 +316,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(60, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -327,9 +326,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(244, 353);
+            this.button1.Location = new System.Drawing.Point(243, 369);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 66);
+            this.button1.Size = new System.Drawing.Size(98, 35);
             this.button1.TabIndex = 1011;
             this.button1.Text = "&Limpiar";
             this.button1.UseVisualStyleBackColor = true;
@@ -340,9 +339,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(473, 427);
+            this.ClientSize = new System.Drawing.Size(473, 431);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox5);
@@ -354,14 +354,14 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(489, 461);
+            this.MaximumSize = new System.Drawing.Size(489, 465);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(489, 461);
+            this.MinimumSize = new System.Drawing.Size(489, 465);
             this.Name = "FrmOrdenCompra";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro de Compra";
+            this.Text = "  ";
             this.TopMost = true;
             this.Activated += new System.EventHandler(this.FrmOrdenCompra_Activated);
             this.Load += new System.EventHandler(this.FrmRegistroProductos_Load);

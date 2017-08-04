@@ -43,7 +43,7 @@ namespace Capa_de_Presentacion
 
             if (caja.BuscarCajaDia())
             {
-                DevComponents.DotNetBar.MessageBoxEx.Show(this, "Ya registro una caja para el dia de hoy \n Solicite al administrador una Reapertura", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                DevComponents.DotNetBar.MessageBoxEx.Show(this, "Ya hay una Caja Registrada para Hoy. \nSolicite al Administrador una Reapertura de Caja.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
 
@@ -54,9 +54,9 @@ namespace Capa_de_Presentacion
                 btn_CerrarCaja.Show();
                 gbox_egresos.Enabled = true;
                 lbl_SaldoCaja.Show();
-                lbl_fecha.Text = "Fecha: " + GetDateString(caja.FechaAbierto);
-                lbl_hora.Text = "Hora de Apertura: "+ caja.HoraAbierto;
-                lbl_SaldoCaja.Text = "Saldo en Caja: s/." + string.Format("{0:N2}", (Program.SaldoAbierto + caja.TotalVendido() - caja.TotalPagos()));
+                lbl_fecha.Text = "FECHA: " + GetDateString(caja.FechaAbierto);
+                lbl_hora.Text = "HORA DE APERTURA: "+ caja.HoraAbierto;
+                lbl_SaldoCaja.Text = "SALDO EN CAJA: s/." + string.Format("{0:N2}", (Program.SaldoAbierto + caja.TotalVendido() - caja.TotalPagos()));
             }
 
         }
@@ -70,7 +70,7 @@ namespace Capa_de_Presentacion
 
         private void btn_CerrarCaja_Click(object sender, EventArgs e)
         {
-            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Está Seguro que Desea Cerrar la Caja? ", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) {
+            if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Seguro que desea Cerrar Caja?", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes) {
 
 
                 caja.CerrarCaja();
@@ -78,7 +78,7 @@ namespace Capa_de_Presentacion
             
                 ticket.FontSize = 8;
                 ticket.AddHeaderLine("CIERRE DE CAJA");
-                ticket.AddHeaderLine("Usuario: " + Program.NombreEmpleadoLogueado);
+                ticket.AddHeaderLine("USUARIO: " + Program.NombreEmpleadoLogueado);
                 ticket.AddHeaderLine(DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString());
                 ticket = caja.TotalVendidoDetalle(ticket);
                 clsPago pagos = new clsPago(caja.IdEmpleado,caja.FechaAbierto);
@@ -126,14 +126,14 @@ namespace Capa_de_Presentacion
                 else
                 {
                     txt_monto.Focus();
-                    DevComponents.DotNetBar.MessageBoxEx.Show(this, "El Monto es requerido", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DevComponents.DotNetBar.MessageBoxEx.Show(this, "El Monto es requerido.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                     
             }
             else 
             {
                 txt_descripcion.Focus();
-                DevComponents.DotNetBar.MessageBoxEx.Show(this, "El Monto es requerido", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                DevComponents.DotNetBar.MessageBoxEx.Show(this, "El Monto es requerido.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
                
         

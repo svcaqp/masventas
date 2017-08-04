@@ -651,6 +651,11 @@ namespace Capa_de_Presentacion
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }                
     }
 }

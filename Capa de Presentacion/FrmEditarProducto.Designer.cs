@@ -42,7 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxCategoria = new System.Windows.Forms.ComboBox();
             this.IdC = new System.Windows.Forms.TextBox();
@@ -77,7 +76,7 @@
             this.txtProducto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProducto.Location = new System.Drawing.Point(6, 67);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(284, 22);
+            this.txtProducto.Size = new System.Drawing.Size(295, 22);
             this.txtProducto.TabIndex = 2;
             // 
             // label2
@@ -95,7 +94,7 @@
             this.txtMarca.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMarca.Location = new System.Drawing.Point(6, 111);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(284, 22);
+            this.txtMarca.Size = new System.Drawing.Size(295, 22);
             this.txtMarca.TabIndex = 3;
             this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             this.txtMarca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMarca_KeyPress);
@@ -104,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 230);
+            this.label3.Location = new System.Drawing.Point(5, 236);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 14);
             this.label3.TabIndex = 4;
@@ -114,7 +113,7 @@
             // 
             this.txtPCompra.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtPCompra.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPCompra.Location = new System.Drawing.Point(6, 247);
+            this.txtPCompra.Location = new System.Drawing.Point(6, 253);
             this.txtPCompra.Name = "txtPCompra";
             this.txtPCompra.ReadOnly = true;
             this.txtPCompra.Size = new System.Drawing.Size(74, 22);
@@ -126,7 +125,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 276);
+            this.label4.Location = new System.Drawing.Point(5, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 14);
             this.label4.TabIndex = 6;
@@ -135,7 +134,7 @@
             // txtPVenta
             // 
             this.txtPVenta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPVenta.Location = new System.Drawing.Point(6, 291);
+            this.txtPVenta.Location = new System.Drawing.Point(6, 297);
             this.txtPVenta.Name = "txtPVenta";
             this.txtPVenta.Size = new System.Drawing.Size(74, 22);
             this.txtPVenta.TabIndex = 6;
@@ -145,7 +144,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(179, 244);
+            this.label5.Location = new System.Drawing.Point(179, 250);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 14);
             this.label5.TabIndex = 8;
@@ -155,7 +154,7 @@
             // 
             this.txtStock.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtStock.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStock.Location = new System.Drawing.Point(182, 261);
+            this.txtStock.Location = new System.Drawing.Point(182, 267);
             this.txtStock.Multiline = true;
             this.txtStock.Name = "txtStock";
             this.txtStock.ReadOnly = true;
@@ -180,31 +179,19 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(6, 200);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(284, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(295, 22);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(15, 248);
+            this.btnGuardar.Location = new System.Drawing.Point(17, 284);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(98, 66);
+            this.btnGuardar.Size = new System.Drawing.Size(98, 35);
             this.btnGuardar.TabIndex = 7;
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(14, 265);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 39);
-            this.btnCancelar.TabIndex = 99;
-            this.btnCancelar.Text = "&Salir";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Visible = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label7
             // 
@@ -223,7 +210,7 @@
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Location = new System.Drawing.Point(6, 22);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(284, 22);
+            this.cbxCategoria.Size = new System.Drawing.Size(295, 22);
             this.cbxCategoria.TabIndex = 1;
             // 
             // IdC
@@ -258,15 +245,15 @@
             this.txtUnidad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUnidad.Location = new System.Drawing.Point(6, 156);
             this.txtUnidad.Name = "txtUnidad";
-            this.txtUnidad.Size = new System.Drawing.Size(284, 22);
+            this.txtUnidad.Size = new System.Drawing.Size(295, 22);
             this.txtUnidad.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 6);
+            this.button1.Location = new System.Drawing.Point(17, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 66);
+            this.button1.Size = new System.Drawing.Size(98, 35);
             this.button1.TabIndex = 999;
             this.button1.Text = "&Sumar Stock";
             this.button1.UseVisualStyleBackColor = true;
@@ -275,9 +262,9 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(15, 178);
+            this.btnEliminar.Location = new System.Drawing.Point(17, 243);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(98, 66);
+            this.btnEliminar.Size = new System.Drawing.Size(98, 35);
             this.btnEliminar.TabIndex = 1000;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -310,7 +297,6 @@
             // 
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.btnEliminar);
-            this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(335, 81);
             this.panel2.Name = "panel2";
@@ -320,9 +306,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(60, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -330,11 +316,10 @@
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.button2);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 55);
+            this.panel4.Size = new System.Drawing.Size(369, 52);
             this.panel4.TabIndex = 1009;
             // 
             // button2
@@ -344,7 +329,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(294, 11);
+            this.button2.Location = new System.Drawing.Point(217, 9);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 33);
             this.button2.TabIndex = 9;
@@ -358,6 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(473, 427);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -365,13 +351,14 @@
             this.Controls.Add(this.IdC);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.MaximumSize = new System.Drawing.Size(489, 465);
+            this.MinimumSize = new System.Drawing.Size(489, 465);
             this.Name = "FrmEditarProducto";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Editar Producto";
+            this.Text = "INFORMACION DEL PRODUCTO";
             this.Activated += new System.EventHandler(this.FrmRegistroProductos_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistroProductos_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistroProductos_Load);
@@ -394,7 +381,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtProducto;
         public System.Windows.Forms.TextBox txtMarca;

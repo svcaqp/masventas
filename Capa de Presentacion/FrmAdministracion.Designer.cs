@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdministracion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_caja = new System.Windows.Forms.Button();
             this.btn_igv = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -55,24 +55,22 @@
             this.gbox_usuarios = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.gbox_opciones = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbox_informacion = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_nombre_empresa = new System.Windows.Forms.TextBox();
-            this.txt_ruc_empresa = new System.Windows.Forms.TextBox();
-            this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
+            this.txt_ruc_empresa = new System.Windows.Forms.TextBox();
+            this.txt_nombre_empresa = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbox_impresora = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -85,6 +83,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.gbox_caja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cajasCerradasBindingSource)).BeginInit();
@@ -93,12 +94,12 @@
             this.gbox_usuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
-          
             this.gbox_opciones.SuspendLayout();
             this.gbox_informacion.SuspendLayout();
             this.gbox_impresora.SuspendLayout();
             this.gbox_igv.SuspendLayout();
             this.gbox_seguridad.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_caja
@@ -133,7 +134,7 @@
             // gbox_caja
             // 
             this.gbox_caja.Controls.Add(this.dataGridView1);
-            this.gbox_caja.Location = new System.Drawing.Point(28, 166);
+            this.gbox_caja.Location = new System.Drawing.Point(28, 244);
             this.gbox_caja.Name = "gbox_caja";
             this.gbox_caja.Size = new System.Drawing.Size(659, 223);
             this.gbox_caja.TabIndex = 5;
@@ -243,9 +244,9 @@
             // pbox_icon
             // 
             this.pbox_icon.Image = ((System.Drawing.Image)(resources.GetObject("pbox_icon.Image")));
-            this.pbox_icon.Location = new System.Drawing.Point(29, 24);
+            this.pbox_icon.Location = new System.Drawing.Point(29, 90);
             this.pbox_icon.Name = "pbox_icon";
-            this.pbox_icon.Size = new System.Drawing.Size(138, 110);
+            this.pbox_icon.Size = new System.Drawing.Size(139, 144);
             this.pbox_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbox_icon.TabIndex = 0;
             this.pbox_icon.TabStop = false;
@@ -268,7 +269,7 @@
             // 
             this.gbox_usuarios.Controls.Add(this.label1);
             this.gbox_usuarios.Controls.Add(this.dataGridView2);
-            this.gbox_usuarios.Location = new System.Drawing.Point(29, 165);
+            this.gbox_usuarios.Location = new System.Drawing.Point(29, 243);
             this.gbox_usuarios.Name = "gbox_usuarios";
             this.gbox_usuarios.Size = new System.Drawing.Size(659, 242);
             this.gbox_usuarios.TabIndex = 6;
@@ -292,8 +293,6 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idUsuarioDataGridViewTextBoxColumn,
-            this.usuarioDataGridViewTextBoxColumn1,
             this.contraseñaDataGridViewTextBoxColumn,
             this.Actualizar,
             this.Eliminar});
@@ -304,32 +303,19 @@
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // idUsuarioDataGridViewTextBoxColumn
-            // 
-            this.idUsuarioDataGridViewTextBoxColumn.DataPropertyName = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.HeaderText = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.Name = "idUsuarioDataGridViewTextBoxColumn";
-            this.idUsuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usuarioDataGridViewTextBoxColumn1
-            // 
-            this.usuarioDataGridViewTextBoxColumn1.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn1.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn1.Name = "usuarioDataGridViewTextBoxColumn1";
-            // 
             // contraseñaDataGridViewTextBoxColumn
             // 
-            dataGridViewCellStyle7.NullValue = "********";
-            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.NullValue = "********";
+            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
             this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
             this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
             // 
             // Actualizar
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.NullValue = "Actualizar";
-            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.NullValue = "Actualizar";
+            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle5;
             this.Actualizar.HeaderText = "Actualizar";
             this.Actualizar.Name = "Actualizar";
             this.Actualizar.Text = "Actualizar";
@@ -338,29 +324,19 @@
             // Eliminar
             // 
             this.Eliminar.DataPropertyName = "Eliminar";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.NullValue = "Eliminar";
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = "Eliminar";
+            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle6;
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.ToolTipText = "Eliminar";
             // 
-            // usuarioBindingSource
-            // 
-            
-            // 
-            // demoPracticaUsuarios
-            // 
-             // 
-            // usuarioTableAdapter
-            // 
-            // 
             // lbl_mensaje
             // 
             this.lbl_mensaje.AutoSize = true;
             this.lbl_mensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mensaje.Location = new System.Drawing.Point(270, 226);
+            this.lbl_mensaje.Location = new System.Drawing.Point(270, 304);
             this.lbl_mensaje.Name = "lbl_mensaje";
             this.lbl_mensaje.Size = new System.Drawing.Size(308, 33);
             this.lbl_mensaje.TabIndex = 7;
@@ -374,21 +350,12 @@
             this.gbox_opciones.Controls.Add(this.button2);
             this.gbox_opciones.Controls.Add(this.btn_igv);
             this.gbox_opciones.Controls.Add(this.btn_caja);
-            this.gbox_opciones.Location = new System.Drawing.Point(183, 24);
+            this.gbox_opciones.Location = new System.Drawing.Point(183, 102);
             this.gbox_opciones.Name = "gbox_opciones";
             this.gbox_opciones.Size = new System.Drawing.Size(505, 136);
             this.gbox_opciones.TabIndex = 8;
             this.gbox_opciones.TabStop = false;
             this.gbox_opciones.Text = "Opciones";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(35, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 43);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Seguridad";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -399,6 +366,15 @@
             this.button3.Text = "Impresora";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 43);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Seguridad";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // gbox_informacion
             // 
             this.gbox_informacion.Controls.Add(this.button4);
@@ -408,61 +384,13 @@
             this.gbox_informacion.Controls.Add(this.label4);
             this.gbox_informacion.Controls.Add(this.label3);
             this.gbox_informacion.Controls.Add(this.label2);
-            this.gbox_informacion.Location = new System.Drawing.Point(27, 168);
+            this.gbox_informacion.Location = new System.Drawing.Point(27, 246);
             this.gbox_informacion.Name = "gbox_informacion";
             this.gbox_informacion.Size = new System.Drawing.Size(654, 233);
             this.gbox_informacion.TabIndex = 9;
             this.gbox_informacion.TabStop = false;
             this.gbox_informacion.Text = "Información de la empresa";
             this.gbox_informacion.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Nombre de la empresa :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "RUC de la empresa :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Direccion de la empresa :";
-            // 
-            // txt_nombre_empresa
-            // 
-            this.txt_nombre_empresa.Location = new System.Drawing.Point(22, 53);
-            this.txt_nombre_empresa.Name = "txt_nombre_empresa";
-            this.txt_nombre_empresa.Size = new System.Drawing.Size(306, 20);
-            this.txt_nombre_empresa.TabIndex = 13;
-            // 
-            // txt_ruc_empresa
-            // 
-            this.txt_ruc_empresa.Location = new System.Drawing.Point(22, 108);
-            this.txt_ruc_empresa.Name = "txt_ruc_empresa";
-            this.txt_ruc_empresa.Size = new System.Drawing.Size(306, 20);
-            this.txt_ruc_empresa.TabIndex = 14;
-            // 
-            // txt_direccion_empresa
-            // 
-            this.txt_direccion_empresa.Location = new System.Drawing.Point(22, 158);
-            this.txt_direccion_empresa.Name = "txt_direccion_empresa";
-            this.txt_direccion_empresa.Size = new System.Drawing.Size(306, 20);
-            this.txt_direccion_empresa.TabIndex = 15;
             // 
             // button4
             // 
@@ -473,12 +401,60 @@
             this.button4.Text = "Guardar";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // txt_direccion_empresa
+            // 
+            this.txt_direccion_empresa.Location = new System.Drawing.Point(22, 158);
+            this.txt_direccion_empresa.Name = "txt_direccion_empresa";
+            this.txt_direccion_empresa.Size = new System.Drawing.Size(306, 20);
+            this.txt_direccion_empresa.TabIndex = 15;
+            // 
+            // txt_ruc_empresa
+            // 
+            this.txt_ruc_empresa.Location = new System.Drawing.Point(22, 108);
+            this.txt_ruc_empresa.Name = "txt_ruc_empresa";
+            this.txt_ruc_empresa.Size = new System.Drawing.Size(306, 20);
+            this.txt_ruc_empresa.TabIndex = 14;
+            // 
+            // txt_nombre_empresa
+            // 
+            this.txt_nombre_empresa.Location = new System.Drawing.Point(22, 53);
+            this.txt_nombre_empresa.Name = "txt_nombre_empresa";
+            this.txt_nombre_empresa.Size = new System.Drawing.Size(306, 20);
+            this.txt_nombre_empresa.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(127, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Direccion de la empresa :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "RUC de la empresa :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Nombre de la empresa :";
+            // 
             // gbox_impresora
             // 
             this.gbox_impresora.Controls.Add(this.button5);
             this.gbox_impresora.Controls.Add(this.textBox3);
             this.gbox_impresora.Controls.Add(this.label7);
-            this.gbox_impresora.Location = new System.Drawing.Point(30, 221);
+            this.gbox_impresora.Location = new System.Drawing.Point(30, 299);
             this.gbox_impresora.Name = "gbox_impresora";
             this.gbox_impresora.Size = new System.Drawing.Size(654, 112);
             this.gbox_impresora.TabIndex = 17;
@@ -516,7 +492,7 @@
             this.gbox_igv.Controls.Add(this.button6);
             this.gbox_igv.Controls.Add(this.textBox1);
             this.gbox_igv.Controls.Add(this.label5);
-            this.gbox_igv.Location = new System.Drawing.Point(29, 221);
+            this.gbox_igv.Location = new System.Drawing.Point(29, 299);
             this.gbox_igv.Name = "gbox_igv";
             this.gbox_igv.Size = new System.Drawing.Size(654, 112);
             this.gbox_igv.TabIndex = 18;
@@ -554,7 +530,7 @@
             this.gbox_seguridad.Controls.Add(this.button7);
             this.gbox_seguridad.Controls.Add(this.textBox2);
             this.gbox_seguridad.Controls.Add(this.label6);
-            this.gbox_seguridad.Location = new System.Drawing.Point(27, 221);
+            this.gbox_seguridad.Location = new System.Drawing.Point(27, 299);
             this.gbox_seguridad.Name = "gbox_seguridad";
             this.gbox_seguridad.Size = new System.Drawing.Size(654, 112);
             this.gbox_seguridad.TabIndex = 19;
@@ -587,11 +563,51 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Ubicacion del archivo (.Backup)";
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.button8);
+            this.panel4.Controls.Add(this.lbl_title);
+            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(871, 65);
+            this.panel4.TabIndex = 1009;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Tomato;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(712, 15);
+            this.button8.MaximumSize = new System.Drawing.Size(143, 33);
+            this.button8.MinimumSize = new System.Drawing.Size(143, 33);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(143, 33);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "Regresar ";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(13, 22);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(165, 23);
+            this.lbl_title.TabIndex = 10;
+            this.lbl_title.Text = "ADMINISTRACION";
+            // 
             // FrmAdministracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 429);
+            this.ClientSize = new System.Drawing.Size(898, 464);
+            this.ControlBox = false;
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.gbox_seguridad);
             this.Controls.Add(this.gbox_igv);
             this.Controls.Add(this.gbox_impresora);
@@ -605,7 +621,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAdministracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Administracion";
+            this.Text = "   ";
             this.Load += new System.EventHandler(this.FrmAdministracion_Load);
             this.gbox_caja.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -616,7 +632,6 @@
             this.gbox_usuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
-         
             this.gbox_opciones.ResumeLayout(false);
             this.gbox_informacion.ResumeLayout(false);
             this.gbox_informacion.PerformLayout();
@@ -626,6 +641,8 @@
             this.gbox_igv.PerformLayout();
             this.gbox_seguridad.ResumeLayout(false);
             this.gbox_seguridad.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -687,5 +704,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

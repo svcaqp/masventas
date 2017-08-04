@@ -55,7 +55,7 @@
             this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(186, 26);
+            this.groupBox1.Location = new System.Drawing.Point(206, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(282, 150);
             this.groupBox1.TabIndex = 2;
@@ -95,9 +95,9 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(97, 113);
+            this.btnIngresar.Location = new System.Drawing.Point(102, 109);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(127, 29);
+            this.btnIngresar.Size = new System.Drawing.Size(98, 35);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "&Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -134,18 +134,18 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(1, 195);
+            this.panel1.Location = new System.Drawing.Point(1, 191);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(504, 11);
+            this.panel1.Size = new System.Drawing.Size(520, 11);
             this.panel1.TabIndex = 7;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(0, -1);
+            this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(504, 11);
+            this.panel2.Size = new System.Drawing.Size(520, 11);
             this.panel2.TabIndex = 8;
             // 
             // FrmLogin
@@ -155,7 +155,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(502, 206);
+            this.ClientSize = new System.Drawing.Size(524, 202);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -165,7 +165,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LOGIN";
+            this.Text = "INICIO DE SESIÓN";
             this.Activated += new System.EventHandler(this.FrmLogin_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmLogin_FormClosing);
             this.Load += new System.EventHandler(this.FrmLogin_Load);
