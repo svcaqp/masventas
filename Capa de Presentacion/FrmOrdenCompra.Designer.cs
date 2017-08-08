@@ -44,9 +44,10 @@
             this.lbl_MarcaProducto = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -210,7 +211,7 @@
             // 
             this.groupBox3.Controls.Add(this.date_Fecha);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(171, 279);
+            this.groupBox3.Location = new System.Drawing.Point(172, 272);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(291, 62);
             this.groupBox3.TabIndex = 28;
@@ -219,15 +220,40 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.txtTotal);
+            this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.txtCantidad);
             this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.txtTotal);
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Location = new System.Drawing.Point(12, 268);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(149, 150);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtTotal.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(68, 96);
+            this.txtTotal.MaxLength = 4;
+            this.txtTotal.Multiline = true;
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(64, 42);
+            this.txtTotal.TabIndex = 23;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 39);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "S/.";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtCantidad
             // 
@@ -251,27 +277,15 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "Cantidad  (*)";
             // 
-            // txtTotal
-            // 
-            this.txtTotal.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtTotal.Font = new System.Drawing.Font("Tahoma", 23.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(14, 94);
-            this.txtTotal.MaxLength = 5;
-            this.txtTotal.Multiline = true;
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(116, 42);
-            this.txtTotal.TabIndex = 23;
-            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 78);
+            this.label3.Location = new System.Drawing.Point(13, 79);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 14);
+            this.label3.Size = new System.Drawing.Size(110, 14);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Precio Unitario (S/.) ";
+            this.label3.Text = "Precio Unitario (*) ";
             // 
             // button2
             // 
@@ -282,7 +296,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(217, 9);
+            this.button2.Location = new System.Drawing.Point(220, 10);
             this.button2.MaximumSize = new System.Drawing.Size(141, 33);
             this.button2.MinimumSize = new System.Drawing.Size(141, 33);
             this.button2.Name = "button2";
@@ -300,7 +314,7 @@
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(341, 52);
+            this.panel4.Size = new System.Drawing.Size(356, 52);
             this.panel4.TabIndex = 1010;
             // 
             // lbl_title
@@ -339,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(473, 431);
+            this.ClientSize = new System.Drawing.Size(473, 426);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -405,5 +419,6 @@
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbl_MarcaProducto;
+        private System.Windows.Forms.Label label1;
     }
 }

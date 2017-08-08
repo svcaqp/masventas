@@ -43,52 +43,52 @@
             this.btn_usuarios = new System.Windows.Forms.Button();
             this.gbox_usuarios = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbox_opciones = new System.Windows.Forms.GroupBox();
             this.btn_impresora = new System.Windows.Forms.Button();
             this.btn_seguridad = new System.Windows.Forms.Button();
             this.gbox_informacion = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.txt_ruc_empresa = new System.Windows.Forms.TextBox();
             this.txt_nombre_empresa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbox_seguridad = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbox_impresora = new System.Windows.Forms.GroupBox();
             this.gbox_caja = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idEmpleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idCajaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saldoAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saldoCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.horaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saldoCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horaAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saldoAbiertoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idCajaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idEmpleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cajasCerradasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCajasCerradas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_icon)).BeginInit();
@@ -197,6 +197,38 @@
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
+            // contraseñaDataGridViewTextBoxColumn
+            // 
+            dataGridViewCellStyle1.NullValue = "********";
+            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
+            this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
+            this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
+            this.contraseñaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // Actualizar
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = "Actualizar";
+            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Actualizar.HeaderText = "Actualizar";
+            this.Actualizar.Name = "Actualizar";
+            this.Actualizar.Text = "Actualizar";
+            this.Actualizar.ToolTipText = "Actualizar";
+            this.Actualizar.Width = 120;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.DataPropertyName = "Eliminar";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "Eliminar";
+            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.ToolTipText = "Eliminar";
+            this.Eliminar.Width = 120;
+            // 
             // gbox_opciones
             // 
             this.gbox_opciones.Controls.Add(this.btn_impresora);
@@ -256,14 +288,53 @@
             this.gbox_informacion.Text = "Información General de la Empresa";
             this.gbox_informacion.Visible = false;
             // 
-            // button4
+            // label9
             // 
-            this.button4.Location = new System.Drawing.Point(266, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 33);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "&Guardar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(27, 177);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(354, 28);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Por favor, \r\nIntroducir el Impuesto con el que se trabajará en este Sistema.";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(149, 236);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 39);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "%";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(30, 236);
+            this.textBox1.MaxLength = 3;
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 42);
+            this.textBox1.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(27, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 14);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Tasa de IGV:";
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(421, 61);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.TabIndex = 19;
             // 
             // txt_direccion_empresa
             // 
@@ -274,6 +345,15 @@
             this.txt_direccion_empresa.Name = "txt_direccion_empresa";
             this.txt_direccion_empresa.Size = new System.Drawing.Size(375, 44);
             this.txt_direccion_empresa.TabIndex = 15;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(266, 242);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(139, 33);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "&Guardar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // txt_ruc_empresa
             // 
@@ -336,6 +416,15 @@
             this.gbox_seguridad.Text = "Seguridad";
             this.gbox_seguridad.Visible = false;
             this.gbox_seguridad.Enter += new System.EventHandler(this.gbox_seguridad_Enter);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(608, 46);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(119, 100);
+            this.panel2.TabIndex = 18;
             // 
             // button7
             // 
@@ -403,38 +492,6 @@
             this.lbl_title.TabIndex = 10;
             this.lbl_title.Text = "ADMINISTRACION";
             // 
-            // contraseñaDataGridViewTextBoxColumn
-            // 
-            dataGridViewCellStyle1.NullValue = "********";
-            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
-            this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
-            this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
-            this.contraseñaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // Actualizar
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "Actualizar";
-            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Actualizar.HeaderText = "Actualizar";
-            this.Actualizar.Name = "Actualizar";
-            this.Actualizar.Text = "Actualizar";
-            this.Actualizar.ToolTipText = "Actualizar";
-            this.Actualizar.Width = 120;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.DataPropertyName = "Eliminar";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "Eliminar";
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.ToolTipText = "Eliminar";
-            this.Eliminar.Width = 120;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -448,7 +505,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Transparent;
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(29, 62);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(522, 30);
@@ -500,99 +557,6 @@
             this.gbox_caja.Text = "Reapertura de Caja";
             this.gbox_caja.Visible = false;
             // 
-            // lbl_mensaje
-            // 
-            this.lbl_mensaje.AutoSize = true;
-            this.lbl_mensaje.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mensaje.Location = new System.Drawing.Point(353, 82);
-            this.lbl_mensaje.Name = "lbl_mensaje";
-            this.lbl_mensaje.Size = new System.Drawing.Size(316, 70);
-            this.lbl_mensaje.TabIndex = 7;
-            this.lbl_mensaje.Text = "Por favor, \r\nSeleccionar una opción.";
-            this.lbl_mensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 642);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "NOTA: Hacer Doble Clic en el campo para editar.";
-            // 
-            // horaCerradoDataGridViewTextBoxColumn
-            // 
-            this.horaCerradoDataGridViewTextBoxColumn.DataPropertyName = "HoraCerrado";
-            this.horaCerradoDataGridViewTextBoxColumn.HeaderText = "Hora Cierre";
-            this.horaCerradoDataGridViewTextBoxColumn.Name = "horaCerradoDataGridViewTextBoxColumn";
-            this.horaCerradoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.horaCerradoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // fechaCerradoDataGridViewTextBoxColumn
-            // 
-            this.fechaCerradoDataGridViewTextBoxColumn.DataPropertyName = "FechaCerrado";
-            this.fechaCerradoDataGridViewTextBoxColumn.HeaderText = "Fecha Cierre";
-            this.fechaCerradoDataGridViewTextBoxColumn.Name = "fechaCerradoDataGridViewTextBoxColumn";
-            this.fechaCerradoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaCerradoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // saldoCerradoDataGridViewTextBoxColumn
-            // 
-            this.saldoCerradoDataGridViewTextBoxColumn.DataPropertyName = "SaldoCerrado";
-            this.saldoCerradoDataGridViewTextBoxColumn.HeaderText = "Saldo Cierre";
-            this.saldoCerradoDataGridViewTextBoxColumn.Name = "saldoCerradoDataGridViewTextBoxColumn";
-            this.saldoCerradoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.saldoCerradoDataGridViewTextBoxColumn.Width = 110;
-            // 
-            // horaAbiertoDataGridViewTextBoxColumn
-            // 
-            this.horaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "HoraAbierto";
-            this.horaAbiertoDataGridViewTextBoxColumn.HeaderText = "Hora Apertura";
-            this.horaAbiertoDataGridViewTextBoxColumn.Name = "horaAbiertoDataGridViewTextBoxColumn";
-            this.horaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.horaAbiertoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // fechaAbiertoDataGridViewTextBoxColumn
-            // 
-            this.fechaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "FechaAbierto";
-            this.fechaAbiertoDataGridViewTextBoxColumn.HeaderText = "Fecha Apertura";
-            this.fechaAbiertoDataGridViewTextBoxColumn.Name = "fechaAbiertoDataGridViewTextBoxColumn";
-            this.fechaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaAbiertoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // saldoAbiertoDataGridViewTextBoxColumn
-            // 
-            this.saldoAbiertoDataGridViewTextBoxColumn.DataPropertyName = "SaldoAbierto";
-            this.saldoAbiertoDataGridViewTextBoxColumn.HeaderText = "Saldo Apertura";
-            this.saldoAbiertoDataGridViewTextBoxColumn.Name = "saldoAbiertoDataGridViewTextBoxColumn";
-            this.saldoAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.saldoAbiertoDataGridViewTextBoxColumn.Width = 110;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.FillWeight = 120F;
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.usuarioDataGridViewTextBoxColumn.Width = 140;
-            // 
-            // idCajaDataGridViewTextBoxColumn
-            // 
-            this.idCajaDataGridViewTextBoxColumn.DataPropertyName = "IdCaja";
-            this.idCajaDataGridViewTextBoxColumn.HeaderText = "IdCaja";
-            this.idCajaDataGridViewTextBoxColumn.Name = "idCajaDataGridViewTextBoxColumn";
-            this.idCajaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idEmpleadoDataGridViewTextBoxColumn
-            // 
-            this.idEmpleadoDataGridViewTextBoxColumn.DataPropertyName = "IdEmpleado";
-            this.idEmpleadoDataGridViewTextBoxColumn.HeaderText = "IdEmpleado";
-            this.idEmpleadoDataGridViewTextBoxColumn.Name = "idEmpleadoDataGridViewTextBoxColumn";
-            this.idEmpleadoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idEmpleadoDataGridViewTextBoxColumn.Visible = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -618,62 +582,98 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
-            // panel2
+            // idEmpleadoDataGridViewTextBoxColumn
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(608, 46);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(119, 100);
-            this.panel2.TabIndex = 18;
+            this.idEmpleadoDataGridViewTextBoxColumn.DataPropertyName = "IdEmpleado";
+            this.idEmpleadoDataGridViewTextBoxColumn.HeaderText = "IdEmpleado";
+            this.idEmpleadoDataGridViewTextBoxColumn.Name = "idEmpleadoDataGridViewTextBoxColumn";
+            this.idEmpleadoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idEmpleadoDataGridViewTextBoxColumn.Visible = false;
             // 
-            // panel3
+            // idCajaDataGridViewTextBoxColumn
             // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(421, 61);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
-            this.panel3.TabIndex = 19;
+            this.idCajaDataGridViewTextBoxColumn.DataPropertyName = "IdCaja";
+            this.idCajaDataGridViewTextBoxColumn.HeaderText = "IdCaja";
+            this.idCajaDataGridViewTextBoxColumn.Name = "idCajaDataGridViewTextBoxColumn";
+            this.idCajaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label9
+            // usuarioDataGridViewTextBoxColumn
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 177);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(354, 28);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Por favor, \r\nIntroducir el Impuesto con el que se trabajará en este Sistema.";
+            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.FillWeight = 120F;
+            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
+            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.usuarioDataGridViewTextBoxColumn.Width = 140;
             // 
-            // label8
+            // saldoAbiertoDataGridViewTextBoxColumn
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(149, 236);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 39);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "%";
+            this.saldoAbiertoDataGridViewTextBoxColumn.DataPropertyName = "SaldoAbierto";
+            this.saldoAbiertoDataGridViewTextBoxColumn.HeaderText = "Saldo Apertura";
+            this.saldoAbiertoDataGridViewTextBoxColumn.Name = "saldoAbiertoDataGridViewTextBoxColumn";
+            this.saldoAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.saldoAbiertoDataGridViewTextBoxColumn.Width = 110;
             // 
-            // textBox1
+            // fechaAbiertoDataGridViewTextBoxColumn
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(30, 236);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 42);
-            this.textBox1.TabIndex = 21;
+            this.fechaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "FechaAbierto";
+            this.fechaAbiertoDataGridViewTextBoxColumn.HeaderText = "Fecha Apertura";
+            this.fechaAbiertoDataGridViewTextBoxColumn.Name = "fechaAbiertoDataGridViewTextBoxColumn";
+            this.fechaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaAbiertoDataGridViewTextBoxColumn.Width = 120;
             // 
-            // label5
+            // horaAbiertoDataGridViewTextBoxColumn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 217);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 14);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Tasa de IGV:";
+            this.horaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "HoraAbierto";
+            this.horaAbiertoDataGridViewTextBoxColumn.HeaderText = "Hora Apertura";
+            this.horaAbiertoDataGridViewTextBoxColumn.Name = "horaAbiertoDataGridViewTextBoxColumn";
+            this.horaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.horaAbiertoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // saldoCerradoDataGridViewTextBoxColumn
+            // 
+            this.saldoCerradoDataGridViewTextBoxColumn.DataPropertyName = "SaldoCerrado";
+            this.saldoCerradoDataGridViewTextBoxColumn.HeaderText = "Saldo Cierre";
+            this.saldoCerradoDataGridViewTextBoxColumn.Name = "saldoCerradoDataGridViewTextBoxColumn";
+            this.saldoCerradoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.saldoCerradoDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // fechaCerradoDataGridViewTextBoxColumn
+            // 
+            this.fechaCerradoDataGridViewTextBoxColumn.DataPropertyName = "FechaCerrado";
+            this.fechaCerradoDataGridViewTextBoxColumn.HeaderText = "Fecha Cierre";
+            this.fechaCerradoDataGridViewTextBoxColumn.Name = "fechaCerradoDataGridViewTextBoxColumn";
+            this.fechaCerradoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaCerradoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // horaCerradoDataGridViewTextBoxColumn
+            // 
+            this.horaCerradoDataGridViewTextBoxColumn.DataPropertyName = "HoraCerrado";
+            this.horaCerradoDataGridViewTextBoxColumn.HeaderText = "Hora Cierre";
+            this.horaCerradoDataGridViewTextBoxColumn.Name = "horaCerradoDataGridViewTextBoxColumn";
+            this.horaCerradoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.horaCerradoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // lbl_mensaje
+            // 
+            this.lbl_mensaje.AutoSize = true;
+            this.lbl_mensaje.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mensaje.Location = new System.Drawing.Point(353, 82);
+            this.lbl_mensaje.Name = "lbl_mensaje";
+            this.lbl_mensaje.Size = new System.Drawing.Size(316, 70);
+            this.lbl_mensaje.TabIndex = 7;
+            this.lbl_mensaje.Text = "Por favor, \r\nSeleccionar una opción.";
+            this.lbl_mensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 642);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(239, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "NOTA: Hacer Doble Clic en el campo para editar.";
             // 
             // FrmAdministracion
             // 

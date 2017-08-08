@@ -33,7 +33,7 @@ namespace Capa_de_Presentacion
             }
             else
             {
-                mensaje = "Debe Ingresar la cantidad";
+                mensaje = "Debe Ingresar la Cantidad.";
                 DevComponents.DotNetBar.MessageBoxEx.Show(mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
 

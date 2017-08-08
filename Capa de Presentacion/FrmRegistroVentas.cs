@@ -17,6 +17,7 @@ namespace Capa_de_Presentacion
     {
         clsVentas Ventas = new clsVentas();
         clsDetalleVenta Detalle = new clsDetalleVenta();
+        private clsProducto P = new clsProducto();
 
 
 
@@ -209,7 +210,7 @@ namespace Capa_de_Presentacion
                         }
                         else
                         {
-                            DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Producto a Vender.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                            DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Ingresa la Cantidad a Vender.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                             txtCantidad.Focus();
                         }
                     }
@@ -228,7 +229,6 @@ namespace Capa_de_Presentacion
                     DevComponents.DotNetBar.MessageBoxEx.Show("Por Favor Busque el Cliente a Vender.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
             }
-        
 
         private void LlenarGrilla()
         {
@@ -242,6 +242,7 @@ namespace Capa_de_Presentacion
                     dataGridView1.Rows[i].Cells[0].Value = lst[i].IdVenta;
                     dataGridView1.Rows[i].Cells[1].Value = lst[i].Cantidad;
                     dataGridView1.Rows[i].Cells[2].Value = lst[i].Descripcion;
+                    
 
                     dataGridView1.Rows[i].Cells[3].Value = lst[i].PrecioVenta;
 

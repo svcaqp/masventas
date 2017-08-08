@@ -307,9 +307,9 @@
             reportDataSource1.Value = this.ReporteVentasBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportVentas.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(17, 188);
+            this.reportViewer1.Location = new System.Drawing.Point(17, 198);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(998, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(998, 440);
             this.reportViewer1.TabIndex = 2;
             // 
             // listarEmpleadosCompletoTableAdapter

@@ -137,13 +137,13 @@
             this.gbox_egresos.Controls.Add(this.label1);
             this.gbox_egresos.Controls.Add(this.txt_descripcion);
             this.gbox_egresos.Enabled = false;
-            this.gbox_egresos.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbox_egresos.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbox_egresos.Location = new System.Drawing.Point(11, 265);
             this.gbox_egresos.Name = "gbox_egresos";
             this.gbox_egresos.Size = new System.Drawing.Size(450, 151);
             this.gbox_egresos.TabIndex = 18;
             this.gbox_egresos.TabStop = false;
-            this.gbox_egresos.Text = "Egresos";
+            this.gbox_egresos.Text = "EGRESOS ";
             // 
             // label3
             // 
@@ -286,7 +286,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 427);
+            this.ClientSize = new System.Drawing.Size(473, 426);
             this.ControlBox = false;
             this.Controls.Add(this.gbox_egresos);
             this.Controls.Add(this.panel1);

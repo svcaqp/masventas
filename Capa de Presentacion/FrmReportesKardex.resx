@@ -123,17 +123,14 @@
   <metadata name="DemoPracticaKardex.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>433, 128</value>
   </metadata>
-  <metadata name="DemoPracticaKardex.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>433, 128</value>
-  </metadata>
   <metadata name="listadoProductosDetalleBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>458, 167</value>
   </metadata>
+  <metadata name="demoPracticaProductosDetalle.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>239, 167</value>
+  </metadata>
   <metadata name="productoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>192, 89</value>
-  </metadata>
-  <metadata name="demoPracticaProducto.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 89</value>
   </metadata>
   <metadata name="demoPracticaProducto.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 89</value>
@@ -147,28 +144,24 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAA3NCSVQICAjb4U/gAAAAAXNSR0IArs4c
-        6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAAN0AAADdAXBTogcAAAAZdEVYdFNvZnR3YXJlAHd3dy5p
-        bmtzY2FwZS5vcmeb7jwaAAADNElEQVRYR+WVXUySURjHubC71lWziy7sBhZOE3xtYkXrphYvkIqJ2mw5
-        Lb+WrEjDpDUv22yurbW1tbW5SkvkldoqwQ/0gsmUlnOrnF9lfqAGglhac/F0DvQa4ktD4qWLLv4X7Ozl
-        9zvPec5zOADAYTMk5TJInsz/kLY5p6SUu0He7NkdyGMVjkGkfqnvZMsc/I4dyDbHJ8nzVRFeZ10AQ2SU
-        5wKpczgDRUi9ayAmAmT7cgGp+2zfXIU5kFKuRlYFmMCSpwtrfhE7nKDm41kRYAKj8s9In60oSL1zEAvg
-        33QjRq0HQoElevdpGka2Lqz6BKjl21ETYCy1zjGLrlxu8PVG5/6IbHO+zW1d3PnXAqc6QZhlBENgc0lC
-        gP80Z7Z9BDQYwQEHC/jBK1t2HM6AC1sgGIzg3mwjUPJ2tzIcEIyl74IJ4iYME8NgIT7AwMG8sG5BKHB2
-        B6SEBcaj3kbsgEniDQogAYAulG4UG3EmZAWiAqbfmYlUhQ8eKIAlLMT0FgEmMCp3e5YJBGHvOPiBmySu
-        Mwr0pn7bEFC8gATc1XRz4TPeDhj1Q3y2CdRSw/Irmd59dZPsRFo9o0Af8X1DAMFaf8G3BcagHBNw0beL
-        +Hs09303A029/g2JcAQUJjiMdtEYSakDK0cLYAmZwSP3SYQjEPH5IkCmEez00W0SoFz3oyZQZ03ao7Em
-        FlabuWX1Zk5coDCCu5kEpNRSc1QE6gb5+Vob/2utdT+oOrhwuYvnuWLhJ9ASrApoh3h7EXwVBWgBLKHu
-        5r2LjcBrfh6GBwtcMvHWoytQfyxuRp3CC25GrS2xnElAZeR6oybg1GTccNSK1qYqBTBeemB9ukqoov+c
-        dQHntYwSBAccLDBWkgTj55O9s1VpQizBuoBDI+oKFsASU5XCptgI1IreMwl8rBCYYySQPsIoUCno/X8E
-        xmvEMFpzFIYq0mGwmPCnQmQtKirfpzYc0mp6hIBT3SmAi/pkf6hkL14vKCg+omga+aJ4OAo48nsDILvb
-        70vmnd5OvN6jO/5gxCwGX16iPBbDWIsYAD/Ht8qU7sJzpRBpcpSFEGmqyvK9nIbyPMvZfyRQo1J6fgIj
-        4xKq0gu3HQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMqSURBVFhH5ZRf
+        SFNRHMd9sLfoKeqhB3txNNHcvIazWvRStLstdea/MBIt/5GjljZzET4GhgQRBEEglZZz1xVUbv5/GA5d
+        JEIl/itTm9qmc5YW0n6dc9ed2zzK3B9fevjA7vl9z/l+dsZdFABEFJpZ1Euez/6RttgnpYyjTt7o3Os9
+        9wlHAlq30Hum6RusYwW6xfZV8mpFhOfETeFGxjgv01qb3VuE1i324xlxQzihW5fyaO13q3c5Rsos1uM5
+        cVM4IBVLXsytuj9b4TQzuw/niJtDgVSMrn9a+nJZQevsA9wzl99wQLBsVizROc55Ms1zK+w6s3SPW/M5
+        JBiIV621zaBXLss/i373p3SL/UNW8/xubs0nsB3OtoMw3QD6QIq3gri4FVwxAjDrxcvbKuYgLpLwL0a4
+        MgzAyFsd2aT8BkZT9sA4dQeGqCEwUZ+h/0gOXieHvdisOKMNEkl5IhZqF0xQ7xGABAA6EJ0IC3WevAER
+        lmKO8SQFW+4tgDFRUxvCpGJEa7oRBP7ZgJmgbhEFepJ+eUKK1xATSjG6nX0ZRlBJ9UtvZTrHDZ/5eHIt
+        UaCX+u0JobLmYIoxmUaIRXvm8X70n8C+Gehfr8+TCURAYYRj6FvUB3PVqNhzc5wARqZ3ytlMIAKhkGYA
+        K1GAWXzEZsIhUGOO3682x+VXdseW1HZHRXvPULGDJCBlFhrZTKgCNQP8XI2F/7PafAiUbbFwrYPnvG7i
+        x3DziApoBnkHUPkKAjgBjKqT95HLRFbgHT8Hl/sLXDXy1rhMeARqT0ZPqxJ5nud/aCxxpSQBpSHWxWVC
+        FrCrU2/bqkWrk+UCGCs+vDZVIVRyh0dcwH4ztQiVAwYLjBbFw9ilBNdMRbJwRwRsalGHvwBmslzYsDMC
+        1aJPJIEvZYLuHRJIGSYKlAt6/h+BsSoxjFSdgMGyFBgopNyUicwFBaUHVfqjGnWXEDCV7QK4oktwwyS4
+        8Dwvr/C4omH4h+LJCGDkD/tB9qCPJe1+Tzued2lPPR7uFgPLG8QzMYw2id0Cd0uyHfkXiyFYMrPzg6ai
+        JNcVVVeaY7pAODhQSAcHSpUy2/kXI+MSqg9VvdQAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="demoPracticaProductosDetalle.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>239, 167</value>
-  </metadata>
   <metadata name="listadoProductosDetalleTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 206</value>
   </metadata>

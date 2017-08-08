@@ -55,7 +55,7 @@ namespace Capa_de_Presentacion
             }
             else
             {
-                MessageBox.Show("Los campos con (*) son obligatorios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Los campos con (*) son obligatorios.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -152,6 +152,11 @@ namespace Capa_de_Presentacion
         }
 
         private void txt_nroDocumento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

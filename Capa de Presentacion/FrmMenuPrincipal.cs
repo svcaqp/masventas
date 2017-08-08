@@ -318,6 +318,11 @@ namespace Capa_de_Presentacion
 
         }
 
+        private void Panel_items_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
        

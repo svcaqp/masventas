@@ -204,7 +204,7 @@
             this.panel4.Controls.Add(this.lbl_title);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(984, 52);
+            this.panel4.Size = new System.Drawing.Size(1000, 52);
             this.panel4.TabIndex = 1011;
             // 
             // pictureBox1
@@ -224,7 +224,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(855, 8);
+            this.button2.Location = new System.Drawing.Point(858, 8);
             this.button2.MaximumSize = new System.Drawing.Size(143, 33);
             this.button2.MinimumSize = new System.Drawing.Size(143, 33);
             this.button2.Name = "button2";
@@ -257,7 +257,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 439);
+            this.ClientSize = new System.Drawing.Size(1038, 434);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtDatos);

@@ -478,7 +478,7 @@ namespace Capa_de_Presentacion
                     {
                         C.Descripcion = txtCategoria.Text;
                         Mensaje = C.RegistrarCategoria();
-                        if (Mensaje == "Categoria ya se encuentra Registrada.")
+                        if (Mensaje == "Categoria ya registrada.")
                         {
                             MessageBoxEx.Show(this, Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         }

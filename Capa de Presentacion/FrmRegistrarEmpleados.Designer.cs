@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarEmpleados));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxEstadoCivil = new System.Windows.Forms.ComboBox();
@@ -49,23 +48,25 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.txtIdE = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 19);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "D.N.I";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.btnGrabar);
             this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.label8);
@@ -84,207 +85,164 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtDni);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(398, 272);
-            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(309, 122);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 29);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "&Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(309, 35);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(75, 69);
-            this.btnGrabar.TabIndex = 18;
-            this.btnGrabar.Text = "&Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(23, 243);
+            resources.ApplyResources(this.txtDireccion, "txtDireccion");
+            this.txtDireccion.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(270, 21);
-            this.txtDireccion.TabIndex = 16;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 224);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Dirección";
             // 
             // cbxEstadoCivil
             // 
+            resources.ApplyResources(this.cbxEstadoCivil, "cbxEstadoCivil");
             this.cbxEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxEstadoCivil.FormattingEnabled = true;
             this.cbxEstadoCivil.Items.AddRange(new object[] {
-            "Seleccione",
-            "Soltero",
-            "Casado",
-            "Divorciado",
-            "Viudo"});
-            this.cbxEstadoCivil.Location = new System.Drawing.Point(209, 196);
+            resources.GetString("cbxEstadoCivil.Items"),
+            resources.GetString("cbxEstadoCivil.Items1"),
+            resources.GetString("cbxEstadoCivil.Items2"),
+            resources.GetString("cbxEstadoCivil.Items3"),
+            resources.GetString("cbxEstadoCivil.Items4")});
             this.cbxEstadoCivil.Name = "cbxEstadoCivil";
-            this.cbxEstadoCivil.Size = new System.Drawing.Size(84, 23);
-            this.cbxEstadoCivil.TabIndex = 14;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(206, 178);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 16);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Estado Civil";
             // 
             // dateTimePicker1
             // 
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(23, 197);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(171, 21);
-            this.dateTimePicker1.TabIndex = 12;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 178);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Fecha Nacimiento";
             // 
             // rbnFemenino
             // 
-            this.rbnFemenino.AutoSize = true;
-            this.rbnFemenino.Location = new System.Drawing.Point(175, 153);
+            resources.ApplyResources(this.rbnFemenino, "rbnFemenino");
             this.rbnFemenino.Name = "rbnFemenino";
-            this.rbnFemenino.Size = new System.Drawing.Size(86, 20);
-            this.rbnFemenino.TabIndex = 10;
-            this.rbnFemenino.Text = "Femenino";
             this.rbnFemenino.UseVisualStyleBackColor = true;
             // 
             // rbnMasculino
             // 
-            this.rbnMasculino.AutoSize = true;
+            resources.ApplyResources(this.rbnMasculino, "rbnMasculino");
             this.rbnMasculino.Checked = true;
-            this.rbnMasculino.Location = new System.Drawing.Point(68, 153);
             this.rbnMasculino.Name = "rbnMasculino";
-            this.rbnMasculino.Size = new System.Drawing.Size(87, 20);
-            this.rbnMasculino.TabIndex = 9;
             this.rbnMasculino.TabStop = true;
-            this.rbnMasculino.Text = "Masculino";
             this.rbnMasculino.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 153);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 16);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Sexo:";
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(23, 122);
+            resources.ApplyResources(this.txtNombres, "txtNombres");
+            this.txtNombres.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(270, 21);
-            this.txtNombres.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 103);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Nombres";
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(23, 79);
+            resources.ApplyResources(this.txtApellidos, "txtApellidos");
+            this.txtApellidos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(270, 21);
-            this.txtApellidos.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 60);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Apellidos";
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(23, 35);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 23);
-            this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 16);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Cargo";
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(164, 35);
-            this.txtDni.MaxLength = 8;
+            resources.ApplyResources(this.txtDni, "txtDni");
+            this.txtDni.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(129, 21);
-            this.txtDni.TabIndex = 1;
+            // 
+            // btnGrabar
+            // 
+            resources.ApplyResources(this.btnGrabar, "btnGrabar");
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtIdE
             // 
-            this.txtIdE.Location = new System.Drawing.Point(605, 241);
+            resources.ApplyResources(this.txtIdE, "txtIdE");
             this.txtIdE.Name = "txtIdE";
-            this.txtIdE.Size = new System.Drawing.Size(31, 20);
-            this.txtIdE.TabIndex = 2;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Name = "panel4";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmRegistrarEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 284);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtIdE);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "FrmRegistrarEmpleados";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrar Empleados";
             this.Activated += new System.EventHandler(this.FrmRegistrarEmpleados_Activated);
             this.Load += new System.EventHandler(this.FrmRegistrarEmpleados_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,7 +259,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnGrabar;
         public System.Windows.Forms.TextBox txtDireccion;
         public System.Windows.Forms.ComboBox cbxEstadoCivil;
@@ -314,5 +271,8 @@
         public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.TextBox txtIdE;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
     }
 }
