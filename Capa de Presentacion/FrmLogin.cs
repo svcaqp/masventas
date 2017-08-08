@@ -12,6 +12,8 @@ using DevComponents.DotNetBar;
 using GestorComercial;
 using Capa_de_Presentacion.Properties;
 
+
+
 namespace Capa_de_Presentacion
 {
     public partial class FrmLogin : DevComponents.DotNetBar.Metro.MetroForm
@@ -39,6 +41,10 @@ namespace Capa_de_Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+
+            
+
+
             if (Settings.Default["TecnicoUser"].ToString() == txtUser.Text &&
                 Settings.Default["TecnicoPass"].ToString() == txtPassword.Text)
                 {
@@ -46,11 +52,17 @@ namespace Capa_de_Presentacion
                     frmServer.Show();
                     txtUser.Text = "";
                     txtPassword.Text = "";
-                
+                    
                     return;
                 }
 
 
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             if (txtUser.Text.Trim() != "")
             {

@@ -28,6 +28,16 @@ namespace GestorComercial
         {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
+
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                Mensaje = "Error de activación : \n Pongase en contacto con SERVICORP \n Tel : 958852192";
+                return Mensaje;
+            }
+
+
             try
             {
                 lst.Add(new clsParametro("@IdEmpleado", IdEmpleado));

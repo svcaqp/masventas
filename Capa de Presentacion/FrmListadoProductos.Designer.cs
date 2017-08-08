@@ -195,7 +195,11 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
+<<<<<<< HEAD
             this.panel4.Size = new System.Drawing.Size(998, 52);
+=======
+            this.panel4.Size = new System.Drawing.Size(970, 52);
+>>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
             this.panel4.TabIndex = 1012;
             // 
             // lbl_title
@@ -226,7 +230,11 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.button3.Location = new System.Drawing.Point(845, 8);
+=======
+            this.button3.Location = new System.Drawing.Point(817, 8);
+>>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
             this.button3.MaximumSize = new System.Drawing.Size(141, 33);
             this.button3.MinimumSize = new System.Drawing.Size(141, 33);
             this.button3.Name = "button3";

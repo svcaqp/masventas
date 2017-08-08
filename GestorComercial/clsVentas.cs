@@ -77,6 +77,13 @@ namespace GestorComercial
         public String RegistrarVenta()
         {
             String Mensaje = "";
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                Mensaje = "Error de activación : \n Pongase en contacto con SERVICORP \n Tel : 958852192";
+                return Mensaje;
+            }
             List<clsParametro> lst = new List<clsParametro>();
             try
             {
