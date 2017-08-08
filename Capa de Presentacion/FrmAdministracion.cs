@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace Capa_de_Presentacion
 {
     public partial class FrmAdministracion : DevComponents.DotNetBar.Metro.MetroForm
@@ -61,6 +62,7 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Hide();
             gbox_impresora.Hide();
             gbox_usuarios.Hide();
+            gbox_licencia.Hide();
             label1.Show(); ;
         }
 
@@ -73,6 +75,7 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Hide();
             gbox_impresora.Hide();
             gbox_usuarios.Show();
+            gbox_licencia.Hide();
             label1.Show(); ;
         }
 
@@ -96,6 +99,7 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Hide();
             gbox_impresora.Hide();
             gbox_usuarios.Hide();
+            gbox_licencia.Hide();
             label1.Hide();                 
         }
 
@@ -111,7 +115,15 @@ namespace Capa_de_Presentacion
 
         private void btn_igv_Click(object sender, EventArgs e)
         {
-            
+            gbox_licencia.Show();
+            lbl_mensaje.Hide();
+            gbox_caja.Hide();
+
+            gbox_informacion.Hide();
+            gbox_seguridad.Hide();
+            gbox_impresora.Hide();
+            gbox_usuarios.Hide();
+            label1.Hide();
         }
 
         private void btn_empresa_Click(object sender, EventArgs e)
@@ -123,7 +135,19 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Hide();
             gbox_impresora.Hide();
             gbox_usuarios.Hide();
-            label1.Hide(); ;
+            gbox_licencia.Hide();
+            label1.Hide();
+
+            clsEmpresa empresa = new clsEmpresa();
+            txt_nombre_empresa.Text = empresa.NombreEmpresa;
+            txt_ruc_empresa.Text = empresa.RucEmpresa;
+            txt_direccion_empresa.Text = empresa.DireccionEmpresa;
+            txt_ciudad.Text = empresa.Ciudad;
+            txt_factura.Text = empresa.FacturaCorrelativo+"";
+            txt_boleta.Text = empresa.BoletaCorrelativo +"";
+            txt_nota.Text = empresa.notaCorrelativo+"";
+            txt_tasa.Text = empresa.TasaIgv + "";
+
         }
 
         private void btn_seguridad_Click(object sender, EventArgs e)
@@ -135,6 +159,7 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Show();
             gbox_impresora.Hide();
             gbox_usuarios.Hide();
+            gbox_licencia.Hide();
             label1.Hide(); ;
         }
 
@@ -147,12 +172,36 @@ namespace Capa_de_Presentacion
             gbox_seguridad.Hide();
             gbox_impresora.Show();
             gbox_usuarios.Hide();
+            gbox_licencia.Hide();
             label1.Hide(); ;
         }
 
         private void gbox_seguridad_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_GuardarEmpresa_Click(object sender, EventArgs e)
+        {
+            clsEmpresa empresa = new clsEmpresa(
+                txt_nombre_empresa.Text,txt_ruc_empresa.Text,txt_direccion_empresa.Text,
+                txt_ciudad.Text,Convert.ToInt32(txt_factura.Text),Convert.ToInt32(txt_boleta.Text),
+                Convert.ToInt32(txt_nota.Text), Convert.ToDouble(txt_tasa.Text));
+            MessageBox.Show(empresa.RegistrarEmpresa());
+
+        }
+
+        private void btn_licencia_Click(object sender, EventArgs e)
+        {
+            clsEmpresa empresa = new clsEmpresa();
+            empresa.Licencia = txt_licencia.Text;
+            if (empresa.ValidarLicencia())
+            {
+                MessageBox.Show(empresa.RegistrarLicencia());
+            }
+            else
+                MessageBox.Show("No se pudo registrar el producto");
+               
         }
     }
 }

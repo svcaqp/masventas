@@ -22,26 +22,10 @@ namespace Capa_de_Presentacion
         {
             InitializeComponent();
 
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode == 1)
-            {
-                lbl_prueba.Text = testPrueba.message;
-            }
-            else
-            {
-                MessageBox.Show(testPrueba.message,"Versión de prueba",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                Application.Exit();
-                return;
-            }
+            
 
             pictureBox1.Location = new Point((Screen.FromControl(this).Bounds.Width - pictureBox1.Size.Width) / 2, pictureBox1.Location.Y);
             Panel_items.Location = new Point((Screen.FromControl(this).Bounds.Width - Panel_items.Size.Width) / 2, (Screen.FromControl(this).Bounds.Height - Panel_items.Size.Height) / 2);
-
-
-            
-
-
 
 
         }
@@ -112,13 +96,11 @@ namespace Capa_de_Presentacion
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
             {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-                return;
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -129,14 +111,7 @@ namespace Capa_de_Presentacion
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
-            {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-                return;
-            }
+
 
             Program.frmClientes = new FrmListadoClientes();
             Program.frmClientes.Show();
@@ -144,14 +119,13 @@ namespace Capa_de_Presentacion
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
             {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-                return;
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
 
             clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "");
             string fechacaja = caja.FechaAbierto.Substring(0, 10);
@@ -168,14 +142,7 @@ namespace Capa_de_Presentacion
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
-            {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-                return;
-            }
+           
             Program.frmAdministracion = new FrmAdministracion();
             Program.frmAdministracion.Show();
 
@@ -199,14 +166,7 @@ namespace Capa_de_Presentacion
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
-            {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit();
-                return;
-            }
+            
             Program.frmEmpleados = new FrmListadoEmpleados();
             Program.frmEmpleados.Show();
         }
@@ -227,7 +187,12 @@ namespace Capa_de_Presentacion
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
+            clsEmpresa empresa = new clsEmpresa();
 
+            if (!empresa.ProductoActivado())
+            {
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             Program.frmReportes  = new FrmReportesMenu();
             Program.frmReportes.Show();
@@ -246,14 +211,7 @@ namespace Capa_de_Presentacion
 
         private void btn_AbrirCaja_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
-            {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-                return;
-            }
+            
             FrmCaja cajaForm = new FrmCaja();
             cajaForm.Show();
         }
@@ -294,13 +252,11 @@ namespace Capa_de_Presentacion
 
         private void btnMenuCaja_Click(object sender, EventArgs e)
         {
-            clsPrueba testPrueba = new clsPrueba();
-            testPrueba.VersionPrueba();
-            if (testPrueba.statusCode != 1)
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
             {
-                MessageBox.Show(testPrueba.message, "Versión de prueba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-                return;
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             Program.frmCaja = new FrmCaja();
             Program.frmCaja.Show();
@@ -313,6 +269,13 @@ namespace Capa_de_Presentacion
 
         private void btnDocumentos_Click(object sender, EventArgs e)
         {
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
             Program.frmDocumentos = new  FrmDocumentos();
             Program.frmDocumentos.Show();
 

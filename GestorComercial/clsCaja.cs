@@ -49,6 +49,17 @@ namespace GestorComercial
         {
             var mensaje = "";
 
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                mensaje = "Error de activación : \n Pongase en contacto con SERVICORP \n Tel : 958852192";
+                return mensaje;
+            }
+
+
+            
+
             var lst = new List<clsParametro>();
             try
             {

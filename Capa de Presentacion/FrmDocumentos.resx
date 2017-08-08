@@ -126,9 +126,6 @@
   <metadata name="demoPracticaDocumentos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="demoPracticaDocumentos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="listarDocumentosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>438, 17</value>
   </metadata>
@@ -150,9 +147,6 @@
   <metadata name="demoPracticaCompras.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>227, 56</value>
   </metadata>
-  <metadata name="demoPracticaCompras.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>227, 56</value>
-  </metadata>
   <metadata name="dataGridViewButtonColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -162,31 +156,28 @@
   <metadata name="demoPracticaPagos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
   </metadata>
-  <metadata name="demoPracticaPagos.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAA3NCSVQICAjb4U/gAAAAAXNSR0IArs4c
         6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAAN0AAADdAXBTogcAAAAZdEVYdFNvZnR3YXJlAHd3dy5p
-        bmtzY2FwZS5vcmeb7jwaAAADp0lEQVRYR+2XW08TWxiG+XX+A6/2JYVtMAqy1eAhGkF0q4hn4xHRgFFR
-        I9tgsjXZGlEBIyBGCwLa0kJnOj3NtEgPSF/Xt+pMOzPfTC/1Yl88ycq33vnWM2utlKEBQAMaG08jEIAv
-        jY3DmO3qx2wn/Onqf6l0DI/GOlCH07R2RSAQUF0Lcnw8VOAXrbIx11lgFuNQfz+B0vY2FHbstFFsa3cJ
-        FIM9KAR7bVDNJRA9jFfRbhujy528wOr+gxifXsLYdMRF+sQZS8CY7WMzBM2ZAmPhG2yGeB055RZIX+ln
-        w0TswRNLQJt/ymYImjMFpsP/sRniXWTILZA7dwnBxQRL6vZ9S0BffMxmCJozBWaWn7AZYnJlwC2w/vdx
-        ZLIlluLla5ZAKXSHzRA0Zwp8TNxlM8RU/LK3QHgli6/LhiQkSBlFl0Ba1EIrlYzMiTHVnAL0LPUwc9S7
-        roCaXENM+yZREmuyxu2AUpsTY6pxO0A9zBz1ppqvwHJ8FRElJ4mqq+LNeIHaHI05AXqWejhzvgJRNYel
-        WFZCD9HWuo+gJOfsOU6gaMtR77oC8VRebikRT3kfgT2XlzWnQCVXydTmfAXosixGdMmXqO55Cb9Gqzka
-        e11C6mHlRG9PgdLxHiQyBZb81T5LoBi6x2YImrMEtCE2Q0ypV90Cv/yX0DwCDu4OcHB3gMP3DtBZfQ6n
-        JfNLGaR0/g4siDkzR2P2DohnqYeZo97eAl3dcpLOSEvnJYl0QdaKFy7VCAy4c2JMNZozBT5og5Wc6OHM
-        TcYvuAVogfVjJ1A6c85Or/hyamqyBOhvPi1Eb2tnwPE9sAfvtT7MaDdtTMev0OK8QF1+CvhRFaiLt0C5
-        pQXlbdvtixMOgfLcMUltjRN4oxzCa+WArSbgBQq370FXM9ATWayN/OspkF95AV3PSWjsJbCYeil+kHJI
-        GgbmkiP+Ahvtf0GPG+hoakPLH1uQXlKxfviIS2Bj4TwyGR2tW1slNKaaU2AyfhFqWkPgzxa07WoXElmM
-        KeK70Eug1NOLRPALNm3aLImMTqBwa9AlUAwPQYl8tnI0pppTIJgYxqfQVLWfFhaX8Lq3AJqbYUQ0BB8/
-        xdTdR9C1LMqtrS6B8twRsfUGZiaeSWhMNafAG6VTvHUOzydGMP7hOTQjiVexvT4Cgo1du5F/+I88/+/7
-        9lcXrxGQCy2cxVpsVEJjq+64A2/Vk/IezCefYVw5atUFvIAvNQJeOAV8+F/gdxL4Zf+eo+EH/WMTQDNX
-        dNQAAAAASUVORK5CYII=
+        bmtzY2FwZS5vcmeb7jwaAAADoUlEQVRYR+VXaU8TURTl1/kP/ORHihqMgCgGlWgAcUFEcIuKIhowKmpE
+        g4mYiBHZjFAhWJCtpYXO0m2mRbpge5z76gyd5bV+k+iHk9y8d+6ZM/fdeb0tA1CG8vIOuFwoivLyAcw3
+        92C+CcXR3PNRqB8YCdajBDro2WXMgMslljRABucaU6UMZBeaUn/wcDIn7j4DmaoapI4cMyFdU7tzNL8r
+        kPa0IeVpN4HWqDqmCgTO4lOgxYSR9Sb9aMwV2Gw4gwn3GsbdfhuilzrzJjQD6ny3I4fyaE83MO67z+WN
+        +q/YjyB6p4ebEHz+xjAgLw5xebSnG3D73nN5X/z9dgOJa7fgWQ45IvLomWFAWX7N5dGebmBm/Q2XN7XR
+        azewfaEVsXjGEenbdw0DGe9jLo/2dANzoSdc3rR0m2/AtxHH6rrK4NUQUdOwGohqa96NPIfxtJjWrAYo
+        lzR0HmnTSxY1IIa3EJR/MAihLZbgVAGhkKfFxHOqAGnoeqRd0sC6tAm/kGAIiJvamzkbKORR7GSAcklD
+        19N5RSsQEBNYC8YZKJFKaz+CDNsz8+wVoNxCHmmXrIAUSYLKS5Ai/CMw85LcIyCNHb08r2gFqGGW/QrD
+        SkDhNuFqYIdHMa8JSUPXI22ugUxrG0KxlCOSXd3GZ5j2PuXyaM/4DOV+Lm9a7NqFN+GuuYjovL77ogyL
+        azFEFOeLaEnb03kUO/aAlksaOo+0+U3Y3MI2qQ/kaJIhFE3lL6Ibtwqu4l47T8vJ3wO9Rg/Myn15nqZh
+        6P3mTUk3nAeS7YuXkOm8Zka7NjlVVBgG6DefHkS3nhm9lnngBL7K3ZiRH5jglu44zwO7aiTLVVYid7jK
+        PqRaZsLcwkUQCudEp5lwTGjEqHDaOqQ6z4SpR0+hiDEooTi2Bt+aTRQYSG58gKIkGCjWTVgNLEc+apdZ
+        AmFVxUJ4sNCE3UC29igUSUV9RQ0q9x1EdE3E9tlztpkwu3QdsZiC6kPVDBTTmnUmnJJuQozKcB2oRE1d
+        rWYijnGhhd8DmbZ2hDwr2LNnL4N/ZBKph332odTXD8H/3eBRnNbWrAY8oQF8807v6Mk+uKV7RZpw/36o
+        fhme10OYfvISihxHrrraZiC3cE4rvYqZyXcMFNOa1cCY0KS9dQLDk4OYmB2GrIbxKXiy+FeQrTuO5ItX
+        7Px/nmrg9kB26Sq2giMMFPN64LN4GdQHi+F3mBDOF++Bkp/iP//P6D+uwF/8e/4L/WMTQNR+yRIAAAAA
+        SUVORK5CYII=
 </value>
   </data>
   <metadata name="listarPagosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -70,5 +70,17 @@ namespace GestorComercial.Properties {
                 this["DBPassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2017-01-01")]
+        public global::System.DateTime FechaHoy {
+            get {
+                return ((global::System.DateTime)(this["FechaHoy"]));
+            }
+            set {
+                this["FechaHoy"] = value;
+            }
+        }
     }
 }

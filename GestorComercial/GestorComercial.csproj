@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GestorComercial, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\GestorComercial.dll</HintPath>
+    </Reference>
     <Reference Include="LibPrintTicket">
       <HintPath>..\Libraries\LibPrintTicket.dll</HintPath>
     </Reference>
@@ -45,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsDocumento.cs" />
+    <Compile Include="clsEmpresa.cs" />
+    <Compile Include="clsPrueba.cs" />
     <Compile Include="clsUsuarios.cs" />
     <Compile Include="clsVentas.cs" />
     <Compile Include="clsProducto.cs" />
