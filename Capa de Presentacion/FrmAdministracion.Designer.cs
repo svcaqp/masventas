@@ -239,10 +239,6 @@
             // Actualizar
             // 
 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "Actualizar";
-            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle2;
-
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.NullValue = "Actualizar";
             this.Actualizar.DefaultCellStyle = dataGridViewCellStyle5;
@@ -257,9 +253,6 @@
             // 
             this.Eliminar.DataPropertyName = "Eliminar";
 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "Eliminar";
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle3;
 
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.NullValue = "Eliminar";

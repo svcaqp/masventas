@@ -54,7 +54,7 @@ namespace Capa_de_Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            FrmRegistrarEmpleados E = new FrmRegistrarEmpleados();
+            FrmEmpleados E = new FrmEmpleados();
             E.txtIdE.Text = "0";
             Program.IdCargo = 0;
             E.Show();
@@ -65,7 +65,7 @@ namespace Capa_de_Presentacion
         {
             if (dataGridView1.Rows.Count > 0) {
                 if (dataGridView1.SelectedRows.Count > 0) {
-                    FrmRegistrarEmpleados E = new FrmRegistrarEmpleados();
+                    FrmEmpleados E = new FrmEmpleados();
                     E.txtIdE.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                     Program.IdCargo = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value.ToString());
                     E.txtDni.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();

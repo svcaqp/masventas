@@ -1,24 +1,21 @@
-﻿using System;
+﻿using GestorComercial;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using DevComponents.DotNetBar;
-using GestorComercial;
 
 namespace Capa_de_Presentacion
 {
-    public partial class FrmRegistrarEmpleados : DevComponents.DotNetBar.Metro.MetroForm
+    public partial class FrmEmpleados : DevComponents.DotNetBar.Metro.MetroForm
     {
         clsCargo C = new clsCargo();
         clsEmpleado E = new clsEmpleado();
         int Listado = 0;
-        public FrmRegistrarEmpleados()
+        public FrmEmpleados()
         {
             InitializeComponent();
         }
@@ -80,9 +77,7 @@ namespace Capa_de_Presentacion
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            switch (Listado) {
-                case 0: CargarComboBox(); break;
-            }
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,5 +92,7 @@ namespace Capa_de_Presentacion
             else
                 cbxEstadoCivil.SelectedIndex = 0;
         }
+
+      
     }
 }
