@@ -322,6 +322,7 @@ namespace Capa_de_Presentacion
                                     {
                                         DevComponents.DotNetBar.MessageBoxEx.Show(this, Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                         Limpiar();
+                                        Program.frmOrdenCompra.LimpiarOrdenCompra();
                                         this.CargarListado();
                                     }
                                     else
@@ -534,6 +535,11 @@ namespace Capa_de_Presentacion
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtPVenta_KeyDown(object sender, KeyEventArgs e)
+        {
+            clsTools.OnlyDouble(sender, e);
         }
 
 

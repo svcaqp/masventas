@@ -58,5 +58,12 @@ namespace GestorComercial
         }
 
 
+        public void SetPrueba()
+        {
+            DateTime localDate = DateTime.Now;
+            Settings.Default.FechaHoy = localDate;
+            Settings.Default.Save();
+        }
+
     }
 }

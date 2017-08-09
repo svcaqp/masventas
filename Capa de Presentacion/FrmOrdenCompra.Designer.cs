@@ -68,7 +68,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(353, 369);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(98, 35);
-            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "&Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -95,23 +95,22 @@
             this.rbn_boleta.AutoSize = true;
             this.rbn_boleta.Checked = true;
             this.rbn_boleta.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbn_boleta.Location = new System.Drawing.Point(215, 20);
+            this.rbn_boleta.Location = new System.Drawing.Point(50, 20);
             this.rbn_boleta.Name = "rbn_boleta";
             this.rbn_boleta.Size = new System.Drawing.Size(59, 18);
             this.rbn_boleta.TabIndex = 1;
-            this.rbn_boleta.TabStop = true;
             this.rbn_boleta.Text = "Boleta";
             this.rbn_boleta.UseVisualStyleBackColor = true;
+            this.rbn_boleta.CheckedChanged += new System.EventHandler(this.rbn_boleta_CheckedChanged);
             // 
             // rbn_factura
             // 
             this.rbn_factura.AutoSize = true;
             this.rbn_factura.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbn_factura.Location = new System.Drawing.Point(306, 20);
+            this.rbn_factura.Location = new System.Drawing.Point(174, 20);
             this.rbn_factura.Name = "rbn_factura";
             this.rbn_factura.Size = new System.Drawing.Size(65, 18);
-            this.rbn_factura.TabIndex = 23;
-            this.rbn_factura.TabStop = true;
+            this.rbn_factura.TabIndex = 2;
             this.rbn_factura.Text = "Factura";
             this.rbn_factura.UseVisualStyleBackColor = true;
             // 
@@ -119,11 +118,10 @@
             // 
             this.rbn_guia.AutoSize = true;
             this.rbn_guia.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbn_guia.Location = new System.Drawing.Point(67, 20);
+            this.rbn_guia.Location = new System.Drawing.Point(300, 20);
             this.rbn_guia.Name = "rbn_guia";
             this.rbn_guia.Size = new System.Drawing.Size(117, 18);
-            this.rbn_guia.TabIndex = 24;
-            this.rbn_guia.TabStop = true;
+            this.rbn_guia.TabIndex = 3;
             this.rbn_guia.Text = "Guia de Remisión";
             this.rbn_guia.UseVisualStyleBackColor = true;
             this.rbn_guia.CheckedChanged += new System.EventHandler(this.rbn_guia_CheckedChanged);
@@ -139,9 +137,9 @@
             this.groupBox1.Location = new System.Drawing.Point(13, 141);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(450, 125);
-            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Documento (*)";
+            this.groupBox1.Text = "Documento ";
             // 
             // txt_nroDocumento
             // 
@@ -152,10 +150,8 @@
             this.txt_nroDocumento.Multiline = true;
             this.txt_nroDocumento.Name = "txt_nroDocumento";
             this.txt_nroDocumento.Size = new System.Drawing.Size(418, 47);
-            this.txt_nroDocumento.TabIndex = 25;
+            this.txt_nroDocumento.TabIndex = 4;
             this.txt_nroDocumento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_nroDocumento.EnabledChanged += new System.EventHandler(this.txt_nroDocumento_EnabledChanged);
-            this.txt_nroDocumento.TextChanged += new System.EventHandler(this.txt_nroDocumento_TextChanged);
             // 
             // label2
             // 
@@ -163,9 +159,9 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 14);
+            this.label2.Size = new System.Drawing.Size(123, 14);
             this.label2.TabIndex = 26;
-            this.label2.Text = "Nro. Documento:";
+            this.label2.Text = "Nro. Documento (*):";
             // 
             // date_Fecha
             // 
@@ -174,7 +170,7 @@
             this.date_Fecha.Location = new System.Drawing.Point(15, 23);
             this.date_Fecha.Name = "date_Fecha";
             this.date_Fecha.Size = new System.Drawing.Size(262, 22);
-            this.date_Fecha.TabIndex = 11;
+            this.date_Fecha.TabIndex = 1;
             // 
             // lbl_nombreProducto
             // 
@@ -185,7 +181,6 @@
             this.lbl_nombreProducto.Size = new System.Drawing.Size(82, 14);
             this.lbl_nombreProducto.TabIndex = 26;
             this.lbl_nombreProducto.Text = "PRODUCTO: ";
-            this.lbl_nombreProducto.Click += new System.EventHandler(this.lbl_nombreProducto_Click);
             // 
             // groupBox2
             // 
@@ -194,7 +189,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 69);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(450, 65);
-            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
             // lbl_MarcaProducto
@@ -214,7 +209,7 @@
             this.groupBox3.Location = new System.Drawing.Point(172, 272);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(291, 62);
-            this.groupBox3.TabIndex = 28;
+            this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Fecha (*)";
             // 
@@ -228,7 +223,7 @@
             this.groupBox5.Location = new System.Drawing.Point(12, 268);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(149, 150);
-            this.groupBox5.TabIndex = 29;
+            this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             // 
             // txtTotal
@@ -240,7 +235,7 @@
             this.txtTotal.Multiline = true;
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(64, 42);
-            this.txtTotal.TabIndex = 23;
+            this.txtTotal.TabIndex = 4;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -253,7 +248,6 @@
             this.label1.Size = new System.Drawing.Size(57, 39);
             this.label1.TabIndex = 26;
             this.label1.Text = "S/.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtCantidad
             // 
@@ -264,7 +258,7 @@
             this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(116, 42);
-            this.txtCantidad.TabIndex = 22;
+            this.txtCantidad.TabIndex = 3;
             this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -301,8 +295,8 @@
             this.button2.MinimumSize = new System.Drawing.Size(141, 33);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 33);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Regresar ";
+            this.button2.TabIndex = 102;
+            this.button2.Text = "&Regresar ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -314,8 +308,8 @@
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(313, 52);
-            this.panel4.TabIndex = 1010;
+            this.panel4.Size = new System.Drawing.Size(382, 52);
+            this.panel4.TabIndex = 0;
             // 
             // lbl_title
             // 
@@ -343,7 +337,7 @@
             this.button1.Location = new System.Drawing.Point(243, 369);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 35);
-            this.button1.TabIndex = 1011;
+            this.button1.TabIndex = 5;
             this.button1.Text = "&Limpiar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -352,8 +346,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(473, 426);
+            this.ClientSize = new System.Drawing.Size(487, 431);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -369,9 +362,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(489, 465);
+            this.MaximumSize = new System.Drawing.Size(503, 465);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(489, 465);
+            this.MinimumSize = new System.Drawing.Size(503, 465);
             this.Name = "FrmOrdenCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";

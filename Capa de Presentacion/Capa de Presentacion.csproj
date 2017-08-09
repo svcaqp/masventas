@@ -87,7 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsPrueba.cs" />
+    <Compile Include="clsTools.cs" />
     <Compile Include="clsVenta.cs" />
     <Compile Include="DataSetReporteProductos.Designer.cs">
       <AutoGen>True</AutoGen>

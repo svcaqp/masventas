@@ -158,6 +158,12 @@ namespace Beta
 
             return true;
         }
+
+        public void setPrueba()
+        {
+            clsPrueba prueba = new clsPrueba();
+            prueba.SetPrueba();
+        }
         
     }
 }

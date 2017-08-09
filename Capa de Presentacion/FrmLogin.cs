@@ -42,7 +42,6 @@ namespace Capa_de_Presentacion
         private void btnIngresar_Click(object sender, EventArgs e)
         {
 
-            
 
 
             if (Settings.Default["TecnicoUser"].ToString() == txtUser.Text &&
@@ -58,6 +57,7 @@ namespace Capa_de_Presentacion
 
 
             clsEmpresa empresa = new clsEmpresa();
+            empresa.setPrueba();
 
             if (!empresa.ProductoActivado())
             {

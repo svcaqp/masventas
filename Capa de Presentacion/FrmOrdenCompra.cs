@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestorComercial;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +29,7 @@ namespace Capa_de_Presentacion
             txtCantidad.Clear();
             txtIdP.Clear();
             txtTotal.Clear();
+            Program.ordenCompra = new clsCompra();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -122,11 +124,6 @@ namespace Capa_de_Presentacion
             
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -141,25 +138,12 @@ namespace Capa_de_Presentacion
             date_Fecha.Value = DateTime.Now;            
         }
 
-        private void txt_nroDocumento_EnabledChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void lbl_nombreProducto_Click(object sender, EventArgs e)
+        private void rbn_boleta_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void txt_nroDocumento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
 
 

@@ -343,8 +343,16 @@ namespace Capa_de_Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-                           this.Close();
-                 }
+
+            if (Program.ordenCompra.Cantidad > 0)
+            {
+                if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "¿Seguro que desea Salir? Los cambios no se han guardado", "Sistema de Ventas.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                    this.Close();
+            }
+            else
+                this.Close();
+            
+        }
 
     }
 }

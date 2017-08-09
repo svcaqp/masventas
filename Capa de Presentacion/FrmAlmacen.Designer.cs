@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAlmacen));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -170,9 +170,9 @@
             // 
             // Nombres
             // 
-            dataGridViewCellStyle19.Format = "C2";
-            dataGridViewCellStyle19.NullValue = null;
-            this.Nombres.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle7.Format = "C2";
+            dataGridViewCellStyle7.NullValue = null;
+            this.Nombres.DefaultCellStyle = dataGridViewCellStyle7;
             this.Nombres.HeaderText = "Precio Compra";
             this.Nombres.Name = "Nombres";
             this.Nombres.ReadOnly = true;
@@ -180,9 +180,9 @@
             // 
             // Dirección
             // 
-            dataGridViewCellStyle20.Format = "C2";
-            dataGridViewCellStyle20.NullValue = null;
-            this.Dirección.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.Dirección.DefaultCellStyle = dataGridViewCellStyle8;
             this.Dirección.HeaderText = "Precio Venta";
             this.Dirección.Name = "Dirección";
             this.Dirección.ReadOnly = true;
@@ -190,9 +190,9 @@
             // 
             // Teléfono
             // 
-            dataGridViewCellStyle21.Format = "N2";
-            dataGridViewCellStyle21.NullValue = null;
-            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle9.Format = "N2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Teléfono.DefaultCellStyle = dataGridViewCellStyle9;
             this.Teléfono.HeaderText = "Stock";
             this.Teléfono.Name = "Teléfono";
             this.Teléfono.ReadOnly = true;
@@ -220,7 +220,7 @@
             this.gbox_nuevo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbox_nuevo.Location = new System.Drawing.Point(771, 83);
             this.gbox_nuevo.Name = "gbox_nuevo";
-            this.gbox_nuevo.Size = new System.Drawing.Size(472, 410);
+            this.gbox_nuevo.Size = new System.Drawing.Size(472, 437);
             this.gbox_nuevo.TabIndex = 6;
             this.gbox_nuevo.TabStop = false;
             this.gbox_nuevo.Text = "Registro de Productos";
@@ -439,12 +439,13 @@
             this.txtPVenta.Name = "txtPVenta";
             this.txtPVenta.Size = new System.Drawing.Size(74, 22);
             this.txtPVenta.TabIndex = 6;
+            this.txtPVenta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPVenta_KeyDown);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(201, 240);
+            this.label6.Location = new System.Drawing.Point(230, 234);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 14);
             this.label6.TabIndex = 8;
@@ -487,7 +488,7 @@
             this.gbox_Categorias.Controls.Add(this.txtCategoria);
             this.gbox_Categorias.Controls.Add(this.button3);
             this.gbox_Categorias.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbox_Categorias.Location = new System.Drawing.Point(771, 497);
+            this.gbox_Categorias.Location = new System.Drawing.Point(771, 526);
             this.gbox_Categorias.Name = "gbox_Categorias";
             this.gbox_Categorias.Size = new System.Drawing.Size(472, 65);
             this.gbox_Categorias.TabIndex = 7;
@@ -555,7 +556,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 639);
+            this.label10.Location = new System.Drawing.Point(7, 614);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(408, 13);
             this.label10.TabIndex = 1000;
@@ -580,9 +581,10 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtBuscarProducto);
             this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Location = new System.Drawing.Point(27, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 595);
+            this.groupBox1.Size = new System.Drawing.Size(738, 660);
             this.groupBox1.TabIndex = 1009;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -603,7 +605,7 @@
             this.groupBox2.Controls.Add(this.cbox_ListaCategorias);
             this.groupBox2.Controls.Add(this.btn_Eliminar);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(771, 568);
+            this.groupBox2.Location = new System.Drawing.Point(771, 601);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(472, 65);
             this.groupBox2.TabIndex = 7;
@@ -641,7 +643,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txt_IdCat);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.gbox_Categorias);
             this.Controls.Add(this.gbox_nuevo);
             this.DoubleBuffered = true;

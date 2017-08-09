@@ -56,7 +56,12 @@ namespace Beta
                 Console.WriteLine("Couldn't catch the Thread Exception");
             }
         }
-
+        public void SetPrueba()
+        {
+            DateTime localDate = DateTime.Now;
+            Settings.Default.FechaHoy = localDate;
+            Settings.Default.Save();
+        }
        
     }
 }

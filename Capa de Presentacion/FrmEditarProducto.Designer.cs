@@ -333,7 +333,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(143, 33);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Regresar ";
+            this.button2.Text = "&Regresar ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -352,7 +352,6 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MaximumSize = new System.Drawing.Size(489, 465);
             this.MinimumSize = new System.Drawing.Size(489, 465);
             this.Name = "FrmEditarProducto";
