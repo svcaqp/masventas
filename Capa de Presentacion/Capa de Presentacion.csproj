@@ -322,6 +322,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOrdenCompra.resx">
       <DependentUpon>FrmOrdenCompra.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCargo.resx">
       <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
@@ -331,6 +332,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoClientes.resx">
       <DependentUpon>FrmListadoClientes.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoProductos.resx">
       <DependentUpon>FrmListadoProductos.cs</DependentUpon>

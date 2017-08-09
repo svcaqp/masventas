@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarEmpleados));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxEstadoCivil = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
-            this.btnGrabar = new System.Windows.Forms.Button();
             this.txtIdE = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -87,6 +87,13 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // btnGrabar
+            // 
+            resources.ApplyResources(this.btnGrabar, "btnGrabar");
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // txtDireccion
             // 
@@ -188,13 +195,6 @@
             this.txtDni.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtDni.Name = "txtDni";
             // 
-            // btnGrabar
-            // 
-            resources.ApplyResources(this.btnGrabar, "btnGrabar");
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
-            // 
             // txtIdE
             // 
             resources.ApplyResources(this.txtIdE, "txtIdE");
@@ -229,6 +229,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtIdE);
