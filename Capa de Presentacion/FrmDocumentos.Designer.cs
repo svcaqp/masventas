@@ -351,11 +351,9 @@
             this.data_pagos.Location = new System.Drawing.Point(26, 178);
             this.data_pagos.Name = "data_pagos";
             this.data_pagos.ReadOnly = true;
-<<<<<<< HEAD
-            this.data_pagos.Size = new System.Drawing.Size(986, 453);
-=======
+
             this.data_pagos.Size = new System.Drawing.Size(986, 454);
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.data_pagos.TabIndex = 10;
             this.data_pagos.Visible = false;
             this.data_pagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);

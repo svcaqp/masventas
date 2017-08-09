@@ -51,7 +51,7 @@
             this.btn_impresora = new System.Windows.Forms.Button();
             this.btn_seguridad = new System.Windows.Forms.Button();
             this.gbox_informacion = new System.Windows.Forms.GroupBox();
-<<<<<<< HEAD
+
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-=======
+
             this.txt_nota = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_boleta = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
             this.btn_GuardarEmpresa = new System.Windows.Forms.Button();
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.txt_ruc_empresa = new System.Windows.Forms.TextBox();
             this.txt_nombre_empresa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -106,14 +106,13 @@
             this.horaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
-=======
+
             this.gbox_licencia = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_licencia = new System.Windows.Forms.Button();
             this.txt_licencia = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             ((System.ComponentModel.ISupportInitialize)(this.cajasCerradasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCajasCerradas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_icon)).BeginInit();
@@ -225,13 +224,13 @@
             // 
             // contraseñaDataGridViewTextBoxColumn
             // 
-<<<<<<< HEAD
-            dataGridViewCellStyle1.NullValue = "********";
+
+       
             this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-=======
+
             dataGridViewCellStyle4.NullValue = "********";
             this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
             this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
             this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
@@ -239,15 +238,15 @@
             // 
             // Actualizar
             // 
-<<<<<<< HEAD
+
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.NullValue = "Actualizar";
             this.Actualizar.DefaultCellStyle = dataGridViewCellStyle2;
-=======
+
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.NullValue = "Actualizar";
             this.Actualizar.DefaultCellStyle = dataGridViewCellStyle5;
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.Actualizar.HeaderText = "Actualizar";
             this.Actualizar.Name = "Actualizar";
             this.Actualizar.Text = "Actualizar";
@@ -257,15 +256,15 @@
             // Eliminar
             // 
             this.Eliminar.DataPropertyName = "Eliminar";
-<<<<<<< HEAD
+
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.NullValue = "Eliminar";
             this.Eliminar.DefaultCellStyle = dataGridViewCellStyle3;
-=======
+
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.NullValue = "Eliminar";
             this.Eliminar.DefaultCellStyle = dataGridViewCellStyle6;
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Text = "Eliminar";
@@ -338,7 +337,7 @@
             this.gbox_informacion.Text = "Información General de la Empresa";
             this.gbox_informacion.Visible = false;
             // 
-<<<<<<< HEAD
+
             // label9
             // 
             this.label9.AutoSize = true;
@@ -347,7 +346,7 @@
             this.label9.Size = new System.Drawing.Size(354, 28);
             this.label9.TabIndex = 24;
             this.label9.Text = "Por favor, \r\nIntroducir el Impuesto con el que se trabajará en este Sistema.";
-=======
+
             // txt_nota
             // 
             this.txt_nota.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -423,23 +422,23 @@
             this.label10.Size = new System.Drawing.Size(47, 14);
             this.label10.TabIndex = 25;
             this.label10.Text = "Ciudad:";
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.label8.Location = new System.Drawing.Point(149, 236);
-=======
-            this.label8.Location = new System.Drawing.Point(158, 301);
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
+
+
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 39);
             this.label8.TabIndex = 23;
             this.label8.Text = "%";
             // 
-<<<<<<< HEAD
+
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -450,7 +449,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(116, 42);
             this.textBox1.TabIndex = 21;
-=======
+
             // txt_tasa
             // 
             this.txt_tasa.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -461,16 +460,15 @@
             this.txt_tasa.Name = "txt_tasa";
             this.txt_tasa.Size = new System.Drawing.Size(116, 42);
             this.txt_tasa.TabIndex = 21;
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-<<<<<<< HEAD
+
             this.label5.Location = new System.Drawing.Point(27, 217);
-=======
+
             this.label5.Location = new System.Drawing.Point(29, 281);
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 14);
             this.label5.TabIndex = 20;
@@ -495,7 +493,7 @@
             this.txt_direccion_empresa.Size = new System.Drawing.Size(375, 30);
             this.txt_direccion_empresa.TabIndex = 15;
             // 
-<<<<<<< HEAD
+
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(266, 242);
@@ -504,7 +502,7 @@
             this.button4.TabIndex = 16;
             this.button4.Text = "&Guardar";
             this.button4.UseVisualStyleBackColor = true;
-=======
+
             // btn_GuardarEmpresa
             // 
             this.btn_GuardarEmpresa.Location = new System.Drawing.Point(266, 301);
@@ -514,7 +512,7 @@
             this.btn_GuardarEmpresa.Text = "&Guardar";
             this.btn_GuardarEmpresa.UseVisualStyleBackColor = true;
             this.btn_GuardarEmpresa.Click += new System.EventHandler(this.btn_GuardarEmpresa_Click);
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             // 
             // txt_ruc_empresa
             // 
@@ -774,7 +772,7 @@
             this.saldoAbiertoDataGridViewTextBoxColumn.Name = "saldoAbiertoDataGridViewTextBoxColumn";
             this.saldoAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
             this.saldoAbiertoDataGridViewTextBoxColumn.Width = 110;
-<<<<<<< HEAD
+
             // 
             // fechaAbiertoDataGridViewTextBoxColumn
             // 
@@ -794,7 +792,7 @@
             // 
             // saldoCerradoDataGridViewTextBoxColumn
             // 
-=======
+
             // 
             // fechaAbiertoDataGridViewTextBoxColumn
             // 
@@ -814,7 +812,7 @@
             // 
             // saldoCerradoDataGridViewTextBoxColumn
             // 
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.saldoCerradoDataGridViewTextBoxColumn.DataPropertyName = "SaldoCerrado";
             this.saldoCerradoDataGridViewTextBoxColumn.HeaderText = "Saldo Cierre";
             this.saldoCerradoDataGridViewTextBoxColumn.Name = "saldoCerradoDataGridViewTextBoxColumn";
@@ -857,8 +855,7 @@
             this.label1.Size = new System.Drawing.Size(239, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "NOTA: Hacer Doble Clic en el campo para editar.";
-<<<<<<< HEAD
-=======
+
             // 
             // gbox_licencia
             // 
@@ -912,7 +909,7 @@
             this.label13.Size = new System.Drawing.Size(145, 14);
             this.label13.TabIndex = 10;
             this.label13.Text = "Ingrese Numero de Serial";
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             // 
             // FrmAdministracion
             // 
@@ -1034,5 +1031,15 @@
         private System.Windows.Forms.Button btn_licencia;
         private System.Windows.Forms.TextBox txt_licencia;
         private System.Windows.Forms.Label label13;
+
+        public System.Windows.Forms.Button button4 { get; set; }
+
+        public System.Windows.Forms.TextBox textBox1 { get; set; }
+
+        public System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 { get; set; }
+
+        public System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 { get; set; }
+
+        public System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 { get; set; }
     }
 }

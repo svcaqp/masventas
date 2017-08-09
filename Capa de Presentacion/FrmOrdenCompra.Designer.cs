@@ -314,11 +314,9 @@
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-<<<<<<< HEAD
-            this.panel4.Size = new System.Drawing.Size(356, 52);
-=======
+
             this.panel4.Size = new System.Drawing.Size(327, 52);
->>>>>>> 881aaf196b63692506b2384376f81e7516b6a918
+
             this.panel4.TabIndex = 1010;
             // 
             // lbl_title

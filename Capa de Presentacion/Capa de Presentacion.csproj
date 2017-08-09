@@ -305,6 +305,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDocumentos.resx">
       <DependentUpon>FrmDocumentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCargos.resx">
       <DependentUpon>FrmListadoCargos.cs</DependentUpon>
