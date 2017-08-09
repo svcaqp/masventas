@@ -87,6 +87,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Regresar ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtIdE
             // 
@@ -344,6 +345,7 @@
             this.Name = "FrmEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INGRESAR EMPLEADO";
+            this.Load += new System.EventHandler(this.FrmRegistrarEmpleados_Load);
             this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
