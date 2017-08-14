@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesAnulaciones));
+            this.ReporteAnulacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DemoPracticaAnulaciones = new Capa_de_Presentacion.DemoPracticaAnulaciones();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.date_final = new System.Windows.Forms.DateTimePicker();
@@ -44,15 +46,23 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.DemoPracticaAnulaciones = new Capa_de_Presentacion.DemoPracticaAnulaciones();
-            this.ReporteAnulacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReporteAnulacionesTableAdapter = new Capa_de_Presentacion.DemoPracticaAnulacionesTableAdapters.ReporteAnulacionesTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteAnulacionesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaAnulaciones)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaAnulaciones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteAnulacionesBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ReporteAnulacionesBindingSource
+            // 
+            this.ReporteAnulacionesBindingSource.DataMember = "ReporteAnulaciones";
+            this.ReporteAnulacionesBindingSource.DataSource = this.DemoPracticaAnulaciones;
+            // 
+            // DemoPracticaAnulaciones
+            // 
+            this.DemoPracticaAnulaciones.DataSetName = "DemoPracticaAnulaciones";
+            this.DemoPracticaAnulaciones.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -205,16 +215,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // DemoPracticaAnulaciones
-            // 
-            this.DemoPracticaAnulaciones.DataSetName = "DemoPracticaAnulaciones";
-            this.DemoPracticaAnulaciones.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ReporteAnulacionesBindingSource
-            // 
-            this.ReporteAnulacionesBindingSource.DataMember = "ReporteAnulaciones";
-            this.ReporteAnulacionesBindingSource.DataSource = this.DemoPracticaAnulaciones;
-            // 
             // ReporteAnulacionesTableAdapter
             // 
             this.ReporteAnulacionesTableAdapter.ClearBeforeFill = true;
@@ -233,13 +233,13 @@
             this.Name = "FrmReportesAnulaciones";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FrmReportes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteAnulacionesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaAnulaciones)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaAnulaciones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteAnulacionesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
