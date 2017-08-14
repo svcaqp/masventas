@@ -185,7 +185,7 @@ namespace Capa_de_Presentacion
             try { Program.frmEmpleados.Close(); }catch { }
             try { Program.frmAlmacen.Close(); } catch { }
             try { Program.frmAdministracion.Close(); } catch { }
-            try { Program.frmDocumentos.Close(); }catch { }
+            try { Program.frmTutorial.Close(); }catch { }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -269,14 +269,20 @@ namespace Capa_de_Presentacion
         {
             
             
-            Program.frmDocumentos = new  FrmDocumentos();
-            Program.frmDocumentos.Show();
+            Program.frmTutorial = new  FrmTutorial();
+            Program.frmTutorial.Show();
 
         }
 
         private void Panel_items_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnTutorial_Click(object sender, EventArgs e)
+        {
+            Program.frmTutorial = new FrmTutorial();
+            Program.frmTutorial.Show();
         }
 
 

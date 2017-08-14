@@ -235,12 +235,6 @@
     <Compile Include="FrmAbrirCaja.Designer.cs">
       <DependentUpon>FrmAbrirCaja.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmListadoCargos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmListadoCargos.Designer.cs">
-      <DependentUpon>FrmListadoCargos.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmListadoEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,18 +253,6 @@
     <Compile Include="FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrarCargo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarCargo.Designer.cs">
-      <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmListadoCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmListadoCategoria.Designer.cs">
-      <DependentUpon>FrmListadoCategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmListadoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,12 +264,6 @@
     </Compile>
     <Compile Include="FrmListadoProductos.Designer.cs">
       <DependentUpon>FrmListadoProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRegistrarUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistrarUsuarios.Designer.cs">
-      <DependentUpon>FrmRegistrarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistroCliente.cs">
       <SubType>Form</SubType>
@@ -306,12 +282,6 @@
     </Compile>
     <Compile Include="FrmReportesVentas.Designer.cs">
       <DependentUpon>FrmReportesVentas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPreferencias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPreferencias.Designer.cs">
-      <DependentUpon>FrmPreferencias.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTutorial.cs">
       <SubType>Form</SubType>
@@ -347,9 +317,6 @@
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmListadoCargos.resx">
-      <DependentUpon>FrmListadoCargos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoEmpleados.resx">
       <DependentUpon>FrmListadoEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -365,12 +332,6 @@
       <DependentUpon>FrmOrdenCompra.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarCargo.resx">
-      <DependentUpon>FrmRegistrarCargo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmListadoCategoria.resx">
-      <DependentUpon>FrmListadoCategoria.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoClientes.resx">
       <DependentUpon>FrmListadoClientes.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -378,9 +339,6 @@
     <EmbeddedResource Include="FrmListadoProductos.resx">
       <DependentUpon>FrmListadoProductos.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrarUsuarios.resx">
-      <DependentUpon>FrmRegistrarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroCliente.resx">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
@@ -402,9 +360,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportesVentas.resx">
       <DependentUpon>FrmReportesVentas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPreferencias.resx">
-      <DependentUpon>FrmPreferencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmServer.resx">
       <DependentUpon>FrmServer.cs</DependentUpon>

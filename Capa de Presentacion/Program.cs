@@ -65,8 +65,8 @@ namespace Capa_de_Presentacion
         public static FrmAdministracion frmAdministracion;
 
         public static FrmDocumentos frmDocumentos;
+        public static FrmTutorial frmTutorial;
     
-
         public static FrmReportesKardex frmReportesKardex;
         public static FrmReportesVentas frmReportesVentas;
         public static FrmReportesAnulaciones frmReportesAnulaciones;

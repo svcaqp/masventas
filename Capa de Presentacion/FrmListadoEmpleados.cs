@@ -121,13 +121,7 @@ namespace Capa_de_Presentacion
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             if (DevComponents.DotNetBar.MessageBoxEx.Show("¿Desea Crear Una Cuenta de Usuario Para este Empleado.?","Sistema de Ventas.", MessageBoxButtons.YesNoCancel) == DialogResult.Yes) {
-                FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
-                Program.IdEmpleado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                U.lblEmpleado.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString() + ", " +
-                                     dataGridView1.CurrentRow.Cells[4].Value.ToString();
-                U.lblDni.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                U.lblCargo.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-                U.Show();
+               
             }
         }
 

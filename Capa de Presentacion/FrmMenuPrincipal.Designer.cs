@@ -245,6 +245,7 @@
             this.btnTutorial.Size = new System.Drawing.Size(134, 114);
             this.btnTutorial.TabIndex = 20;
             this.btnTutorial.UseVisualStyleBackColor = true;
+            this.btnTutorial.Click += new System.EventHandler(this.btnTutorial_Click);
             // 
             // btnDocumentos
             // 

@@ -22,5 +22,11 @@ namespace Capa_de_Presentacion
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string sIni = Application.StartupPath + "\\prueba.cfg";
+
+        }
     }
 }

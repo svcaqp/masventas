@@ -35,8 +35,7 @@ namespace Capa_de_Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmRegistrarCargo C = new FrmRegistrarCargo();
-            C.Show();
+          
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
