@@ -8,6 +8,8 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
 
 namespace Capa_de_Presentacion
 {
@@ -25,8 +27,15 @@ namespace Capa_de_Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sIni = Application.StartupPath + "\\prueba.cfg";
+            string pdfPath = Path.Combine(Application.StartupPath, "ManualInstalacion.docx");
+            Process.Start(pdfPath);
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string pdfPath = Path.Combine(Application.StartupPath, "Manual_VendeMas.pdf");
+           Process.Start(pdfPath);
         }
     }
 }

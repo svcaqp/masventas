@@ -267,10 +267,9 @@ namespace Capa_de_Presentacion
 
         private void btnDocumentos_Click(object sender, EventArgs e)
         {
-            
-            
-            Program.frmTutorial = new  FrmTutorial();
-            Program.frmTutorial.Show();
+                      
+            Program.frmDocumentos = new  FrmDocumentos();
+            Program.frmDocumentos.Show();
 
         }
 
