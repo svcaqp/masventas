@@ -313,6 +313,12 @@
     <Compile Include="FrmPreferencias.Designer.cs">
       <DependentUpon>FrmPreferencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTutorial.Designer.cs">
+      <DependentUpon>FrmTutorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrmReportesMenu.cs">
@@ -402,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmServer.resx">
       <DependentUpon>FrmServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTutorial.resx">
+      <DependentUpon>FrmTutorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesVencimiento));
+            this.ReporteInventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DemoPracticaVencimiento = new Capa_de_Presentacion.DemoPracticaVencimiento();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.date_final = new System.Windows.Forms.DateTimePicker();
@@ -44,15 +46,23 @@
             this.lbl_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.DemoPracticaVencimiento = new Capa_de_Presentacion.DemoPracticaVencimiento();
-            this.ReporteInventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ReporteInventarioTableAdapter = new Capa_de_Presentacion.DemoPracticaVencimientoTableAdapters.ReporteInventarioTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteInventarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVencimiento)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVencimiento)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteInventarioBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ReporteInventarioBindingSource
+            // 
+            this.ReporteInventarioBindingSource.DataMember = "ReporteInventario";
+            this.ReporteInventarioBindingSource.DataSource = this.DemoPracticaVencimiento;
+            // 
+            // DemoPracticaVencimiento
+            // 
+            this.DemoPracticaVencimiento.DataSetName = "DemoPracticaVencimiento";
+            this.DemoPracticaVencimiento.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -145,9 +155,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "DataSetVencimiento";
-            reportDataSource1.Value = this.ReporteInventarioBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSetVencimiento";
+            reportDataSource2.Value = this.ReporteInventarioBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportVencimiento.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(17, 167);
             this.reportViewer1.Name = "reportViewer1";
@@ -173,9 +183,9 @@
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.Location = new System.Drawing.Point(93, 12);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(133, 23);
+            this.lbl_title.Size = new System.Drawing.Size(249, 23);
             this.lbl_title.TabIndex = 1013;
-            this.lbl_title.Text = "VENCIMIENTO";
+            this.lbl_title.Text = "REPORTE DE VENCIMIENTO";
             // 
             // pictureBox1
             // 
@@ -205,16 +215,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // DemoPracticaVencimiento
-            // 
-            this.DemoPracticaVencimiento.DataSetName = "DemoPracticaVencimiento";
-            this.DemoPracticaVencimiento.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ReporteInventarioBindingSource
-            // 
-            this.ReporteInventarioBindingSource.DataMember = "ReporteInventario";
-            this.ReporteInventarioBindingSource.DataSource = this.DemoPracticaVencimiento;
-            // 
             // ReporteInventarioTableAdapter
             // 
             this.ReporteInventarioTableAdapter.ClearBeforeFill = true;
@@ -233,13 +233,13 @@
             this.Name = "FrmReportesVencimiento";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FrmReportes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ReporteInventarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVencimiento)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DemoPracticaVencimiento)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ReporteInventarioBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

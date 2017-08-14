@@ -351,7 +351,7 @@
             this.data_pagos.Location = new System.Drawing.Point(26, 178);
             this.data_pagos.Name = "data_pagos";
             this.data_pagos.ReadOnly = true;
-            this.data_pagos.Size = new System.Drawing.Size(986, 387);
+            this.data_pagos.Size = new System.Drawing.Size(986, 364);
             this.data_pagos.TabIndex = 10;
             this.data_pagos.Visible = false;
             this.data_pagos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_facturas_CellContentClick);
@@ -484,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 677);
+            this.ClientSize = new System.Drawing.Size(1038, 676);
             this.ControlBox = false;
             this.Controls.Add(this.cbox_Documentos);
             this.Controls.Add(this.panel4);

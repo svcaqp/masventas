@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesAnulaciones));
             this.ReporteAnulacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DemoPracticaAnulaciones = new Capa_de_Presentacion.DemoPracticaAnulaciones();
@@ -155,9 +155,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource1.Name = "DataSetAnulaciones";
-            reportDataSource1.Value = this.ReporteAnulacionesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSetAnulaciones";
+            reportDataSource2.Value = this.ReporteAnulacionesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Capa_de_Presentacion.ReportAnulaciones.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(17, 167);
             this.reportViewer1.Name = "reportViewer1";
@@ -183,9 +183,9 @@
             this.lbl_title.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.Location = new System.Drawing.Point(93, 12);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(132, 23);
+            this.lbl_title.Size = new System.Drawing.Size(248, 23);
             this.lbl_title.TabIndex = 1013;
-            this.lbl_title.Text = "ANULACIONES";
+            this.lbl_title.Text = "REPORTE DE ANULACIONES";
             // 
             // pictureBox1
             // 
