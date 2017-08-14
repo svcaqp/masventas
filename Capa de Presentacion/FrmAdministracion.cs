@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,12 +23,14 @@ namespace Capa_de_Presentacion
 
         private void FrmAdministracion_Load(object sender, EventArgs e)
         {
+           
   
             clsPreferences preferences = new clsPreferences();
             Settings.Default["DemoPracticaConnectionString1"] = preferences.getConnectionString();
             Settings.Default.Save();
 
             this.cajasCerradasTableAdapter.Fill(this.demoPracticaCajasCerradas.CajasCerradas);
+            this.listarUsuariosTableAdapter.Fill(this.demoPracticaUsuarios.ListarUsuarios);
 
             
 
@@ -218,6 +221,26 @@ namespace Capa_de_Presentacion
             else
                 MessageBox.Show("No se pudo registrar el producto");
                
+        }
+
+        private void btn_copia_Click(object sender, EventArgs e)
+        {
+            //con is the connection string
+            SqlConnection con = new SqlConnection(new clsPreferences().getConnectionString());
+            con.Open();
+            string str = "USE DemoPractica;";
+            string str1 = "BACKUP DATABASE DemoPractica TO DISK = '" + txt_ruta.Text + "\\backupfile.Bak' WITH FORMAT,MEDIANAME = 'Z_SQLServerBackups',NAME = 'Full Backup of DemoPractica';";
+            SqlCommand cmd1 = new SqlCommand(str, con);
+            SqlCommand cmd2 = new SqlCommand(str1, con);
+            cmd1.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("success");
+            con.Close();
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

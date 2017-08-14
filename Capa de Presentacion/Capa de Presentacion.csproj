@@ -148,6 +148,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DemoPracticaProductosDetalle.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DemoPracticaUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPracticaVencimiento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DemoPracticaVencimiento.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DemoPracticaVentas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,6 +192,12 @@
     </Compile>
     <Compile Include="FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportesVencimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportesVencimiento.Designer.cs">
+      <DependentUpon>FrmReportesVencimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReportesAnulaciones.cs">
       <SubType>Form</SubType>
@@ -369,6 +385,9 @@
     <EmbeddedResource Include="FrmRegistroVentas.resx">
       <DependentUpon>FrmRegistroVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportesVencimiento.resx">
+      <DependentUpon>FrmReportesVencimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReportesAnulaciones.resx">
       <DependentUpon>FrmReportesAnulaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -392,6 +411,7 @@
     <EmbeddedResource Include="FrmReportesMenu.resx">
       <DependentUpon>FrmReportesMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportVencimiento.rdlc" />
     <EmbeddedResource Include="ReportAnulaciones.rdlc" />
     <EmbeddedResource Include="ReportKardex.rdlc" />
     <EmbeddedResource Include="ReportVentas.rdlc" />
@@ -516,6 +536,28 @@
     </None>
     <None Include="DemoPracticaProductosDetalle.xss">
       <DependentUpon>DemoPracticaProductosDetalle.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaUsuarios.xsc">
+      <DependentUpon>DemoPracticaUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaUsuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaUsuarios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaUsuarios.xss">
+      <DependentUpon>DemoPracticaUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaVencimiento.xsc">
+      <DependentUpon>DemoPracticaVencimiento.xsd</DependentUpon>
+    </None>
+    <None Include="DemoPracticaVencimiento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DemoPracticaVencimiento.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DemoPracticaVencimiento.xss">
+      <DependentUpon>DemoPracticaVencimiento.xsd</DependentUpon>
     </None>
     <None Include="DemoPracticaVentas.xsc">
       <DependentUpon>DemoPracticaVentas.xsd</DependentUpon>

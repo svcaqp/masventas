@@ -65,6 +65,12 @@ namespace Capa_de_Presentacion
         public static FrmAdministracion frmAdministracion;
 
         public static FrmDocumentos frmDocumentos;
+    
+
+        public static FrmReportesKardex frmReportesKardex;
+        public static FrmReportesVentas frmReportesVentas;
+        public static FrmReportesAnulaciones frmReportesAnulaciones;
+        public static FrmReportesVencimiento frmReportesVencimiento;
 
         [STAThread]
         static void Main()

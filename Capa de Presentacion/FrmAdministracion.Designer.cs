@@ -30,9 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdministracion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_caja = new System.Windows.Forms.Button();
             this.btn_igv = new System.Windows.Forms.Button();
             this.btn_empresa = new System.Windows.Forms.Button();
@@ -42,15 +40,11 @@
             this.cajasCerradasTableAdapter = new Capa_de_Presentacion.DemoPracticaCajasCerradasTableAdapters.CajasCerradasTableAdapter();
             this.btn_usuarios = new System.Windows.Forms.Button();
             this.gbox_usuarios = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.contraseñaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Actualizar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.usuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbox_opciones = new System.Windows.Forms.GroupBox();
             this.btn_impresora = new System.Windows.Forms.Button();
             this.btn_seguridad = new System.Windows.Forms.Button();
             this.gbox_informacion = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txt_nota = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_boleta = new System.Windows.Forms.TextBox();
@@ -71,8 +65,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.gbox_seguridad = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_copia = new System.Windows.Forms.Button();
+            this.txt_ruta = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -96,18 +90,23 @@
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gbox_licencia = new System.Windows.Forms.GroupBox();
+            this.lbl_licencia_mensaje = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_licencia = new System.Windows.Forms.Button();
             this.txt_licencia = new System.Windows.Forms.TextBox();
             this.lbl_licencia_nroserial = new System.Windows.Forms.Label();
-            this.lbl_licencia_mensaje = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.demoPracticaUsuarios = new Capa_de_Presentacion.DemoPracticaUsuarios();
+            this.listarUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listarUsuariosTableAdapter = new Capa_de_Presentacion.DemoPracticaUsuariosTableAdapters.ListarUsuariosTableAdapter();
+            this.idEmpleadoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cajasCerradasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCajasCerradas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_icon)).BeginInit();
             this.gbox_usuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             this.gbox_opciones.SuspendLayout();
             this.gbox_informacion.SuspendLayout();
             this.gbox_seguridad.SuspendLayout();
@@ -116,6 +115,9 @@
             this.gbox_caja.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbox_licencia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listarUsuariosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_caja
@@ -194,55 +196,6 @@
             this.gbox_usuarios.Text = "Usuarios";
             this.gbox_usuarios.Visible = false;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.contraseñaDataGridViewTextBoxColumn,
-            this.Actualizar,
-            this.Eliminar});
-            this.dataGridView2.DataSource = this.usuarioBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 23);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(403, 354);
-            this.dataGridView2.TabIndex = 0;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // contraseñaDataGridViewTextBoxColumn
-            // 
-            dataGridViewCellStyle4.NullValue = "********";
-            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
-            this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
-            this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
-            this.contraseñaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // Actualizar
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.NullValue = "Actualizar";
-            this.Actualizar.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Actualizar.HeaderText = "Actualizar";
-            this.Actualizar.Name = "Actualizar";
-            this.Actualizar.Text = "Actualizar";
-            this.Actualizar.ToolTipText = "Actualizar";
-            this.Actualizar.Width = 120;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.DataPropertyName = "Eliminar";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = "Eliminar";
-            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.ToolTipText = "Eliminar";
-            this.Eliminar.Width = 120;
-            // 
             // gbox_opciones
             // 
             this.gbox_opciones.Controls.Add(this.btn_impresora);
@@ -308,6 +261,15 @@
             this.gbox_informacion.TabStop = false;
             this.gbox_informacion.Text = "Información General de la Empresa";
             this.gbox_informacion.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(29, 209);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(112, 14);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Correlativo Factura:";
             // 
             // txt_nota
             // 
@@ -484,8 +446,8 @@
             // gbox_seguridad
             // 
             this.gbox_seguridad.Controls.Add(this.panel2);
-            this.gbox_seguridad.Controls.Add(this.button7);
-            this.gbox_seguridad.Controls.Add(this.textBox2);
+            this.gbox_seguridad.Controls.Add(this.btn_copia);
+            this.gbox_seguridad.Controls.Add(this.txt_ruta);
             this.gbox_seguridad.Controls.Add(this.label6);
             this.gbox_seguridad.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbox_seguridad.Location = new System.Drawing.Point(24, 245);
@@ -506,24 +468,25 @@
             this.panel2.Size = new System.Drawing.Size(119, 100);
             this.panel2.TabIndex = 18;
             // 
-            // button7
+            // btn_copia
             // 
-            this.button7.Location = new System.Drawing.Point(29, 108);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 41);
-            this.button7.TabIndex = 16;
-            this.button7.Text = "Generar copia de seguridad";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_copia.Location = new System.Drawing.Point(29, 108);
+            this.btn_copia.Name = "btn_copia";
+            this.btn_copia.Size = new System.Drawing.Size(139, 41);
+            this.btn_copia.TabIndex = 16;
+            this.btn_copia.Text = "Generar copia de seguridad";
+            this.btn_copia.UseVisualStyleBackColor = true;
+            this.btn_copia.Click += new System.EventHandler(this.btn_copia_Click);
             // 
-            // textBox2
+            // txt_ruta
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(29, 67);
-            this.textBox2.MaxLength = 400;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(547, 23);
-            this.textBox2.TabIndex = 13;
+            this.txt_ruta.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txt_ruta.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ruta.Location = new System.Drawing.Point(29, 67);
+            this.txt_ruta.MaxLength = 400;
+            this.txt_ruta.Name = "txt_ruta";
+            this.txt_ruta.Size = new System.Drawing.Size(547, 23);
+            this.txt_ruta.TabIndex = 13;
             // 
             // label6
             // 
@@ -771,6 +734,15 @@
             this.gbox_licencia.Text = "Licencia";
             this.gbox_licencia.Visible = false;
             // 
+            // lbl_licencia_mensaje
+            // 
+            this.lbl_licencia_mensaje.AutoSize = true;
+            this.lbl_licencia_mensaje.Location = new System.Drawing.Point(251, 67);
+            this.lbl_licencia_mensaje.Name = "lbl_licencia_mensaje";
+            this.lbl_licencia_mensaje.Size = new System.Drawing.Size(213, 14);
+            this.lbl_licencia_mensaje.TabIndex = 19;
+            this.lbl_licencia_mensaje.Text = "El producto no se encuentra activado";
+            // 
             // panel5
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
@@ -809,23 +781,68 @@
             this.lbl_licencia_nroserial.TabIndex = 10;
             this.lbl_licencia_nroserial.Text = "Ingrese Numero de Serial";
             // 
-            // lbl_licencia_mensaje
+            // dataGridView2
             // 
-            this.lbl_licencia_mensaje.AutoSize = true;
-            this.lbl_licencia_mensaje.Location = new System.Drawing.Point(251, 67);
-            this.lbl_licencia_mensaje.Name = "lbl_licencia_mensaje";
-            this.lbl_licencia_mensaje.Size = new System.Drawing.Size(213, 14);
-            this.lbl_licencia_mensaje.TabIndex = 19;
-            this.lbl_licencia_mensaje.Text = "El producto no se encuentra activado";
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idEmpleadoDataGridViewTextBoxColumn1,
+            this.column1DataGridViewTextBoxColumn,
+            this.usuarioDataGridViewTextBoxColumn2,
+            this.Eliminar});
+            this.dataGridView2.DataSource = this.listarUsuariosBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(28, 32);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(676, 212);
+            this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
             // 
-            // label9
+            // demoPracticaUsuarios
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(29, 209);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 14);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Correlativo Factura:";
+            this.demoPracticaUsuarios.DataSetName = "DemoPracticaUsuarios";
+            this.demoPracticaUsuarios.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listarUsuariosBindingSource
+            // 
+            this.listarUsuariosBindingSource.DataMember = "ListarUsuarios";
+            this.listarUsuariosBindingSource.DataSource = this.demoPracticaUsuarios;
+            // 
+            // listarUsuariosTableAdapter
+            // 
+            this.listarUsuariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // idEmpleadoDataGridViewTextBoxColumn1
+            // 
+            this.idEmpleadoDataGridViewTextBoxColumn1.DataPropertyName = "IdEmpleado";
+            this.idEmpleadoDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idEmpleadoDataGridViewTextBoxColumn1.Name = "idEmpleadoDataGridViewTextBoxColumn1";
+            this.idEmpleadoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // column1DataGridViewTextBoxColumn
+            // 
+            this.column1DataGridViewTextBoxColumn.DataPropertyName = "Column1";
+            this.column1DataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.column1DataGridViewTextBoxColumn.Name = "column1DataGridViewTextBoxColumn";
+            this.column1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // usuarioDataGridViewTextBoxColumn2
+            // 
+            this.usuarioDataGridViewTextBoxColumn2.DataPropertyName = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn2.HeaderText = "Usuario";
+            this.usuarioDataGridViewTextBoxColumn2.Name = "usuarioDataGridViewTextBoxColumn2";
+            this.usuarioDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // Eliminar
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "Eliminar";
+            this.Eliminar.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
             // 
             // FrmAdministracion
             // 
@@ -833,14 +850,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 677);
             this.ControlBox = false;
+            this.Controls.Add(this.gbox_usuarios);
+            this.Controls.Add(this.gbox_seguridad);
             this.Controls.Add(this.gbox_informacion);
             this.Controls.Add(this.gbox_licencia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.gbox_opciones);
             this.Controls.Add(this.pbox_icon);
-            this.Controls.Add(this.gbox_seguridad);
-            this.Controls.Add(this.gbox_usuarios);
             this.Controls.Add(this.gbox_impresora);
             this.Controls.Add(this.gbox_caja);
             this.DoubleBuffered = true;
@@ -853,8 +870,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCajasCerradas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_icon)).EndInit();
             this.gbox_usuarios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.gbox_opciones.ResumeLayout(false);
             this.gbox_informacion.ResumeLayout(false);
             this.gbox_informacion.PerformLayout();
@@ -869,6 +884,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gbox_licencia.ResumeLayout(false);
             this.gbox_licencia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demoPracticaUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listarUsuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -885,9 +903,6 @@
         private DemoPracticaCajasCerradasTableAdapters.CajasCerradasTableAdapter cajasCerradasTableAdapter;
         private System.Windows.Forms.Button btn_usuarios;
         private System.Windows.Forms.GroupBox gbox_usuarios;
-        private System.Windows.Forms.DataGridView dataGridView2;
-
-        private System.Windows.Forms.BindingSource usuarioBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUsuarioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn1;
         private System.Windows.Forms.GroupBox gbox_opciones;
@@ -902,15 +917,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gbox_seguridad;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btn_copia;
+        private System.Windows.Forms.TextBox txt_ruta;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label lbl_title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contraseñaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn Actualizar;
-        private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
@@ -948,6 +960,14 @@
         private System.Windows.Forms.Label lbl_licencia_nroserial;
         private System.Windows.Forms.Label lbl_licencia_mensaje;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private DemoPracticaUsuarios demoPracticaUsuarios;
+        private System.Windows.Forms.BindingSource listarUsuariosBindingSource;
+        private DemoPracticaUsuariosTableAdapters.ListarUsuariosTableAdapter listarUsuariosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idEmpleadoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usuarioDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
 
         public System.Windows.Forms.Button button4 { get; set; }
 

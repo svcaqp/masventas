@@ -58,8 +58,8 @@ namespace Capa_de_Presentacion.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVER-PC\\SERVER;Initial Catalog=DemoPractica;User ID=PRUEBA;Password" +
-            "=prueba")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=WINDOWS-PC\\SQLEXPRESS;Initial Catalog=DemoPractica;User ID=PRUEBA;Pas" +
+            "sword=prueba")]
         public string DemoPracticaConnectionString1 {
             get {
                 return ((string)(this["DemoPracticaConnectionString1"]));

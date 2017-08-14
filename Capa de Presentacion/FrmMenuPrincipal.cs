@@ -185,6 +185,7 @@ namespace Capa_de_Presentacion
             try { Program.frmEmpleados.Close(); }catch { }
             try { Program.frmAlmacen.Close(); } catch { }
             try { Program.frmAdministracion.Close(); } catch { }
+            try { Program.frmDocumentos.Close(); }catch { }
         }
 
         private void label1_Click(object sender, EventArgs e)

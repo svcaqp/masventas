@@ -38,5 +38,11 @@ namespace Capa_de_Presentacion
             FrmReportesAnulaciones reporte = new FrmReportesAnulaciones();
             reporte.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmReportesVencimiento reporte = new FrmReportesVencimiento();
+            reporte.Show();
+        }
     }
 }
