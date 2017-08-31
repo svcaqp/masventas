@@ -99,6 +99,7 @@
             this.rbn_boleta.Name = "rbn_boleta";
             this.rbn_boleta.Size = new System.Drawing.Size(59, 18);
             this.rbn_boleta.TabIndex = 1;
+            this.rbn_boleta.TabStop = true;
             this.rbn_boleta.Text = "Boleta";
             this.rbn_boleta.UseVisualStyleBackColor = true;
             this.rbn_boleta.CheckedChanged += new System.EventHandler(this.rbn_boleta_CheckedChanged);
@@ -308,7 +309,7 @@
             this.panel4.Controls.Add(this.button2);
             this.panel4.Location = new System.Drawing.Point(93, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(382, 52);
+            this.panel4.Size = new System.Drawing.Size(368, 52);
             this.panel4.TabIndex = 0;
             // 
             // lbl_title

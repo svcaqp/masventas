@@ -69,7 +69,7 @@ namespace Capa_de_Presentacion
                 label10.Hide();
                 label11.Hide();
                 btnReportes.Hide();
-                btnUsuarios.Hide();
+                btnAdministracion.Hide();
                                                     
                 lbl_TipodeUsuario.Text = "Trabajador";
 
@@ -92,17 +92,30 @@ namespace Capa_de_Presentacion
             Left = Top = 0;
             Width = Screen.PrimaryScreen.WorkingArea.Width;
             Height = Screen.PrimaryScreen.WorkingArea.Height;
+
+
+
+            clsEmpresa empresa = new clsEmpresa();
+
+
+            if (!empresa.ProductoActivado())
+            {
+                btnClientes.Enabled = false;
+                btnProductos.Enabled = false;
+                btnVentas.Enabled = false;
+                btnAdministracion.Enabled = true;
+                btnMenuCaja.Enabled = false;
+                btnReportes.Enabled = false;
+                btnEmpleados.Enabled = false;
+                btnDocumentos.Enabled = false;
+            }
+
+
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            clsEmpresa empresa = new clsEmpresa();
-
-            if (!empresa.ProductoActivado())
-            {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
+         
 
 
             Program.frmAlmacen = new FrmAlmacen();
@@ -119,13 +132,7 @@ namespace Capa_de_Presentacion
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            clsEmpresa empresa = new clsEmpresa();
-
-            if (!empresa.ProductoActivado())
-            {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
+           
 
             clsCaja caja = new clsCaja(Program.IdEmpleadoLogueado + "");
             string fechacaja = caja.FechaAbierto.Substring(0, 10);
@@ -187,12 +194,7 @@ namespace Capa_de_Presentacion
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
-            clsEmpresa empresa = new clsEmpresa();
-
-            if (!empresa.ProductoActivado())
-            {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            
 
             Program.frmReportes  = new FrmReportesMenu();
             Program.frmReportes.Show();
@@ -252,12 +254,7 @@ namespace Capa_de_Presentacion
 
         private void btnMenuCaja_Click(object sender, EventArgs e)
         {
-            clsEmpresa empresa = new clsEmpresa();
-
-            if (!empresa.ProductoActivado())
-            {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+           
             Program.frmCaja = new FrmCaja();
             Program.frmCaja.Show();
         }
@@ -269,12 +266,7 @@ namespace Capa_de_Presentacion
 
         private void btnDocumentos_Click(object sender, EventArgs e)
         {
-            clsEmpresa empresa = new clsEmpresa();
-
-            if (!empresa.ProductoActivado())
-            {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            
             
             Program.frmDocumentos = new  FrmDocumentos();
             Program.frmDocumentos.Show();

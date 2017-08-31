@@ -51,21 +51,11 @@
             this.btn_impresora = new System.Windows.Forms.Button();
             this.btn_seguridad = new System.Windows.Forms.Button();
             this.gbox_informacion = new System.Windows.Forms.GroupBox();
-
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-
             this.txt_nota = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_boleta = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_factura = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -74,7 +64,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_direccion_empresa = new System.Windows.Forms.TextBox();
             this.btn_GuardarEmpresa = new System.Windows.Forms.Button();
-
             this.txt_ruc_empresa = new System.Windows.Forms.TextBox();
             this.txt_nombre_empresa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -106,13 +95,13 @@
             this.horaCerradoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_mensaje = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-
             this.gbox_licencia = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_licencia = new System.Windows.Forms.Button();
             this.txt_licencia = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-
+            this.lbl_licencia_nroserial = new System.Windows.Forms.Label();
+            this.lbl_licencia_mensaje = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cajasCerradasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demoPracticaCajasCerradas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_icon)).BeginInit();
@@ -224,13 +213,8 @@
             // 
             // contraseñaDataGridViewTextBoxColumn
             // 
-
-       
-            this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-
             dataGridViewCellStyle4.NullValue = "********";
             this.contraseñaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-
             this.contraseñaDataGridViewTextBoxColumn.HeaderText = "Contraseña";
             this.contraseñaDataGridViewTextBoxColumn.Name = "contraseñaDataGridViewTextBoxColumn";
             this.contraseñaDataGridViewTextBoxColumn.ToolTipText = "*********";
@@ -238,11 +222,9 @@
             // 
             // Actualizar
             // 
-
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.NullValue = "Actualizar";
             this.Actualizar.DefaultCellStyle = dataGridViewCellStyle5;
-
             this.Actualizar.HeaderText = "Actualizar";
             this.Actualizar.Name = "Actualizar";
             this.Actualizar.Text = "Actualizar";
@@ -252,12 +234,9 @@
             // Eliminar
             // 
             this.Eliminar.DataPropertyName = "Eliminar";
-
-
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.NullValue = "Eliminar";
             this.Eliminar.DefaultCellStyle = dataGridViewCellStyle6;
-
             this.Eliminar.HeaderText = "Eliminar";
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Text = "Eliminar";
@@ -302,12 +281,12 @@
             // 
             // gbox_informacion
             // 
+            this.gbox_informacion.Controls.Add(this.label9);
             this.gbox_informacion.Controls.Add(this.txt_nota);
             this.gbox_informacion.Controls.Add(this.label12);
             this.gbox_informacion.Controls.Add(this.txt_boleta);
             this.gbox_informacion.Controls.Add(this.label11);
             this.gbox_informacion.Controls.Add(this.txt_factura);
-            this.gbox_informacion.Controls.Add(this.label9);
             this.gbox_informacion.Controls.Add(this.txt_ciudad);
             this.gbox_informacion.Controls.Add(this.label10);
             this.gbox_informacion.Controls.Add(this.label8);
@@ -330,16 +309,6 @@
             this.gbox_informacion.Text = "Información General de la Empresa";
             this.gbox_informacion.Visible = false;
             // 
-
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 177);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(354, 28);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Por favor, \r\nIntroducir el Impuesto con el que se trabajará en este Sistema.";
-
             // txt_nota
             // 
             this.txt_nota.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -388,15 +357,6 @@
             this.txt_factura.Size = new System.Drawing.Size(119, 30);
             this.txt_factura.TabIndex = 28;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 212);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 14);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Correlativo Factura:";
-            // 
             // txt_ciudad
             // 
             this.txt_ciudad.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -415,34 +375,17 @@
             this.label10.Size = new System.Drawing.Size(47, 14);
             this.label10.TabIndex = 25;
             this.label10.Text = "Ciudad:";
-
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.label8.Location = new System.Drawing.Point(149, 236);
-
-
-
+            this.label8.Location = new System.Drawing.Point(150, 301);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 39);
             this.label8.TabIndex = 23;
             this.label8.Text = "%";
             // 
-
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(30, 236);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 42);
-            this.textBox1.TabIndex = 21;
-
             // txt_tasa
             // 
             this.txt_tasa.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -453,14 +396,10 @@
             this.txt_tasa.Name = "txt_tasa";
             this.txt_tasa.Size = new System.Drawing.Size(116, 42);
             this.txt_tasa.TabIndex = 21;
-
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-
-            this.label5.Location = new System.Drawing.Point(27, 217);
-
             this.label5.Location = new System.Drawing.Point(29, 281);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 14);
@@ -486,16 +425,6 @@
             this.txt_direccion_empresa.Size = new System.Drawing.Size(375, 30);
             this.txt_direccion_empresa.TabIndex = 15;
             // 
-
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(266, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 33);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "&Guardar";
-            this.button4.UseVisualStyleBackColor = true;
-
             // btn_GuardarEmpresa
             // 
             this.btn_GuardarEmpresa.Location = new System.Drawing.Point(266, 301);
@@ -505,7 +434,6 @@
             this.btn_GuardarEmpresa.Text = "&Guardar";
             this.btn_GuardarEmpresa.UseVisualStyleBackColor = true;
             this.btn_GuardarEmpresa.Click += new System.EventHandler(this.btn_GuardarEmpresa_Click);
-
             // 
             // txt_ruc_empresa
             // 
@@ -765,7 +693,6 @@
             this.saldoAbiertoDataGridViewTextBoxColumn.Name = "saldoAbiertoDataGridViewTextBoxColumn";
             this.saldoAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
             this.saldoAbiertoDataGridViewTextBoxColumn.Width = 110;
-
             // 
             // fechaAbiertoDataGridViewTextBoxColumn
             // 
@@ -785,27 +712,6 @@
             // 
             // saldoCerradoDataGridViewTextBoxColumn
             // 
-
-            // 
-            // fechaAbiertoDataGridViewTextBoxColumn
-            // 
-            this.fechaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "FechaAbierto";
-            this.fechaAbiertoDataGridViewTextBoxColumn.HeaderText = "Fecha Apertura";
-            this.fechaAbiertoDataGridViewTextBoxColumn.Name = "fechaAbiertoDataGridViewTextBoxColumn";
-            this.fechaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaAbiertoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // horaAbiertoDataGridViewTextBoxColumn
-            // 
-            this.horaAbiertoDataGridViewTextBoxColumn.DataPropertyName = "HoraAbierto";
-            this.horaAbiertoDataGridViewTextBoxColumn.HeaderText = "Hora Apertura";
-            this.horaAbiertoDataGridViewTextBoxColumn.Name = "horaAbiertoDataGridViewTextBoxColumn";
-            this.horaAbiertoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.horaAbiertoDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // saldoCerradoDataGridViewTextBoxColumn
-            // 
-
             this.saldoCerradoDataGridViewTextBoxColumn.DataPropertyName = "SaldoCerrado";
             this.saldoCerradoDataGridViewTextBoxColumn.HeaderText = "Saldo Cierre";
             this.saldoCerradoDataGridViewTextBoxColumn.Name = "saldoCerradoDataGridViewTextBoxColumn";
@@ -848,18 +754,18 @@
             this.label1.Size = new System.Drawing.Size(239, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "NOTA: Hacer Doble Clic en el campo para editar.";
-
             // 
             // gbox_licencia
             // 
+            this.gbox_licencia.Controls.Add(this.lbl_licencia_mensaje);
             this.gbox_licencia.Controls.Add(this.panel5);
             this.gbox_licencia.Controls.Add(this.btn_licencia);
             this.gbox_licencia.Controls.Add(this.txt_licencia);
-            this.gbox_licencia.Controls.Add(this.label13);
+            this.gbox_licencia.Controls.Add(this.lbl_licencia_nroserial);
             this.gbox_licencia.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbox_licencia.Location = new System.Drawing.Point(12, 260);
+            this.gbox_licencia.Location = new System.Drawing.Point(2, 324);
             this.gbox_licencia.Name = "gbox_licencia";
-            this.gbox_licencia.Size = new System.Drawing.Size(775, 184);
+            this.gbox_licencia.Size = new System.Drawing.Size(775, 244);
             this.gbox_licencia.TabIndex = 20;
             this.gbox_licencia.TabStop = false;
             this.gbox_licencia.Text = "Licencia";
@@ -876,7 +782,7 @@
             // 
             // btn_licencia
             // 
-            this.btn_licencia.Location = new System.Drawing.Point(258, 104);
+            this.btn_licencia.Location = new System.Drawing.Point(254, 184);
             this.btn_licencia.Name = "btn_licencia";
             this.btn_licencia.Size = new System.Drawing.Size(139, 41);
             this.btn_licencia.TabIndex = 16;
@@ -888,21 +794,38 @@
             // 
             this.txt_licencia.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txt_licencia.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_licencia.Location = new System.Drawing.Point(30, 57);
+            this.txt_licencia.Location = new System.Drawing.Point(29, 130);
             this.txt_licencia.MaxLength = 400;
             this.txt_licencia.Name = "txt_licencia";
             this.txt_licencia.Size = new System.Drawing.Size(547, 23);
             this.txt_licencia.TabIndex = 13;
             // 
-            // label13
+            // lbl_licencia_nroserial
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(27, 33);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 14);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Ingrese Numero de Serial";
-
+            this.lbl_licencia_nroserial.AutoSize = true;
+            this.lbl_licencia_nroserial.Location = new System.Drawing.Point(26, 106);
+            this.lbl_licencia_nroserial.Name = "lbl_licencia_nroserial";
+            this.lbl_licencia_nroserial.Size = new System.Drawing.Size(145, 14);
+            this.lbl_licencia_nroserial.TabIndex = 10;
+            this.lbl_licencia_nroserial.Text = "Ingrese Numero de Serial";
+            // 
+            // lbl_licencia_mensaje
+            // 
+            this.lbl_licencia_mensaje.AutoSize = true;
+            this.lbl_licencia_mensaje.Location = new System.Drawing.Point(251, 67);
+            this.lbl_licencia_mensaje.Name = "lbl_licencia_mensaje";
+            this.lbl_licencia_mensaje.Size = new System.Drawing.Size(213, 14);
+            this.lbl_licencia_mensaje.TabIndex = 19;
+            this.lbl_licencia_mensaje.Text = "El producto no se encuentra activado";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(29, 209);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(112, 14);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Correlativo Factura:";
             // 
             // FrmAdministracion
             // 
@@ -910,12 +833,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 677);
             this.ControlBox = false;
+            this.Controls.Add(this.gbox_informacion);
             this.Controls.Add(this.gbox_licencia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.gbox_opciones);
             this.Controls.Add(this.pbox_icon);
-            this.Controls.Add(this.gbox_informacion);
             this.Controls.Add(this.gbox_seguridad);
             this.Controls.Add(this.gbox_usuarios);
             this.Controls.Add(this.gbox_impresora);
@@ -1016,14 +939,15 @@
         private System.Windows.Forms.TextBox txt_boleta;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_factura;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_ciudad;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox gbox_licencia;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btn_licencia;
         private System.Windows.Forms.TextBox txt_licencia;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_licencia_nroserial;
+        private System.Windows.Forms.Label lbl_licencia_mensaje;
+        private System.Windows.Forms.Label label9;
 
         public System.Windows.Forms.Button button4 { get; set; }
 

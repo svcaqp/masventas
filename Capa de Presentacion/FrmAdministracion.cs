@@ -23,12 +23,6 @@ namespace Capa_de_Presentacion
         private void FrmAdministracion_Load(object sender, EventArgs e)
         {
   
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaCajasCerradas.CajasCerradas' Puede moverla o quitarla según sea necesario.
-            this.cajasCerradasTableAdapter.Fill(this.demoPracticaCajasCerradas.CajasCerradas);
-            // TODO: esta línea de código carga datos en la tabla 'demoPracticaCajasCerradas1.CajasCerradas' Puede moverla o quitarla según sea necesario.
-        
-            
-
             clsPreferences preferences = new clsPreferences();
             Settings.Default["DemoPracticaConnectionString1"] = preferences.getConnectionString();
             Settings.Default.Save();
@@ -124,6 +118,23 @@ namespace Capa_de_Presentacion
             gbox_impresora.Hide();
             gbox_usuarios.Hide();
             label1.Hide();
+
+            clsEmpresa empresa = new clsEmpresa();
+
+
+            if (!empresa.ProductoActivado() || empresa.codeLicencia == 1)
+            {
+                lbl_licencia_mensaje.Text = "El producto no se encuentra activado";
+            }
+            else
+            {
+                txt_licencia.Text = empresa.Licencia;
+                lbl_licencia_mensaje.Text = "El producto se encuentra activado";
+                txt_licencia.Enabled = false;
+                btn_licencia.Enabled = false;
+            }
+
+
         }
 
         private void btn_empresa_Click(object sender, EventArgs e)
@@ -197,7 +208,12 @@ namespace Capa_de_Presentacion
             empresa.Licencia = txt_licencia.Text;
             if (empresa.ValidarLicencia())
             {
-                MessageBox.Show(empresa.RegistrarLicencia());
+                MessageBox.Show(empresa.RegistrarLicencia() );
+                if (DevComponents.DotNetBar.MessageBoxEx.Show(this, "Debe reiniciar el sistema para efectuar los cambios", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Warning) == DialogResult.OK) {
+
+                    Application.ExitThread();
+                    }
+
             }
             else
                 MessageBox.Show("No se pudo registrar el producto");

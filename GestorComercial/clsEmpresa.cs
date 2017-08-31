@@ -19,6 +19,7 @@ namespace GestorComercial
         public int notaCorrelativo;
         public double TasaIgv;
         public string Licencia;
+        public int codeLicencia;
 
 
         public clsEmpresa(string nombreEmpresa,
@@ -61,7 +62,15 @@ namespace GestorComercial
         }
         public string RegistrarEmpresa()
         {
+
             var mensaje = "";
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                mensaje = "Error de activación : \n Pongase en contacto al \n Tel : 957407217";
+                return mensaje;
+            }
 
             var lst = new List<clsParametro>();
             try
@@ -157,6 +166,7 @@ namespace GestorComercial
         {
             clsPrueba prueba = new clsPrueba();
             prueba.VersionPrueba();
+            codeLicencia = prueba.statusCode;
             if (prueba.statusCode != 1)
             {
                 return ValidarLicencia();
@@ -169,7 +179,7 @@ namespace GestorComercial
         public void setPrueba()
         {
             clsPrueba prueba = new clsPrueba();
-            prueba.SetPrueba();
+           // prueba.SetPrueba();
         }
 
     }

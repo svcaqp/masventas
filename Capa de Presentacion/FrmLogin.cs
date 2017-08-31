@@ -57,11 +57,11 @@ namespace Capa_de_Presentacion
 
 
             clsEmpresa empresa = new clsEmpresa();
-            empresa.setPrueba();
+          
 
             if (!empresa.ProductoActivado())
             {
-                MessageBox.Show("Error de Activacion ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La prueba ha finalizado, porfavor contactese al numero 957407217 para obtener un codigo de serial ", "Error de Activacion ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             if (txtUser.Text.Trim() != "")

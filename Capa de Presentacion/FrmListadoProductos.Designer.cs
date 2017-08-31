@@ -195,7 +195,7 @@
             this.panel4.Controls.Add(this.button3);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(956, 52);
+            this.panel4.Size = new System.Drawing.Size(942, 52);
             this.panel4.TabIndex = 1012;
             // 
             // lbl_title
@@ -226,7 +226,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(803, 8);
+            this.button3.Location = new System.Drawing.Point(789, 8);
             this.button3.MaximumSize = new System.Drawing.Size(141, 33);
             this.button3.MinimumSize = new System.Drawing.Size(141, 33);
             this.button3.Name = "button3";
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 434);
+            this.ClientSize = new System.Drawing.Size(1038, 435);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);

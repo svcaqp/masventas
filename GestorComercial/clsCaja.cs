@@ -53,7 +53,7 @@ namespace GestorComercial
 
             if (!empresa.ProductoActivado())
             {
-                mensaje = "Error de activación : \n Pongase en contacto con SERVICORP \n Tel : 958852192";
+                mensaje = "Error de activación : \n Pongase en contacto al \n Tel : 957407217";
                 return mensaje;
             }
 

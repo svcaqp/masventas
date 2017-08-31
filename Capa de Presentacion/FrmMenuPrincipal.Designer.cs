@@ -48,7 +48,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.btnAdministracion = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnEmpleados = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -142,7 +142,7 @@
             this.Panel_items.Controls.Add(this.label10);
             this.Panel_items.Controls.Add(this.label9);
             this.Panel_items.Controls.Add(this.label7);
-            this.Panel_items.Controls.Add(this.btnUsuarios);
+            this.Panel_items.Controls.Add(this.btnAdministracion);
             this.Panel_items.Controls.Add(this.label6);
             this.Panel_items.Controls.Add(this.btnEmpleados);
             this.Panel_items.Controls.Add(this.btnReportes);
@@ -302,17 +302,17 @@
             this.label7.Text = "Clientes";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // btnUsuarios
+            // btnAdministracion
             // 
-            this.btnUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.BackgroundImage")));
-            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(455, 166);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(130, 116);
-            this.btnUsuarios.TabIndex = 0;
-            this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.btnAdministracion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdministracion.BackgroundImage")));
+            this.btnAdministracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdministracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministracion.Location = new System.Drawing.Point(455, 166);
+            this.btnAdministracion.Name = "btnAdministracion";
+            this.btnAdministracion.Size = new System.Drawing.Size(130, 116);
+            this.btnAdministracion.TabIndex = 0;
+            this.btnAdministracion.UseVisualStyleBackColor = true;
+            this.btnAdministracion.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // label6
             // 
@@ -566,7 +566,7 @@
         private System.Windows.Forms.Panel Panel_items;
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnVentas;
-        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnAdministracion;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Label label4;

@@ -11,7 +11,7 @@ namespace Beta
     {
         public static void Main()
         {
-            clsEmpresa empresa = new clsEmpresa();
+            //clsEmpresa empresa = new clsEmpresa();
             //empresa.GenerarLicencia();
             //Console.Write(empresa.Licencia);
             //if(empresa.ValidarLicencia("VwBJAE4ARABPAFcAUwAtAFAAQwA"))

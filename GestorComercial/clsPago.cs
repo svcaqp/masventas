@@ -41,6 +41,13 @@ namespace GestorComercial
         public string RegistrarPago()
         {
             var mensaje = "";
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                mensaje = "Error de activación : \n Pongase en contacto al \n Tel : 957407217";
+                return mensaje;
+            }
 
             var lst = new List<clsParametro>();
             try

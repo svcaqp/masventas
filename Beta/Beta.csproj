@@ -41,8 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsCredencial.cs" />
-    <Compile Include="clsEmpresa.cs" />
-    <Compile Include="clslPrueba.cs" />
     <Compile Include="clsManejador.cs" />
     <Compile Include="clsParametro.cs" />
     <Compile Include="Main.cs" />

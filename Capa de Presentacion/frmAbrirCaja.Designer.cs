@@ -71,8 +71,9 @@
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_aceptar.BackColor = System.Drawing.Color.White;
             this.btn_aceptar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_aceptar.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_aceptar.Location = new System.Drawing.Point(354, 121);
             this.btn_aceptar.Name = "btn_aceptar";
@@ -108,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 170);
+            this.ClientSize = new System.Drawing.Size(482, 171);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);

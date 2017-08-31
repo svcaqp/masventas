@@ -29,43 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReportesMenu));
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_reporteventas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_reporteventas = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(130, 343);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 134);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btn_reporteventas
-            // 
-            this.btn_reporteventas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_reporteventas.BackgroundImage")));
-            this.btn_reporteventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_reporteventas.Location = new System.Drawing.Point(130, 181);
-            this.btn_reporteventas.Name = "btn_reporteventas";
-            this.btn_reporteventas.Size = new System.Drawing.Size(130, 134);
-            this.btn_reporteventas.TabIndex = 0;
-            this.btn_reporteventas.UseVisualStyleBackColor = true;
-            this.btn_reporteventas.Click += new System.EventHandler(this.btn_reporteventas_Click);
             // 
             // label1
             // 
@@ -87,16 +65,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "REPORTE\r\nDE KARDEX";
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(552, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 134);
-            this.button3.TabIndex = 4;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -106,16 +74,6 @@
             this.label3.Size = new System.Drawing.Size(183, 50);
             this.label3.TabIndex = 5;
             this.label3.Text = "REPORTE\r\nDE ANULACIONES";
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(552, 343);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 134);
-            this.button4.TabIndex = 7;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -150,16 +108,6 @@
             this.lbl_title.TabIndex = 1013;
             this.lbl_title.Text = "REPORTES";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 44);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -177,6 +125,59 @@
             this.button1.Text = "Regresar ";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(60, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Location = new System.Drawing.Point(552, 343);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(130, 134);
+            this.button4.TabIndex = 7;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Location = new System.Drawing.Point(552, 181);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 134);
+            this.button3.TabIndex = 4;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(130, 343);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 134);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_reporteventas
+            // 
+            this.btn_reporteventas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_reporteventas.BackgroundImage")));
+            this.btn_reporteventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_reporteventas.Location = new System.Drawing.Point(130, 181);
+            this.btn_reporteventas.Name = "btn_reporteventas";
+            this.btn_reporteventas.Size = new System.Drawing.Size(130, 134);
+            this.btn_reporteventas.TabIndex = 0;
+            this.btn_reporteventas.UseVisualStyleBackColor = true;
+            this.btn_reporteventas.Click += new System.EventHandler(this.btn_reporteventas_Click);
             // 
             // FrmReportesMenu
             // 

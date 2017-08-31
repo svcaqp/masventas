@@ -62,6 +62,16 @@ namespace GestorComercial
         {
             List<clsParametro> lst = new List<clsParametro>();
             String Mensaje = "";
+
+            clsEmpresa empresa = new clsEmpresa();
+
+            if (!empresa.ProductoActivado())
+            {
+                Mensaje = "Error de activación : \n Pongase en contacto al \n Tel : 957407217";
+                return Mensaje;
+            }
+
+
             try
             {
                 lst.Add(new clsParametro("@Descripcion", m_Descripcion));

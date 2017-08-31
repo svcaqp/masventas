@@ -177,7 +177,7 @@
             this.panel4.Controls.Add(this.lbl_title);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(956, 52);
+            this.panel4.Size = new System.Drawing.Size(942, 52);
             this.panel4.TabIndex = 1010;
             // 
             // pictureBox1
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 434);
+            this.ClientSize = new System.Drawing.Size(1038, 439);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnActualizar);
